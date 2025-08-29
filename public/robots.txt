@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://petararsic.rs/sitemap.xml
+
+# Disallow admin and API routes
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Crawl delay
+Crawl-delay: 1

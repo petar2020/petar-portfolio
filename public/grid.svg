@@ -1,0 +1,6 @@
+<!-- public/grid.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none">
+  <rect width="40" height="40" fill="transparent"/>
+  <path d="M0 0.5H40M0 20.5H40M0 40.5H40M0.5 0V40M20.5 0V40M40.5 0V40"
+        stroke="rgba(148,163,184,0.15)" stroke-width="1"/>
+</svg>
