@@ -4,7 +4,7 @@
     "/sr": {
       "initialRevalidateSeconds": false,
       "srcRoute": "/[locale]",
-      "dataRoute": "/_next/data/H_ga-OKJ_HPVs1cHYxJ8Z/sr.json",
+      "dataRoute": "/_next/data/2fFD4FCe3RjFPFq8UY3mW/sr.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -17,7 +17,7 @@
     "/en": {
       "initialRevalidateSeconds": false,
       "srcRoute": "/[locale]",
-      "dataRoute": "/_next/data/H_ga-OKJ_HPVs1cHYxJ8Z/en.json",
+      "dataRoute": "/_next/data/2fFD4FCe3RjFPFq8UY3mW/en.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -31,9 +31,9 @@
   "dynamicRoutes": {
     "/[locale]": {
       "routeRegex": "^/([^/]+?)(?:/)?$",
-      "dataRoute": "/_next/data/H_ga-OKJ_HPVs1cHYxJ8Z/[locale].json",
+      "dataRoute": "/_next/data/2fFD4FCe3RjFPFq8UY3mW/[locale].json",
       "fallback": false,
-      "dataRouteRegex": "^/_next/data/H_ga\\-OKJ_HPVs1cHYxJ8Z/([^/]+?)\\.json$",
+      "dataRouteRegex": "^/_next/data/2fFD4FCe3RjFPFq8UY3mW/([^/]+?)\\.json$",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -46,8 +46,8 @@
   },
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "5b14240216cf89cba3d3384ab270b5a6",
-    "previewModeSigningKey": "1401c76603b23328622dc9aa8c3e7739f085734eadcabc3e83be86f537355b00",
-    "previewModeEncryptionKey": "e1ba2f7b317b2de82f016a92ac9e606500fe8eac886314fa4a678b232685ce4e"
+    "previewModeId": "0c6438d27ada45e8111081287920b202",
+    "previewModeSigningKey": "89152cb003e59169e5e7406146732f108d795cda42100de7c221e1e1c4136475",
+    "previewModeEncryptionKey": "6d072a55e448bc290ba50f47e149573c7dc1c23e6f490a5c37164121c6379dd6"
   }
 }

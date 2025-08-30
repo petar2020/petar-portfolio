@@ -40,19 +40,19 @@
   "dataRoutes": [
     {
       "page": "/",
-      "dataRouteRegex": "^/_next/data/H_ga\\-OKJ_HPVs1cHYxJ8Z/index\\.json$"
+      "dataRouteRegex": "^/_next/data/2fFD4FCe3RjFPFq8UY3mW/index\\.json$"
     },
     {
       "page": "/sitemap.xml",
-      "dataRouteRegex": "^/_next/data/H_ga\\-OKJ_HPVs1cHYxJ8Z/sitemap.xml\\.json$"
+      "dataRouteRegex": "^/_next/data/2fFD4FCe3RjFPFq8UY3mW/sitemap.xml\\.json$"
     },
     {
       "page": "/[locale]",
       "routeKeys": {
         "nxtPlocale": "nxtPlocale"
       },
-      "dataRouteRegex": "^/_next/data/H_ga\\-OKJ_HPVs1cHYxJ8Z/([^/]+?)\\.json$",
-      "namedDataRouteRegex": "^/_next/data/H_ga\\-OKJ_HPVs1cHYxJ8Z/(?<nxtPlocale>[^/]+?)\\.json$"
+      "dataRouteRegex": "^/_next/data/2fFD4FCe3RjFPFq8UY3mW/([^/]+?)\\.json$",
+      "namedDataRouteRegex": "^/_next/data/2fFD4FCe3RjFPFq8UY3mW/(?<nxtPlocale>[^/]+?)\\.json$"
     }
   ],
   "rsc": {
