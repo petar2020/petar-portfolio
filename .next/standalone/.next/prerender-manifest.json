@@ -1,0 +1,53 @@
+{
+  "version": 4,
+  "routes": {
+    "/sr": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]",
+      "dataRoute": "/_next/data/H_ga-OKJ_HPVs1cHYxJ8Z/sr.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/en": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]",
+      "dataRoute": "/_next/data/H_ga-OKJ_HPVs1cHYxJ8Z/en.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    }
+  },
+  "dynamicRoutes": {
+    "/[locale]": {
+      "routeRegex": "^/([^/]+?)(?:/)?$",
+      "dataRoute": "/_next/data/H_ga-OKJ_HPVs1cHYxJ8Z/[locale].json",
+      "fallback": false,
+      "dataRouteRegex": "^/_next/data/H_ga\\-OKJ_HPVs1cHYxJ8Z/([^/]+?)\\.json$",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    }
+  },
+  "notFoundRoutes": [],
+  "preview": {
+    "previewModeId": "5b14240216cf89cba3d3384ab270b5a6",
+    "previewModeSigningKey": "1401c76603b23328622dc9aa8c3e7739f085734eadcabc3e83be86f537355b00",
+    "previewModeEncryptionKey": "e1ba2f7b317b2de82f016a92ac9e606500fe8eac886314fa4a678b232685ce4e"
+  }
+}

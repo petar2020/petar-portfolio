@@ -1,0 +1,11 @@
+{
+  "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js",
+  "/api/contact": "pages/api/contact.js",
+  "/_error": "pages/_error.js",
+  "/api/cv": "pages/api/cv.js",
+  "/[locale]": "pages/[locale].js",
+  "/": "pages/index.js",
+  "/sitemap.xml": "pages/sitemap.xml.js",
+  "/404": "pages/404.html"
+}

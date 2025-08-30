@@ -1,0 +1,105 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "services": "Services",
+    "contact": "Contact",
+    "cv": "CV"
+  },
+  "hero": {
+    "title": "Petar Arsić",
+    "subtitle": "Full-Stack Developer",
+    "description": "I build modern web applications with the latest technologies",
+    "cta": "View My Work",
+    "scroll": "Scroll Down"
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "What I can do for you",
+    "webDev": {
+      "title": "Web Development",
+      "description": "Modern, responsive websites and applications",
+      "features": "React, Next.js, Laravel, WordPress, SEO, Performance"
+    },
+    "mobileDev": {
+      "title": "Mobile Development",
+      "description": "Cross-platform mobile apps with React Native",
+      "features": "React Native, Expo, iOS, Android, App Store, Google Play"
+    },
+    "cloudDev": {
+      "title": "Cloud Development",
+      "description": "Scalable cloud solutions and DevOps practices",
+      "features": "AWS, Azure, Docker, Kubernetes, CI/CD, Monitoring"
+    },
+    "devOps": {
+      "title": "DevOps & Infrastructure",
+      "description": "Deployment automation and infrastructure as code",
+      "features": "Terraform, Ansible, Jenkins, GitLab CI, Monitoring, Security"
+    }
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "Some of my recent work",
+    "viewCase": "View Case Study",
+    "viewLive": "View Live",
+    "viewCode": "View Code",
+    "tech": "Technologies",
+    "metrics": "Key Metrics",
+    "challenge": "Challenge",
+    "solution": "Solution",
+    "results": "Results"
+  },
+  "testimonials": {
+    "title": "Client Testimonials",
+    "subtitle": "What people say about working with me"
+  },
+  "clients": {
+    "title": "Trusted By",
+    "subtitle": "Companies I’ve had the pleasure to work with"
+  },
+  "cv": {
+    "title": "Download My CV",
+    "subtitle": "A detailed overview of my experience and skills",
+    "downloadTitle": "Download CV",
+    "downloadDescription": "Download my CV in PDF with detailed information about experience, skills, and projects.",
+    "downloadButton": "Download CV"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Full-stack developer focused on fast, stable and scalable apps.",
+    "aboutMe": "Who I Am",
+    "bio": "Graduated from Metropolitan University. 5+ years building end-to-end solutions in the transportation industry: Laravel backends (booking, payments, logistics), React/Next frontends, WordPress (10+ live sites), and mobile apps (React Native). Currently full-time at Serbia Tours International with side freelance projects. Remote-first.",
+    "stats": {
+      "years": { "label": "Years of Experience", "value": "5+" },
+      "projects": { "label": "Projects", "value": "30+" },
+      "stack": { "label": "Stack", "value": "Laravel, React/Next, MySQL, Redis, Docker" },
+      "remote": { "label": "Work Mode", "value": "Remote, async, Git" }
+    },
+    "focus": {
+      "title": "What I Focus On",
+      "items": {
+        "0": "Booking & payment systems (150k+ passengers/year)",
+        "1": "Modern web app architecture (React/Next + API)",
+        "2": "WordPress development (themes, plugins, 10+ live sites)",
+        "3": "Performance optimization & SEO",
+        "4": "Mobile apps (React Native, Expo)"
+      }
+    },
+    "cta": "Let’s get started"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Let's talk about your next project",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "success": "Message sent successfully!",
+    "error": "Error sending message. Please try again."
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "madeWith": "Made with ❤️ in Serbia"
+  }
+}
