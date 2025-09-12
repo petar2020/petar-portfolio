@@ -1,6 +1,7 @@
 {
   "nav": {
     "home": "Početna",
+    "about": "O meni",        
     "projects": "Projekti",
     "services": "Usluge",
     "contact": "Kontakt",
@@ -37,25 +38,83 @@
       "features": "Terraform, Ansible, Jenkins, GitLab CI, Monitoring, Security"
     }
   },
-  "projects": {
+    "projects": {
     "title": "Istaknuti Projekti",
     "subtitle": "Neki od mojih nedavnih radova",
     "viewCase": "Pogledaj Case Study",
+    "viewCaseStudy": "Pogledaj Case Study",
     "viewLive": "Pogledaj Live",
-    "viewCode": "Pogledaj Kod",
-    "tech": "Tehnologije",
-    "metrics": "Ključne Metrike",
-    "challenge": "Izazov",
-    "solution": "Rešenje",
-    "results": "Rezultati"
+    "caseStudy": "Case study",
+    "highlights": "Izdvojeno",
+    "items": {
+      "bozic-konig": {
+        "title": "Božić König – Online Rezervacije",
+        "description": "React aplikacija za pretragu polazaka i online kupovinu karata.",
+        "long": "SPA u React/Next okruženju sa optimizovanom pretragom, jasnim tokom kupovine i integracijom sa back-office sistemima (linije, polasci, cene). Fokus na UX i performanse.",
+        "details": [
+          "Brza pretraga i filtriranje linija",
+          "Sigurni tokovi plaćanja",
+          "SEO i performance optimizacije"
+        ]
+      },
+    "sti-web": {
+  "title": "Srbija Tours – Prodaja karata",
+  "description": "WordPress frontend sa Laravel API-jem za polaske, rezervacije i plaćanja.",
+  "long": "Frontend je WordPress (custom tema/blokovi) – brz i SEO-prijateljski. Laravel služi kao backend koji isporučuje API za polaske, cene i rezervacije, uz integrisana plaćanja i fiskalizaciju. Primena Redis keširanja i Nginx optimizacija."
+}
+,
+      "sti-mobile": {
+        "title": "Srbija Tours – Mobilna aplikacija (iOS/Android)",
+        "description": "React Native aplikacija: pretraga polazaka, nalozi i rezervacije.",
+        "long": "Cross-platform aplikacija sa Expo/React Native. Deljeni UI i logika, offline keširanje i push notifikacije.",
+        "details": [
+          "Login/registracija i profil",
+          "Pretraga i filtriranje polazaka",
+          "Push notifikacije"
+        ]
+      },
+      "drivesoft-backoffice": {
+        "title": "DriveSoft – Back-office (Laravel)",
+        "description": "Interni sistem za praćenje putnika, polazaka, linija i operativa.",
+        "long": "Laravel aplikacija sa kompleksnim modelima, RBAC-om, keširanjem i queue-vima. Izveštaji i export/import podataka.",
+        "details": [
+          "RBAC i audit trail",
+          "Import/Export CSV/Excel",
+          "Grafikoni i operativni izveštaji"
+        ]
+      },
+      "drivesoft-demo": {
+        "title": "DriveSoft – Demo rezervacije (React)",
+        "description": "Demo front-end za pretragu i rezervaciju sa statičkim podacima.",
+        "long": "Jasan UX sa filterima (smer, polazak, destinacija, datum, broj putnika). Demo verzija odvojena od produkcionih API-ja, spremna za povezivanje na pravi backend.",
+        "details": [
+          "Statički seed podaci za prezentacije",
+          "Čist tok rezervacije u nekoliko koraka",
+          "Lako povezivanje sa realnim API-jem"
+        ]
+      },
+      "prostor-dereta": {
+        "title": "Prostor Miljenko Dereta – WordPress",
+        "description": "WP sajt sa blogom i formama za rezervaciju prostora.",
+        "long": "Moderni WordPress build sa prilagođenim šablonima i optimizacijama. Fokus na brzinu, SEO i jednostavno uređivanje sadržaja.",
+        "details": [
+          "Kontakt i booking forme",
+          "Optimizovane slike i keširanje",
+          "SEO-prijateljska struktura i blog"
+        ]
+      }
+    }
   },
   "testimonials": {
     "title": "Komentari Klijenata",
     "subtitle": "Šta ljudi kažu o radu sa mnom"
   },
-  "clients": {
+    "clients": {
     "title": "Veruju Mi",
-    "subtitle": "Kompanije sa kojima sam imao zadovoljstvo da radim"
+    "subtitle": "Kompanije sa kojima sam imao zadovoljstvo da radim",
+    "visit": "Poseti sajt kompanije {name}",
+    "ctaText": "Spremni da se pridružite listi zadovoljnih klijenata? Hajde da razgovaramo o vašem sledećem projektu.",
+    "ctaButton": "Započnite projekat"
   },
   "cv": {
     "title": "Preuzmite Moj CV",

@@ -1,19 +1,6 @@
-// src/data/projects.js
-
-/**
- * @typedef Project
- * @property {string} title
- * @property {string} description
- * @property {string} longDescription
- * @property {string} image
- * @property {string} link
- * @property {string[]} tech
- * @property {string[]} [details]
- * @property {string} [codeLink]
- */
-
 export const projects = [
   {
+    key: 'bozic-konig',
     title: 'Božić König – Online Rezervacije',
     description: 'React aplikacija za pretragu polazaka i online kupovinu karata.',
     longDescription:
@@ -21,27 +8,25 @@ export const projects = [
     image: '/bozic-konig.png',
     link: 'https://bozic-konig.com/',
     tech: ['React', 'Next.js', 'Tailwind CSS', 'REST API'],
-    details: [
-      'Brza pretraga i filtriranje linija',
-      'Sigurni tokovi plaćanja',
-      'SEO i performance optimizacije'
-    ]
+    details: ['Brza pretraga i filtriranje linija', 'Sigurni tokovi plaćanja', 'SEO i performance optimizacije']
   },
+ {
+  key: 'sti-web',
+  title: 'Srbija Tours – Prodaja karata',
+  description: 'WordPress frontend sa Laravel API-jem za polaske, rezervacije i plaćanja.',
+  longDescription:
+    'Frontend je WordPress (custom tema/blokovi) – brz i SEO-prijateljski. Backend je Laravel koji isporučuje API za polaske, cene i rezervacije, zajedno sa integrisanim plaćanjem i fiskalizacijom. Keširanje preko Redis-a i optimizacije na nivou Nginx-a.',
+  image: '/srbijatours.png',
+  link: 'https://srbijatours.com/',
+  tech: ['WordPress', 'Laravel (API)', 'MySQL', 'Redis', 'Nginx'],
+  details: [
+    'WordPress frontend (custom tema/blokovi)',
+    'Laravel API: polasci, cene, rezervacije',
+    'Integrisana plaćanja + email/queue tokovi'
+  ]
+},
   {
-    title: 'Srbija Tours – Prodaja karata',
-    description: 'Produkcioni sajt za online rezervacije i plaćanja sa integracijama.',
-    longDescription:
-      'Sistem za pretragu linija, rezervacije i plaćanja, sa optimizacijom baza i keširanjem. U produkciji za veliki broj putnika godišnje.',
-    image: '/srbijatours.png',
-    link: 'https://srbijatours.com/',
-    tech: ['Laravel', 'MySQL', 'Redis', 'Nginx'],
-    details: [
-      'Upravljanje linijama, cenama i popustima',
-      'Integracija plaćanja i email/queue tokovi',
-      'Monitoring, logovi i error tracking'
-    ]
-  },
-  {
+    key: 'sti-mobile',
     title: 'Srbija Tours – Mobilna aplikacija (iOS/Android)',
     description: 'React Native aplikacija: pretraga polazaka, nalozi i rezervacije.',
     longDescription:
@@ -49,13 +34,10 @@ export const projects = [
     image: '/sti-mobilna.png',
     link: 'https://play.google.com/store/apps/details?id=com.panzo98.srbijatours',
     tech: ['React Native', 'Expo', 'Android', 'iOS', 'REST API'],
-    details: [
-      'Login/registracija i profil',
-      'Pretraga i filtriranje polazaka',
-      'Push notifikacije'
-    ]
+    details: ['Login/registracija i profil', 'Pretraga i filtriranje polazaka', 'Push notifikacije']
   },
   {
+    key: 'drivesoft-backoffice',
     title: 'DriveSoft – Back-office (Laravel)',
     description: 'Interni sistem za praćenje putnika, polazaka, linija i operativa.',
     longDescription:
@@ -63,13 +45,30 @@ export const projects = [
     image: '/bozic-laravel.png',
     link: 'https://drivesoft-bozic.com/login',
     tech: ['Laravel 10', 'MySQL', 'Redis', 'Queues', 'Docker'],
-    details: [
-      'RBAC i audit trail',
-      'Import/Export CSV/Excel',
-      'Grafikoni i operativni izveštaji'
-    ]
+    details: ['RBAC i audit trail', 'Import/Export CSV/Excel', 'Grafikoni i operativni izveštaji']
+  },
+  {
+    key: 'drivesoft-demo',
+    title: 'DriveSoft – Demo rezervacije (React)',
+    description: 'Demo front-end aplikacija za pretragu i rezervaciju karata sa statičkim podacima.',
+    longDescription:
+      'Jasan UX sa filterima (smer, polazak, destinacija, datum, broj putnika). Verzija za demo svrhe, odvojena od produkcionih API-ja, spremna za povezivanje na pravi backend.',
+    image: '/demo.png',
+    link: 'https://demo.drivesoft.rs/',
+    tech: ['React', 'Vite', 'Tailwind', 'i18n'],
+    details: ['Statički seed podaci za prezentacije', 'Čist tok rezervacije u nekoliko koraka', 'Lako povezivanje sa realnim API-jem']
+  },
+  {
+    key: 'prostor-dereta',
+    title: 'Prostor Miljenko Dereta – WordPress',
+    description: 'Korporativni WP sajt sa blogom i formama za rezervaciju prostora.',
+    longDescription:
+      'Moderni WordPress build sa prilagođenim šablonima i optimizacijama. Fokus na brzinu, SEO i jednostavno uređivanje sadržaja.',
+    image: '/prostordereta.png',
+    link: 'https://prostordereta.org/',
+    tech: ['WordPress', 'Gutenberg', 'Performance', 'SEO'],
+    details: ['Kontakt i booking forme', 'Optimizovane slike i keširanje', 'Struktura pogodna za SEO i blog']
   }
 ]
 
-// koristi prva 4 za carousel/sekciju
-export const featuredProjects = projects.slice(0, 4)
+export const featuredProjects = projects

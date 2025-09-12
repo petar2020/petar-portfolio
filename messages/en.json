@@ -1,6 +1,7 @@
 {
   "nav": {
     "home": "Home",
+    "about": "About",          
     "projects": "Projects",
     "services": "Services",
     "contact": "Contact",
@@ -37,17 +38,72 @@
       "features": "Terraform, Ansible, Jenkins, GitLab CI, Monitoring, Security"
     }
   },
-  "projects": {
+   "projects": {
     "title": "Featured Projects",
     "subtitle": "Some of my recent work",
     "viewCase": "View Case Study",
+    "viewCaseStudy": "View Case Study",
     "viewLive": "View Live",
-    "viewCode": "View Code",
-    "tech": "Technologies",
-    "metrics": "Key Metrics",
-    "challenge": "Challenge",
-    "solution": "Solution",
-    "results": "Results"
+    "caseStudy": "Case study",
+    "highlights": "Highlights",
+    "items": {
+      "bozic-konig": {
+        "title": "Božić König – Online Reservations",
+        "description": "React app for searching trips and buying tickets online.",
+        "long": "SPA in React/Next with optimized search, a clean checkout flow and back-office integration (routes, departures, pricing). Focus on UX and performance.",
+        "details": [
+          "Fast search & filtering",
+          "Secure checkout",
+          "SEO & performance optimizations"
+        ]
+      },
+      "sti-web": {
+  "title": "Serbia Tours – Ticket Sales",
+  "description": "WordPress frontend with a Laravel API for departures, bookings and payments.",
+  "long": "Frontend is WordPress (custom theme/blocks) for speed and SEO. Laravel acts as the backend providing APIs for departures, pricing and bookings, with integrated payments and fiscalization. Redis caching and Nginx optimizations applied."
+}
+,
+      "sti-mobile": {
+        "title": "Serbia Tours – Mobile app (iOS/Android)",
+        "description": "React Native app: search trips, accounts and reservations.",
+        "long": "Cross-platform app with Expo/React Native. Shared UI/logic, offline caching and push notifications.",
+        "details": [
+          "Login/registration & profile",
+          "Trip search & filtering",
+          "Push notifications"
+        ]
+      },
+      "drivesoft-backoffice": {
+        "title": "DriveSoft – Back-office (Laravel)",
+        "description": "Internal system for passengers, departures, routes and operations.",
+        "long": "Laravel app with complex models, RBAC, caching and queues. Reports and data import/export.",
+        "details": [
+          "RBAC and audit trail",
+          "CSV/Excel import & export",
+          "Charts and operational reports"
+        ]
+      },
+      "drivesoft-demo": {
+        "title": "DriveSoft – Demo reservations (React)",
+        "description": "Demo front-end for search & booking with static data.",
+        "long": "Clear UX with filters (direction, origin, destination, date, passengers). Demo version decoupled from production APIs; ready to hook to a real backend.",
+        "details": [
+          "Static seed data for demos",
+          "Simple multi-step booking flow",
+          "Easy to connect to real API"
+        ]
+      },
+      "prostor-dereta": {
+        "title": "Prostor Miljenko Dereta – WordPress",
+        "description": "Corporate WP site with blog and space-booking forms.",
+        "long": "Modern WordPress build with custom templates and optimizations. Focus on speed, SEO and easy content editing.",
+        "details": [
+          "Contact & booking forms",
+          "Optimized images and caching",
+          "SEO-friendly structure and blog"
+        ]
+      }
+    }
   },
   "testimonials": {
     "title": "Client Testimonials",
@@ -55,7 +111,10 @@
   },
   "clients": {
     "title": "Trusted By",
-    "subtitle": "Companies I’ve had the pleasure to work with"
+    "subtitle": "Companies I’ve had the pleasure to work with",
+    "visit": "Visit {name} website",
+    "ctaText": "Ready to join the list of happy clients? Let’s talk about your next project.",
+    "ctaButton": "Start a project"
   },
   "cv": {
     "title": "Download My CV",

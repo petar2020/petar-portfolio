@@ -10,16 +10,9 @@ import ParallaxCVTimeline from '../../components/ParallaxCVTimeline'
 import Contact from '../../components/Contact'
 import Analytics, { PlausibleScript } from '../../components/Analytics'
 
-// Client-only komponente
-const ParallaxBackground = dynamic(
-  () => import('../../components/ParallaxBackground'),
-  { ssr: false }
-)
-// Ako koristiš animiranu verziju servisa, zadrži je i ukloni statičnu:
-const ServicesAnimated = dynamic(
-  () => import('../../components/ServicesAnimated'),
-  { ssr: false }
-)
+// Client-only
+const ParallaxBackground = dynamic(() => import('../../components/ParallaxBackground'), { ssr: false })
+const ServicesAnimated   = dynamic(() => import('../../components/ServicesAnimated'), { ssr: false })
 
 export default function LocaleHome() {
   return (
@@ -29,14 +22,11 @@ export default function LocaleHome() {
       <Analytics />
 
       <div className="relative">
-        {/* 1) Parallax slojevi (client-only) */}
         <ParallaxBackground />
-
-        {/* 2) Sekcije sajta */}
         <Nav />
         <Hero />
         <AboutMe />
-        <ServicesAnimated />  {/* ili <Services /> ako koristiš statičnu varijantu */}
+        <ServicesAnimated />
         <Projects />
         <ClientLogos />
         <ParallaxCVTimeline />
@@ -49,24 +39,18 @@ export default function LocaleHome() {
 // Prebuild rute za sr/en
 export async function getStaticPaths() {
   return {
-    paths: [
-      { params: { locale: 'sr' } },
-      { params: { locale: 'en' } }
-    ],
-    fallback: false
+    paths: [{ params: { locale: 'sr' } }, { params: { locale: 'en' } }],
+    fallback: false,
   }
 }
 
-// Učitavanje prevoda za dati locale
+// Učitavanje prevoda
 export async function getStaticProps({ params }) {
   const locale = params?.locale === 'en' ? 'en' : 'sr'
   const messages = (await import(`../../messages/${locale}.json`)).default
 
   return {
-    props: {
-      locale,
-      messages
-    }
+    props: { locale, messages },
     // po želji: revalidate: 60
   }
 }
