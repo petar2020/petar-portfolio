@@ -1,5 +1,8 @@
 // pages/[locale]/index.jsx
 import dynamic from 'next/dynamic'
+import { useMemo } from 'react'
+import { useTranslations } from 'next-intl'
+import { useRouter } from 'next/router'
 import SEO from '../../components/SEO'
 import Nav from '../../components/Nav'
 import Hero from '../../components/Hero'
@@ -14,10 +17,37 @@ import Analytics, { PlausibleScript } from '../../components/Analytics'
 const ParallaxBackground = dynamic(() => import('../../components/ParallaxBackground'), { ssr: false })
 const ServicesAnimated   = dynamic(() => import('../../components/ServicesAnimated'), { ssr: false })
 
-export default function LocaleHome() {
+const SITE_URL = 'https://petararsic.rs'
+const OG_LOCALE_MAP = {
+  sr: 'sr_RS',
+  en: 'en_US',
+}
+
+export default function LocaleHome({ locale }) {
+  const tSeo = useTranslations('seo')
+  const router = useRouter()
+  const currentLocale = locale ?? router.query?.locale ?? 'sr'
+
+  const seoConfig = useMemo(() => {
+    const normalizedPath = router?.asPath?.split('#')[0]?.split('?')[0] ?? `/${currentLocale}`
+    const canonicalUrl = `${SITE_URL}${normalizedPath}`
+    const ogLocale = OG_LOCALE_MAP[currentLocale] ?? 'sr_RS'
+    const alternateLocales = Object.entries(OG_LOCALE_MAP)
+      .filter(([key]) => key !== currentLocale)
+      .map(([, value]) => value)
+
+    return {
+      title: tSeo('title'),
+      description: tSeo('description'),
+      url: canonicalUrl,
+      locale: ogLocale,
+      alternateLocales,
+    }
+  }, [currentLocale, router?.asPath, tSeo])
+
   return (
     <>
-      <SEO />
+      <SEO {...seoConfig} />
       <PlausibleScript />
       <Analytics />
 

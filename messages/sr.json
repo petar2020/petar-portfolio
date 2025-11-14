@@ -1,4 +1,8 @@
 {
+  "seo": {
+    "title": "Petar Arsić - Full-Stack Developer",
+    "description": "Full-Stack Developer iz Srbije. Gradim moderne web aplikacije sa najnovijim tehnologijama."
+  },
   "nav": {
     "home": "Početna",
     "about": "O meni",        
