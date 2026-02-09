@@ -1,95 +1,80 @@
-// src/components/AboutMe.jsx
 'use client'
-import { motion } from 'framer-motion'
+
+import { motion, useReducedMotion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 
 export default function AboutMe() {
   const t = useTranslations('about')
+  const reduceMotion = useReducedMotion()
+  const highlights = Array.isArray(t.raw('highlights')) ? t.raw('highlights') : []
+  const credibility = Array.isArray(t.raw('credibility')) ? t.raw('credibility') : []
 
   return (
-    <section id="about" className="py-20 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 relative overflow-hidden">
-      {/* Background Pattern */}
+    <section id="about" className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-[#0b1f3f] to-gray-900 py-20">
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,_#3B82F6_1px,_transparent_1px)] bg-[length:20px_20px]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,_#3B82F6_1px,_transparent_1px)] bg-[length:24px_24px]" />
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
-        {/* Naslov */}
+      <div className="container relative z-10 mx-auto max-w-6xl px-4 md:px-6">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          initial={reduceMotion ? false : { opacity: 0, y: 20 }}
+          whileInView={reduceMotion ? undefined : { opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '0px 0px -80px 0px' }}
+          transition={reduceMotion ? undefined : { duration: 0.45 }}
+          className="mb-12 text-center"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            {t('title')}
-          </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            {t('subtitle')}
-          </p>
+          <h2 className="text-4xl font-extrabold text-white md:text-5xl">{t('title')}</h2>
+          <p className="mx-auto mt-4 max-w-3xl text-lg text-slate-300">{t('subtitle')}</p>
         </motion.div>
 
-        {/* Sadržaj */}
-        <div className="mx-auto grid md:grid-cols-2 gap-8 max-w-5xl">
-          {/* Kratka biografija */}
-          <motion.div
-            initial={{ opacity: 0, x: -40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20"
+        <div className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr]">
+          <motion.article
+            initial={reduceMotion ? false : { opacity: 0, x: -16 }}
+            whileInView={reduceMotion ? undefined : { opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: '0px 0px -80px 0px' }}
+            transition={reduceMotion ? undefined : { duration: 0.45 }}
+            className="rounded-2xl border border-white/15 bg-white/8 p-6 backdrop-blur-sm md:p-8"
           >
-            <h3 className="text-2xl font-semibold text-white mb-4">{t('aboutMe')}</h3>
-            <p className="text-gray-200 leading-relaxed">{t('bio')}</p>
+            <h3 className="text-2xl font-bold text-white">{t('aboutMe')}</h3>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-slate-200 md:text-lg">{t('story')}</p>
 
-            <div className="grid grid-cols-2 gap-4 mt-6">
-              <div className="bg-white/5 rounded-xl p-4 border border-white/10">
-                <p className="text-sm text-gray-300">{t('stats.years.label')}</p>
-                <p className="text-2xl font-bold text-white">{t('stats.years.value')}</p>
-              </div>
-              <div className="bg-white/5 rounded-xl p-4 border border-white/10">
-                <p className="text-sm text-gray-300">{t('stats.projects.label')}</p>
-                <p className="text-2xl font-bold text-white">{t('stats.projects.value')}</p>
-              </div>
-              <div className="bg-white/5 rounded-xl p-4 border border-white/10">
-                <p className="text-sm text-gray-300">{t('stats.stack.label')}</p>
-                <p className="text-sm font-semibold text-white">{t('stats.stack.value')}</p>
-              </div>
-              <div className="bg-white/5 rounded-xl p-4 border border-white/10">
-                <p className="text-sm text-gray-300">{t('stats.remote.label')}</p>
-                <p className="text-sm font-semibold text-white">{t('stats.remote.value')}</p>
-              </div>
-            </div>
-          </motion.div>
-
-          {/* Fokus/servisi kratko */}
-          <motion.div
-            initial={{ opacity: 0, x: 40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20"
-          >
-            <h3 className="text-2xl font-semibold text-white mb-4">{t('focus.title')}</h3>
-            <ul className="space-y-3 text-gray-200">
-              {['focus.items.0','focus.items.1','focus.items.2','focus.items.3','focus.items.4'].map(k => (
-                <li key={k} className="flex items-start gap-3">
-                  <span className="mt-1 h-2 w-2 rounded-full bg-blue-400" />
-                  <span>{t(k)}</span>
+            <h4 className="mt-8 text-sm font-semibold uppercase tracking-[0.16em] text-sky-300">{t('highlightsTitle')}</h4>
+            <ul className="mt-4 space-y-3">
+              {highlights.map((item) => (
+                <li key={item} className="flex items-start gap-3 text-slate-100">
+                  <span className="mt-1.5 inline-block h-2 w-2 shrink-0 rounded-full bg-sky-400" />
+                  <span>{item}</span>
                 </li>
               ))}
             </ul>
 
-            <div className="mt-6">
+            <div className="mt-8">
               <a
                 href="#contact"
-                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300"
+                className="inline-flex items-center rounded-xl bg-gradient-to-r from-sky-500 to-indigo-500 px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white shadow-lg transition hover:brightness-110"
               >
                 {t('cta')}
-                <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
               </a>
             </div>
-          </motion.div>
+          </motion.article>
+
+          <motion.aside
+            initial={reduceMotion ? false : { opacity: 0, x: 16 }}
+            whileInView={reduceMotion ? undefined : { opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: '0px 0px -80px 0px' }}
+            transition={reduceMotion ? undefined : { duration: 0.45, delay: 0.04 }}
+            className="rounded-2xl border border-white/15 bg-white/8 p-6 backdrop-blur-sm md:p-8"
+          >
+            <h4 className="text-sm font-semibold uppercase tracking-[0.16em] text-sky-300">{t('credibilityTitle')}</h4>
+            <div className="mt-6 space-y-4">
+              {credibility.map((item, index) => (
+                <div key={`${item.value}-${index}`} className="rounded-xl border border-white/15 bg-white/5 p-4">
+                  <p className="text-2xl font-extrabold text-white">{item.value}</p>
+                  <p className="mt-1 text-sm text-slate-300">{item.label}</p>
+                </div>
+              ))}
+            </div>
+          </motion.aside>
         </div>
       </div>
     </section>

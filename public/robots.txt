@@ -3,11 +3,8 @@ Allow: /
 
 # Sitemap
 Sitemap: https://petararsic.rs/sitemap.xml
+Host: https://petararsic.rs
 
-# Disallow admin and API routes
+# Private routes
 Disallow: /api/
-Disallow: /_next/
 Disallow: /admin/
-
-# Crawl delay
-Crawl-delay: 1

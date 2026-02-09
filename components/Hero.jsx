@@ -1,253 +1,114 @@
 'use client'
+
 import Image from 'next/image'
-import { motion, useAnimation, useInView } from 'framer-motion'
-import { useEffect, useRef, useState } from 'react'
+import { motion, useReducedMotion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 
-/* ---------- Particles: stalni lagani drift, bez miša ---------- */
-function Particles({ className = '', density = 0.12, maxSpeed = 0.75, size = [1, 2.2] }) {
-  const canvasRef = useRef(null)
-  const rafRef = useRef(0)
-  const particlesRef = useRef([])
-  const tRef = useRef(0)
-
-  useEffect(() => {
-    const canvas = canvasRef.current
-    if (!canvas) return
-    const ctx = canvas.getContext('2d')
-
-    const resize = () => {
-      const dpr = Math.min(window.devicePixelRatio || 1, 2)
-      canvas.width = canvas.offsetWidth * dpr
-      canvas.height = canvas.offsetHeight * dpr
-      ctx.setTransform(dpr, 0, 0, dpr, 0, 0)
-      seed()
-    }
-
-    const rand = (a, b) => a + Math.random() * (b - a)
-    const countFromArea = () => {
-      const area = (canvas.offsetWidth * canvas.offsetHeight) / 1000
-      return Math.max(60, Math.min(420, Math.floor(area * density)))
-    }
-
-    const seed = () => {
-      const count = countFromArea()
-      const arr = []
-      for (let i = 0; i < count; i++) {
-        arr.push({
-          x: Math.random() * canvas.offsetWidth,
-          y: Math.random() * canvas.offsetHeight,
-          r: rand(size[0], size[1]),
-          vx: rand(-maxSpeed, maxSpeed),
-          vy: rand(-maxSpeed, maxSpeed),
-          phase: Math.random() * Math.PI * 2
-        })
-      }
-      particlesRef.current = arr
-    }
-
-    const draw = () => {
-      const w = canvas.offsetWidth
-      const h = canvas.offsetHeight
-
-      // blagi trail (bez „seckanja”)
-      ctx.fillStyle = 'rgba(8, 14, 28, 0.22)'
-      ctx.fillRect(0, 0, w, h)
-
-      const pts = particlesRef.current
-      tRef.current += 0.0045
-
-      for (let i = 0; i < pts.length; i++) {
-        const p = pts[i]
-        // noise-like drift (uvek radi lagano)
-        const driftX = Math.sin(tRef.current * 2 + p.phase) * 0.22
-        const driftY = Math.cos(tRef.current * 2 + p.phase) * 0.22
-        p.x += p.vx + driftX
-        p.y += p.vy + driftY
-
-        // wrap
-        if (p.x < -5) p.x = w + 5
-        if (p.x > w + 5) p.x = -5
-        if (p.y < -5) p.y = h + 5
-        if (p.y > h + 5) p.y = -5
-
-        // dot
-        ctx.beginPath()
-        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2)
-        ctx.fillStyle = 'rgba(148, 163, 184, 0.8)'
-        ctx.fill()
-      }
-
-      // kratke povezne linije
-      ctx.lineWidth = 0.8
-      ctx.strokeStyle = 'rgba(99,102,241,0.22)'
-      const maxD = 130
-      for (let i = 0; i < pts.length; i++) {
-        for (let j = i + 1; j < pts.length; j++) {
-          const dx = pts[i].x - pts[j].x
-          const dy = pts[i].y - pts[j].y
-          const d2 = dx * dx + dy * dy
-          if (d2 < maxD * maxD) {
-            ctx.globalAlpha = 1 - d2 / (maxD * maxD)
-            ctx.beginPath()
-            ctx.moveTo(pts[i].x, pts[i].y)
-            ctx.lineTo(pts[j].x, pts[j].y)
-            ctx.stroke()
-          }
-        }
-      }
-      ctx.globalAlpha = 1
-
-      rafRef.current = requestAnimationFrame(draw)
-    }
-
-    resize()
-    window.addEventListener('resize', resize)
-    rafRef.current = requestAnimationFrame(draw)
-
-    return () => {
-      cancelAnimationFrame(rafRef.current)
-      window.removeEventListener('resize', resize)
-    }
-  }, [density, maxSpeed, size])
-
-  return (
-    <div className={`absolute inset-0 ${className}`} aria-hidden>
-      <canvas ref={canvasRef} className="w-full h-full" />
-    </div>
-  )
-}
-
-/* ---------- HERO ---------- */
 export default function Hero() {
   const t = useTranslations('hero')
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: '-10% 0px' })
-  const controls = useAnimation()
-  const [isMobile, setIsMobile] = useState(false)
-
-  useEffect(() => {
-    if (isInView) controls.start('visible')
-  }, [isInView, controls])
-
-  useEffect(() => {
-    const onResize = () => setIsMobile(window.innerWidth < 640)
-    onResize()
-    window.addEventListener('resize', onResize)
-    return () => window.removeEventListener('resize', onResize)
-  }, [])
-
-  const container = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { staggerChildren: 0.12, delayChildren: 0.1 } }
-  }
-  const item = {
-    hidden: { opacity: 0, y: 24 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } }
-  }
+  const reduceMotion = useReducedMotion()
+  const chips = Array.isArray(t.raw('chips')) ? t.raw('chips') : []
+  const trustNames = Array.isArray(t.raw('trustNames')) ? t.raw('trustNames') : []
 
   return (
     <section
       id="home"
-      ref={ref}
-      className="
-        relative overflow-hidden flex items-center
-        bg-gradient-to-br from-[#0B1220] via-[#0E1B37] to-[#0B1220]
-        min-h-[88vh] pt-28 sm:pt-0
-      "
+      className="relative overflow-hidden bg-gradient-to-br from-[#070f22] via-[#0b1e40] to-[#070f22] pb-16 pt-28 md:pb-20 md:pt-32"
     >
-      {/* dotted grid */}
-      <div aria-hidden className="pointer-events-none absolute inset-0 opacity-15">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,#3b82f6_1px,transparent_1px)] [background-size:18px_18px]" />
+      <div className="pointer-events-none absolute inset-0 opacity-15">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,#38bdf8_1px,transparent_1px)] [background-size:22px_22px]" />
       </div>
 
-      {/* particles – uvek lagano, bez miša */}
-      <Particles
-        className="opacity-90"
-        density={isMobile ? 0.08 : 0.14}
-        maxSpeed={isMobile ? 0.55 : 0.75}
-        size={[1, 2.2]}
-      />
-
-      {/* glowing blob */}
       <motion.div
         aria-hidden
-        className="absolute sm:right-[-10rem] sm:top-1/3 right-[-6rem] top-[55%] h-[26rem] w-[26rem] sm:h-[32rem] sm:w-[32rem] rounded-full blur-3xl"
-        style={{
-          background:
-            'radial-gradient(closest-side, rgba(59,130,246,.35), rgba(168,85,247,.15), transparent)'
-        }}
-        animate={{ y: [0, -20, 0], scale: [1, 1.04, 1] }}
-        transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
+        className="pointer-events-none absolute -right-16 top-20 h-64 w-64 rounded-full bg-sky-500/20 blur-3xl md:h-80 md:w-80"
+        animate={reduceMotion ? undefined : { y: [0, -8, 0] }}
+        transition={reduceMotion ? undefined : { duration: 8, repeat: Infinity, ease: 'easeInOut' }}
       />
 
-      <motion.div
-        variants={container}
-        initial="hidden"
-        animate={controls}
-        className="container mx-auto max-w-6xl px-4 md:px-6 relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
-      >
-        {/* LEFT */}
-        <div className="text-center md:text-left order-1 md:order-none">
-          <motion.h1 variants={item} className="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight text-white">
-            <span>{t('title').split(' ')[0]} </span>
-            <span className="bg-gradient-to-r from-indigo-400 via-sky-400 to-cyan-300 bg-clip-text text-transparent">
-              {t('title').split(' ').slice(1).join(' ')}
-            </span>
-          </motion.h1>
+      <div className="container relative z-10 mx-auto grid max-w-6xl grid-cols-1 items-center gap-10 px-4 md:grid-cols-[1.1fr_0.9fr] md:px-6">
+        <motion.div
+          initial={reduceMotion ? false : { opacity: 0, y: 18 }}
+          animate={reduceMotion ? false : { opacity: 1, y: 0 }}
+          transition={reduceMotion ? undefined : { duration: 0.45 }}
+          className="text-center md:text-left"
+        >
+          <p className="inline-flex rounded-full border border-sky-300/45 bg-sky-400/10 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-sky-100">
+            {t('badge')}
+          </p>
 
-          <motion.h2 variants={item} className="mt-3 sm:mt-4 text-xl sm:text-2xl md:text-3xl font-semibold text-sky-300">
+          <h1 className="mt-5 text-4xl font-extrabold leading-tight text-white sm:text-5xl md:text-[3.35rem]">
+            {t('title')}
+          </h1>
+
+          <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-slate-200/95 sm:text-lg md:mx-0">
             {t('subtitle')}
-          </motion.h2>
+          </p>
 
-          <motion.p variants={item} className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl text-slate-300/90 leading-relaxed max-w-2xl md:pr-6 mx-auto md:mx-0">
-            {t('description')}
-          </motion.p>
+          <div className="mt-7 grid grid-cols-1 gap-3 sm:grid-cols-3">
+            {chips.map((chip) => (
+              <span
+                key={chip}
+                className="rounded-xl border border-white/20 bg-white/8 px-4 py-2 text-sm font-semibold text-slate-100 backdrop-blur-sm"
+              >
+                {chip}
+              </span>
+            ))}
+          </div>
 
-          <motion.div variants={item} className="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-center md:justify-start">
+            <a
+              href="#contact"
+              className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-sky-500 to-indigo-500 px-7 py-3.5 text-sm font-semibold uppercase tracking-wide text-white shadow-[0_14px_30px_rgba(56,189,248,0.35)] transition hover:brightness-110"
+            >
+              {t('primaryCta')}
+            </a>
             <a
               href="#projects"
-              className="
-                inline-flex items-center justify-center rounded-xl px-8 py-4
-                font-semibold text-white
-                bg-gradient-to-r from-indigo-600 to-fuchsia-600
-                shadow-[0_10px_30px_rgba(99,102,241,.35)]
-                transition-transform duration-200 hover:shadow-[0_18px_40px_rgba(99,102,241,.45)]
-                hover:-translate-y-0.5 w-full sm:w-auto
-              "
+              className="inline-flex items-center justify-center rounded-xl border border-white/25 bg-white/7 px-7 py-3.5 text-sm font-semibold uppercase tracking-wide text-white transition hover:bg-white/12"
             >
-              {t('cta')}
+              {t('secondaryCta')}
             </a>
-          </motion.div>
-        </div>
+          </div>
+        </motion.div>
 
-        {/* RIGHT: avatar – stalno, glatko ljuljanje/rotacija (bez miša) */}
         <motion.div
-          variants={item}
-          className="relative mx-auto md:mx-0 order-first md:order-none mt-4 sm:mt-0"
-          animate={{
-            y: [0, -10, 0],
-            rotateX: [-6, 6, -6],
-            rotateY: [6, -6, 6],
-          }}
-          transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
-          style={{ perspective: 1200 }}
+          initial={reduceMotion ? false : { opacity: 0, y: 16 }}
+          animate={reduceMotion ? false : { opacity: 1, y: 0 }}
+          transition={reduceMotion ? undefined : { duration: 0.5, delay: 0.05 }}
+          className="mx-auto w-full max-w-[18.5rem] sm:max-w-[20rem] md:max-w-[20.5rem]"
         >
-          <div className="relative h-44 w-44 sm:h-56 sm:w-56 md:h-72 md:w-72 rounded-full mx-auto">
-            <div className="absolute -inset-1 rounded-full bg-gradient-to-tr from-indigo-500/60 via-sky-400/40 to-fuchsia-500/60 blur-xl" />
-            <div className="relative rounded-full overflow-hidden ring-1 ring-white/10 shadow-2xl">
+          <div className="relative rounded-3xl border border-white/18 bg-gradient-to-b from-white/18 to-white/7 p-4 shadow-2xl backdrop-blur-sm md:p-5">
+            <div className="absolute -inset-0.5 -z-10 rounded-3xl bg-gradient-to-tr from-sky-500/30 to-indigo-500/25 blur-xl" />
+            <div className="overflow-hidden rounded-2xl">
               <Image
                 src="/avatar.png"
-                alt="Petar Arsić"
-                width={640}
-                height={640}
+                alt="Petar Arsic"
+                width={600}
+                height={600}
                 priority
-                className="h-44 w-44 sm:h-56 sm:w-56 md:h-72 md:w-72 object-cover"
+                sizes="(max-width: 768px) 74vw, 330px"
+                className="h-auto w-full object-cover"
               />
             </div>
           </div>
         </motion.div>
-      </motion.div>
+      </div>
+
+      <div className="container relative z-10 mx-auto mt-10 max-w-6xl px-4 md:px-6">
+        <div className="rounded-2xl border border-white/15 bg-white/7 px-5 py-4 backdrop-blur-sm">
+          <p className="text-center text-xs font-semibold uppercase tracking-[0.14em] text-slate-300">
+            {t('trustTitle')}
+          </p>
+          <div className="mt-3 grid grid-cols-2 gap-2 text-center sm:grid-cols-4">
+            {trustNames.map((name) => (
+              <span key={name} className="rounded-lg bg-white/8 px-3 py-2 text-sm font-semibold text-slate-100">
+                {name}
+              </span>
+            ))}
+          </div>
+        </div>
+      </div>
     </section>
   )
 }

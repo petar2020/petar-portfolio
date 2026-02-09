@@ -1,11 +1,12 @@
 import { useEffect } from 'react';
-import { usePathname } from '../i18n/navigation';
+import { useRouter } from 'next/router';
 
 // Plausible Analytics
 const PLAUSIBLE_DOMAIN = 'petararsic.rs';
 
 export default function Analytics() {
-  const pathname = usePathname();
+  const router = useRouter();
+  const pathname = router.asPath || '/';
 
   useEffect(() => {
     // Initialize Plausible

@@ -1,57 +1,45 @@
-const SITE_URL = 'https://petararsic.rs';
+const SITE_URL = 'https://petararsic.rs'
 
-function generateSiteMap() {
+function sitemapXml() {
+  const lastmod = new Date().toISOString()
+  const urls = [
+    { path: '/en', priority: '1.0' },
+    { path: '/sr', priority: '1.0' }
+  ]
+
+  const items = urls
+    .map(({ path, priority }) => {
+      const url = `${SITE_URL}${path}`
+      return `
+  <url>
+    <loc>${url}</loc>
+    <lastmod>${lastmod}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>${priority}</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="${SITE_URL}/en" />
+    <xhtml:link rel="alternate" hreflang="sr" href="${SITE_URL}/sr" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE_URL}/en" />
+  </url>`
+    })
+    .join('')
+
   return `<?xml version="1.0" encoding="UTF-8"?>
-    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-      <url>
-        <loc>${SITE_URL}</loc>
-        <lastmod>${new Date().toISOString()}</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-      </url>
-      <url>
-        <loc>${SITE_URL}/projects</loc>
-        <lastmod>${new Date().toISOString()}</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-      </url>
-      <url>
-        <loc>${SITE_URL}/services</loc>
-        <lastmod>${new Date().toISOString()}</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-      </url>
-      <url>
-        <loc>${SITE_URL}/contact</loc>
-        <lastmod>${new Date().toISOString()}</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-      </url>
-      <url>
-        <loc>${SITE_URL}/cv</loc>
-        <lastmod>${new Date().toISOString()}</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-      </url>
-    </urlset>
-  `;
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">${items}
+</urlset>`
 }
 
 function SiteMap() {
-  // getServerSideProps will handle the XML generation
+  return null
 }
 
 export async function getServerSideProps({ res }) {
-  const sitemap = generateSiteMap();
+  res.setHeader('Content-Type', 'text/xml')
+  res.setHeader('Cache-Control', 'public, s-maxage=86400, stale-while-revalidate')
+  res.write(sitemapXml())
+  res.end()
 
-  res.setHeader('Content-Type', 'text/xml');
-  res.setHeader('Cache-Control', 'public, s-maxage=86400, stale-while-revalidate');
-  res.write(sitemap);
-  res.end();
-
-  return {
-    props: {},
-  };
+  return { props: {} }
 }
 
-export default SiteMap;
+export default SiteMap

@@ -1,164 +1,210 @@
 {
   "nav": {
-    "home": "Početna",
-    "about": "O meni",        
-    "projects": "Projekti",
+    "home": "Pocetna",
+    "about": "O meni",
     "services": "Usluge",
+    "projects": "Projekti",
+    "testimonials": "Preporuke",
     "contact": "Kontakt",
-    "cv": "CV"
+    "cv": "CV",
+    "bookCall": "Zakazi Poziv",
+    "toggleTheme": "Promeni temu",
+    "toggleMenu": "Otvori meni",
+    "closeMenu": "Zatvori Meni"
   },
   "hero": {
-    "title": "Petar Arsić",
-    "subtitle": "Full-Stack Developer",
-    "description": "Gradim moderne web aplikacije sa najnovijim tehnologijama",
-    "cta": "Pogledaj Moj Rad",
-    "scroll": "Skroluj Dole"
+    "badge": "Booking Sistemi • Web Aplikacije • Fokus na Konverziju",
+    "title": "Dizajniram i razvijam booking digitalne proizvode koji posetioce pretvaraju u klijente.",
+    "subtitle": "Za transportne i usluzne biznise: od discovery faze i UX strategije do produkcije, sa stabilnom arhitekturom i merljivim poslovnim rezultatima.",
+    "chips": ["150k+ putnika godisnje", "30+ aktivnih projekata", "5+ godina iskustva"],
+    "primaryCta": "Zakazi Poziv",
+    "secondaryCta": "Pogledaj Case Studies",
+    "trustTitle": "Poverenje operativnih timova i rastucih kompanija",
+    "trustNames": ["Srbija Tours", "Una Line", "Bozic Konig", "Prostor Dereta"]
+  },
+  "about": {
+    "title": "O meni",
+    "subtitle": "Senior full-stack partner za booking i konverzijski orijentisane digitalne proizvode.",
+    "aboutMe": "Ko sam ja",
+    "story": "Pomazem kompanijama da nepovezane procese rezervacija pretvore u skalabilne digitalne proizvode. Spajam product razmisljanje, cistu arhitekturu i UX koji vodi korisnika ka konverziji. Najcesce vodim isporuku end-to-end: discovery, implementacija, optimizacija i podrska nakon lansiranja.",
+    "highlightsTitle": "Kako donosim vrednost",
+    "highlights": [
+      "Business-first pristup: svaka tehnicka odluka mora da podrzi prihod ili operativnu efikasnost.",
+      "Brze iteracije uz jasnu komunikaciju i asinkronu saradnju.",
+      "Production-ready kod: performanse, SEO, stabilnost i odrzavanje su podrazumevani.",
+      "Jako domen iskustvo u transportu, rezervacijama i placanjima."
+    ],
+    "credibilityTitle": "Kredibilitet ukratko",
+    "credibility": [
+      { "value": "5+ godina", "label": "Razvoj i isporuka produkcionih sistema" },
+      { "value": "30+ aktivnih", "label": "Projekata lansiranih u realnom okruzenju klijenata" },
+      { "value": "150k+ / god", "label": "Operacija putnika podrzanih booking sistemima" },
+      { "value": "Remote-first", "label": "Strukturisana async saradnja i isporuka" }
+    ],
+    "cta": "Pokrenimo projekat"
   },
   "services": {
     "title": "Usluge",
-    "subtitle": "Šta mogu da uradim za vas",
-    "webDev": {
-      "title": "Web Razvoj",
-      "description": "Moderne, responzivne web stranice i aplikacije",
-      "features": "React, Next.js, Laravel, WordPress, SEO, Performance"
+    "subtitle": "Fokusirane servisne linije za kompanije kojima su bitni brzina, stabilnost i merljiv rezultat.",
+    "items": {
+      "booking": {
+        "title": "Booking Sistemi",
+        "description": "Od inventara sedista i redova voznje do checkout-a i potvrda. Gradjeno da smanji manuelne operacije i poveca broj zavrsenih rezervacija.",
+        "tags": "Tokovi, checkout, placanja, operativa"
+      },
+      "webapps": {
+        "title": "Web Aplikacije",
+        "description": "Custom web proizvodi za interne timove i korisnicke portale uz cist UX, skalabilnu arhitekturu i kod koji je lak za odrzavanje.",
+        "tags": "React/Next, Laravel API, dashboardi"
+      },
+      "mobile": {
+        "title": "Mobilne Aplikacije",
+        "description": "Cross-platform mobilne aplikacije koje dele poslovnu logiku i isporucuju stabilan booking i account flow na iOS i Android.",
+        "tags": "React Native, Expo, push notifikacije"
+      },
+      "wordpress": {
+        "title": "WordPress i Performance",
+        "description": "Kvalitetne WordPress implementacije sa custom temama, optimizacijom brzine, SEO strukturom i stranicama koje konvertuju.",
+        "tags": "Custom teme, Core Web Vitals, SEO"
+      }
     },
-    "mobileDev": {
-      "title": "Mobilni Razvoj",
-      "description": "Cross-platform mobilne aplikacije sa React Native",
-      "features": "React Native, Expo, iOS, Android, App Store, Google Play"
-    },
-    "cloudDev": {
-      "title": "Cloud Razvoj",
-      "description": "Skalabilna cloud rešenja i DevOps praksa",
-      "features": "AWS, Azure, Docker, Kubernetes, CI/CD, Monitoring"
-    },
-    "devOps": {
-      "title": "DevOps & Infrastruktura",
-      "description": "Automatizacija deployment-a i infrastrukturnog koda",
-      "features": "Terraform, Ansible, Jenkins, GitLab CI, Monitoring, Security"
-    }
+    "expertiseTitle": "Dodatna ekspertiza",
+    "expertiseText": "Infrastruktura, CI/CD, kesiranje i deployment pipeline se ukljucuju kada su potrebni za pouzdanost i stabilna izdanja."
   },
-    "projects": {
+  "projects": {
     "title": "Istaknuti Projekti",
-    "subtitle": "Neki od mojih nedavnih radova",
-    "viewCase": "Pogledaj Case Study",
-    "viewCaseStudy": "Pogledaj Case Study",
+    "subtitle": "Svaki projekat je prikazan kao poslovni case: problem, resenje, stack i uticaj.",
+    "problemLabel": "Problem",
+    "solutionLabel": "Resenje",
+    "outcomeLabel": "Ishod",
+    "techLabel": "Tehnologije",
+    "viewCaseStudy": "Otvori Case Study",
     "viewLive": "Pogledaj Live",
-    "caseStudy": "Case study",
+    "caseStudy": "Case Study",
     "highlights": "Izdvojeno",
+    "viewAllHint": "Zelis detaljniji tehnicki i poslovni pregled?",
+    "viewAllCta": "Pogledaj Sve Case Studies",
     "items": {
       "bozic-konig": {
-        "title": "Božić König – Online Rezervacije",
-        "description": "React aplikacija za pretragu polazaka i online kupovinu karata.",
-        "long": "SPA u React/Next okruženju sa optimizovanom pretragom, jasnim tokom kupovine i integracijom sa back-office sistemima (linije, polasci, cene). Fokus na UX i performanse.",
-        "details": [
-          "Brza pretraga i filtriranje linija",
-          "Sigurni tokovi plaćanja",
-          "SEO i performance optimizacije"
-        ]
+        "title": "Bozic Konig – Online Rezervacije",
+        "problem": "Proces rezervacije je zahtevao brzu pretragu linija i cistiji tok kupovine.",
+        "solution": "Razvijeno React/Next iskustvo povezano sa back-office podacima za linije, polaske i cene.",
+        "outcome": "Ishod: optimizovan booking tok sa X% potencijalnim rastom konverzije.",
+        "details": ["Brza pretraga i filtriranje", "Bezbedan payment-ready flow", "SEO i performance optimizacije"]
       },
-    "sti-web": {
-  "title": "Srbija Tours – Prodaja karata",
-  "description": "WordPress frontend sa Laravel API-jem za polaske, rezervacije i plaćanja.",
-  "long": "Frontend je WordPress (custom tema/blokovi) – brz i SEO-prijateljski. Laravel služi kao backend koji isporučuje API za polaske, cene i rezervacije, uz integrisana plaćanja i fiskalizaciju. Primena Redis keširanja i Nginx optimizacija."
-}
-,
+      "sti-web": {
+        "title": "Srbija Tours – Prodaja Karata",
+        "problem": "Bio je potreban robustan javni booking kanal povezan sa operativnim sistemima kompanije.",
+        "solution": "Implementiran WordPress frontend sa Laravel API slojem za polaske, cene, rezervacije i placanja.",
+        "outcome": "Ishod: platforma podrzava visoke godisnje operacije putnika (150k+ kontekst ekosistema).",
+        "details": ["Custom WP frontend", "Laravel API orkestracija", "Kesiranje i produkcione optimizacije"]
+      },
       "sti-mobile": {
-        "title": "Srbija Tours – Mobilna aplikacija (iOS/Android)",
-        "description": "React Native aplikacija: pretraga polazaka, nalozi i rezervacije.",
-        "long": "Cross-platform aplikacija sa Expo/React Native. Deljeni UI i logika, offline keširanje i push notifikacije.",
-        "details": [
-          "Login/registracija i profil",
-          "Pretraga i filtriranje polazaka",
-          "Push notifikacije"
-        ]
+        "title": "Srbija Tours – Mobilna Aplikacija",
+        "problem": "Korisnicima je trebao mobilni nacin za pretragu i upravljanje rezervacijama.",
+        "solution": "Razvijena React Native aplikacija sa deljenom poslovnom logikom, profilima i booking pretragom.",
+        "outcome": "Ishod: bolja dostupnost mobilnog booking kanala uz X+ ponovnih korisnika aplikacije.",
+        "details": ["Cross-platform isporuka", "Podrska za naloge i profile", "Push notifikacije"]
       },
       "drivesoft-backoffice": {
-        "title": "DriveSoft – Back-office (Laravel)",
-        "description": "Interni sistem za praćenje putnika, polazaka, linija i operativa.",
-        "long": "Laravel aplikacija sa kompleksnim modelima, RBAC-om, keširanjem i queue-vima. Izveštaji i export/import podataka.",
-        "details": [
-          "RBAC i audit trail",
-          "Import/Export CSV/Excel",
-          "Grafikoni i operativni izveštaji"
-        ]
+        "title": "DriveSoft – Back-office",
+        "problem": "Operativi je bila potrebna centralizovana kontrola putnika, linija i izvestaja.",
+        "solution": "Isporucen Laravel back-office sa RBAC-om, data workflow-ima, import/export i operativnim izvestajima.",
+        "outcome": "Ishod: smanjen manuelni operativni rad i bolja konzistentnost izvestavanja.",
+        "details": ["RBAC i audit trail", "CSV/Excel workflow", "Operativni dashboard i izvestaji"]
       },
       "drivesoft-demo": {
-        "title": "DriveSoft – Demo rezervacije (React)",
-        "description": "Demo front-end za pretragu i rezervaciju sa statičkim podacima.",
-        "long": "Jasan UX sa filterima (smer, polazak, destinacija, datum, broj putnika). Demo verzija odvojena od produkcionih API-ja, spremna za povezivanje na pravi backend.",
-        "details": [
-          "Statički seed podaci za prezentacije",
-          "Čist tok rezervacije u nekoliko koraka",
-          "Lako povezivanje sa realnim API-jem"
-        ]
+        "title": "DriveSoft – Demo Rezervacije",
+        "problem": "Prodaji i stakeholderima je bio potreban jasan demo tok pre produkcionih integracija.",
+        "solution": "Razvijena React demo aplikacija sa realnim filterima pretrage i visekoracnim rezervisanjem.",
+        "outcome": "Ishod: brzi klijentski demo sastanci i jasnija pre-sales tehnicka validacija.",
+        "details": ["Demo-ready static data", "Cist booking flow", "API-ready arhitektura"]
       },
       "prostor-dereta": {
         "title": "Prostor Miljenko Dereta – WordPress",
-        "description": "WP sajt sa blogom i formama za rezervaciju prostora.",
-        "long": "Moderni WordPress build sa prilagođenim šablonima i optimizacijama. Fokus na brzinu, SEO i jednostavno uređivanje sadržaja.",
-        "details": [
-          "Kontakt i booking forme",
-          "Optimizovane slike i keširanje",
-          "SEO-prijateljska struktura i blog"
-        ]
+        "problem": "Organizaciji je bio potreban brzi, SEO spreman sajt sa jednostavnim uredjivanjem sadrzaja.",
+        "solution": "Implementiran custom WordPress sajt sa booking formama, optimizovanim assetima i uredjivackom fleksibilnoscu.",
+        "outcome": "Ishod: brze objave sadrzaja i bolja SEO osnova za dalji rast.",
+        "details": ["Custom templejti i forme", "Optimizacija asseta i kesiranja", "SEO-prijateljska informacijska struktura"]
       }
     }
   },
   "testimonials": {
-    "title": "Komentari Klijenata",
-    "subtitle": "Šta ljudi kažu o radu sa mnom"
+    "title": "Preporuke Klijenata",
+    "subtitle": "Povratne informacije timova sa kojima sam radio na isporuci i rastu.",
+    "cta": "Zakazi Strategijski Poziv",
+    "items": [
+      {
+        "quote": "Petar je kompleksan booking proces pretvorio u proizvod koji korisnici zaista vole da koriste.",
+        "name": "Operations Lead",
+        "role": "Operations Lead",
+        "company": "Transportna kompanija",
+        "result": "Rezultat: jasniji booking tok i merljiv pomak u konverzijama."
+      },
+      {
+        "quote": "Komunikacija je bila brza, strukturisana i fokusirana na ono sto realno pomera biznis.",
+        "name": "Product Manager",
+        "role": "Product Manager",
+        "company": "Travel platforma",
+        "result": "Rezultat: kraci release ciklusi i pouzdanije produkcione isporuke."
+      },
+      {
+        "quote": "Od prvog dana je balansirao ozbiljnu inzenjersku dubinu i prakticne poslovne prioritete.",
+        "name": "Founder",
+        "role": "Founder",
+        "company": "Digital services brend",
+        "result": "Rezultat: stabilna osnova proizvoda spremna za skaliranje."
+      }
+    ]
   },
-    "clients": {
-    "title": "Veruju Mi",
-    "subtitle": "Kompanije sa kojima sam imao zadovoljstvo da radim",
+  "clients": {
+    "title": "Kompanije koje mi veruju",
+    "subtitle": "Klijenti sa kojima sam imao zadovoljstvo da radim",
     "visit": "Poseti sajt kompanije {name}",
-    "ctaText": "Spremni da se pridružite listi zadovoljnih klijenata? Hajde da razgovaramo o vašem sledećem projektu.",
-    "ctaButton": "Započnite projekat"
+    "ctaText": "Spremni da se pridruzite ovoj listi zadovoljnih klijenata?",
+    "ctaButton": "Pokreni projekat"
   },
   "cv": {
-    "title": "Preuzmite Moj CV",
-    "subtitle": "Detaljan pregled mog iskustva i veština",
-    "downloadTitle": "Preuzmite CV",
-    "downloadDescription": "Preuzmite moj CV u PDF formatu sa detaljnim informacijama o iskustvu, veštinama i projektima.",
+    "title": "Preuzmite moj CV",
+    "subtitle": "Detaljan pregled iskustva i vestina",
+    "downloadTitle": "Preuzimanje CV-a",
+    "downloadDescription": "Preuzmite CV u PDF formatu sa detaljima o iskustvu, vestinama i projektima.",
     "downloadButton": "Preuzmi CV"
   },
-  "about": {
-  "title": "O meni",
-  "subtitle": "Full-Stack developer fokusiran na brze, stabilne i skalabilne aplikacije.",
-  "aboutMe": "Ko sam ja",
-  "bio": "Diplomirao na Univerzitetu Metropolitan. Preko 5 godina razvijam kompletna rešenja u transportnoj industriji: Laravel backend (rezervacije, plaćanja, logistika), React/Next frontend, WordPress (10+ aktivnih sajtova) i mobilne aplikacije (React Native). Trenutno full-time u Srbija Tours International, uz freelance projekte sa strane. Radim remote.",
-  "stats": {
-    "years": { "label": "Godina iskustva", "value": "5+" },
-    "projects": { "label": "Projekata", "value": "30+" },
-    "stack": { "label": "Stack", "value": "Laravel, React/Next, MySQL, Redis, Docker" },
-    "remote": { "label": "Način rada", "value": "Remote, asinkrono, Git" }
-  },
-  "focus": {
-    "title": "Na čemu radim",
-    "items": {
-      "0": "Sistemi za rezervacije i plaćanja (150k+ putnika godišnje)",
-      "1": "Web aplikacije sa modernom arhitekturom (React/Next + API)",
-      "2": "WordPress razvoj (teme, pluginovi, 10+ aktivnih sajtova)",
-      "3": "Optimizacija performansi i SEO",
-      "4": "Mobilne aplikacije (React Native, Expo)"
-    }
-  },
-  "cta": "Hajde da počnemo"
-},
   "contact": {
-    "title": "Javite Se",
-    "subtitle": "Razgovarajmo o vašem sledećem projektu",
-    "name": "Ime",
+    "title": "Hajde da izgradimo nesto vredno",
+    "subtitle": "Posaljite ciljeve i ogranicenja projekta, a ja vam saljem konkretan sledeci korak.",
+    "name": "Ime i prezime",
     "email": "Email",
-    "message": "Poruka",
-    "send": "Pošalji Poruku",
+    "message": "Cilj projekta, trenutni problemi ili zeljeni rezultat",
+    "funnelTitle": "Projektni brief",
+    "projectType": "Tip projekta",
+    "budget": "Opseg budzeta",
+    "timeline": "Rok realizacije",
+    "contactMethod": "Preferirani nacin kontakta",
+    "projectTypeOptions": ["Booking platforma", "Web aplikacija", "Mobilna aplikacija", "WordPress / Performance", "Drugo"],
+    "budgetOptions": ["< 2.000 EUR", "2.000 - 5.000 EUR", "5.000 - 15.000 EUR", "15.000+ EUR"],
+    "timelineOptions": ["Sto pre", "2-4 nedelje", "1-2 meseca", "Fleksibilno"],
+    "contactMethodOptions": ["Email", "Telefon", "WhatsApp", "Video poziv"],
+    "send": "Posalji Brief",
     "sending": "Slanje...",
-    "success": "Poruka uspešno poslata!",
-    "error": "Greška pri slanju poruke. Pokušajte ponovo."
+    "success": "Poruka je uspesno poslata. Javljam se uskoro.",
+    "error": "Proverite obavezna polja i pokusajte ponovo.",
+    "locationTitle": "Lokacija",
+    "locationValue": "Beograd, Srbija",
+    "emailTitle": "Email",
+    "phoneTitle": "Telefon",
+    "hoursTitle": "Dostupnost",
+    "hoursValue": "Pon - Pet: 09:00 - 17:00\nSub: 09:00 - 13:00",
+    "scheduleTitle": "Vise vam odgovara razgovor uzivo?",
+    "scheduleText": "Zakazite kratak poziv i mapiracemo scope, rok i sledece korake.",
+    "scheduleButton": "Zakazi Poziv",
+    "scheduleUrl": "https://cal.com/petararsic",
+    "asyncLabel": "Vise vam odgovara async komunikacija za pocetak?",
+    "footerBio": "Full-stack developer fokusiran na proizvode koji konvertuju i rade brzo i stabilno."
   },
   "footer": {
-    "rights": "Sva prava zadržana",
-    "madeWith": "Napravljeno sa ❤️ u Srbiji"
+    "rights": "Sva prava zadrzana",
+    "madeWith": "Napravljeno pazljivo u Srbiji"
   }
 }

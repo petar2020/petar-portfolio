@@ -1,7 +1,7 @@
 'use client'
 import {useEffect, useRef, useState} from 'react'
 import {motion, AnimatePresence} from 'framer-motion'
-import {useRouter, usePathname} from '../i18n/navigation'
+import {useRouter} from 'next/router'
 import {useLocale} from 'next-intl'
 import {useTheme} from 'next-themes'
 
@@ -12,7 +12,7 @@ const LANGS = [
 
 export default function LanguageSwitcher({ scrolled = false }) {
   const router = useRouter()
-  const pathname = usePathname()
+  const pathname = router.asPath || '/'
   const locale = useLocale()                 // ← tačan, reaktivan locale iz next-intl
   const { resolvedTheme } = useTheme()
 
@@ -39,8 +39,10 @@ export default function LanguageSwitcher({ scrolled = false }) {
     setOptimistic(newLocale) // ← odmah preboji tačku
 
     // skini stari locale prefiks sa početka rute (npr. /sr/xxx -> /xxx)
-    const pathWithoutLocale = pathname.replace(/^\/(sr|en)(?=\/|$)/, '') || '/'
-    router.push(pathWithoutLocale, { locale: newLocale })
+    const rawPath = pathname.replace(/^\/(sr|en)(?=\/|$)/, '') || '/'
+    const normalizedPath = rawPath.startsWith('/') ? rawPath : `/${rawPath}`
+    const nextPath = normalizedPath === '/' ? `/${newLocale}` : `/${newLocale}${normalizedPath}`
+    router.push(nextPath)
 
     if (typeof window !== 'undefined' && window.trackLanguageChange) {
       window.trackLanguageChange(locale, newLocale)

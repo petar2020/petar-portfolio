@@ -1,136 +1,88 @@
-// src/components/Services.jsx
 'use client'
-import { motion, useAnimation, useInView } from 'framer-motion'
-import { useEffect, useRef } from 'react'
+
+import { motion, useReducedMotion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 
 export default function Services() {
   const t = useTranslations('services')
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true })
-  const controls = useAnimation()
-
-  useEffect(() => {
-    if (isInView) {
-      controls.start('visible')
-    }
-  }, [isInView, controls])
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-        delayChildren: 0.1,
-      },
-    },
-  }
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 30 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.6,
-        type: 'spring',
-        stiffness: 100,
-        damping: 15,
-      },
-    },
-  }
+  const reduceMotion = useReducedMotion()
 
   const services = [
     {
-      icon: '💻',
-      title: t('webDev.title'),
-      description: t('webDev.description'),
-      features: t('webDev.features').split(', '),
+      icon: '🎫',
+      title: t('items.booking.title'),
+      description: t('items.booking.description'),
+      tags: t('items.booking.tags')
+    },
+    {
+      icon: '🧩',
+      title: t('items.webapps.title'),
+      description: t('items.webapps.description'),
+      tags: t('items.webapps.tags')
     },
     {
       icon: '📱',
-      title: t('mobileDev.title'),
-      description: t('mobileDev.description'),
-      features: t('mobileDev.features').split(', '),
+      title: t('items.mobile.title'),
+      description: t('items.mobile.description'),
+      tags: t('items.mobile.tags')
     },
     {
-      icon: '☁️',
-      title: t('cloudDev.title'),
-      description: t('cloudDev.description'),
-      features: t('cloudDev.features').split(', '),
-    },
-    {
-      icon: '🔧',
-      title: t('devOps.title'),
-      description: t('devOps.description'),
-      features: t('devOps.features').split(', '),
-    },
+      icon: '⚡',
+      title: t('items.wordpress.title'),
+      description: t('items.wordpress.description'),
+      tags: t('items.wordpress.tags')
+    }
   ]
 
   return (
-    <section
-      id="services"
-      ref={ref}
-      className="relative py-24 bg-gradient-to-b from-blue-900 to-gray-900 overflow-hidden"
-    >
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,_#3B82F6_1px,_transparent_1px)] bg-[length:25px_25px]" />
+    <section id="services" className="relative overflow-hidden bg-gradient-to-b from-[#091733] to-[#0a1222] py-20">
+      <div className="absolute inset-0 opacity-8">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,_#3B82F6_1px,_transparent_1px)] bg-[length:28px_28px]" />
       </div>
 
-      <motion.div
-        variants={containerVariants}
-        initial="hidden"
-        animate={controls}
-        className="container mx-auto px-4 relative z-10"
-      >
-        <div className="text-center mb-16">
-          <motion.h2
-            variants={itemVariants}
-            className="text-4xl md:text-5xl font-bold text-white mb-6"
-          >
-            {t('title')}
-          </motion.h2>
-          <motion.p
-            variants={itemVariants}
-            className="text-xl text-gray-300 max-w-3xl mx-auto"
-          >
-            {t('subtitle')}
-          </motion.p>
-        </div>
+      <div className="container relative z-10 mx-auto max-w-6xl px-4 md:px-6">
+        <motion.div
+          initial={reduceMotion ? false : { opacity: 0, y: 20 }}
+          whileInView={reduceMotion ? undefined : { opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '0px 0px -80px 0px' }}
+          transition={reduceMotion ? undefined : { duration: 0.45 }}
+          className="mb-12 text-center"
+        >
+          <h2 className="text-4xl font-extrabold text-white md:text-5xl">{t('title')}</h2>
+          <p className="mx-auto mt-4 max-w-3xl text-lg text-slate-300">{t('subtitle')}</p>
+        </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
           {services.map((service, index) => (
-            <motion.div
-              key={index}
-              variants={itemVariants}
-              className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:border-white/40 transition-all duration-300 group"
-              whileHover={{ y: -10, scale: 1.02 }}
+            <motion.article
+              key={service.title}
+              initial={reduceMotion ? false : { opacity: 0, y: 18 }}
+              whileInView={reduceMotion ? undefined : { opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '0px 0px -80px 0px' }}
+              transition={reduceMotion ? undefined : { duration: 0.35, delay: index * 0.05 }}
+              className="rounded-2xl border border-white/15 bg-white/8 p-6 backdrop-blur-sm"
             >
-              <div className="text-center">
-                <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                  {service.icon}
-                </div>
-                <h3 className="text-xl font-semibold text-white mb-3">
-                  {service.title}
-                </h3>
-                <p className="text-gray-300 mb-4 text-sm">
-                  {service.description}
-                </p>
-                <ul className="text-left space-y-2">
-                  {service.features.map((feature, i) => (
-                    <li key={i} className="text-gray-400 text-sm flex items-center gap-2">
-                      <span className="text-blue-400">✓</span>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </motion.div>
+              <div className="text-3xl">{service.icon}</div>
+              <h3 className="mt-4 text-xl font-bold text-white">{service.title}</h3>
+              <p className="mt-3 text-sm leading-relaxed text-slate-200">{service.description}</p>
+              <p className="mt-4 rounded-lg border border-white/15 bg-white/6 p-3 text-xs font-semibold uppercase tracking-wide text-sky-200">
+                {service.tags}
+              </p>
+            </motion.article>
           ))}
         </div>
-      </motion.div>
+
+        <motion.div
+          initial={reduceMotion ? false : { opacity: 0, y: 16 }}
+          whileInView={reduceMotion ? undefined : { opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '0px 0px -80px 0px' }}
+          transition={reduceMotion ? undefined : { duration: 0.35, delay: 0.12 }}
+          className="mx-auto mt-10 max-w-4xl rounded-2xl border border-white/15 bg-white/8 p-5 text-center backdrop-blur-sm"
+        >
+          <p className="text-sm font-semibold uppercase tracking-[0.16em] text-sky-300">{t('expertiseTitle')}</p>
+          <p className="mt-2 text-sm text-slate-200">{t('expertiseText')}</p>
+        </motion.div>
+      </div>
     </section>
   )
 }

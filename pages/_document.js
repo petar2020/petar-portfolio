@@ -1,9 +1,12 @@
 // pages/_document.js
 import { Html, Head, Main, NextScript } from 'next/document';
 
-export default function Document() {
+export default function Document(props) {
+  const localeFromRoute = props?.__NEXT_DATA__?.query?.locale;
+  const lang = localeFromRoute === 'en' ? 'en' : 'sr';
+
   return (
-    <Html lang="sr">
+    <Html lang={lang}>
       <Head>
         {/* osnovni favikoni */}
         <link rel="icon" href="/favicon.ico" sizes="any" />
