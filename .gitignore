@@ -22,9 +22,5 @@ out/
 dist/
 coverage/
 
-# Next: ignoriši sve u .next osim standalone i static (treba za deploy)
-.next/**
-!.next/standalone
-!.next/standalone/**
-!.next/static
-!.next/static/**
+# Next build output
+.next/
