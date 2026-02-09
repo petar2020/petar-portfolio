@@ -12,19 +12,18 @@ export default function ParallaxCVTimeline() {
   })
 
   const y = useTransform(scrollYProgress, [0, 1], ['0%', '50%'])
-  const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [0, 1, 0.1])
 
   return (
     <section
       ref={ref}
       className="
-        relative overflow-hidden
+        relative isolate overflow-hidden
         bg-gradient-to-b from-gray-900 via-[#0C1B34] to-blue-900
         py-24 sm:py-28 md:py-40      /* ⇦ više vertikalnog razmaka na svim uređajima */
       "
     >
       {/* Background pattern + blaga vinjeta */}
-      <div className="absolute inset-0">
+      <div className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,_#3B82F6_1px,_transparent_1px)] bg-[length:28px_28px]" />
         </div>
@@ -32,7 +31,7 @@ export default function ParallaxCVTimeline() {
       </div>
 
       <motion.div
-        style={{ y, opacity }}
+        style={{ y }}
         className="container mx-auto px-5 sm:px-6 md:px-8 relative z-10"
       >
         {/* Heading blok */}
@@ -76,10 +75,10 @@ export default function ParallaxCVTimeline() {
             viewport={{ once: true, margin: '-10% 0px' }}
             transition={{ duration: 0.7, delay: 0.15 }}
             className="
-              bg-white/10 backdrop-blur-sm
+              bg-white/14 backdrop-blur-sm
               rounded-2xl md:rounded-3xl
               p-6 sm:p-8 md:p-12
-              border border-white/15
+              border border-white/20
               shadow-[0_10px_40px_rgba(2,6,23,0.45)]
             "
           >
@@ -101,7 +100,8 @@ export default function ParallaxCVTimeline() {
                   rounded-xl md:rounded-2xl
                   font-semibold text-white
                   bg-gradient-to-r from-blue-600 to-purple-600
-                  hover:from-blue-700 hover:to-purple-700
+                  hover:from-blue-500 hover:to-purple-500
+                  hover:brightness-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-300/80
                   transition-all duration-300
                   shadow-lg hover:shadow-xl
                 "

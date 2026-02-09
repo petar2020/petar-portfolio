@@ -8,14 +8,16 @@ const DEFAULTS = {
     description:
       'Full-stack developer building premium booking platforms and web applications focused on conversion, speed, and reliability.',
     localeTag: 'en_US',
-    heroImage: '/og-hero-en.svg'
+    heroImage: '/og-hero-en.svg',
+    fallbackImage: '/og-image.png'
   },
   sr: {
     title: 'Booking platforme i web aplikacije | Petar Arsic',
     description:
       'Full-stack developer za premium booking platforme i web aplikacije sa fokusom na konverziju, brzinu i stabilnost.',
     localeTag: 'sr_RS',
-    heroImage: '/og-hero-sr.svg'
+    heroImage: '/og-hero-sr.svg',
+    fallbackImage: '/og-image.png'
   }
 }
 
@@ -41,6 +43,7 @@ export default function SEO({
   const canonicalUrl = absolute(path)
   const alternateEn = absolute('/en')
   const alternateSr = absolute('/sr')
+  const fallbackImage = absolute(defaults.fallbackImage)
   const primaryImage = absolute(heroImage || defaults.heroImage)
 
   const extraProjectImages = projectImages
@@ -48,7 +51,7 @@ export default function SEO({
     .filter(Boolean)
     .filter((img, index, arr) => arr.indexOf(img) === index)
 
-  const ogImages = [primaryImage, ...extraProjectImages].filter(Boolean)
+  const ogImages = [fallbackImage, primaryImage, ...extraProjectImages].filter(Boolean).filter((img, index, arr) => arr.indexOf(img) === index)
 
   const structuredData = [
     {
@@ -100,11 +103,13 @@ export default function SEO({
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta property="og:image:alt" content="Petar Arsic portfolio preview" />
+      <meta property="og:image:secure_url" content={ogImages[0]} />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={finalTitle} />
       <meta name="twitter:description" content={finalDescription} />
       <meta name="twitter:image" content={ogImages[0]} />
+      <meta name="twitter:url" content={canonicalUrl} />
 
       {structuredData.map((item, index) => (
         <script

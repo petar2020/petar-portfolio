@@ -11,7 +11,6 @@ import ParallaxCVTimeline from '../../components/ParallaxCVTimeline'
 import Contact from '../../components/Contact'
 import Services from '../../components/Services'
 import Analytics, { PlausibleScript } from '../../components/Analytics'
-import { featuredProjects } from '../../data/projects'
 
 // Client-only
 const ParallaxBackground = dynamic(() => import('../../components/ParallaxBackground'), { ssr: false })
@@ -34,7 +33,6 @@ const SEO_BY_LOCALE = {
 export default function LocaleHome({ locale = 'sr' }) {
   const currentLocale = locale === 'en' ? 'en' : 'sr'
   const seo = SEO_BY_LOCALE[currentLocale]
-  const projectImages = featuredProjects.slice(0, 4).map((project) => project.image)
 
   return (
     <>
@@ -44,12 +42,11 @@ export default function LocaleHome({ locale = 'sr' }) {
         title={seo.title}
         description={seo.description}
         heroImage={seo.heroImage}
-        projectImages={projectImages}
       />
       <PlausibleScript />
       <Analytics />
 
-      <div className="relative">
+      <div className="relative isolate">
         <ParallaxBackground />
         <Nav />
         <Hero />
