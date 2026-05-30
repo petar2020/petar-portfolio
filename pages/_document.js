@@ -3,7 +3,7 @@ import { Html, Head, Main, NextScript } from 'next/document';
 
 export default function Document() {
   return (
-    <Html lang="sr">
+    <Html lang="en" className="dark" style={{ backgroundColor: '#06100E' }}>
       <Head>
         {/* osnovni favikoni */}
         <link rel="icon" href="/favicon.ico" sizes="any" />
@@ -13,7 +13,7 @@ export default function Document() {
         {/* Apple & PWA */}
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/site.webmanifest" />
-        <meta name="theme-color" content="#0f172a" />
+        <meta name="theme-color" content="#06100E" />
 
         {/* (opciono) Android ikone već su u manifestu; ostaju i ove dve za starije browsere */}
         <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />

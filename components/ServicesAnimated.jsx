@@ -1,164 +1,60 @@
-// src/components/ServicesAnimated.jsx
 'use client'
-import { motion, useAnimation, useInView } from 'framer-motion'
-import { useEffect, useRef } from 'react'
+import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
+import SectionHeader from './ui/SectionHeader'
 
 export default function ServicesAnimated() {
   const t = useTranslations('services')
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true })
-  const controls = useAnimation()
 
-  useEffect(() => {
-    if (isInView) {
-      controls.start('visible')
-    }
-  }, [isInView, controls])
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.3,
-        delayChildren: 0.2,
-      },
-    },
-  }
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 50, scale: 0.8 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      scale: 1,
-      transition: {
-        duration: 0.8,
-        type: 'spring',
-        stiffness: 100,
-        damping: 15,
-      },
-    },
-  }
-
-  const services = [
-    {
-      icon: '🚀',
-      title: t('webDev.title'),
-      description: t('webDev.description'),
-      color: 'from-blue-500 to-cyan-500',
-    },
-    {
-      icon: '📱',
-      title: t('mobileDev.title'),
-      description: t('mobileDev.description'),
-      color: 'from-purple-500 to-pink-500',
-    },
-    {
-      icon: '☁️',
-      title: t('cloudDev.title'),
-      description: t('cloudDev.description'),
-      color: 'from-green-500 to-teal-500',
-    },
-    {
-      icon: '🔧',
-      title: t('devOps.title'),
-      description: t('devOps.description'),
-      color: 'from-orange-500 to-red-500',
-    },
+  const items = [
+    { key: 'webDev', code: 'WEB' },
+    { key: 'mobileDev', code: 'MOB' },
+    { key: 'cloudDev', code: 'CLD' },
+    { key: 'devOps', code: 'OPS' },
   ]
 
   return (
-    <section
-      id="services"
-      ref={ref}
-      className="relative py-24 bg-gradient-to-b from-gray-900 to-blue-900 overflow-hidden"
-    >
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,_#3B82F6_1px,_transparent_1px)] bg-[length:30px_30px]" />
-      </div>
+    <section id="services" className="relative grain bg-ink-900 py-20 sm:py-28 scroll-mt-24">
+      <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 relative z-10">
+        <SectionHeader index="05" callsign="Capabilities" title={t('title')} subtitle={t('subtitle')} />
 
-      <motion.div
-        variants={containerVariants}
-        initial="hidden"
-        animate={controls}
-        className="container mx-auto px-4 relative z-10"
-      >
-        <div className="text-center mb-16">
-          <motion.h2
-            variants={itemVariants}
-            className="text-4xl md:text-5xl font-bold text-white mb-6"
-          >
-            {t('title')}
-          </motion.h2>
-          <motion.p
-            variants={itemVariants}
-            className="text-xl text-gray-300 max-w-3xl mx-auto"
-          >
-            {t('subtitle')}
-          </motion.p>
-        </div>
+        {/* spec table */}
+        <div className="mt-12 border border-line">
+          {/* header row */}
+          <div className="hidden md:grid grid-cols-12 gap-4 px-5 py-3 border-b border-line bg-ink-850">
+            <span className="col-span-1 callsign !text-[0.6rem]">ID</span>
+            <span className="col-span-4 callsign !text-[0.6rem]">Capability</span>
+            <span className="col-span-7 callsign !text-[0.6rem]">Stack</span>
+          </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {services.map((service, index) => (
+          {items.map(({ key, code }, i) => (
             <motion.div
-              key={index}
-              variants={itemVariants}
-              className="group relative"
-              whileHover={{ y: -20, scale: 1.05 }}
-              transition={{ duration: 0.3 }}
+              key={key}
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.4 }}
+              transition={{ duration: 0.45, delay: i * 0.08 }}
+              className="group grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-4 px-5 py-6 border-b border-line last:border-b-0 transition-colors hover:bg-ink-800"
             >
-              <div className={`bg-gradient-to-br ${service.color} p-1 rounded-2xl shadow-2xl`}>
-                <div className="bg-gray-900 rounded-2xl p-6 h-full">
-                  <div className="text-center">
-                    <motion.div
-                      className="text-5xl mb-4 inline-block"
-                      whileHover={{ rotate: 360 }}
-                      transition={{ duration: 0.6 }}
-                    >
-                      {service.icon}
-                    </motion.div>
-                    <h3 className="text-xl font-semibold text-white mb-3">
-                      {service.title}
-                    </h3>
-                    <p className="text-gray-300 text-sm leading-relaxed">
-                      {service.description}
-                    </p>
-                  </div>
-                </div>
+              <div className="md:col-span-1 flex items-center gap-2">
+                <span className="h-1.5 w-1.5 rounded-full bg-teal-deep group-hover:bg-teal-bright transition-colors" />
+                <span className="font-mono text-sm font-bold text-paper-faint group-hover:text-amber transition-colors">{code}</span>
               </div>
-              
-              {/* Floating particles */}
-              <motion.div
-                className="absolute -top-2 -right-2 w-4 h-4 bg-blue-400 rounded-full opacity-60"
-                animate={{ 
-                  y: [0, -10, 0],
-                  opacity: [0.6, 1, 0.6]
-                }}
-                transition={{ 
-                  duration: 2, 
-                  repeat: Infinity,
-                  delay: index * 0.5
-                }}
-              />
-              <motion.div
-                className="absolute -bottom-2 -left-2 w-3 h-3 bg-purple-400 rounded-full opacity-60"
-                animate={{ 
-                  y: [0, 10, 0],
-                  opacity: [0.6, 1, 0.6]
-                }}
-                transition={{ 
-                  duration: 2.5, 
-                  repeat: Infinity,
-                  delay: index * 0.3
-                }}
-              />
+              <div className="md:col-span-4">
+                <h3 className="font-display text-lg font-bold text-paper">{t(`${key}.title`)}</h3>
+                <p className="mt-1 text-sm text-paper-dim leading-relaxed">{t(`${key}.description`)}</p>
+              </div>
+              <div className="md:col-span-7 flex flex-wrap items-start gap-1.5 md:justify-end content-start">
+                {t(`${key}.features`).split(',').map((f, idx) => (
+                  <span key={idx} className="px-2 py-0.5 font-mono text-[0.68rem] text-paper-faint border border-line">
+                    {f.trim()}
+                  </span>
+                ))}
+              </div>
             </motion.div>
           ))}
         </div>
-      </motion.div>
+      </div>
     </section>
   )
 }

@@ -11,9 +11,9 @@ export async function getServerSideProps({ locale, req }) {
     };
   }
 
-  // fallback: pogodi iz Accept-Language header-a
+  // fallback: pogodi iz Accept-Language header-a (English is the default)
   const header = req.headers['accept-language'] || '';
-  const pref = header.toLowerCase().startsWith('en') ? 'en' : 'sr';
+  const pref = header.toLowerCase().startsWith('sr') ? 'sr' : 'en';
 
   return {
     redirect: { destination: `/${pref}`, permanent: false },

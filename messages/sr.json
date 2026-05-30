@@ -1,22 +1,75 @@
 {
   "seo": {
-    "title": "Petar Arsić - Full-Stack Developer",
-    "description": "Full-Stack Developer iz Srbije. Gradim moderne web aplikacije sa najnovijim tehnologijama."
+    "title": "Petar Arsić — Full-Stack Developer | Produkcioni sistemi za rezervacije i operativu",
+    "description": "Full-stack developer koji gradi produkcione sisteme za rezervacije i operativu za realne firme. End-to-end: Laravel i MySQL API, React / React Native i cloud. 5+ godina u produkciji."
   },
   "nav": {
     "home": "Početna",
-    "about": "O meni",        
+    "demo": "Demo uživo",
+    "casestudy": "Case study",
     "projects": "Projekti",
-    "services": "Usluge",
+    "about": "O meni",
     "contact": "Kontakt",
     "cv": "CV"
   },
   "hero": {
-    "title": "Petar Arsić",
-    "subtitle": "Full-Stack Developer",
-    "description": "Gradim moderne web aplikacije sa najnovijim tehnologijama",
-    "cta": "Pogledaj Moj Rad",
-    "scroll": "Skroluj Dole"
+    "name": "Petar Arsić",
+    "eyebrow": "Full-Stack Developer · Laravel · React · React Native",
+    "headline": "Gradim produkcione sisteme za rezervacije i operativu",
+    "headlineAccent": "za realne firme.",
+    "subline": "End-to-end full-stack — od baze i API-ja do React / React Native i cloud-a. Više od pet godina isporučujem softver koji firme koriste svakog dana.",
+    "ctaDemo": "Pogledaj demo uživo",
+    "ctaCase": "Pogledaj case study",
+    "metrics": {
+      "passengers": { "value": "150.000+", "label": "putnika opsluženo" },
+      "users": { "value": "30+", "label": "internih korisnika dnevno" },
+      "years": { "value": "5+", "label": "godina u produkciji" }
+    }
+  },
+  "demo": {
+    "eyebrow": "Live product",
+    "title": "A real product you can open right now",
+    "subtitle": "Most portfolios show mockups. This is a live reservation platform running in production — explore both sides of it.",
+    "open": "Open demo",
+    "passenger": {
+      "title": "Passenger booking",
+      "caption": "What you're looking at: the customer-facing flow — search routes, pick a departure, and book a ticket.",
+      "url": "https://demo.drivesoft.rs/passenger-demo"
+    },
+    "admin": {
+      "title": "Admin panel",
+      "caption": "What you're looking at: the internal operations dashboard — manage passengers, routes, departures and reporting.",
+      "url": "https://demo.drivesoft.rs/admin-demo"
+    }
+  },
+  "caseStudy": {
+    "eyebrow": "Flagship case study",
+    "title": "DriveSoft — Reservation & Ticketing Platform for Srbija Tours",
+    "tagline": "A production system that runs daily ticket sales and operations for an international bus carrier.",
+    "problemTitle": "Problem",
+    "problem": "Srbija Tours, an international bus carrier, ran reservations, ticketing and field operations across disconnected, mostly manual tools. They needed one system to sell tickets online, manage routes and passengers, validate tickets, handle payments and fiscal-legal receipts, and give office and field staff a single source of truth.",
+    "solutionTitle": "Solution",
+    "solution": "I built DriveSoft end to end: a Laravel/MySQL backend exposing REST APIs, a React passenger-facing booking site, a React admin panel for operations, and React Native tools for field workers. It covers online reservations, passenger & route management, ticket generation with QR-code validation, payments with fiscal-receipt integration, and operational reporting.",
+    "architectureTitle": "Architecture",
+    "architecture": [
+      "Backend: Laravel + MySQL, REST APIs, Redis caching, queued background jobs",
+      "Frontends: React passenger booking site + React admin panel",
+      "Mobile: React Native tools for field workers (ticket validation on the move)",
+      "Infrastructure: Docker, deployed on DigitalOcean",
+      "Integrations: online payments, fiscal-receipt (legal) integration, QR-code ticket validation"
+    ],
+    "scaleTitle": "Scale",
+    "scale": [
+      { "value": "150,000+", "label": "passengers served" },
+      { "value": "30+", "label": "active internal users daily" },
+      { "value": "Live", "label": "production workflows, in continuous use" }
+    ],
+    "resultTitle": "Result",
+    "result": "Online reservations, ticketing and back-office operations now run through one maintained platform instead of scattered manual processes — a single source of truth for both the sales desk and field staff.",
+    "techTitle": "Built with",
+    "tech": ["Laravel", "PHP", "MySQL", "React", "React Native", "REST APIs", "Redis", "Docker", "DigitalOcean"],
+    "ctaPassenger": "Open passenger demo",
+    "ctaAdmin": "Open admin demo"
   },
   "services": {
     "title": "Usluge",
@@ -42,82 +95,75 @@
       "features": "Terraform, Ansible, Jenkins, GitLab CI, Monitoring, Security"
     }
   },
-    "projects": {
-    "title": "Istaknuti Projekti",
-    "subtitle": "Neki od mojih nedavnih radova",
-    "viewCase": "Pogledaj Case Study",
-    "viewCaseStudy": "Pogledaj Case Study",
-    "viewLive": "Pogledaj Live",
-    "caseStudy": "Case study",
-    "highlights": "Izdvojeno",
+  "howIWork": {
+    "eyebrow": "How I build",
+    "title": "AI-assisted development, senior discipline",
+    "subtitle": "I use an AI-assisted workflow to ship faster without lowering the bar. AI accelerates the work; engineering judgment, review and testing keep the code maintainable and correct.",
     "items": {
-      "bozic-konig": {
-        "title": "Božić König – Online Rezervacije",
-        "description": "React aplikacija za pretragu polazaka i online kupovinu karata.",
-        "long": "SPA u React/Next okruženju sa optimizovanom pretragom, jasnim tokom kupovine i integracijom sa back-office sistemima (linije, polasci, cene). Fokus na UX i performanse.",
-        "details": [
-          "Brza pretraga i filtriranje linija",
-          "Sigurni tokovi plaćanja",
-          "SEO i performance optimizacije"
-        ]
+      "review": {
+        "title": "Disciplined code review",
+        "description": "Every change is read, understood and reviewed before it ships. AI speeds up exploration; it doesn't get a free pass into production."
       },
-    "sti-web": {
-  "title": "Srbija Tours – Prodaja karata",
-  "description": "WordPress frontend sa Laravel API-jem za polaske, rezervacije i plaćanja.",
-  "long": "Frontend je WordPress (custom tema/blokovi) – brz i SEO-prijateljski. Laravel služi kao backend koji isporučuje API za polaske, cene i rezervacije, uz integrisana plaćanja i fiskalizaciju. Primena Redis keširanja i Nginx optimizacija."
-}
-,
-      "sti-mobile": {
-        "title": "Srbija Tours – Mobilna aplikacija (iOS/Android)",
-        "description": "React Native aplikacija: pretraga polazaka, nalozi i rezervacije.",
-        "long": "Cross-platform aplikacija sa Expo/React Native. Deljeni UI i logika, offline keširanje i push notifikacije.",
-        "details": [
-          "Login/registracija i profil",
-          "Pretraga i filtriranje polazaka",
-          "Push notifikacije"
-        ]
+      "prompting": {
+        "title": "Precise prompting",
+        "description": "I scope problems clearly and direct AI tools deliberately — the same way I'd brief a teammate, with explicit constraints and intent."
       },
-      "drivesoft-backoffice": {
-        "title": "DriveSoft – Back-office (Laravel)",
-        "description": "Interni sistem za praćenje putnika, polazaka, linija i operativa.",
-        "long": "Laravel aplikacija sa kompleksnim modelima, RBAC-om, keširanjem i queue-vima. Izveštaji i export/import podataka.",
-        "details": [
-          "RBAC i audit trail",
-          "Import/Export CSV/Excel",
-          "Grafikoni i operativni izveštaji"
-        ]
+      "testing": {
+        "title": "Verification & testing",
+        "description": "Generated code is verified against real behavior and covered by tests before it reaches users. Nothing ships unproven."
       },
-      "drivesoft-demo": {
-        "title": "DriveSoft – Demo rezervacije (React)",
-        "description": "Demo front-end za pretragu i rezervaciju sa statičkim podacima.",
-        "long": "Jasan UX sa filterima (smer, polazak, destinacija, datum, broj putnika). Demo verzija odvojena od produkcionih API-ja, spremna za povezivanje na pravi backend.",
-        "details": [
-          "Statički seed podaci za prezentacije",
-          "Čist tok rezervacije u nekoliko koraka",
-          "Lako povezivanje sa realnim API-jem"
-        ]
-      },
-      "prostor-dereta": {
-        "title": "Prostor Miljenko Dereta – WordPress",
-        "description": "WP sajt sa blogom i formama za rezervaciju prostora.",
-        "long": "Moderni WordPress build sa prilagođenim šablonima i optimizacijama. Fokus na brzinu, SEO i jednostavno uređivanje sadržaja.",
-        "details": [
-          "Kontakt i booking forme",
-          "Optimizovane slike i keširanje",
-          "SEO-prijateljska struktura i blog"
-        ]
+      "shipping": {
+        "title": "Faster, reviewable shipping",
+        "description": "The result is quicker delivery with clean, maintainable, reviewable code — not throwaway output that someone has to rewrite later."
       }
     }
   },
-  "testimonials": {
-    "title": "Komentari Klijenata",
-    "subtitle": "Šta ljudi kažu o radu sa mnom"
+  "projects": {
+    "title": "Izabrani Projekti",
+    "subtitle": "Realni sistemi, predstavljeni kroz problem koji rešavaju i rezultat koji donose.",
+    "viewLive": "Pogledaj uživo",
+    "problemLabel": "Problem",
+    "solutionLabel": "Rešenje",
+    "resultLabel": "Rezultat",
+    "techLabel": "Tehnologije",
+    "items": {
+      "sti-web": {
+        "title": "Srbija Tours — Prodaja karata",
+        "problem": "Prevozniku je bio potreban brz, SEO-prijateljski sajt koji ujedno prodaje karte i ostaje sinhronizovan sa backend sistemom za rezervacije.",
+        "solution": "WordPress frontend zbog sadržaja i SEO brzine, uz Laravel API za polaske, cene i rezervacije, sa integrisanim plaćanjem i fiskalizacijom; Redis keširanje i Nginx optimizacije.",
+        "result": "Javni prodajni kanal koji se brzo učitava, dobro rangira i deli isti izvor podataka sa sistemom rezervacija."
+      },
+      "sti-mobile": {
+        "title": "Srbija Tours — Mobilna aplikacija (iOS / Android)",
+        "problem": "Putnici su želeli da pretražuju polaske i upravljaju nalozima i rezervacijama sa telefona.",
+        "solution": "Cross-platform React Native (Expo) aplikacija sa deljenim UI-jem i logikom, offline keširanjem i push notifikacijama.",
+        "result": "Objavljena iOS/Android aplikacija koja proširuje platformu za rezervacije na mobilne uređaje."
+      },
+      "drivesoft-backoffice": {
+        "title": "DriveSoft — Operativni back-office",
+        "problem": "Osoblju u kancelariji je trebalo da upravlja putnicima, polascima, linijama i dnevnom operativom bez tabela.",
+        "solution": "Laravel aplikacija sa RBAC-om, audit trail-om, keširanjem i queue-vima, CSV/Excel import-export i operativnim izveštajima.",
+        "result": "Jedinstveni interni alat za svakodnevnu operativu, sa ugrađenim izveštajima i kontrolom pristupa."
+      },
+      "bozic-konig": {
+        "title": "Božić König — Online rezervacije",
+        "problem": "Prevozniku je bio potreban online kanal za pretragu polazaka i kupovinu karata.",
+        "solution": "React/Next SPA sa optimizovanom pretragom, jasnim tokom kupovine i integracijom sa back-office sistemom za linije, polaske i cene.",
+        "result": "Fokusiran booking front-end napravljen za UX i performanse."
+      },
+      "prostor-dereta": {
+        "title": "Prostor Miljenko Dereta — Korporativni sajt",
+        "problem": "Organizaciji je bio potreban brz, lako uredljiv sajt sa blogom i formama za rezervaciju prostora.",
+        "solution": "Moderni WordPress build sa prilagođenim šablonima, optimizovanim slikama i keširanjem, i SEO-prijateljskom strukturom.",
+        "result": "Održiv korporativni sajt koji tim može da uređuje bez programera."
+      }
+    }
   },
-    "clients": {
+  "clients": {
     "title": "Veruju Mi",
-    "subtitle": "Kompanije sa kojima sam imao zadovoljstvo da radim",
+    "subtitle": "Kompanije čije sam proizvode pomogao da se izgrade i održavaju.",
     "visit": "Poseti sajt kompanije {name}",
-    "ctaText": "Spremni da se pridružite listi zadovoljnih klijenata? Hajde da razgovaramo o vašem sledećem projektu.",
+    "ctaText": "Želite sistem na kojem vaša firma zaista može da radi? Hajde da razgovaramo o vašem sledećem projektu.",
     "ctaButton": "Započnite projekat"
   },
   "cv": {
@@ -128,28 +174,28 @@
     "downloadButton": "Preuzmi CV"
   },
   "about": {
-  "title": "O meni",
-  "subtitle": "Full-Stack developer fokusiran na brze, stabilne i skalabilne aplikacije.",
-  "aboutMe": "Ko sam ja",
-  "bio": "Diplomirao na Univerzitetu Metropolitan. Preko 5 godina razvijam kompletna rešenja u transportnoj industriji: Laravel backend (rezervacije, plaćanja, logistika), React/Next frontend, WordPress (10+ aktivnih sajtova) i mobilne aplikacije (React Native). Trenutno full-time u Srbija Tours International, uz freelance projekte sa strane. Radim remote.",
-  "stats": {
-    "years": { "label": "Godina iskustva", "value": "5+" },
-    "projects": { "label": "Projekata", "value": "30+" },
-    "stack": { "label": "Stack", "value": "Laravel, React/Next, MySQL, Redis, Docker" },
-    "remote": { "label": "Način rada", "value": "Remote, asinkrono, Git" }
+    "title": "O meni",
+    "subtitle": "Full-Stack developer fokusiran na brze, stabilne i skalabilne sisteme.",
+    "aboutMe": "Ko sam ja",
+    "bio": "Preko 5 godina razvijam kompletna rešenja u transportnoj industriji: Laravel backend (rezervacije, plaćanja, logistika), React/Next frontend, WordPress (10+ aktivnih sajtova) i mobilne aplikacije (React Native). Trenutno full-time u Srbija Tours International, uz freelance projekte. Remote-first, asinhrono, Git workflow.",
+    "stats": {
+      "years": { "label": "Godina iskustva", "value": "5+" },
+      "projects": { "label": "Projekata", "value": "30+" },
+      "stack": { "label": "Stack", "value": "Laravel, React/Next, MySQL, Redis, Docker" },
+      "remote": { "label": "Način rada", "value": "Remote, asinkrono, Git" }
+    },
+    "focus": {
+      "title": "Na čemu radim",
+      "items": {
+        "0": "Sistemi za rezervacije i plaćanja (150.000+ putnika godišnje)",
+        "1": "Web aplikacije sa modernom arhitekturom (React/Next + API)",
+        "2": "WordPress razvoj (teme, pluginovi, 10+ aktivnih sajtova)",
+        "3": "Optimizacija performansi i SEO",
+        "4": "Mobilne aplikacije (React Native, Expo)"
+      }
+    },
+    "cta": "Hajde da počnemo"
   },
-  "focus": {
-    "title": "Na čemu radim",
-    "items": {
-      "0": "Sistemi za rezervacije i plaćanja (150k+ putnika godišnje)",
-      "1": "Web aplikacije sa modernom arhitekturom (React/Next + API)",
-      "2": "WordPress razvoj (teme, pluginovi, 10+ aktivnih sajtova)",
-      "3": "Optimizacija performansi i SEO",
-      "4": "Mobilne aplikacije (React Native, Expo)"
-    }
-  },
-  "cta": "Hajde da počnemo"
-},
   "contact": {
     "title": "Javite Se",
     "subtitle": "Razgovarajmo o vašem sledećem projektu",
@@ -159,7 +205,14 @@
     "send": "Pošalji Poruku",
     "sending": "Slanje...",
     "success": "Poruka uspešno poslata!",
-    "error": "Greška pri slanju poruke. Pokušajte ponovo."
+    "error": "Greška pri slanju poruke. Pokušajte ponovo.",
+    "locationTitle": "Lokacija",
+    "location": "Beograd, Srbija",
+    "phoneTitle": "Telefon",
+    "hoursTitle": "Radno vreme",
+    "hours": "Ponedeljak – Petak: 09:00 – 17:00\nSubota: 09:00 – 13:00",
+    "footerBio": "Full-stack developer koji gradi produkcione sisteme za rezervacije i operativu za realne firme.",
+    "copyright": "Sva prava zadržana. Izradio Petar Arsić."
   },
   "footer": {
     "rights": "Sva prava zadržana",
