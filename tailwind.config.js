@@ -8,78 +8,85 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#2563EB',
-        secondary: '#4F46E5',
-        accent: '#F59E0B',
-        bgLight: '#F3F4F6',
-        bgDark: '#1F2937',
-        cyan: {
-          500: '#06b6d4',
-          600: '#0891b2',
-        },
-        blue: {
-          500: '#3b82f6',
-          600: '#2563eb',
-        },
-        indigo: {
-          500: '#6366f1',
-          600: '#4f46e5',
-        },
-        emerald: {
-          500: '#10b981',
-          600: '#059669',
+        // ── Control-surface tokens ───────────────────────────────
+        ink: {
+          DEFAULT: '#06100E', // page base — near-black, faint teal tint
+          900: '#06100E',
+          850: '#0A1614', // raised sections
+          800: '#0E1D1A', // cards / readouts
+          700: '#142B27', // hairline-adjacent fills
         },
         teal: {
-          500: '#14b8a6',
-          600: '#0d9488',
+          DEFAULT: '#0E8C82', // structural brand hue
+          bright: '#2DD4BF', // active / "on-time" signal
+          deep: '#0A4F4A',
+          500: '#0E8C82',
+          600: '#0A6F67',
         },
         amber: {
-          500: '#f59e0b',
-          600: '#d97706',
+          DEFAULT: '#F6A623', // the single sharp accent — CTA / live
+          bright: '#FFC24B',
+          500: '#F6A623',
+          600: '#D98E15',
         },
-        orange: {
-          500: '#f97316',
-          600: '#ea580c',
+        signal: {
+          danger: '#E5575C', // muted "Problem" markers only
         },
-        rose: {
-          500: '#f43f5e',
-          600: '#e11d48',
-        },
-        pink: {
-          500: '#ec4899',
-          600: '#db2777',
-        }
+        // text tokens
+        paper: '#E7F1EE',
+        'paper-dim': '#8FA8A3',
+        'paper-faint': '#5E7873',
+        // hairline
+        line: 'rgba(64,160,150,0.18)',
+
+        // ── Repoint legacy aliases onto the new palette so existing
+        //    `primary/secondary/accent` classes de-blue automatically ──
+        primary: '#0E8C82',
+        secondary: '#0A6F67',
+        accent: '#F6A623',
+        bgLight: '#0A1614',
+        bgDark: '#06100E',
+      },
+      fontFamily: {
+        sans: ['var(--font-display)', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        display: ['var(--font-display)', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        mono: ['var(--font-mono)', 'ui-monospace', 'SFMono-Regular', 'monospace'],
+      },
+      borderRadius: {
+        // sharp instrument-panel corners
+        DEFAULT: '2px',
+        sm: '1px',
+        md: '3px',
+        lg: '4px',
+        xl: '6px',
+        '2xl': '8px',
+        '3xl': '10px',
+      },
+      letterSpacing: {
+        label: '0.18em',
       },
       boxShadow: {
-        'xl': '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
-        '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
+        panel: '0 1px 0 rgba(255,255,255,0.02) inset, 0 20px 50px -30px rgba(0,0,0,0.8)',
+        lift: '0 30px 60px -30px rgba(0,0,0,0.85)',
       },
       animation: {
-        float: 'float 4s ease-in-out infinite',
         'fade-in': 'fadeIn 0.5s ease-in-out',
-        'slide-up': 'slideUp 0.5s ease-out',
-        'scale-in': 'scaleIn 0.3s ease-out',
+        marquee: 'marquee 40s linear infinite',
+        flap: 'flap 0.42s cubic-bezier(0.36,0,0.06,1) both',
       },
       keyframes: {
         fadeIn: {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },
         },
-        slideUp: {
-          '0%': { transform: 'translateY(20px)', opacity: '0' },
-          '100%': { transform: 'translateY(0)', opacity: '1' },
+        marquee: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
         },
-        scaleIn: {
-          '0%': { transform: 'scale(0.95)', opacity: '0' },
-          '100%': { transform: 'scale(1)', opacity: '1' },
+        flap: {
+          '0%': { transform: 'rotateX(90deg)', opacity: '0' },
+          '100%': { transform: 'rotateX(0deg)', opacity: '1' },
         },
-      },
-      fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        mono: ['JetBrains Mono', 'monospace'],
-      },
-      backdropBlur: {
-        xs: '2px',
       },
     },
   },
@@ -87,7 +94,6 @@ module.exports = {
     require('@tailwindcss/forms'),
     require('@tailwindcss/typography'),
   ],
-  // Performance optimizations
   future: {
     hoverOnlyWhenSupported: true,
   },

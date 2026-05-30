@@ -6,6 +6,9 @@ import { useRouter } from 'next/router'
 import SEO from '../../components/SEO'
 import Nav from '../../components/Nav'
 import Hero from '../../components/Hero'
+import LiveDemo from '../../components/LiveDemo'
+import CaseStudy from '../../components/CaseStudy'
+import HowIWork from '../../components/HowIWork'
 import AboutMe from '../../components/AboutMe'
 import Projects from '../../components/Projects'
 import ClientLogos from '../../components/ClientLogos'
@@ -14,8 +17,8 @@ import Contact from '../../components/Contact'
 import Analytics, { PlausibleScript } from '../../components/Analytics'
 
 // Client-only
-const ParallaxBackground = dynamic(() => import('../../components/ParallaxBackground'), { ssr: false })
-const ServicesAnimated   = dynamic(() => import('../../components/ServicesAnimated'), { ssr: false })
+const Backdrop         = dynamic(() => import('../../components/Backdrop'), { ssr: false })
+const ServicesAnimated = dynamic(() => import('../../components/ServicesAnimated'), { ssr: false })
 
 const SITE_URL = 'https://petararsic.rs'
 const OG_LOCALE_MAP = {
@@ -26,12 +29,12 @@ const OG_LOCALE_MAP = {
 export default function LocaleHome({ locale }) {
   const tSeo = useTranslations('seo')
   const router = useRouter()
-  const currentLocale = locale ?? router.query?.locale ?? 'sr'
+  const currentLocale = locale ?? router.query?.locale ?? 'en'
 
   const seoConfig = useMemo(() => {
     const normalizedPath = router?.asPath?.split('#')[0]?.split('?')[0] ?? `/${currentLocale}`
     const canonicalUrl = `${SITE_URL}${normalizedPath}`
-    const ogLocale = OG_LOCALE_MAP[currentLocale] ?? 'sr_RS'
+    const ogLocale = OG_LOCALE_MAP[currentLocale] ?? 'en_US'
     const alternateLocales = Object.entries(OG_LOCALE_MAP)
       .filter(([key]) => key !== currentLocale)
       .map(([, value]) => value)
@@ -52,12 +55,15 @@ export default function LocaleHome({ locale }) {
       <Analytics />
 
       <div className="relative">
-        <ParallaxBackground />
+        <Backdrop />
         <Nav />
         <Hero />
-        <AboutMe />
-        <ServicesAnimated />
+        <LiveDemo />
+        <CaseStudy />
         <Projects />
+        <ServicesAnimated />
+        <HowIWork />
+        <AboutMe />
         <ClientLogos />
         <ParallaxCVTimeline />
         <Contact />
@@ -76,7 +82,7 @@ export async function getStaticPaths() {
 
 // Učitavanje prevoda
 export async function getStaticProps({ params }) {
-  const locale = params?.locale === 'en' ? 'en' : 'sr'
+  const locale = params?.locale === 'sr' ? 'sr' : 'en'
   const messages = (await import(`../../messages/${locale}.json`)).default
 
   return {
