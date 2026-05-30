@@ -6,7 +6,7 @@ const DEFAULT_SITE_URL = 'https://petararsic.rs';
 export default function SEO({
   title = 'Petar Arsić - Full-Stack Developer',
   description = 'Full-Stack Developer iz Srbije. Gradim moderne web aplikacije sa najnovijim tehnologijama.',
-  image = '/og-image.jpg',
+  image = '/og-image.png',
   url,
   type = 'website',
   locale,
@@ -40,11 +40,13 @@ export default function SEO({
       'https://linkedin.com/in/petararsic'
     ],
     knowsAbout: [
-      'Web Development',
       'Laravel',
-      'Vue.js',
+      'PHP',
       'React',
+      'React Native',
       'Next.js',
+      'MySQL',
+      'Booking & Reservation Systems',
       'Full-Stack Development'
     ],
     address: {
@@ -108,7 +110,7 @@ export default function SEO({
       {/* Additional Meta Tags */}
       <meta name="author" content="Petar Arsić" />
       <meta name="robots" content="index, follow" />
-      <meta name="theme-color" content="#3B82F6" />
+      <meta name="theme-color" content="#06100E" />
 
       {/* Canonical URL */}
       <link rel="canonical" href={siteUrl} />
