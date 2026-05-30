@@ -1,5 +1,5 @@
 module.exports = {
   locales: ['sr', 'en'],
-  defaultLocale: 'sr',
+  defaultLocale: 'en',
   localeDetection: true,
 };
