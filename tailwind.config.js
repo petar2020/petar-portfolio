@@ -38,6 +38,7 @@ module.exports = {
         'paper-faint': '#5E7873',
         // hairline
         line: 'rgba(64,160,150,0.18)',
+        'line-strong': 'rgba(64,160,150,0.34)',
 
         // ── Repoint legacy aliases onto the new palette so existing
         //    `primary/secondary/accent` classes de-blue automatically ──
