@@ -93,25 +93,23 @@ export default function Hero() {
             </motion.div>
           </div>
 
-          {/* RIGHT — schematic + duotone portrait */}
+          {/* RIGHT — operator instrument panel */}
           <motion.div variants={item} className="md:col-span-5">
-            <div className="panel ticked relative aspect-[4/5] max-w-xs mx-auto md:mx-0 md:ml-auto">
-              {/* schematic behind */}
-              <div className="absolute inset-0 p-5">
-                <RouteSchematic />
-              </div>
-
+            <div className="panel ticked relative max-w-sm mx-auto md:mx-0 md:ml-auto">
               {/* call-sign bar */}
-              <div className="absolute left-0 right-0 top-0 flex items-center justify-between border-b border-line px-3 py-2">
-                <span className="callsign !text-[0.62rem]">SYS · LIVE</span>
+              <div className="flex items-center justify-between border-b border-line px-3 py-2">
+                <span className="callsign !text-[0.62rem]">SYS · OPERATOR</span>
                 <span className="flex items-center gap-1.5 callsign !text-[0.62rem] text-teal-bright">
                   <span className="h-1.5 w-1.5 rounded-full bg-teal-bright animate-pulse" /> ONLINE
                 </span>
               </div>
 
-              {/* duotone portrait insert */}
-              <div className="absolute bottom-5 left-5 right-5">
-                <div className="relative aspect-square overflow-hidden border border-line-strong">
+              {/* schematic + duotone portrait */}
+              <div className="relative aspect-[5/4] overflow-hidden border-b border-line">
+                <div className="absolute inset-0 p-4">
+                  <RouteSchematic />
+                </div>
+                <div className="absolute bottom-3 right-3 w-[52%] aspect-square overflow-hidden border border-line-strong">
                   <Image
                     src="/avatar.png"
                     alt="Petar Arsić"
@@ -120,15 +118,28 @@ export default function Hero() {
                     priority
                     className="h-full w-full object-cover grayscale contrast-[1.15]"
                   />
-                  {/* teal duotone tint */}
                   <div className="absolute inset-0 mix-blend-color" style={{ background: 'var(--teal)' }} />
                   <div className="absolute inset-0 mix-blend-multiply" style={{ background: 'radial-gradient(120% 100% at 50% 0%, transparent 40%, rgba(6,16,14,0.85))' }} />
                   <div className="absolute inset-0 mix-blend-screen opacity-25" style={{ background: 'linear-gradient(180deg, var(--amber), transparent 60%)' }} />
-                  {/* corner ticks */}
                   <span className="absolute left-1 top-1 h-3 w-3 border-l border-t border-teal-bright" />
                   <span className="absolute bottom-1 right-1 h-3 w-3 border-b border-r border-teal-bright" />
                 </div>
               </div>
+
+              {/* live status readout */}
+              <dl className="divide-y divide-line">
+                {[
+                  ['ROLE', 'Full-Stack'],
+                  ['STACK', 'Laravel · React · RN'],
+                  ['BASED', 'Belgrade, RS'],
+                  ['MODE', 'Remote · Async'],
+                ].map(([k, v]) => (
+                  <div key={k} className="flex items-center justify-between px-3 py-2.5">
+                    <dt className="callsign !text-[0.6rem]">{k}</dt>
+                    <dd className="font-mono text-xs text-paper">{v}</dd>
+                  </div>
+                ))}
+              </dl>
             </div>
           </motion.div>
         </motion.div>
@@ -138,11 +149,11 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.5, ease: [0.65, 0, 0.35, 1] }}
-          className="mt-14 md:mt-16 grid grid-cols-1 sm:grid-cols-3 border-t border-line"
+          className="mt-14 md:mt-16 grid grid-cols-1 sm:grid-cols-[1.5fr_1fr_1fr] border-t border-line"
         >
           {metricKeys.map((k, i) => (
-            <div key={k} className={`py-6 sm:py-7 ${i > 0 ? 'sm:border-l border-line sm:pl-8' : ''} ${i > 0 ? 'border-t sm:border-t-0' : ''}`}>
-              <dd className={`font-mono font-bold tracking-tight ${i === 0 ? 'text-amber text-6xl md:text-7xl lg:text-8xl' : 'text-paper text-4xl md:text-5xl'} leading-none`}>
+            <div key={k} className={`py-6 sm:py-7 ${i > 0 ? 'sm:border-l border-line sm:pl-8 border-t sm:border-t-0' : ''}`}>
+              <dd className={`font-mono font-bold tracking-tight tabular-nums whitespace-nowrap leading-none ${i === 0 ? 'text-amber text-5xl md:text-6xl lg:text-7xl' : 'text-paper text-4xl md:text-5xl'}`}>
                 <CountUp value={t(`metrics.${k}.value`)} />
               </dd>
               <dt className="mt-3 callsign">{t(`metrics.${k}.label`)}</dt>
