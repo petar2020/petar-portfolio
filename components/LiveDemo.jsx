@@ -20,7 +20,7 @@ export default function LiveDemo() {
   const reduced = usePrefersReducedMotion()
 
   return (
-    <section id="demo" className="relative grain bg-ink-850 py-20 sm:py-28 scroll-mt-24">
+    <section id="demo" className="relative grain bg-ink-850 border-t border-line py-20 sm:py-28 scroll-mt-24">
       <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 relative z-10">
         <SectionHeader index="02" callsign={t('eyebrow')} title={t('title')} subtitle={t('subtitle')} />
 

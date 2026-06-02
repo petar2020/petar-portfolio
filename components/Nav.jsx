@@ -7,6 +7,7 @@ import LanguageSwitcher from './LanguageSwitcher'
 export default function Nav() {
   const t = useTranslations('nav')
   const [scrolled, setScrolled] = useState(false)
+  const [active, setActive] = useState('home')
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50)
@@ -23,6 +24,24 @@ export default function Nav() {
     { href: '#about', label: t('about', { default: 'About' }) },
     { href: '#contact', label: t('contact', { default: 'Contact' }) },
   ]
+
+  // Scroll-spy: highlight the nav item for the section currently in view.
+  useEffect(() => {
+    const ids = ['home', 'demo', 'case-study', 'projects', 'about', 'contact']
+    const els = ids.map((id) => document.getElementById(id)).filter(Boolean)
+    if (!els.length) return
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((e) => e.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)
+        if (visible[0]) setActive(visible[0].target.id)
+      },
+      { rootMargin: '-45% 0px -50% 0px', threshold: [0, 0.25, 0.5] }
+    )
+    els.forEach((el) => observer.observe(el))
+    return () => observer.disconnect()
+  }, [])
 
   const handleNavClick = (e, href) => {
     e.preventDefault()
@@ -49,19 +68,29 @@ export default function Nav() {
 
         <div className="flex items-center gap-6">
           <ul className="hidden md:flex gap-7">
-            {navItems.map(({ href, label }) => (
-              <li key={href} className="group">
-                <motion.a
-                  href={href}
-                  onClick={(e) => handleNavClick(e, href)}
-                  whileHover={{ y: -1 }}
-                  className="relative font-mono text-xs uppercase tracking-[0.14em] text-paper-dim hover:text-paper transition-colors"
-                >
-                  {label}
-                  <span className="absolute left-0 -bottom-1.5 h-px w-0 bg-teal-bright group-hover:w-full transition-all duration-300" />
-                </motion.a>
-              </li>
-            ))}
+            {navItems.map(({ href, label }) => {
+              const isActive = active === href.replace('#', '')
+              return (
+                <li key={href} className="group">
+                  <motion.a
+                    href={href}
+                    onClick={(e) => handleNavClick(e, href)}
+                    whileHover={{ y: -1 }}
+                    aria-current={isActive ? 'true' : undefined}
+                    className={`relative font-mono text-xs uppercase tracking-[0.14em] transition-colors ${
+                      isActive ? 'text-paper' : 'text-paper-dim hover:text-paper'
+                    }`}
+                  >
+                    {label}
+                    <span
+                      className={`absolute left-0 -bottom-1.5 h-px bg-teal-bright transition-all duration-300 ${
+                        isActive ? 'w-full' : 'w-0 group-hover:w-full'
+                      }`}
+                    />
+                  </motion.a>
+                </li>
+              )
+            })}
           </ul>
 
           <LanguageSwitcher scrolled={scrolled} />

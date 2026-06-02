@@ -7,9 +7,9 @@
 /* ============================================================ */
 :root {
   --ink-900: #06100e;
-  --ink-850: #0a1614;
-  --ink-800: #0e1d1a;
-  --ink-700: #142b27;
+  --ink-850: #0b1a16;
+  --ink-800: #102420;
+  --ink-700: #16322d;
 
   --teal: #0e8c82;
   --teal-bright: #2dd4bf;
@@ -18,11 +18,11 @@
   --amber-bright: #ffc24b;
   --danger: #e5575c;
 
-  --paper: #e7f1ee;
-  --paper-dim: #9bb3ae;
-  --paper-faint: #6d8a84;
-  --line: rgba(64, 160, 150, 0.18);
-  --line-strong: rgba(64, 160, 150, 0.34);
+  --paper: #eaf3f0;
+  --paper-dim: #a6bdb8;
+  --paper-faint: #809b95;
+  --line: rgba(72, 168, 158, 0.22);
+  --line-strong: rgba(80, 184, 172, 0.42);
 
   --ease-surface: cubic-bezier(0.65, 0, 0.35, 1);
 }
@@ -82,10 +82,13 @@ body {
   .panel {
     position: relative;
     background:
-      linear-gradient(180deg, rgba(255, 255, 255, 0.015), transparent 120px),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.022), transparent 140px),
       var(--ink-800);
     border: 1px solid var(--line);
     border-radius: 2px;
+    box-shadow:
+      0 1px 0 rgba(255, 255, 255, 0.02) inset,
+      0 24px 50px -34px rgba(0, 0, 0, 0.9);
   }
 
   /* Registration tick-marks at panel corners */
@@ -127,11 +130,14 @@ body {
     color: var(--ink-900);
     border: 1px solid var(--amber);
     border-radius: 2px;
-    transition: transform 0.18s var(--ease-surface), background 0.18s var(--ease-surface);
+    box-shadow: 0 0 0 0 rgba(246, 166, 35, 0);
+    transition: transform 0.18s var(--ease-surface), background 0.18s var(--ease-surface),
+      box-shadow 0.25s var(--ease-surface);
   }
   .btn-signal:hover {
     background: var(--amber-bright);
     transform: translateY(-2px);
+    box-shadow: 0 12px 30px -10px rgba(246, 166, 35, 0.55);
   }
 
   /* Hairline-bordered secondary action */

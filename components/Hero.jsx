@@ -65,6 +65,18 @@ export default function Hero() {
 
   return (
     <section id="home" className="relative grain overflow-hidden min-h-[92vh] flex flex-col justify-center pt-28 pb-0">
+      {/* focal lighting — control-room screen ambience, sits behind content */}
+      <div className="pointer-events-none absolute inset-0 z-0" aria-hidden>
+        <div
+          className="absolute right-[4%] top-[10%] h-[36rem] w-[36rem] rounded-full opacity-70 blur-3xl"
+          style={{ background: 'radial-gradient(circle, rgba(45,212,191,0.12), transparent 62%)' }}
+        />
+        <div
+          className="absolute -left-[6%] bottom-[2%] h-[30rem] w-[30rem] rounded-full opacity-60 blur-3xl"
+          style={{ background: 'radial-gradient(circle, rgba(246,166,35,0.07), transparent 62%)' }}
+        />
+      </div>
+
       <div className="container mx-auto max-w-6xl px-4 md:px-6 relative z-10 w-full">
         <motion.div variants={container} initial="hidden" animate="visible" className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-8 items-center">
           {/* LEFT — copy */}

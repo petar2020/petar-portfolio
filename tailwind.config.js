@@ -12,9 +12,9 @@ module.exports = {
         ink: {
           DEFAULT: '#06100E', // page base — near-black, faint teal tint
           900: '#06100E',
-          850: '#0A1614', // raised sections
-          800: '#0E1D1A', // cards / readouts
-          700: '#142B27', // hairline-adjacent fills
+          850: '#0B1A16', // raised sections
+          800: '#102420', // cards / readouts
+          700: '#16322D', // hairline-adjacent fills
         },
         teal: {
           DEFAULT: '#0E8C82', // structural brand hue
@@ -33,12 +33,12 @@ module.exports = {
           danger: '#E5575C', // muted "Problem" markers only
         },
         // text tokens
-        paper: '#E7F1EE',
-        'paper-dim': '#9BB3AE',
-        'paper-faint': '#6D8A84',
+        paper: '#EAF3F0',
+        'paper-dim': '#A6BDB8',
+        'paper-faint': '#809B95',
         // hairline
-        line: 'rgba(64,160,150,0.18)',
-        'line-strong': 'rgba(64,160,150,0.34)',
+        line: 'rgba(72,168,158,0.22)',
+        'line-strong': 'rgba(80,184,172,0.42)',
 
         // ── Repoint legacy aliases onto the new palette so existing
         //    `primary/secondary/accent` classes de-blue automatically ──

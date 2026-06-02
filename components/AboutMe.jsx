@@ -10,7 +10,7 @@ export default function AboutMe() {
   const focus = ['focus.items.0', 'focus.items.1', 'focus.items.2', 'focus.items.3', 'focus.items.4']
 
   return (
-    <section id="about" className="relative grain bg-ink-900 py-20 sm:py-28 scroll-mt-24">
+    <section id="about" className="relative grain bg-ink-900 border-t border-line py-20 sm:py-28 scroll-mt-24">
       <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 relative z-10">
         <SectionHeader index="07" callsign="Profile" title={t('title')} subtitle={t('subtitle')} />
 
