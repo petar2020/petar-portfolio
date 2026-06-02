@@ -34,8 +34,8 @@ module.exports = {
         },
         // text tokens
         paper: '#E7F1EE',
-        'paper-dim': '#8FA8A3',
-        'paper-faint': '#5E7873',
+        'paper-dim': '#9BB3AE',
+        'paper-faint': '#6D8A84',
         // hairline
         line: 'rgba(64,160,150,0.18)',
         'line-strong': 'rgba(64,160,150,0.34)',

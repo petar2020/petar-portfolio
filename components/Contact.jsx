@@ -2,7 +2,7 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react'
 import { useTranslations } from 'next-intl'
-import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt, FaPaperPlane, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt, FaPaperPlane, FaGithub, FaLinkedin } from 'react-icons/fa'
 import SectionHeader from './ui/SectionHeader'
 
 export default function Contact() {
@@ -121,6 +121,20 @@ export default function Contact() {
               ))}
             </div>
 
+            {/* availability — hiring signal for recruiters / clients */}
+            <div className="mt-6 border border-teal-deep/60 bg-teal-deep/10 p-5">
+              <div className="flex items-center gap-2">
+                <span className="h-1.5 w-1.5 rounded-full bg-teal-bright animate-pulse" aria-hidden />
+                <h4 className="callsign !text-[0.6rem] text-teal-bright">{t('availabilityTitle')}</h4>
+              </div>
+              <p className="mt-3 text-sm text-paper leading-relaxed">{t('availability')}</p>
+              <p className="mt-1.5 font-mono text-xs text-paper-dim">{t('locationMode')}</p>
+              <div className="mt-4 pt-4 border-t border-line">
+                <span className="callsign !text-[0.6rem]">{t('stackTitle')}</span>
+                <p className="mt-1.5 font-mono text-xs text-paper">{t('stackValue')}</p>
+              </div>
+            </div>
+
             <div className="mt-6 border border-line p-5">
               <h4 className="callsign !text-[0.6rem]">{t('hoursTitle')}</h4>
               <p className="mt-2 whitespace-pre-line font-mono text-sm text-paper-dim">{t('hours')}</p>
@@ -144,8 +158,7 @@ export default function Contact() {
             <div className="flex gap-3">
               {[
                 { Icon: FaGithub, url: 'https://github.com/petar2020' },
-                { Icon: FaLinkedin, url: 'https://linkedin.com/in/petararsic' },
-                { Icon: FaTwitter, url: 'https://twitter.com/petar2020' },
+                { Icon: FaLinkedin, url: 'https://www.linkedin.com/in/petar-arsic-2067821b5/' },
               ].map(({ Icon, url }, idx) => (
                 <motion.a
                   key={idx}

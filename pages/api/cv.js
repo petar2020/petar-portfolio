@@ -8,7 +8,7 @@ export default async function handler(req, res) {
 
   try {
     // CV file path (update this to your actual CV file)
-    const cvPath = path.join(process.cwd(), 'public', 'Petar-Arsic-CV.pdf');
+    const cvPath = path.join(process.cwd(), 'public', 'Petar_Arsic_CV.pdf');
     
     // Check if CV file exists
     if (!fs.existsSync(cvPath)) {
@@ -42,7 +42,7 @@ export default async function handler(req, res) {
       const head = {
         'Content-Length': fileSize,
         'Content-Type': 'application/pdf',
-        'Content-Disposition': 'attachment; filename="Petar-Arsic-CV.pdf"',
+        'Content-Disposition': 'attachment; filename="Petar_Arsic_CV.pdf"',
         'Cache-Control': 'no-cache',
       };
       

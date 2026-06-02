@@ -8,6 +8,7 @@ export default function CaseStudy() {
   const t = useTranslations('caseStudy')
   const architecture = t.raw('architecture')
   const scale = t.raw('scale')
+  const features = t.raw('features')
   const tech = t.raw('tech')
 
   const rows = [
@@ -68,6 +69,44 @@ export default function CaseStudy() {
           </ul>
         </motion.div>
 
+        {/* Key features + My role */}
+        <div className="mt-8 grid lg:grid-cols-2 gap-px bg-line border border-line">
+          <motion.div
+            initial={{ opacity: 0, y: 18 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.25 }}
+            transition={{ duration: 0.55 }}
+            className="bg-ink-800 p-6 sm:p-8"
+          >
+            <div className="flex items-baseline gap-3 mb-5">
+              <span className="font-mono text-sm font-bold text-teal-bright">04</span>
+              <span className="callsign">{t('featuresTitle')}</span>
+            </div>
+            <ul className="space-y-3">
+              {features.map((f, i) => (
+                <li key={i} className="flex items-start gap-3 text-paper-dim leading-relaxed">
+                  <span className="mt-2 h-px w-3 shrink-0 bg-teal" aria-hidden />
+                  <span className="text-sm">{f}</span>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 18 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.25 }}
+            transition={{ duration: 0.55, delay: 0.08 }}
+            className="bg-ink-800 p-6 sm:p-8"
+          >
+            <div className="flex items-baseline gap-3 mb-5">
+              <span className="font-mono text-sm font-bold text-amber">05</span>
+              <span className="callsign text-amber">{t('roleTitle')}</span>
+            </div>
+            <p className="text-paper-dim leading-relaxed">{t('role')}</p>
+          </motion.div>
+        </div>
+
         {/* Result — emphasized */}
         <motion.div
           initial={{ opacity: 0, y: 18 }}
@@ -77,7 +116,7 @@ export default function CaseStudy() {
           className="mt-8 border-l-2 border-amber pl-6"
         >
           <div className="flex items-baseline gap-3 mb-3">
-            <span className="font-mono text-sm font-bold text-amber">04</span>
+            <span className="font-mono text-sm font-bold text-amber">06</span>
             <span className="callsign text-amber">{t('resultTitle')}</span>
           </div>
           <p className="max-w-3xl text-lg sm:text-xl text-paper leading-relaxed">{t('result')}</p>

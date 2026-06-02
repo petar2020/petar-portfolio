@@ -9,11 +9,10 @@ import usePrefersReducedMotion from './ui/usePrefersReducedMotion'
 // Lazy-loaded, client-only — keeps the tilt lib out of first paint.
 const Tilt = dynamic(() => import('react-parallax-tilt'), { ssr: false })
 
-// NOTE: replace these placeholders with real screenshots:
-//   /demo-passenger.png  and  /demo-admin.png  (both reuse /demo.png for now)
+// Real product screenshots: passenger-facing reservation flow + operations back-office.
 const CARDS = [
-  { key: 'passenger', image: '/demo.png', tag: 'PAX', offset: false },
-  { key: 'admin', image: '/demo.png', tag: 'OPS', offset: true },
+  { key: 'passenger', image: '/demo-drivesoft.png', tag: 'PAX', offset: false },
+  { key: 'admin', image: '/demo-admin.png', tag: 'OPS', offset: true },
 ]
 
 export default function LiveDemo() {
@@ -71,10 +70,21 @@ export default function LiveDemo() {
                   </Tilt>
                 </div>
 
-                {/* caption */}
+                {/* caption + testable checklist */}
                 <div className="px-5 pb-6">
                   <p className="text-sm text-paper-dim leading-relaxed">{t(`${key}.caption`)}</p>
-                  <span className="mt-4 inline-flex items-center gap-2 font-mono text-xs font-semibold uppercase tracking-[0.14em] text-amber group-hover:translate-x-1 transition-transform">
+
+                  <p className="mt-5 callsign !text-[0.6rem]">{t('testLabel')}</p>
+                  <ul className="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-x-5 gap-y-2">
+                    {t.raw(`${key}.tests`).map((item, idx) => (
+                      <li key={idx} className="flex items-start gap-2 text-sm text-paper-dim">
+                        <span className="mt-1.5 h-px w-2.5 shrink-0 bg-teal-bright" aria-hidden />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  <span className="mt-6 inline-flex items-center gap-2 font-mono text-xs font-semibold uppercase tracking-[0.14em] text-amber group-hover:translate-x-1 transition-transform">
                     {t('open')} <span aria-hidden>→</span>
                   </span>
                 </div>

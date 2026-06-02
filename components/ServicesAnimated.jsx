@@ -7,10 +7,13 @@ export default function ServicesAnimated() {
   const t = useTranslations('services')
 
   const items = [
-    { key: 'webDev', code: 'WEB' },
-    { key: 'mobileDev', code: 'MOB' },
-    { key: 'cloudDev', code: 'CLD' },
-    { key: 'devOps', code: 'OPS' },
+    { key: 'backend', code: 'LAR' },
+    { key: 'frontend', code: 'FE' },
+    { key: 'booking', code: 'BKG' },
+    { key: 'maintenance', code: 'OPS' },
+    { key: 'automation', code: 'AUT' },
+    { key: 'cms', code: 'CMS' },
+    { key: 'ai', code: 'AI' },
   ]
 
   return (

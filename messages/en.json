@@ -15,31 +15,44 @@
   "hero": {
     "name": "Petar Arsić",
     "eyebrow": "Full-Stack Developer · Laravel · React · React Native",
-    "headline": "I build production booking and operations systems",
+    "headline": "Full-stack Laravel developer building production booking, ticketing & operations platforms",
     "headlineAccent": "for real businesses.",
-    "subline": "End-to-end full-stack — from database and API to React / React Native and cloud. Five-plus years shipping software that real companies run every day.",
+    "subline": "Full-stack on Laravel and React — from database and API to web, mobile and cloud. Five-plus years shipping booking, ticketing and operations software that real companies run every day, not demo projects.",
     "ctaDemo": "View live demo",
     "ctaCase": "See the case study",
     "metrics": {
-      "passengers": { "value": "150,000+", "label": "passengers served" },
-      "users": { "value": "30+", "label": "daily internal users" },
-      "years": { "value": "5+", "label": "years in production" }
+      "passengers": { "value": "150,000+", "label": "tickets & reservations processed" },
+      "users": { "value": "100+", "label": "operational features shipped" },
+      "years": { "value": "5+", "label": "years building production software" }
     }
   },
   "demo": {
     "eyebrow": "Live product",
     "title": "A real product you can open right now",
-    "subtitle": "Most portfolios show mockups. This is a live reservation platform running in production — explore both sides of it.",
+    "subtitle": "Most portfolios show mockups. This is a live reservation and ticketing platform running in production — open either side and click through it yourself, no login required.",
     "open": "Open demo",
+    "testLabel": "What you can test",
     "passenger": {
-      "title": "Passenger booking",
-      "caption": "What you're looking at: the customer-facing flow — search routes, pick a departure, and book a ticket.",
-      "url": "https://demo.drivesoft.rs/passenger-demo"
+      "title": "Passenger demo",
+      "caption": "The customer-facing booking flow — exactly what a real passenger sees.",
+      "url": "https://demo.drivesoft.rs/passenger-demo",
+      "tests": [
+        "Search routes & departures",
+        "Reserve a seat",
+        "Enter passenger details",
+        "Get an e-ticket confirmation"
+      ]
     },
     "admin": {
-      "title": "Admin panel",
-      "caption": "What you're looking at: the internal operations dashboard — manage passengers, routes, departures and reporting.",
-      "url": "https://demo.drivesoft.rs/admin-demo"
+      "title": "Admin demo",
+      "caption": "The internal operations dashboard the carrier's staff runs every day.",
+      "url": "https://demo.drivesoft.rs/admin-demo",
+      "tests": [
+        "Manage reservations",
+        "Reports & revenue",
+        "Routes & operations",
+        "QR ticketing workflow"
+      ]
     }
   },
   "caseStudy": {
@@ -61,10 +74,21 @@
     "scaleTitle": "Scale",
     "scale": [
       { "value": "150,000+", "label": "passengers served" },
-      { "value": "30+", "label": "active internal users daily" },
+      { "value": "100+", "label": "active internal users daily" },
       { "value": "Live", "label": "production workflows, in continuous use" }
     ],
-    "resultTitle": "Result",
+    "featuresTitle": "Key features",
+    "features": [
+      "Online seat reservation and checkout",
+      "Ticket generation with QR-code validation",
+      "Payments with fiscal-receipt (legal) integration",
+      "Passenger, route and departure management",
+      "Role-based admin panel with operational reporting",
+      "React Native tools for on-the-road ticket validation"
+    ],
+    "roleTitle": "My role",
+    "role": "Sole full-stack developer. I own the architecture, the Laravel/MySQL backend, both React front-ends and the React Native tools — from database schema and API design through deployment — and I maintain and extend it in production.",
+    "resultTitle": "Impact",
     "result": "Online reservations, ticketing and back-office operations now run through one maintained platform instead of scattered manual processes — a single source of truth for both the sales desk and field staff.",
     "techTitle": "Built with",
     "tech": ["Laravel", "PHP", "MySQL", "React", "React Native", "REST APIs", "Redis", "Docker", "DigitalOcean"],
@@ -72,33 +96,48 @@
     "ctaAdmin": "Open admin demo"
   },
   "services": {
-    "title": "Services",
-    "subtitle": "What I can do for you",
-    "webDev": {
-      "title": "Web Development",
-      "description": "Modern, responsive websites and applications",
-      "features": "React, Next.js, Laravel, WordPress, SEO, Performance"
+    "title": "What I can help with",
+    "subtitle": "For companies and freelance clients — backend, frontend, and the production systems in between.",
+    "backend": {
+      "title": "Laravel Backend Development",
+      "description": "APIs, business logic and data models for systems that run in production.",
+      "features": "Laravel, PHP, MySQL, REST APIs, Redis, Queues"
     },
-    "mobileDev": {
-      "title": "Mobile Development",
-      "description": "Cross-platform mobile apps with React Native",
-      "features": "React Native, Expo, iOS, Android, App Store, Google Play"
+    "frontend": {
+      "title": "React & React Native",
+      "description": "Web and mobile front-ends wired to real backends.",
+      "features": "React, Next.js, React Native, Expo, TypeScript"
     },
-    "cloudDev": {
-      "title": "Cloud Development",
-      "description": "Scalable cloud solutions and DevOps practices",
-      "features": "AWS, Azure, Docker, Kubernetes, CI/CD, Monitoring"
+    "booking": {
+      "title": "Booking & Ticketing Systems",
+      "description": "Reservations, seat selection, payments, fiscalization and QR ticketing.",
+      "features": "Reservations, Payments, Fiscalization, QR validation"
     },
-    "devOps": {
-      "title": "DevOps & Infrastructure",
-      "description": "Deployment automation and infrastructure as code",
-      "features": "Terraform, Ansible, Jenkins, GitLab CI, Monitoring, Security"
+    "maintenance": {
+      "title": "Production Debugging & Maintenance",
+      "description": "Fixing, stabilizing and extending live systems without downtime.",
+      "features": "Debugging, Performance, Refactoring, Monitoring"
+    },
+    "automation": {
+      "title": "Business Process Automation",
+      "description": "Turning manual, spreadsheet-driven work into reliable software.",
+      "features": "Workflows, Integrations, Imports/Exports, Reporting"
+    },
+    "cms": {
+      "title": "WordPress & Webflow",
+      "description": "Fast, editable marketing sites and corporate web presence.",
+      "features": "WordPress, Webflow, Custom themes, SEO, Performance"
+    },
+    "ai": {
+      "title": "AI-Assisted Development",
+      "description": "Shipping faster with AI tooling kept under senior engineering control.",
+      "features": "Code review, Refactoring, Debugging, Documentation"
     }
   },
   "howIWork": {
     "eyebrow": "How I build",
-    "title": "AI-assisted development, senior discipline",
-    "subtitle": "I use an AI-assisted workflow to ship faster without lowering the bar. AI accelerates the work; engineering judgment, review and testing keep the code maintainable and correct.",
+    "title": "AI-accelerated development with senior engineering judgment",
+    "subtitle": "I use AI tools to move faster on development, refactoring, debugging and documentation. Architecture, business logic, validation and final code quality stay under my control — AI speeds up the work, it doesn't decide what ships.",
     "items": {
       "review": {
         "title": "Disciplined code review",
@@ -120,42 +159,43 @@
   },
   "projects": {
     "title": "Selected Projects",
-    "subtitle": "Real systems, framed by the problem they solve and the outcome they deliver.",
-    "viewLive": "View live",
-    "problemLabel": "Problem",
-    "solutionLabel": "Solution",
-    "resultLabel": "Result",
+    "subtitle": "Real systems in production — what each one does, and what I built.",
+    "viewLive": "Live",
+    "viewDemo": "Demo",
+    "viewCase": "Case study",
+    "viewGithub": "GitHub",
+    "roleLabel": "My role",
     "techLabel": "Built with",
     "items": {
+      "drivesoft-web": {
+        "title": "DriveSoft — Product & Agency Site",
+        "summary": "Modern marketing site for DriveSoft's transport software, with interactive passenger and admin demos and a focused book-a-call flow.",
+        "role": "Designed and built the full site — Next.js, animations, embedded demos and SEO."
+      },
       "sti-web": {
         "title": "Srbija Tours — Public Ticket Sales",
-        "problem": "The carrier needed a fast, SEO-friendly public site that could also sell tickets and stay in sync with the booking backend.",
-        "solution": "WordPress frontend for content and SEO speed, backed by a Laravel API for departures, pricing and reservations, with integrated payments and fiscalization; Redis caching and Nginx tuning.",
-        "result": "A public sales channel that loads fast, ranks well, and shares one source of truth with the reservation system."
+        "summary": "Public ticket-sales site for an international bus carrier, sharing one source of truth with the booking backend.",
+        "role": "Built the WordPress frontend and the Laravel API powering departures, pricing, reservations and fiscalized payments."
       },
       "sti-mobile": {
         "title": "Srbija Tours — Mobile App (iOS / Android)",
-        "problem": "Passengers wanted to search trips and manage accounts and bookings from their phones.",
-        "solution": "Cross-platform React Native (Expo) app sharing UI and logic, with offline caching and push notifications.",
-        "result": "A published iOS/Android app that extends the booking platform to mobile."
+        "summary": "Cross-platform app that extends the Srbija Tours booking platform to iOS and Android.",
+        "role": "Built the React Native (Expo) app end to end against the existing booking API, with offline caching and push."
       },
       "drivesoft-backoffice": {
         "title": "DriveSoft — Operations Back-office",
-        "problem": "Office staff needed to manage passengers, departures, routes and daily operations without juggling spreadsheets.",
-        "solution": "A Laravel application with role-based access control, audit trail, caching and queues, CSV/Excel import-export, and operational reporting.",
-        "result": "A single internal tool for day-to-day operations, with reports and access control built in."
+        "summary": "Internal tool for managing passengers, routes, departures and daily operations — no more spreadsheets.",
+        "role": "Built the Laravel app: role-based access, operational reporting, CSV/Excel import-export, queues and caching."
       },
       "bozic-konig": {
         "title": "Božić König — Online Reservations",
-        "problem": "A carrier needed an online channel for searching trips and buying tickets.",
-        "solution": "A React/Next SPA with optimized search, a clean checkout flow, and back-office integration for routes, departures and pricing.",
-        "result": "A focused booking front-end built for UX and performance."
+        "summary": "Online reservation front-end for a carrier — search trips, pick seats and buy tickets.",
+        "role": "Built the React/Next SPA and integrated it with the back-office for routes, departures and pricing."
       },
       "prostor-dereta": {
         "title": "Prostor Miljenko Dereta — Corporate Site",
-        "problem": "An organization needed a fast, editable site with a blog and space-booking forms.",
-        "solution": "A modern WordPress build with custom templates, optimized images and caching, and an SEO-friendly structure.",
-        "result": "A maintainable corporate site the team can update without a developer."
+        "summary": "Fast, editable corporate site with a blog and space-booking forms.",
+        "role": "Built a custom WordPress theme tuned for performance and SEO that the team can update without a developer."
       }
     }
   },
@@ -175,30 +215,35 @@
   },
   "about": {
     "title": "About Me",
-    "subtitle": "Full-stack developer focused on fast, stable and scalable systems.",
+    "subtitle": "Full-stack developer focused on real production systems and business logic.",
     "aboutMe": "Who I Am",
-    "bio": "5+ years building end-to-end software for the transportation industry: Laravel backends (booking, payments, logistics), React/Next frontends, WordPress (10+ live sites), and mobile apps (React Native). Currently full-time at Srbija Tours International, with side freelance projects. Remote-first, async, Git-based workflow.",
+    "bio": "I build and maintain real production systems for booking, ticketing, operations and business automation. For 5+ years I've shipped end-to-end software for the transport industry — Laravel backends (reservations, payments, fiscalization, logistics), React / Next and React Native front-ends, and 10+ live WordPress sites. I'm comfortable taking ownership of an existing codebase, untangling real business logic, and delivering practical solutions that hold up in production — not just clean code in isolation. Currently full-time at Srbija Tours International, with freelance projects on the side. Remote-first, async, Git-based.",
     "stats": {
-      "years": { "label": "Years of Experience", "value": "5+" },
-      "projects": { "label": "Projects", "value": "30+" },
-      "stack": { "label": "Stack", "value": "Laravel, React/Next, MySQL, Redis, Docker" },
+      "years": { "label": "Years in Production", "value": "5+" },
+      "projects": { "label": "Projects Shipped", "value": "30+" },
+      "stack": { "label": "Stack", "value": "Laravel, React/Next, React Native, MySQL" },
       "remote": { "label": "Work Mode", "value": "Remote, async, Git" }
     },
     "focus": {
       "title": "What I Focus On",
       "items": {
-        "0": "Booking & payment systems (150,000+ passengers/year)",
-        "1": "Modern web app architecture (React/Next + API)",
-        "2": "WordPress development (themes, plugins, 10+ live sites)",
-        "3": "Performance optimization & SEO",
-        "4": "Mobile apps (React Native, Expo)"
+        "0": "Production booking, ticketing & payment systems",
+        "1": "Business logic & operations software",
+        "2": "Laravel APIs and React / React Native front-ends",
+        "3": "Taking over and extending existing systems",
+        "4": "WordPress / Webflow, performance & SEO"
       }
     },
-    "cta": "Let's get started"
+    "cta": "Let's talk"
   },
   "contact": {
     "title": "Get In Touch",
-    "subtitle": "Let's talk about your next project",
+    "subtitle": "Have a Laravel, booking, operations or automation project? Let's talk.",
+    "availabilityTitle": "Availability",
+    "availability": "Open to full-time, contract and freelance",
+    "locationMode": "Remote · Serbia · EU-friendly timezone",
+    "stackTitle": "Main stack",
+    "stackValue": "Laravel · React · React Native · WordPress",
     "name": "Name",
     "email": "Email",
     "message": "Message",

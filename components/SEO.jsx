@@ -32,12 +32,12 @@ export default function SEO({
     '@context': 'https://schema.org',
     '@type': 'Person',
     name: 'Petar Arsić',
-    jobTitle: 'Full-Stack Developer',
+    jobTitle: 'Full-Stack Developer (Laravel / React)',
     description,
     url: siteUrl,
     sameAs: [
       'https://github.com/petar2020',
-      'https://linkedin.com/in/petararsic'
+      'https://www.linkedin.com/in/petar-arsic-2067821b5/'
     ],
     knowsAbout: [
       'Laravel',
@@ -46,7 +46,10 @@ export default function SEO({
       'React Native',
       'Next.js',
       'MySQL',
-      'Booking & Reservation Systems',
+      'WordPress',
+      'Booking & Ticketing Systems',
+      'Business Process Automation',
+      'Production Software',
       'Full-Stack Development'
     ],
     address: {
