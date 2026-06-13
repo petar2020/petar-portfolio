@@ -1,0 +1,38 @@
+# Petar Arsic
+
+> Full-stack developer building production booking and operations systems for real businesses. End to end: Laravel & MySQL APIs, React / React Native, and cloud. 5+ years in production.
+
+## About
+
+Petar Arsic is a full-stack Laravel and React developer based in Belgrade, Serbia. He builds and maintains production booking, ticketing, and operations platforms for the transport industry. His flagship product, DriveSoft, powers online seat reservations, QR-code ticket validation, payment processing with fiscal-receipt integration, and role-based admin tools for international bus carriers.
+
+## Links
+
+- Portfolio: https://petararsic.rs/en
+- DriveSoft Case Study: https://petararsic.rs/en/case-study/drivesoft
+- Laravel Backend Development: https://petararsic.rs/en/services/laravel-backend
+- Booking & Ticketing Systems: https://petararsic.rs/en/services/booking-systems
+- GitHub: https://github.com/petar2020
+- LinkedIn: https://www.linkedin.com/in/petar-arsic-2067821b5/
+- Email: petar.arsic14@hotmail.com
+
+## Key Projects
+
+- DriveSoft (https://drivesoft.rs/) — Reservation, ticketing and operations platform for international bus carriers. 150,000+ tickets processed.
+- Srbija Tours (https://srbijatours.com/) — Public ticket-sales site sharing one source of truth with the booking backend.
+- Srbija Tours Mobile App (https://play.google.com/store/apps/details?id=com.panzo98.srbijatours) — Cross-platform React Native app for iOS and Android.
+- DriveSoft Operations Back-office (https://drivesoft-bozic.com/login) — Internal tool for managing passengers, routes, departures and daily operations.
+- Bozic Konig (https://bozic-konig.com/) — Online reservation front-end for a carrier.
+- Prostor Miljenko Dereta (https://prostordereta.org/) — Corporate site with blog and space-booking forms on custom WordPress.
+
+## Tech Stack
+
+Laravel, PHP, MySQL, React, Next.js, React Native, Expo, Redis, Docker, DigitalOcean, WordPress, Nginx, Plausible Analytics
+
+## Specialties
+
+Booking & ticketing systems, payment & fiscalization integration, QR-code ticket validation, role-based admin panels, transport operations software, full-stack SaaS development
+
+## Availability
+
+Open to full-time, contract and freelance work. Remote, async-first. Belgrade, Serbia (EU-friendly timezone, CET/CEST).

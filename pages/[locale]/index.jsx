@@ -14,11 +14,12 @@ import Projects from '../../components/Projects'
 import ClientLogos from '../../components/ClientLogos'
 import ParallaxCVTimeline from '../../components/ParallaxCVTimeline'
 import Contact from '../../components/Contact'
+import FAQ from '../../components/FAQ'
 import Analytics, { PlausibleScript } from '../../components/Analytics'
 
 // Client-only
 const Backdrop         = dynamic(() => import('../../components/Backdrop'), { ssr: false })
-const ServicesAnimated = dynamic(() => import('../../components/ServicesAnimated'), { ssr: false })
+const ServicesAnimated = dynamic(() => import('../../components/ServicesAnimated'))
 
 const SITE_URL = 'https://petararsic.rs'
 const OG_LOCALE_MAP = {
@@ -64,6 +65,7 @@ export default function LocaleHome({ locale }) {
         <ServicesAnimated />
         <HowIWork />
         <AboutMe />
+        <FAQ />
         <ClientLogos />
         <ParallaxCVTimeline />
         <Contact />

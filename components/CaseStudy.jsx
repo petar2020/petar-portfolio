@@ -1,11 +1,13 @@
 'use client'
 import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
+import { useLocale } from 'next-intl'
 import SectionHeader from './ui/SectionHeader'
 import CountUp from './ui/CountUp'
 
 export default function CaseStudy() {
   const t = useTranslations('caseStudy')
+  const locale = useLocale()
   const architecture = t.raw('architecture')
   const scale = t.raw('scale')
   const features = t.raw('features')
@@ -139,6 +141,9 @@ export default function CaseStudy() {
             </a>
             <a href="https://demo.drivesoft.rs/admin-demo" target="_blank" rel="noopener noreferrer" className="btn-line w-full sm:w-auto">
               {t('ctaAdmin')} <span aria-hidden>→</span>
+            </a>
+            <a href={`/${locale}/case-study/drivesoft`} className="btn-line w-full sm:w-auto">
+              {t('ctaFullStudy')} <span aria-hidden>→</span>
             </a>
           </div>
         </div>

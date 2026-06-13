@@ -60,9 +60,9 @@
     "title": "DriveSoft — Reservation & Ticketing Platform for Srbija Tours",
     "tagline": "A production system that runs daily ticket sales and operations for an international bus carrier.",
     "problemTitle": "Problem",
-    "problem": "Srbija Tours, an international bus carrier, ran reservations, ticketing and field operations across disconnected, mostly manual tools. They needed one system to sell tickets online, manage routes and passengers, validate tickets, handle payments and fiscal-legal receipts, and give office and field staff a single source of truth.",
+    "problem": "Srbija Tours, an international bus carrier, ran reservations, ticketing and field operations across disconnected, mostly manual tools. There was no online sales channel for passengers, no central passenger database, and field staff had no way to validate tickets on the road. They needed one system to sell tickets online, manage routes and passengers, validate tickets on the spot, handle payments with legally required fiscal receipts, and give both office and field staff a single source of truth — replacing a patchwork of processes that could not scale with growing route and passenger volume.",
     "solutionTitle": "Solution",
-    "solution": "I built DriveSoft end to end: a Laravel/MySQL backend exposing REST APIs, a React passenger-facing booking site, a React admin panel for operations, and React Native tools for field workers. It covers online reservations, passenger & route management, ticket generation with QR-code validation, payments with fiscal-receipt integration, and operational reporting.",
+    "solution": "I built DriveSoft end to end: a Laravel/MySQL backend exposing REST APIs, a React passenger-facing booking site, a React admin panel for operations, and React Native tools for field workers. The backend handles the full transaction lifecycle — seat availability, reservation locking, payment processing, fiscal-receipt generation and ticket issuance — with Redis caching and queued background jobs to keep response times fast under concurrent bookings. The admin panel gives office staff role-based access to manage routes, departures, passengers and daily reporting, while the React Native app lets field workers validate tickets by scanning QR codes on the road.",
     "architectureTitle": "Architecture",
     "architecture": [
       "Backend: Laravel + MySQL, REST APIs, Redis caching, queued background jobs",
@@ -89,48 +89,49 @@
     "roleTitle": "My role",
     "role": "Sole full-stack developer. I own the architecture, the Laravel/MySQL backend, both React front-ends and the React Native tools — from database schema and API design through deployment — and I maintain and extend it in production.",
     "resultTitle": "Impact",
-    "result": "Online reservations, ticketing and back-office operations now run through one maintained platform instead of scattered manual processes — a single source of truth for both the sales desk and field staff.",
+    "result": "Online reservations, ticketing and back-office operations now run through one maintained platform instead of scattered manual processes. Passengers book and pay online, office staff manage operations from a unified dashboard, and field workers validate tickets with a phone scan instead of paper lists. Over 150,000 tickets and reservations have been processed through the system, with 100+ internal users relying on it daily across routes and offices.",
     "techTitle": "Built with",
     "tech": ["Laravel", "PHP", "MySQL", "React", "React Native", "REST APIs", "Redis", "Docker", "DigitalOcean"],
     "ctaPassenger": "Open passenger demo",
-    "ctaAdmin": "Open admin demo"
+    "ctaAdmin": "Open admin demo",
+    "ctaFullStudy": "Read full case study"
   },
   "services": {
     "title": "What I can help with",
     "subtitle": "For companies and freelance clients — backend, frontend, and the production systems in between.",
     "backend": {
       "title": "Laravel Backend Development",
-      "description": "APIs, business logic and data models for systems that run in production.",
+      "description": "Production-grade Laravel APIs, MySQL data models and business logic — authentication, role-based access, queued jobs and caching. Built to handle real transaction loads like the 150,000+ reservations running through DriveSoft.",
       "features": "Laravel, PHP, MySQL, REST APIs, Redis, Queues"
     },
     "frontend": {
       "title": "React & React Native",
-      "description": "Web and mobile front-ends wired to real backends.",
+      "description": "React SPAs and React Native mobile apps connected to live Laravel backends. Server-rendered with Next.js where SEO matters, with responsive layouts and real-time state tied to production APIs.",
       "features": "React, Next.js, React Native, Expo, TypeScript"
     },
     "booking": {
       "title": "Booking & Ticketing Systems",
-      "description": "Reservations, seat selection, payments, fiscalization and QR ticketing.",
+      "description": "End-to-end reservation and ticketing — route search, seat selection, online checkout, QR-code ticket generation and validation, and payment processing with fiscal-receipt integration for legal compliance.",
       "features": "Reservations, Payments, Fiscalization, QR validation"
     },
     "maintenance": {
       "title": "Production Debugging & Maintenance",
-      "description": "Fixing, stabilizing and extending live systems without downtime.",
+      "description": "Diagnosing and fixing bugs in live Laravel and WordPress systems, query optimization, and extending existing features without taking the service offline. Currently maintaining multiple systems in daily use.",
       "features": "Debugging, Performance, Refactoring, Monitoring"
     },
     "automation": {
       "title": "Business Process Automation",
-      "description": "Turning manual, spreadsheet-driven work into reliable software.",
+      "description": "Replacing manual spreadsheet-based workflows with software — automated CSV/Excel imports and exports, scheduled reports, third-party integrations and operational dashboards.",
       "features": "Workflows, Integrations, Imports/Exports, Reporting"
     },
     "cms": {
       "title": "WordPress & Webflow",
-      "description": "Fast, editable marketing sites and corporate web presence.",
+      "description": "WordPress and Webflow sites built for speed and easy editing — custom themes, structured content, on-page SEO and performance optimization. 10+ live sites built and maintained.",
       "features": "WordPress, Webflow, Custom themes, SEO, Performance"
     },
     "ai": {
       "title": "AI-Assisted Development",
-      "description": "Shipping faster with AI tooling kept under senior engineering control.",
+      "description": "Using AI tools to accelerate coding, refactoring, debugging and documentation while keeping architecture decisions, code review and production quality under direct engineering control.",
       "features": "Code review, Refactoring, Debugging, Documentation"
     }
   },
@@ -262,5 +263,161 @@
   "footer": {
     "rights": "All rights reserved",
     "madeWith": "Made with ❤️ in Serbia"
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Frequently Asked Questions",
+    "subtitle": "Common questions about my work, process, and availability.",
+    "items": [
+      {
+        "question": "Who is Petar Arsić?",
+        "answer": "I'm a full-stack developer based in Belgrade, Serbia, specializing in Laravel backends and React / React Native frontends. For over 5 years I've been building and maintaining production booking, ticketing, and operations systems for the transport industry. My flagship product, DriveSoft, has processed over 150,000 tickets and reservations for international bus carriers."
+      },
+      {
+        "question": "What is DriveSoft?",
+        "answer": "DriveSoft is a production reservation, ticketing, and operations platform I built end to end for international bus carriers. It covers online seat reservations, QR-code ticket validation, payment processing with fiscal-receipt integration, passenger and route management, and a role-based admin panel. It's in daily use by 100+ internal users."
+      },
+      {
+        "question": "What tech stack do you work with?",
+        "answer": "My core stack is Laravel (PHP) and MySQL on the backend, React and Next.js on the web, and React Native with Expo for mobile apps. I also work with Redis, Docker, DigitalOcean, WordPress, and Webflow. I choose tools based on what the project actually needs, not trends."
+      },
+      {
+        "question": "Do you work remotely?",
+        "answer": "Yes. I work remote-first, asynchronous, and Git-based. I'm based in Belgrade, Serbia (CET/CEST timezone), which overlaps well with European and UK business hours. I'm open to full-time, contract, and freelance engagements."
+      },
+      {
+        "question": "Can you build a booking or reservation system for my business?",
+        "answer": "Yes — that's my main specialization. I've built complete booking and ticketing platforms from scratch, including online seat selection, checkout, payment processing with fiscal-receipt compliance, QR-code ticket generation and validation, and admin tools for managing operations. You can try a live demo at demo.drivesoft.rs."
+      },
+      {
+        "question": "How do you use AI in your development process?",
+        "answer": "I use AI tools to speed up coding, refactoring, debugging, and documentation. Architecture decisions, business logic, code review, and production quality stay under my direct control. AI accelerates the work — it doesn't decide what ships."
+      }
+    ]
+  },
+  "subpage": {
+    "backLink": "Back to portfolio"
+  },
+  "caseStudyPage": {
+    "seo": {
+      "title": "DriveSoft Case Study — Production Booking & Ticketing Platform",
+      "description": "How I built DriveSoft end to end: a Laravel/React booking, ticketing, and operations platform processing 150,000+ reservations for international bus carriers."
+    },
+    "overviewLabel": "Overview",
+    "overview": "DriveSoft is a full-stack reservation, ticketing, and operations platform I built from scratch for Srbija Tours, an international bus carrier. It replaced disconnected manual tools with a single system covering online booking, ticket validation, payments, and daily operations. The platform has processed over 150,000 tickets and reservations and is used daily by 100+ internal staff across offices and routes.",
+    "challengeTitle": "The Challenge",
+    "challengeIntro": "Srbija Tours, an international bus carrier, ran reservations, ticketing and field operations across disconnected, mostly manual tools.",
+    "challengePoints": [
+      "No online sales channel — passengers had to call the office or buy tickets in person",
+      "No central passenger database — records were scattered across spreadsheets and paper logs",
+      "Field staff had no way to validate tickets on the road — boarding relied on paper manifests",
+      "Payments were processed manually with no automated fiscal-receipt generation",
+      "Office, dispatch, and field teams worked from different data sources with no shared view of operations"
+    ],
+    "challengeConclusion": "They needed one system to sell tickets online, manage routes and passengers, validate tickets on the spot, handle payments with legally required fiscal receipts, and give both office and field staff a single source of truth.",
+    "solutionTitle": "The Solution",
+    "solution": "I built DriveSoft end to end: a Laravel/MySQL backend exposing REST APIs, a React passenger-facing booking site, a React admin panel for operations, and React Native tools for field workers. The backend handles the full transaction lifecycle — seat availability, reservation locking, payment processing, fiscal-receipt generation and ticket issuance — with Redis caching and queued background jobs to keep response times fast under concurrent bookings.",
+    "architectureTitle": "System Architecture",
+    "architectureIntro": "DriveSoft is structured as a service-oriented monolith: a single Laravel backend serving multiple frontends through REST APIs.",
+    "layers": [
+      {
+        "title": "Backend",
+        "code": "API",
+        "description": "Laravel with MySQL. Resource controllers with form request validation, service classes for business logic, and repository pattern for data access. Redis handles session storage, caching of route and departure lookups, and rate limiting. Queued jobs process payment confirmations, fiscal receipt generation, and email notifications in the background."
+      },
+      {
+        "title": "Passenger Frontend",
+        "code": "WEB",
+        "description": "A React SPA that guides passengers through route search, departure selection, seat picking, passenger details, and checkout. Connected to the backend via REST API with real-time seat availability."
+      },
+      {
+        "title": "Admin Panel",
+        "code": "ADM",
+        "description": "A React admin application with role-based access control. Operators manage routes, departures, passengers, and pricing. Managers access revenue reports, occupancy data, and CSV/Excel exports. Super-admins configure system settings and user permissions."
+      },
+      {
+        "title": "Mobile Tools",
+        "code": "MOB",
+        "description": "React Native (Expo) app for field workers — primarily ticket validation via QR code scanning. Works with intermittent connectivity through offline-first data caching and background sync."
+      },
+      {
+        "title": "Infrastructure",
+        "code": "OPS",
+        "description": "Dockerized deployment on DigitalOcean. Nginx reverse proxy, automated SSL, and environment-based configuration for staging and production."
+      }
+    ],
+    "bookingFlowTitle": "The Booking Flow",
+    "bookingFlowSteps": [
+      { "step": "Search", "description": "Passenger selects origin, destination, and date. The system returns available departures with pricing." },
+      { "step": "Select seats", "description": "Interactive seat map shows available and taken seats. Selected seats are temporarily locked to prevent double-booking." },
+      { "step": "Passenger details", "description": "Name, contact, and any required travel documents are entered and validated." },
+      { "step": "Payment", "description": "Online payment is processed. A fiscal receipt is generated automatically to comply with Serbian tax regulations." },
+      { "step": "Ticket issued", "description": "The system generates a ticket with a unique QR code. Confirmation is sent by email." },
+      { "step": "Boarding", "description": "Field worker scans the QR code with the mobile app. Ticket is validated and the passenger manifest updates in real time." }
+    ],
+    "featuresTitle": "Key Features",
+    "featuresList": [
+      { "title": "Online Seat Reservation", "description": "Passengers search routes, view real-time seat availability on interactive seat maps, and complete reservations through a guided checkout flow." },
+      { "title": "QR-Code Ticket Validation", "description": "Each ticket carries a unique QR code. Field workers use the React Native app to scan and validate tickets at boarding, replacing paper manifests." },
+      { "title": "Fiscal-Receipt Integration", "description": "Every payment automatically generates a legally compliant fiscal receipt, meeting Serbian tax authority requirements. The integration handles receipt numbering, tax calculation, and regulatory reporting." },
+      { "title": "Route & Departure Management", "description": "Admin users define routes with stops, set departure schedules, manage pricing, and track occupancy across departures." },
+      { "title": "Role-Based Admin Panel", "description": "Four access levels — operators handle daily bookings, dispatchers manage departures, managers view reports, and super-admins configure the system." },
+      { "title": "Operational Reporting", "description": "Daily, weekly, and monthly reports covering revenue, passenger counts, route performance, and occupancy rates. Exportable to CSV and Excel." }
+    ],
+    "roleTitle": "My Role",
+    "role": "Sole full-stack developer. I own the architecture, the Laravel/MySQL backend, both React frontends, and the React Native mobile tools — from database schema and API design through deployment. I built the initial version, shipped it to production, and continue to maintain and extend it as the business grows. Every layer of the stack — from migration files to UI components to Docker configuration — is my work.",
+    "impactTitle": "Impact",
+    "impact": "Online reservations, ticketing, and back-office operations now run through one maintained platform instead of scattered manual processes. Passengers book and pay online instead of calling the office. Office staff manage operations from a unified dashboard instead of spreadsheets. Field workers validate tickets with a phone scan instead of paper lists. Over 150,000 tickets and reservations have been processed through the system, with 100+ internal users relying on it daily.",
+    "demoTitle": "Try It Yourself",
+    "demoDescription": "Open the live demos below — no login required. The passenger demo shows the booking flow, the admin demo shows the operations dashboard.",
+    "ctaPassenger": "Open passenger demo",
+    "ctaAdmin": "Open admin demo",
+    "ctaTitle": "Need a similar system?",
+    "ctaDescription": "I build reservation, ticketing, and operations platforms for transport and service businesses.",
+    "ctaButton": "Start a project"
+  },
+  "laravelService": {
+    "seo": {
+      "title": "Laravel Backend Development — Petar Arsić",
+      "description": "Production-grade Laravel APIs, MySQL data models, and business logic. Authentication, role-based access, queued jobs, Redis caching. 5+ years in production, 150,000+ transactions processed."
+    },
+    "title": "Laravel Backend Development",
+    "subtitle": "Production-grade APIs, business logic, and data models — built to handle real transaction loads.",
+    "whatTitle": "What I Build",
+    "what": "I build Laravel backends that power production systems — REST APIs with proper authentication, role-based access control, database migrations, queued background jobs, and Redis caching. My backends handle the full transaction lifecycle: data validation, business logic, payment processing, third-party integrations, and operational reporting. Not prototypes — real systems running under real traffic with 150,000+ transactions processed.",
+    "processTitle": "How I Work",
+    "process": [
+      { "title": "Database-first design", "description": "I start with the data model — migrations, relationships, and indexes — before writing a single controller. Getting the schema right avoids expensive rewrites later." },
+      { "title": "API design", "description": "Resource controllers with form request validation, consistent JSON responses, and proper HTTP status codes. Every endpoint is documented and testable." },
+      { "title": "Business logic in services", "description": "Complex logic lives in service classes, not controllers. This keeps controllers thin and business rules testable and reusable." },
+      { "title": "Production readiness", "description": "Redis caching for hot paths, queued jobs for heavy processing, proper error handling, and environment-based configuration. Ready for staging and production from day one." }
+    ],
+    "projectsTitle": "Built With Laravel",
+    "ctaTitle": "Need a Laravel backend?",
+    "ctaDescription": "I'm available for backend development projects — from building new APIs to extending existing Laravel systems.",
+    "ctaButton": "Get in touch"
+  },
+  "bookingService": {
+    "seo": {
+      "title": "Booking & Ticketing System Development — Petar Arsić",
+      "description": "End-to-end booking and ticketing system development. Online reservations, seat selection, payment processing, fiscal receipts, QR-code validation. 150,000+ tickets processed in production."
+    },
+    "title": "Booking & Ticketing Systems",
+    "subtitle": "End-to-end reservation and ticketing platforms — from seat selection to QR-code validation.",
+    "whatTitle": "What I Build",
+    "what": "I build complete booking and ticketing systems from scratch — the kind that process real payments, issue legally compliant receipts, and handle daily operations for transport companies. My flagship system, DriveSoft, has processed over 150,000 reservations for international bus carriers. This is my core specialization: I've solved the real-world problems of seat management, concurrent booking conflicts, fiscal compliance, and field ticket validation.",
+    "flowTitle": "How a Booking System Works",
+    "flow": [
+      { "step": "Route & departure search", "description": "Passengers search available routes by origin, destination, and date. The system returns departures with real-time seat availability." },
+      { "step": "Seat selection", "description": "Interactive seat maps show available, reserved, and blocked seats. Selected seats are temporarily locked to prevent double-booking." },
+      { "step": "Checkout & payment", "description": "Passenger details, payment processing, and automatic fiscal-receipt generation for legal compliance." },
+      { "step": "Ticket issuance", "description": "The system generates a ticket with a unique QR code. Passengers receive confirmation by email." },
+      { "step": "QR validation", "description": "Field workers scan QR codes with a mobile app to validate tickets at boarding. Works offline with background sync." },
+      { "step": "Operations dashboard", "description": "Staff manage departures, view passenger manifests, track revenue, and export reports from a role-based admin panel." }
+    ],
+    "projectsTitle": "Systems I've Built",
+    "ctaTitle": "Need a booking system?",
+    "ctaDescription": "I build reservation and ticketing platforms for transport, hospitality, and service businesses.",
+    "ctaButton": "Start a project"
   }
 }

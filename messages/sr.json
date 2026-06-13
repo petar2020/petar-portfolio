@@ -60,9 +60,9 @@
     "title": "DriveSoft — platforma za rezervacije i karte za Srbija Tours",
     "tagline": "Produkcioni sistem koji svakodnevno vodi prodaju karata i operativu za međunarodnog autobuskog prevoznika.",
     "problemTitle": "Problem",
-    "problem": "Srbija Tours, međunarodni autobuski prevoznik, vodio je rezervacije, prodaju karata i terensku operativu kroz razdvojene, uglavnom ručne alate. Bio im je potreban jedan sistem da prodaju karte online, upravljaju linijama i putnicima, validiraju karte, obrađuju plaćanja i fiskalne račune, i daju kancelariji i terenu jedinstven izvor podataka.",
+    "problem": "Srbija Tours, međunarodni autobuski prevoznik, vodio je rezervacije, prodaju karata i terensku operativu kroz razdvojene, uglavnom ručne alate. Nije postojao online prodajni kanal za putnike, nije bilo centralne baze putnika, a terenski radnici nisu imali način da validiraju karte na licu mesta. Bio im je potreban jedan sistem da prodaju karte online, upravljaju linijama i putnicima, validiraju karte na terenu, obrađuju plaćanja sa zakonski obaveznim fiskalnim računima, i daju kancelariji i terenu jedinstven izvor podataka — umesto procesa koji nisu mogli da prate rast broja linija i putnika.",
     "solutionTitle": "Rešenje",
-    "solution": "Izgradio sam DriveSoft od početka do kraja: Laravel/MySQL backend sa REST API-jima, React sajt za rezervacije za putnike, React admin panel za operativu i React Native alate za terenske radnike. Pokriva online rezervacije, upravljanje putnicima i linijama, izdavanje karata sa QR validacijom, plaćanja sa fiskalnom integracijom i operativne izveštaje.",
+    "solution": "Izgradio sam DriveSoft od početka do kraja: Laravel/MySQL backend sa REST API-jima, React sajt za rezervacije za putnike, React admin panel za operativu i React Native alate za terenske radnike. Backend obrađuje ceo životni ciklus transakcije — dostupnost sedišta, zaključavanje rezervacije, obradu plaćanja, generisanje fiskalnog računa i izdavanje karte — sa Redis keširanjem i queue pozadinskim poslovima da vreme odgovora ostane brzo pri konkurentnim rezervacijama. Admin panel daje kancelarijskom osoblju pristup zasnovan na ulogama za upravljanje linijama, polascima, putnicima i dnevnim izveštajima, dok React Native aplikacija omogućava terenskim radnicima validaciju karata skeniranjem QR koda na terenu.",
     "architectureTitle": "Arhitektura",
     "architecture": [
       "Backend: Laravel + MySQL, REST API-ji, Redis keširanje, queue background poslovi",
@@ -89,48 +89,49 @@
     "roleTitle": "Moja uloga",
     "role": "Samostalni full-stack developer. Vlasnik sam arhitekture, Laravel/MySQL backend-a, oba React frontend-a i React Native alata — od šeme baze i dizajna API-ja do deployment-a — i održavam i proširujem sistem u produkciji.",
     "resultTitle": "Rezultat",
-    "result": "Online rezervacije, karte i back-office operativa sada idu kroz jednu održavanu platformu umesto razbacanih ručnih procesa — jedinstven izvor podataka i za prodaju i za teren.",
+    "result": "Online rezervacije, karte i back-office operativa sada idu kroz jednu održavanu platformu umesto razbacanih ručnih procesa. Putnici rezervišu i plaćaju online, kancelarijsko osoblje upravlja operativom iz jednog dashboard-a, a terenski radnici validiraju karte skeniranjem telefona umesto papirnih spiskova. Preko 150.000 karata i rezervacija je obrađeno kroz sistem, sa 100+ internih korisnika koji ga koriste svakodnevno kroz linije i kancelarije.",
     "techTitle": "Tehnologije",
     "tech": ["Laravel", "PHP", "MySQL", "React", "React Native", "REST APIs", "Redis", "Docker", "DigitalOcean"],
     "ctaPassenger": "Otvori demo za putnike",
-    "ctaAdmin": "Otvori admin demo"
+    "ctaAdmin": "Otvori admin demo",
+    "ctaFullStudy": "Pročitaj ceo case study"
   },
   "services": {
     "title": "Šta mogu da uradim za vas",
     "subtitle": "Za firme i freelance klijente — backend, frontend i produkcioni sistemi između.",
     "backend": {
       "title": "Laravel Backend Razvoj",
-      "description": "API-ji, biznis logika i modeli podataka za sisteme koji rade u produkciji.",
+      "description": "Produkcioni Laravel API-ji, MySQL modeli podataka i biznis logika — autentifikacija, RBAC, queue poslovi i keširanje. Izgrađeno da podnese realno opterećenje poput 150.000+ rezervacija koje prolaze kroz DriveSoft.",
       "features": "Laravel, PHP, MySQL, REST APIs, Redis, Queues"
     },
     "frontend": {
       "title": "React i React Native",
-      "description": "Web i mobilni frontend povezan sa realnim backend-om.",
+      "description": "React SPA aplikacije i React Native mobilne aplikacije povezane sa živim Laravel backend-om. Server-renderovano sa Next.js gde je bitan SEO, sa responzivnim layoutom i real-time stanjem vezanim za produkcione API-je.",
       "features": "React, Next.js, React Native, Expo, TypeScript"
     },
     "booking": {
       "title": "Sistemi za rezervacije i karte",
-      "description": "Rezervacije, izbor sedišta, plaćanja, fiskalizacija i QR karte.",
+      "description": "Kompletni sistemi za rezervacije i karte — pretraga linija, izbor sedišta, online naplata, generisanje QR karata sa validacijom i obrada plaćanja sa fiskalnom integracijom za zakonsku usklađenost.",
       "features": "Rezervacije, Plaćanja, Fiskalizacija, QR validacija"
     },
     "maintenance": {
       "title": "Produkciono održavanje i debugging",
-      "description": "Popravka, stabilizacija i proširenje živih sistema bez prekida rada.",
+      "description": "Dijagnostika i popravka bagova u živim Laravel i WordPress sistemima, optimizacija upita i proširenje postojećih funkcionalnosti bez prekida rada. Trenutno održavam više sistema u svakodnevnoj upotrebi.",
       "features": "Debugging, Performance, Refactoring, Monitoring"
     },
     "automation": {
       "title": "Automatizacija poslovnih procesa",
-      "description": "Pretvaranje ručnog rada sa tabelama u pouzdan softver.",
+      "description": "Zamena ručnih workflow-ova baziranih na tabelama softverom — automatizovani CSV/Excel importi i eksporti, zakazani izveštaji, integracije sa trećim stranama i operativni dashboardovi.",
       "features": "Workflow-ovi, Integracije, Import/Export, Izveštaji"
     },
     "cms": {
       "title": "WordPress i Webflow",
-      "description": "Brzi, lako uredljivi prezentacioni i korporativni sajtovi.",
+      "description": "WordPress i Webflow sajtovi izgrađeni za brzinu i lako uređivanje — prilagođene teme, strukturiran sadržaj, on-page SEO i optimizacija performansi. 10+ živih sajtova izgrađeno i održavano.",
       "features": "WordPress, Webflow, Custom teme, SEO, Performance"
     },
     "ai": {
       "title": "AI-asistirani razvoj",
-      "description": "Brža isporuka uz AI alate pod kontrolom senior inženjerske procene.",
+      "description": "Korišćenje AI alata za ubrzanje kodiranja, refaktorisanja, debugging-a i dokumentacije uz zadržavanje arhitektonskih odluka, code review-a i produkcionog kvaliteta pod direktnom inženjerskom kontrolom.",
       "features": "Code review, Refactoring, Debugging, Dokumentacija"
     }
   },
@@ -262,5 +263,161 @@
   "footer": {
     "rights": "Sva prava zadržana",
     "madeWith": "Napravljeno sa ❤️ u Srbiji"
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Česta pitanja",
+    "subtitle": "Uobičajena pitanja o mom radu, procesu i dostupnosti.",
+    "items": [
+      {
+        "question": "Ko je Petar Arsić?",
+        "answer": "Full-stack developer iz Beograda, specijalizovan za Laravel backend i React / React Native frontend. Preko 5 godina gradim i održavam produkcione sisteme za rezervacije, karte i operativu u transportnoj industriji. Moj glavni proizvod, DriveSoft, obradio je preko 150.000 karata i rezervacija za međunarodne autobuske prevoznike."
+      },
+      {
+        "question": "Šta je DriveSoft?",
+        "answer": "DriveSoft je produkciona platforma za rezervacije, karte i operativu koju sam izgradio od početka do kraja za međunarodne autobuske prevoznike. Pokriva online rezervacije sedišta, QR validaciju karata, obradu plaćanja sa fiskalnom integracijom, upravljanje putnicima i linijama, i admin panel sa ulogama. Koristi ga 100+ internih korisnika svakodnevno."
+      },
+      {
+        "question": "Koji tech stack koristiš?",
+        "answer": "Glavni stack mi je Laravel (PHP) i MySQL na backend-u, React i Next.js na webu, i React Native sa Expo za mobilne aplikacije. Takođe radim sa Redis, Docker, DigitalOcean, WordPress i Webflow. Biram alate prema tome šta projekat zaista zahteva, ne prema trendovima."
+      },
+      {
+        "question": "Da li radiš remote?",
+        "answer": "Da. Radim remote-first, asinhrono i Git-bazirano. Nalazim se u Beogradu, Srbija (CET/CEST vremenska zona), što se dobro poklapa sa evropskim i britanskim radnim vremenom. Otvoren sam za full-time, ugovorne i freelance angažmane."
+      },
+      {
+        "question": "Možeš li napraviti sistem za rezervacije za moj biznis?",
+        "answer": "Da — to je moja glavna specijalizacija. Izgradio sam kompletne platforme za rezervacije i karte od nule, uključujući online izbor sedišta, naplatu, obradu plaćanja sa fiskalnom usklađenošću, generisanje i validaciju QR karata, i admin alate za upravljanje operativom. Možete isprobati demo uživo na demo.drivesoft.rs."
+      },
+      {
+        "question": "Kako koristiš AI u razvoju?",
+        "answer": "Koristim AI alate za ubrzanje kodiranja, refaktorisanja, debugging-a i dokumentacije. Arhitektonske odluke, biznis logika, code review i produkcioni kvalitet ostaju pod mojom direktnom kontrolom. AI ubrzava rad — ne odlučuje šta ide u produkciju."
+      }
+    ]
+  },
+  "subpage": {
+    "backLink": "Nazad na portfolio"
+  },
+  "caseStudyPage": {
+    "seo": {
+      "title": "DriveSoft Case Study — Produkciona platforma za rezervacije i karte",
+      "description": "Kako sam izgradio DriveSoft od početka do kraja: Laravel/React platforma za rezervacije, karte i operativu koja je obradila 150.000+ rezervacija za međunarodne autobuske prevoznike."
+    },
+    "overviewLabel": "Pregled",
+    "overview": "DriveSoft je full-stack platforma za rezervacije, karte i operativu koju sam izgradio od nule za Srbija Tours, međunarodnog autobuskog prevoznika. Zamenila je razdvojene ručne alate jednim sistemom koji pokriva online rezervacije, validaciju karata, plaćanja i svakodnevnu operativu. Platforma je obradila preko 150.000 karata i rezervacija i koristi je 100+ zaposlenih svakodnevno.",
+    "challengeTitle": "Izazov",
+    "challengeIntro": "Srbija Tours, međunarodni autobuski prevoznik, vodio je rezervacije, prodaju karata i terensku operativu kroz razdvojene, uglavnom ručne alate.",
+    "challengePoints": [
+      "Bez online prodajnog kanala — putnici su morali da zovu kancelariju ili kupuju karte lično",
+      "Bez centralne baze putnika — podaci su bili razbacani po tabelama i papirnim evidencijama",
+      "Terenski radnici nisu imali način da validiraju karte na putu — ukrcavanje se oslanjalo na papirne spiskove",
+      "Plaćanja su se obrađivala ručno bez automatskog generisanja fiskalnih računa",
+      "Kancelarija, dispečeri i teren su radili sa različitim izvorima podataka bez zajedničkog uvida u operativu"
+    ],
+    "challengeConclusion": "Bio im je potreban jedan sistem da prodaju karte online, upravljaju linijama i putnicima, validiraju karte na terenu, obrađuju plaćanja sa zakonski obaveznim fiskalnim računima, i daju kancelariji i terenu jedinstven izvor podataka.",
+    "solutionTitle": "Rešenje",
+    "solution": "Izgradio sam DriveSoft od početka do kraja: Laravel/MySQL backend sa REST API-jima, React sajt za rezervacije za putnike, React admin panel za operativu i React Native alate za terenske radnike. Backend obrađuje ceo životni ciklus transakcije — dostupnost sedišta, zaključavanje rezervacije, obradu plaćanja, generisanje fiskalnog računa i izdavanje karte — sa Redis keširanjem i queue pozadinskim poslovima da vreme odgovora ostane brzo pri konkurentnim rezervacijama.",
+    "architectureTitle": "Arhitektura sistema",
+    "architectureIntro": "DriveSoft je strukturiran kao servisno orijentisan monolit: jedan Laravel backend koji opslužuje više frontend-ova kroz REST API-je.",
+    "layers": [
+      {
+        "title": "Backend",
+        "code": "API",
+        "description": "Laravel sa MySQL. Resource kontroleri sa form request validacijom, servisne klase za biznis logiku i repository pattern za pristup podacima. Redis upravlja sesijama, keširanjem pretrage linija i polazaka, i rate limiting-om. Queue poslovi obrađuju potvrde plaćanja, generisanje fiskalnih računa i email notifikacije u pozadini."
+      },
+      {
+        "title": "Frontend za putnike",
+        "code": "WEB",
+        "description": "React SPA koji vodi putnike kroz pretragu linija, izbor polaska, biranje sedišta, unos podataka i naplatu. Povezan sa backend-om preko REST API-ja sa real-time dostupnošću sedišta."
+      },
+      {
+        "title": "Admin panel",
+        "code": "ADM",
+        "description": "React admin aplikacija sa kontrolom pristupa po ulogama. Operateri upravljaju linijama, polascima, putnicima i cenama. Menadžeri pristupaju izveštajima o prihodima, podacima o popunjenosti i CSV/Excel eksportima. Super-admini konfigurišu sistemska podešavanja i korisničke dozvole."
+      },
+      {
+        "title": "Mobilni alati",
+        "code": "MOB",
+        "description": "React Native (Expo) aplikacija za terenske radnike — prvenstveno validacija karata putem skeniranja QR koda. Radi sa povremenom konekcijom kroz offline-first keširanje podataka i pozadinsku sinhronizaciju."
+      },
+      {
+        "title": "Infrastruktura",
+        "code": "OPS",
+        "description": "Dockerizovan deployment na DigitalOcean-u. Nginx reverse proxy, automatski SSL i konfiguracija bazirana na okruženju za staging i produkciju."
+      }
+    ],
+    "bookingFlowTitle": "Tok rezervacije",
+    "bookingFlowSteps": [
+      { "step": "Pretraga", "description": "Putnik bira polazište, odredište i datum. Sistem vraća dostupne polaske sa cenama." },
+      { "step": "Izbor sedišta", "description": "Interaktivna mapa sedišta prikazuje slobodna i zauzeta mesta. Izabrana sedišta se privremeno zaključavaju da se spreči dupla rezervacija." },
+      { "step": "Podaci o putniku", "description": "Ime, kontakt i eventualno potrebna putna dokumenta se unose i validiraju." },
+      { "step": "Plaćanje", "description": "Online plaćanje se obrađuje. Fiskalni račun se automatski generiše u skladu sa propisima poreske uprave." },
+      { "step": "Izdavanje karte", "description": "Sistem generiše kartu sa jedinstvenim QR kodom. Potvrda se šalje email-om." },
+      { "step": "Ukrcavanje", "description": "Terenski radnik skenira QR kod mobilnom aplikacijom. Karta se validira i spisak putnika se ažurira u realnom vremenu." }
+    ],
+    "featuresTitle": "Ključne funkcije",
+    "featuresList": [
+      { "title": "Online rezervacija sedišta", "description": "Putnici pretražuju linije, vide real-time dostupnost na interaktivnim mapama sedišta i završavaju rezervacije kroz vođeni tok naplate." },
+      { "title": "QR validacija karata", "description": "Svaka karta nosi jedinstven QR kod. Terenski radnici koriste React Native aplikaciju da skeniraju i validiraju karte pri ukrcavanju, zamenjujući papirne spiskove." },
+      { "title": "Fiskalna integracija", "description": "Svako plaćanje automatski generiše zakonski usklađen fiskalni račun koji ispunjava zahteve poreske uprave. Integracija upravlja numeracijom računa, obračunom poreza i regulatornim izveštavanjem." },
+      { "title": "Upravljanje linijama i polascima", "description": "Admin korisnici definišu linije sa stanicama, postavljaju rasporede polazaka, upravljaju cenama i prate popunjenost kroz polaske." },
+      { "title": "Admin panel sa ulogama", "description": "Četiri nivoa pristupa — operateri obrađuju dnevne rezervacije, dispečeri upravljaju polascima, menadžeri gledaju izveštaje, super-admini konfigurišu sistem." },
+      { "title": "Operativni izveštaji", "description": "Dnevni, nedeljni i mesečni izveštaji koji pokrivaju prihode, broj putnika, performanse linija i popunjenost. Eksportuju se u CSV i Excel." }
+    ],
+    "roleTitle": "Moja uloga",
+    "role": "Samostalni full-stack developer. Vlasnik sam arhitekture, Laravel/MySQL backend-a, oba React frontend-a i React Native mobilnih alata — od šeme baze i dizajna API-ja do deployment-a. Izgradio sam inicijalnu verziju, pustio je u produkciju i nastavljam da je održavam i proširujem kako biznis raste. Svaki sloj stack-a — od migracija do UI komponenti do Docker konfiguracije — je moj rad.",
+    "impactTitle": "Rezultat",
+    "impact": "Online rezervacije, karte i back-office operativa sada idu kroz jednu održavanu platformu umesto razbacanih ručnih procesa. Putnici rezervišu i plaćaju online umesto da zovu kancelariju. Kancelarijsko osoblje upravlja operativom iz jednog dashboard-a umesto tabela. Terenski radnici validiraju karte skeniranjem telefona umesto papirnih spiskova. Preko 150.000 karata i rezervacija je obrađeno kroz sistem, sa 100+ internih korisnika koji ga koriste svakodnevno.",
+    "demoTitle": "Isprobajte sami",
+    "demoDescription": "Otvorite demo ispod — bez prijave. Demo za putnike prikazuje tok rezervacije, admin demo prikazuje operativni panel.",
+    "ctaPassenger": "Otvori demo za putnike",
+    "ctaAdmin": "Otvori admin demo",
+    "ctaTitle": "Treba vam sličan sistem?",
+    "ctaDescription": "Gradim platforme za rezervacije, karte i operativu za transportne i uslužne firme.",
+    "ctaButton": "Započnite projekat"
+  },
+  "laravelService": {
+    "seo": {
+      "title": "Laravel Backend Razvoj — Petar Arsić",
+      "description": "Produkcioni Laravel API-ji, MySQL modeli podataka i biznis logika. Autentifikacija, RBAC, queue poslovi, Redis keširanje. 5+ godina u produkciji, 150.000+ transakcija obrađeno."
+    },
+    "title": "Laravel Backend Razvoj",
+    "subtitle": "Produkcioni API-ji, biznis logika i modeli podataka — izgrađeni da izdrže realno opterećenje.",
+    "whatTitle": "Šta gradim",
+    "what": "Gradim Laravel backend-e koji pokreću produkcione sisteme — REST API-je sa pravilnom autentifikacijom, kontrolom pristupa po ulogama, migracijama baze, queue pozadinskim poslovima i Redis keširanjem. Moji backend-i obrađuju kompletan životni ciklus transakcije: validaciju podataka, biznis logiku, obradu plaćanja, integracije sa trećim stranama i operativno izveštavanje. Ne prototipove — realne sisteme pod realnim saobraćajem sa 150.000+ obrađenih transakcija.",
+    "processTitle": "Kako radim",
+    "process": [
+      { "title": "Dizajn počinje od baze", "description": "Krećem od modela podataka — migracije, relacije i indeksi — pre nego što napišem jedan kontroler. Ispravan šema sprečava skupe prepravke kasnije." },
+      { "title": "Dizajn API-ja", "description": "Resource kontroleri sa form request validacijom, konzistentni JSON odgovori i ispravni HTTP status kodovi. Svaki endpoint je dokumentovan i testabilan." },
+      { "title": "Biznis logika u servisima", "description": "Složena logika živi u servisnim klasama, ne u kontrolerima. Ovo drži kontrolere tankim a biznis pravila testabilnim i višekratno upotrebljivim." },
+      { "title": "Spremnost za produkciju", "description": "Redis keširanje za česte rute, queue poslovi za teške obrade, pravilno upravljanje greškama i konfiguracija bazirana na okruženju. Spremno za staging i produkciju od prvog dana." }
+    ],
+    "projectsTitle": "Izgrađeno sa Laravel-om",
+    "ctaTitle": "Treba vam Laravel backend?",
+    "ctaDescription": "Dostupan sam za projekte backend razvoja — od izgradnje novih API-ja do proširenja postojećih Laravel sistema.",
+    "ctaButton": "Javite se"
+  },
+  "bookingService": {
+    "seo": {
+      "title": "Razvoj sistema za rezervacije i karte — Petar Arsić",
+      "description": "End-to-end razvoj sistema za rezervacije i karte. Online rezervacije, izbor sedišta, obrada plaćanja, fiskalni računi, QR validacija. 150.000+ karata obrađeno u produkciji."
+    },
+    "title": "Sistemi za rezervacije i karte",
+    "subtitle": "Kompletne platforme za rezervacije i karte — od izbora sedišta do QR validacije.",
+    "whatTitle": "Šta gradim",
+    "what": "Gradim kompletne sisteme za rezervacije i karte od nule — sisteme koji obrađuju realna plaćanja, izdaju zakonski usklađene račune i vode svakodnevnu operativu za transportne firme. Moj glavni sistem, DriveSoft, obradio je preko 150.000 rezervacija za međunarodne autobuske prevoznike. Ovo je moja osnovna specijalizacija: rešio sam realne probleme upravljanja sedištima, konkurentnih konflikata pri rezervaciji, fiskalne usklađenosti i terenske validacije karata.",
+    "flowTitle": "Kako funkcioniše sistem za rezervacije",
+    "flow": [
+      { "step": "Pretraga linija i polazaka", "description": "Putnici pretražuju dostupne linije po polazištu, odredištu i datumu. Sistem vraća polaske sa real-time dostupnošću sedišta." },
+      { "step": "Izbor sedišta", "description": "Interaktivne mape sedišta prikazuju slobodna, rezervisana i blokirana mesta. Izabrana sedišta se privremeno zaključavaju da se spreči dupla rezervacija." },
+      { "step": "Naplata i plaćanje", "description": "Podaci o putniku, obrada plaćanja i automatsko generisanje fiskalnog računa za zakonsku usklađenost." },
+      { "step": "Izdavanje karte", "description": "Sistem generiše kartu sa jedinstvenim QR kodom. Putnici dobijaju potvrdu email-om." },
+      { "step": "QR validacija", "description": "Terenski radnici skeniraju QR kodove mobilnom aplikacijom za validaciju karata pri ukrcavanju. Radi offline sa pozadinskom sinhronizacijom." },
+      { "step": "Operativni panel", "description": "Osoblje upravlja polascima, pregleda spiskove putnika, prati prihode i eksportuje izveštaje iz admin panela sa ulogama." }
+    ],
+    "projectsTitle": "Sistemi koje sam izgradio",
+    "ctaTitle": "Treba vam sistem za rezervacije?",
+    "ctaDescription": "Gradim platforme za rezervacije i karte za transportne, ugostiteljske i uslužne firme.",
+    "ctaButton": "Započnite projekat"
   }
 }
