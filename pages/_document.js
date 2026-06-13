@@ -5,6 +5,9 @@ export default function Document() {
   return (
     <Html lang="en" className="dark" style={{ backgroundColor: '#06100E' }}>
       <Head>
+        {/* FOUC prevention — hide until stylesheet loads */}
+        <style dangerouslySetInnerHTML={{ __html: 'html{opacity:0}' }} />
+
         {/* osnovni favikoni */}
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />

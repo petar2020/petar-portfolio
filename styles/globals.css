@@ -35,6 +35,8 @@ html {
   @apply scroll-smooth;
   background: var(--ink-900);
   color-scheme: dark;
+  opacity: 1;
+  transition: opacity 0.12s ease-in;
 }
 
 body {
