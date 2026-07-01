@@ -455,7 +455,9 @@
     "copyright": "All rights reserved. Built by Petar Arsić.",
     "servicesLink": "Services",
     "caseStudyLink": "Case Study",
-    "contactLink": "Contact"
+    "contactLink": "Contact",
+    "githubLabel": "Open Petar Arsić's GitHub profile",
+    "linkedinLabel": "Open Petar Arsić's LinkedIn profile"
   },
   "homeServices": {
     "eyebrow": "Platforms",

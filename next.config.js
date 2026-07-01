@@ -6,6 +6,13 @@ module.exports = withNextIntl({
   // (builtwell-backend) — bez ovoga Next bira pogrešan "workspace root", što kvari
   // standalone pakovanje i pravi buku oko watch-a. Zakucavamo root na ovaj folder.
   outputFileTracingRoot: __dirname,
+  // Next's standalone tracer doesn't reliably follow sharp's runtime
+  // platform-detection require() calls, so the native binary can be left
+  // out of .next/standalone — force-include it so image optimization
+  // actually works (not just falls back silently) in production.
+  outputFileTracingIncludes: {
+    '/*': ['./node_modules/sharp/**/*', './node_modules/@img/**/*'],
+  },
   images: { domains: ['images.unsplash.com','via.placeholder.com'], formats: ['image/webp','image/avif'] },
   compiler: { removeConsole: process.env.NODE_ENV === 'production' },
   // Dev watcher hardening — folder je pod OneDrive-om koji stalno "dodiruje" fajlove

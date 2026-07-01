@@ -101,7 +101,7 @@ export default function Contact() {
 
             <button type="submit" disabled={isSubmitting} className="btn-signal w-full disabled:opacity-50 disabled:cursor-not-allowed">
               {isSubmitting ? t('sending') : t('send')}
-              <FaPaperPlane className={isSubmitting ? 'animate-spin' : ''} />
+              <FaPaperPlane aria-hidden="true" className={isSubmitting ? 'animate-spin' : ''} />
             </button>
           </form>
 
@@ -110,7 +110,7 @@ export default function Contact() {
             <div className="space-y-px bg-line border border-line">
               {infoRows.map(({ Icon, title, value, href }, i) => (
                 <div key={i} className="bg-ink-900 p-5 flex items-start gap-4">
-                  <span className="mt-0.5 text-teal-bright"><Icon /></span>
+                  <span className="mt-0.5 text-teal-bright"><Icon aria-hidden="true" /></span>
                   <div>
                     <h3 className="callsign !text-[0.6rem]">{title}</h3>
                     {href ? (
@@ -159,18 +159,19 @@ export default function Contact() {
 
             <div className="flex gap-3">
               {[
-                { Icon: FaGithub, url: 'https://github.com/petar2020' },
-                { Icon: FaLinkedin, url: 'https://www.linkedin.com/in/petar-arsic-2067821b5/' },
-              ].map(({ Icon, url }, idx) => (
+                { Icon: FaGithub, url: 'https://github.com/petar2020', label: t('githubLabel') },
+                { Icon: FaLinkedin, url: 'https://www.linkedin.com/in/petar-arsic-2067821b5/', label: t('linkedinLabel') },
+              ].map(({ Icon, url, label }, idx) => (
                 <motion.a
                   key={idx}
                   href={url}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label={label}
                   whileHover={{ y: -3 }}
                   className="p-3 border border-line text-paper-dim hover:border-teal-bright hover:text-teal-bright transition-colors"
                 >
-                  <Icon />
+                  <Icon aria-hidden="true" />
                 </motion.a>
               ))}
             </div>
