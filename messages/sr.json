@@ -8,6 +8,7 @@
     "demo": "Demo uživo",
     "casestudy": "Case study",
     "projects": "Projekti",
+    "services": "Usluge",
     "about": "O meni",
     "contact": "Kontakt",
     "cv": "CV"
@@ -165,6 +166,7 @@
     "viewDemo": "Demo",
     "viewCase": "Case study",
     "viewGithub": "GitHub",
+    "relatedService": "Povezana usluga",
     "roleLabel": "Moja uloga",
     "techLabel": "Tehnologije",
     "items": {
@@ -258,7 +260,10 @@
     "hoursTitle": "Radno vreme",
     "hours": "Ponedeljak – Petak: 09:00 – 17:00\nSubota: 09:00 – 13:00",
     "footerBio": "Full-stack developer koji gradi produkcione sisteme za rezervacije i operativu za realne firme.",
-    "copyright": "Sva prava zadržana. Izradio Petar Arsić."
+    "copyright": "Sva prava zadržana. Izradio Petar Arsić.",
+    "servicesLink": "Usluge",
+    "caseStudyLink": "Case Study",
+    "contactLink": "Kontakt"
   },
   "footer": {
     "rights": "Sva prava zadržana",
@@ -419,5 +424,674 @@
     "ctaTitle": "Treba vam sistem za rezervacije?",
     "ctaDescription": "Gradim platforme za rezervacije i karte za transportne, ugostiteljske i uslužne firme.",
     "ctaButton": "Započnite projekat"
+  },
+  "homeServices": {
+    "eyebrow": "Platforme",
+    "title": "Web platforme za realne poslovne potrebe",
+    "subtitle": "Custom Laravel, WordPress i React rešenja za rezervacije, turizam, interne alate, e-commerce i poslovnu automatizaciju.",
+    "viewAll": "Pogledaj sve usluge",
+    "cards": {
+      "tourism": {
+        "code": "TOU",
+        "title": "Turizam i smeštaj",
+        "description": "Custom turistički portali sa listinzima, destinacijama, pretragom i formama za upit — sajt kao Nikana ili Grčka Info, originalan dizajn."
+      },
+      "booking": {
+        "code": "BKG",
+        "title": "Rezervacije i booking",
+        "description": "Online sistemi za rezervacije sa dostupnošću, naplatom, admin panelima i QR kartama."
+      },
+      "admin": {
+        "code": "ADM",
+        "title": "Admin paneli",
+        "description": "Dashboard-ovi bazirani na ulogama i operativni alati za upravljanje podacima, korisnicima i svakodnevnim tokovima."
+      },
+      "wordpress": {
+        "code": "WPD",
+        "title": "WordPress sajtovi",
+        "description": "Brzi, lako uredljivi WordPress sajtovi i custom teme za firme i agencije."
+      },
+      "ecommerce": {
+        "code": "ECM",
+        "title": "E-commerce",
+        "description": "WooCommerce prodavnice i online shop-ovi spremni za prodaju, skaliranje i rangiranje."
+      },
+      "ai": {
+        "code": "AII",
+        "title": "AI-asistirani tokovi",
+        "description": "Praktične AI integracije za sadržaj, pretragu, dokumente i poslovnu automatizaciju."
+      }
+    }
+  },
+  "servicesIndex": {
+    "seo": {
+      "title": "Usluge | Petar Arsić — Full-Stack Developer",
+      "description": "Full-stack usluge razvoja: Laravel aplikacije, WordPress sajtovi, sistemi za rezervacije, turistički portali, admin paneli, CRM alati, e-commerce i AI integracije."
+    },
+    "heroCallsign": "Usluge",
+    "title": "Usluge razvoja za realne poslovne potrebe",
+    "subtitle": "Custom Laravel, WordPress i React rešenja za rezervacije, turizam, interne alate, e-commerce i poslovnu automatizaciju.",
+    "ctaTitle": "Niste sigurni koja usluga odgovara?",
+    "ctaDescription": "Recite mi koji problem pokušavate da rešite i preporučiću pravi pristup — bez prodajnog pritiska.",
+    "ctaButton": "Započnite razgovor",
+    "faqTitle": "Česta pitanja",
+    "professionalServiceType": "Full-Stack Web Development",
+    "readMore": "Pročitaj više",
+    "faq": [
+      {
+        "question": "Da li radite i na malim i na velikim projektima?",
+        "answer": "Da. Bavit ću se svega od malih WordPress sajtova i dodavanja funkcionalnosti do full-stack platformi sa rezervacijama, plaćanjima i admin panelima."
+      },
+      {
+        "question": "Možete li napraviti booking ili turistički portal?",
+        "answer": "Da — to je jedna od mojih glavnih specijalizacija. Izgradio sam sisteme za rezervacije koji obrađuju realna plaćanja i turističke platforme sa listinzima, destinacijama i formama za upit."
+      },
+      {
+        "question": "Da li radite na postojećim codebase-ovima?",
+        "answer": "Da. Redovno proširujem postojeće Laravel, WordPress i React projekte, popravljam bagove i modernizujem legacy kod."
+      },
+      {
+        "question": "Da li su vaša rešenja SEO-friendly?",
+        "answer": "Da. Koristim semantički HTML, ispravnu strukturu naslova, čiste URL-ove, meta tagove, structured data i brze stranice — bilo na WordPress-u ili Next.js-u."
+      }
+    ]
+  },
+  "servicePages": {
+    "breadcrumbHome": "Početna",
+    "breadcrumbServices": "Usluge",
+    "heroCallsign": "Usluga",
+    "heroCta": "Započnite projekat",
+    "allServicesCta": "Sve usluge",
+    "whoForTitle": "Za koga je ovo",
+    "whatBuildTitle": "Šta se može izgraditi",
+    "featuresTitle": "Tipične funkcije",
+    "techTitle": "Korišćene tehnologije",
+    "projectsTitle": "Relevantno iskustvo",
+    "relatedServicesTitle": "Povezane usluge",
+    "faqTitle": "Česta pitanja",
+    "ctaTitle": "Spremni da gradimo?",
+    "ctaDescription": "Recite mi šta gradite, koji sajt ili aplikaciju već imate (ako imate), koje funkcije su vam potrebne i kakav je rok — kao i da li već znate da vam treba WordPress, Laravel ili React, ili vam treba pomoć oko izbora tehnologije. Odgovaram u roku od jednog radnog dana.",
+    "ctaButton": "Javite se",
+    "noProjects": "Još uvek nema javnih case study-ja za ovu uslugu — kontaktirajte me za detalje.",
+    "readMore": "Pročitaj više",
+    "services": {
+      "custom-web-applications": {
+        "title": "Custom Web Aplikacije",
+        "code": "CWA",
+        "seo": {
+          "title": "Izrada custom web aplikacija | Petar Arsić",
+          "description": "Custom web aplikacije izgrađene sa Laravel-om, React-om i Next.js-om. Sistemi za rezervacije, admin paneli, poslovni alati i API platforme za realne firme."
+        },
+        "shortDescription": "Prilagođene web aplikacije koje rešavaju realne poslovne probleme — od Laravel backend-a do React frontend-a.",
+        "subtitle": "Web aplikacije izgrađene oko vašeg workflow-a, a ne obrnuto. Laravel backend-i, React frontend-i, čisti API-ji i produkciona infrastruktura.",
+        "serviceType": "Custom Web Application Development",
+        "whoForIntro": "Ova usluga je za firme koje trebaju softver dizajniran oko njihovih specifičnih procesa, a ne gotove proizvode koji nameću kompromise.",
+        "whoFor": [
+          { "title": "Firme sa operativnim opterećenjem", "description": "Biznisi koji žele da zamene tabele i ručni rad jednim pouzdanim sistemom." },
+          { "title": "Startapovi i produktni timovi", "description": "Osnivači koji trebaju MVP ili produkciono rešenje izgrađeno brzo i održavano kako treba." },
+          { "title": "Agencije koje trebaju backend podršku", "description": "Timovi koji trebaju solidan Laravel API ili admin panel iza svog frontend rada." },
+          { "title": "Postojeći sistemi koji trebaju proširenje", "description": "Firme sa codebase-om koji treba nove funkcije, refaktorisanje ili modernizaciju." }
+        ],
+        "whatBuildIntro": "Gradim end-to-end web aplikacije koje obrađuju realne podatke, realne korisnike i realna poslovna pravila.",
+        "built": [
+          { "title": "Platforme za poslovnu operativu", "description": "Alati za upravljanje kupcima, narudžbinama, inventarom, terminima ili internim tokovima." },
+          { "title": "API-driven web aplikacije", "description": "Laravel backend-i sa REST API-jima koje koriste React ili Next.js frontend-i." },
+          { "title": "Admin paneli i dashboard-ovi", "description": "Bezbedni interfejsi bazirani na ulogama za osoblje koje upravlja podacima i operativom." },
+          { "title": "Sistemi za rezervacije", "description": "Online zakazivanje, upravljanje dostupnošću i korisnički portali." },
+          { "title": "Integracioni slojevi", "description": "Povežite aplikaciju sa platnim provajderima, knjigovodstvenim alatima, email servisima ili API-jima trećih strana." }
+        ],
+        "features": [
+          "Tok rada modelovan prema tome kako vaš tim zaista radi, ne prema generičkom šablonu",
+          "Migracija podataka iz Excel tabela ili postojećeg legacy sistema",
+          "Integracije sa alatima za plaćanje, knjigovodstvo ili email",
+          "Više korisničkih uloga kroz timove i odeljenja",
+          "Automatizovani email i notifikacioni tokovi",
+          "Izveštavanje prilagođeno vašim poslovnim metrikama",
+          "Postepeno lansiranje od MVP-a do pune produkcije",
+          "Test i staging okruženja pre lansiranja"
+        ],
+        "techIntro": "Stack biram prema tome šta projekat zaista zahteva. Ovo su alati koje najčešće koristim za custom web aplikacije.",
+        "faq": [
+          { "question": "Da li radite na postojećim codebase-ovima?", "answer": "Da. Redovno preuzimam postojeće Laravel ili React projekte, razumem trenutnu strukturu i proširujem je bez lomljenja onoga što već radi." },
+          { "question": "Možete li izgraditi i backend i frontend?", "answer": "Da. Radim full-stack, tako da mogu da uradim bazu, API, admin panel i korisnički frontend u jednoj koherentnoj izgradnji." },
+          { "question": "Kako rešavate deployment?", "answer": "Koristim Docker za dosledna okruženja i deploy-ujem na servere poput DigitalOcean-a, sa SSL-om, konfiguracijom baziranom na okruženju i staging setup-om." },
+          { "question": "Da li je kod održiv?", "answer": "Da. Pratim Laravel i React konvencije, držim poslovnu logiku u servisnim klasama, pišem migracije i strukturiram kod tako da ga sledeći developer može nastaviti." },
+          { "question": "Da li projekat može da se isporuči u fazama?", "answer": "Da. Obično prvu fazu definišem oko ključnog toka rada koji je najvažniji, a zatim dodajem sekundarne funkcije, integracije i izveštavanje u kasnijim fazama kada se sistem pokaže u praksi." },
+          { "question": "Šta se dešava nakon lansiranja?", "answer": "Mogu da predam dokumentovan i održiv kod, ili da ostanem na raspolaganju za kontinuiranu podršku — ispravke grešaka, bezbednosne update-ove i manje dodatne funkcije kako se potrebe vašeg biznisa menjaju." }
+        ]
+      },
+      "laravel-applications": {
+        "title": "Laravel Aplikacije",
+        "code": "LAR",
+        "seo": {
+          "title": "Izrada Laravel aplikacija | Petar Arsić",
+          "description": "Produkcione Laravel aplikacije za sisteme rezervacija, admin panele, API-je i poslovnu automatizaciju. 5+ godina iskustva, 150.000+ transakcija obrađeno."
+        },
+        "shortDescription": "Produkcioni Laravel backend-i, API-ji i poslovne aplikacije izgrađeni za pouzdanost.",
+        "subtitle": "Laravel aplikacije koje izdržavaju realno opterećenje — od booking engine-a i admin panela do automatizacije i integracija.",
+        "serviceType": "Laravel Development",
+        "whoForIntro": "Ova usluga je za timove koje trebaju solidan PHP/Laravel fundament za svoj proizvod ili interni alat.",
+        "whoFor": [
+          { "title": "Firme koje trebaju custom backend", "description": "Izgradite pouzdan API i admin sloj za svoju mobilnu aplikaciju, frontend ili integracije sa partnerima." },
+          { "title": "Timovi koji prerastaju WordPress ili no-code alate", "description": "Pređite na custom Laravel aplikaciju kada vaš workflow više ne staje u plugin-bazirani setup." },
+          { "title": "Biznisi sa kompleksnim poslovnim pravilima", "description": "Laravel je dobar izbor kada vam treba precizna kontrola nad podacima, dozvolama i tokovima." },
+          { "title": "Timovi kojima treba dugoročna održivost", "description": "Laravel-ove konvencije, test alati i ekosistem olakšavaju održavanje projekta tokom vremena." }
+        ],
+        "whatBuildIntro": "Gradim Laravel aplikacije koje su organizovane, testirane i spremne za produkciju — isti temelj na kom danas radi DriveSoft platforma za rezervacije i izdavanje karata.",
+        "built": [
+          { "title": "REST API-ji", "description": "Resource-bazirani API-ji sa validacijom, autentifikacijom i doslednim JSON odgovorima." },
+          { "title": "Admin paneli", "description": "Dashboard-ovi bazirani na ulogama za upravljanje korisnicima, narudžbinama, sadržajem i operativom." },
+          { "title": "Booking engine-i", "description": "Logika dostupnosti, rezervacije, plaćanja i operativnih tokova." },
+          { "title": "Sistemi automatizacije", "description": "Planirani poslovi, importi, eksporti, notifikacije i integracije sa trećim stranama." },
+          { "title": "Multi-tenant SaaS alati", "description": "Aplikacije koje opslužuju više organizacija sa izoliranim podacima i podešavanjima." }
+        ],
+        "features": [
+          "Dizajn baze počinje od migracija",
+          "REST API sa form request validacijom",
+          "Autentifikacija i kontrola pristupa po ulogama",
+          "Servisne klase za poslovnu logiku",
+          "Queue pozadinski poslovi",
+          "Redis keširanje i sesije",
+          "Eloquent modeli i relacije",
+          "Automatizovano testiranje sa PHPUnit",
+          "Docker i CI/CD deployment"
+        ],
+        "techIntro": "Laravel je jezgro mog backend rada. Kombinujem ga sa alatima koji čine aplikaciju pouzdanom u skali.",
+        "faq": [
+          { "question": "Da li je Laravel još uvek dobar izbor 2026?", "answer": "Da. Laravel ostaje jedan od najproduktivnijih i najzrelijih PHP framework-ova, sa odličnim alatima za API-je, queue-ove, testiranje i dugoročno održavanje." },
+          { "question": "Da li Laravel može da podnese veliki saobraćaj?", "answer": "Da. Sa ispravnim keširanjem, queue worker-ima, indeksiranjem baze i queue-baziranim pozadinskim poslovima, Laravel podnosi ozbiljne obime transakcija. Moj produkcioni booking sistem obrađuje preko 150.000 rezervacija." },
+          { "question": "Da li pišete testove?", "answer": "Da. Pišem feature i unit testove za kritične putanje, posebno oko plaćanja, logike rezervacija i kontrole pristupa." },
+          { "question": "Možete li integrisati Laravel sa React frontend-om?", "answer": "Da. Većina mojih projekata koristi Laravel API sa React ili Next.js frontend-om, koji dele jedan izvor istine." }
+        ]
+      },
+      "wordpress-websites": {
+        "title": "WordPress Sajtovi",
+        "code": "WPD",
+        "seo": {
+          "title": "Izrada WordPress sajtova | Petar Arsić",
+          "description": "Brzi, lako uredljivi WordPress sajtovi za firme, agencije i lične brendove. Custom teme, SEO, performanse i jednostavno upravljanje sadržajem."
+        },
+        "shortDescription": "Custom WordPress sajtovi koji se brzo učitavaju, dobro rangiraju i koje vaš tim lako ažurira.",
+        "subtitle": "WordPress sajtovi izgrađeni za performanse, lako uređivanje i dugoročno održavanje — od korporativnih sajtova do rešenja integrisanih sa rezervacijama.",
+        "serviceType": "WordPress Development",
+        "whoForIntro": "Ova usluga je za firme koje trebaju profesionalan, lako uredljiv sajt bez kompleksnosti custom aplikacije.",
+        "whoFor": [
+          { "title": "Firme i agencije", "description": "Korporativni sajt koji izgleda profesionalno, brzo se učitava i koji marketinški tim lako ažurira." },
+          { "title": "Uslužni biznisi", "description": "Sajt sa stranicama usluga, kontakt formama, blogom i SEO strukturom koja donosi leadove." },
+          { "title": "Projekti koji trebaju booking frontend", "description": "WordPress kao korisnički sajt povezan sa Laravel backend-om za rezervacije ili podatke." },
+          { "title": "Timovi bez dedicated developera", "description": "Sajt koji klijent može sam ažurirati nakon lansiranja, uz obuku i dokumentaciju." }
+        ],
+        "whatBuildIntro": "Gradim WordPress sajtove koji su brzi, bezbedni i jednostavni za upravljanje, uključujući sajtove povezane sa Laravel booking API-jem — isto rešenje na kom radi javni sajt za prodaju karata Srbija Tours-a.",
+        "built": [
+          { "title": "Korporativni i poslovni sajtovi", "description": "Čisti, profesionalni sajtovi sa strukturiranim sadržajem, kontakt formama i blogovima." },
+          { "title": "WordPress sajtovi integrisani sa rezervacijama", "description": "WordPress frontend-i povezani sa Laravel booking API-jem za dostupnost i rezervacije." },
+          { "title": "Custom teme", "description": "Teme izgrađene od nule za performanse i kontrolu dizajna, bez natopljenih page builder-a." },
+          { "title": "SEO-optimizovani blogovi", "description": "Strukture sadržaja, metadata i podešavanje performansi za podršku search vidljivosti." },
+          { "title": "Višejezički sajtovi", "description": "Srpski/engleski ili višejezički setup-i za turizam, izvoz i uslužne firme." }
+        ],
+        "features": [
+          "Razvoj custom tema",
+          "Gutenberg blokovi i patterns",
+          "Advanced Custom Fields",
+          "On-page SEO setup",
+          "Optimizacija performansi",
+          "Responzivan dizajn",
+          "Kontakt forme i integracije",
+          "Obuka za upravljanje sadržajem"
+        ],
+        "techIntro": "Koristim moderne WordPress alate da sajtovi ostanu brzi i održivi.",
+        "faq": [
+          { "question": "Da li koristite page buildere?", "answer": "Preferiram custom Gutenberg blokove i ACF za kontrolu layout-a, što čini sajt bržim i lakšim za održavanje od teških page-builder plugin-a." },
+          { "question": "Možete li napraviti WordPress sajt brzim?", "answer": "Da. Optimizujem slike, minimiziram pluginove, koristim keširanje, čist kod tema i lake asset-e da vreme učitavanja ostane nisko." },
+          { "question": "Da li mogu sam ažurirati sajt?", "answer": "Da. Gradim sajtove tako da netehnički korisnici mogu da uređuju sadržaj, dodaju blog postove i upravljaju stranicama bez dodira u kod." },
+          { "question": "Da li WordPress može da se poveže sa custom booking sistemom?", "answer": "Da. Izgradio sam WordPress frontend-e koji komuniciraju sa Laravel backend-om da prikažu live dostupnost i prihvate rezervacije." },
+          { "question": "Da li mi treba WordPress ili custom Laravel?", "answer": "Za poslovni sajt, blog ili katalog sa upravljanjem sadržajem, WordPress je obično brži za lansiranje i lakši za predaju klijentu. Ako vam treba kompleksna poslovna logika, custom booking pravila ili tokovi rada van mogućnosti plugin-ova, custom Laravel aplikacija je bolje dugoročno rešenje — mogu da vam pomognem oko ovog izbora na kratkom pozivu." }
+        ]
+      },
+      "booking-systems": {
+        "title": "Sistemi za rezervacije",
+        "code": "BKG",
+        "seo": {
+          "title": "Izrada sistema za rezervacije | Petar Arsić",
+          "description": "End-to-end sistemi za rezervacije sa Laravel-om, React-om i plaćanjima. Izbor sedišta, dostupnost, QR karte i admin paneli. 150.000+ karata obrađeno."
+        },
+        "shortDescription": "Online rezervacione platforme sa real-time dostupnošću, naplatom i operativnim admin alatima.",
+        "subtitle": "Sistemi za rezervacije koji obrađuju realne kupce, realna plaćanja i realnu operativu — izgrađeni od baze do checkout-a.",
+        "serviceType": "Booking System Development",
+        "whoForIntro": "Ova usluga je za prevozne, ugostiteljske, rentne i uslužne firme koje primaju rezervacije online.",
+        "whoFor": [
+          { "title": "Prevoznici", "description": "Autobuski, trajektni ili shuttle prevoznici koji prodaju sedišta i karte online." },
+          { "title": "Pružaoci smeštaja", "description": "Hoteli, vile, apartmani i hosteli kojima treba dostupnost i upravljanje rezervacijama." },
+          { "title": "Rentni i uslužni biznisi", "description": "Iznajmljivanje opreme, zakazivanje termina, rezervacije tura i raspored resursa." },
+          { "title": "Organizatori događaja", "description": "Prodaja karata, izbor sedišta i check-in tokovi za događaje i lokacije." }
+        ],
+        "whatBuildIntro": "Gradim sisteme za rezervacije koji rešavaju teške probleme: konflikte dostupnosti, konkurentne rezervacije, plaćanja i operativno izveštavanje — iste probleme koje sam rešio gradeći DriveSoft platformu za rezervaciju sedišta i izdavanje karata u produkciji.",
+        "built": [
+          { "title": "Online tokovi rezervacija", "description": "Vođeni korisnički putevi od pretrage do potvrde." },
+          { "title": "Izbor sedišta ili resursa", "description": "Interaktivne mape sedišta, termini ili izbor resursa sa real-time dostupnošću." },
+          { "title": "Plaćanje i fiskalizacija", "description": "Online plaćanja sa zakonski usklađenim fiskalnim računima gde je to potrebno." },
+          { "title": "Generisanje i validacija QR karata", "description": "Karte sa QR kodovima koje osoblje može skenirati i validirati na mobilnim uređajima." },
+          { "title": "Dashboard-i za osoblje", "description": "Admin alati za upravljanje rezervacijama, kupcima, linijama, resursima i izveštajima." }
+        ],
+        "features": [
+          "Real-time dostupnost",
+          "Mape sedišta/resursa",
+          "Korisnički self-service",
+          "Bezbedan checkout",
+          "Integracija fiskalnih računa",
+          "QR karte",
+          "Email potvrde",
+          "Admin panel sa ulogama",
+          "Izveštaji i eksporti"
+        ],
+        "techIntro": "Moji sistemi za rezervacije se obično grade sa Laravel-om na backend-u i React-om ili Next.js-om na frontend-u, sa mobilnim alatima kada je potrebna terenska validacija.",
+        "faq": [
+          { "question": "Možete li napraviti sistem za rezervacije za moj biznis?", "answer": "Da — to je moja glavna specijalizacija. Moj glavni sistem, DriveSoft, obradio je preko 150.000 rezervacija i karata za međunarodne autobuske prevoznike. Možete isprobati demo uživo na demo.drivesoft.rs." },
+          { "question": "Da li može da podnese konkurentne rezervacije?", "answer": "Da. Koristim zaključavanje sedišta, baze transakcija i queue-baziranu obradu da sprečim dupla izbora sedišta u periodima visoke potražnje." },
+          { "question": "Možete li integrisati plaćanja?", "answer": "Da. Integrišem payment procesore i, gde to lokalni zakon zahteva, generisanje fiskalnih računa za usklađeno fakturisanje." },
+          { "question": "Da li osoblje može validirati karte na mobilnom?", "answer": "Da. Gradim React Native ili PWA alate za skeniranje koji rade online i offline za validaciju karata." },
+          { "question": "Da li projekat može da se isporuči u fazama?", "answer": "Da. Tipična prva faza pokriva osnovni tok rezervacija — dostupnost, rezervacije i potvrde. Kasnije faze mogu dodati plaćanja, alate za osoblje, izveštavanje ili proveru karata na mobilnom nakon što je osnovni sistem u produkciji." }
+        ]
+      },
+      "tourism-accommodation-portals": {
+        "title": "Turistički i smeštajni portali",
+        "code": "TOU",
+        "seo": {
+          "title": "Izrada turističkih i smeštajnih portala | Petar Arsić",
+          "description": "Custom turistički i smeštajni portali za agencije, vile i apartmane — Laravel booking sistemi, admin paneli, katalog smeštaja i upiti za rezervaciju."
+        },
+        "shortDescription": "Custom turističke platforme sa listinzima, destinacijama, filterima, formama za upit i admin panelima — slična funkcionalnost kao Nikana ili Grčka Info, originalan dizajn.",
+        "subtitle": "Izrada turističkog portala ili sajta turističke agencije — listinzi, destinacije, pretraga, filteri, sistem za upite o rezervaciji i admin panel za smeštaj — bez kopiranja postojećih sajtova.",
+        "serviceType": "Tourism Portal Development",
+        "whoForIntro": "Ova usluga je za turističke agencije, vlasnike smeštaja i property managere koji trebaju sajt koji prikazuje destinacije i obrađuje upite ili rezervacije.",
+        "whoFor": [
+          { "title": "Turističke agencije", "description": "Promovišite destinacije i objekte sa SEO-friendly stranicama i tokovima za upit." },
+          { "title": "Vlasnici vila i apartmana", "description": "Dobijte sajt za apartmane i vile — na primer sajt za apartmane u Grčkoj — sa fotografijama, sadržajima, lokacijom i opcijama za direktnu rezervaciju ili upit." },
+          { "title": "Property manageri", "description": "Upravljajte više objekata, vlasnicima i sezonskim cenama iz jednog admin panela." },
+          { "title": "Turistički startapovi", "description": "Lansirajte platformu fokusiranu na destinacije sa prostorom za rast u rezervacije i korisničke naloge vlasnika." }
+        ],
+        "whatBuildIntro": "Mogu da izgradim custom turističku i smeštajnu platformu sa sličnim tipovima funkcionalnosti kao popularni srpski portali, oslanjajući se na realno produkciono iskustvo sa booking sajtom Srbija Tours-a i DriveSoft platformom za rezervacije — originalan dizajn i kod.",
+        "built": [
+          { "title": "Katalog smeštaja", "description": "Svaki objekat dobija svoju stranicu sa fotografijama, sadržajima, lokacijom i dostupnošću." },
+          { "title": "Stranice destinacija i regiona", "description": "SEO-optimizovane stranice za Grčku, ostrva, regione ili gradove koji privlače organski saobraćaj." },
+          { "title": "Pretraga i filteri", "description": "Filtriranje po lokaciji, ceni, broju gostiju, sadržajima, dostupnosti i tipu objekta." },
+          { "title": "Upiti za rezervaciju", "description": "Booking sistem za smeštaj sa direktnim upitima ili rezervacijama, email notifikacijama i praćenjem u admin panelu." },
+          { "title": "Admin panel za smeštaj", "description": "Vlasnici objekata ili menadžeri mogu ažurirati dostupnost, cene i opise." },
+          { "title": "Višejezička struktura", "description": "Srpski, engleski i drugi jezici za dosezanje lokalnih i međunarodnih gostiju." }
+        ],
+        "features": [
+          "Responzivne galerije objekata",
+          "Kalendari dostupnosti",
+          "Sezonsko određivanje cena",
+          "Recenzije ili ocene gostiju",
+          "SEO-friendly URL-ovi i metadata",
+          "Google Maps integracija",
+          "Notifikacije za upite",
+          "Admin dashboard za listinze",
+          "Podrška za više valuta"
+        ],
+        "techIntro": "Turističke portale obično gradim sa Laravel-om na backend-u i React-om ili Next.js-om na frontend-u. WordPress može da odgovara za manje, content-heavy kataloge.",
+        "faq": [
+          { "question": "Da li možete da napravite sajt kao Nikana ili Grčka Info?", "answer": "Da — mogu da izgradim custom turističku i smeštajnu platformu sa sličnim tipovima funkcionalnosti: listinzi, destinacije, pretraga, filteri, forme za upit, admin panel, dostupnost, višejezička struktura i SEO-friendly stranice destinacija. Dizajn i kod su originalni." },
+          { "question": "Da li radite izradu sajta za apartmane u Grčkoj?", "answer": "Da. Mogu da izgradim sajt ili portal fokusiran na grčke destinacije, ostrva i apartmane, sa srpskim i engleskim sadržajem, stranicama destinacija i tokovima za upit ili rezervaciju." },
+          { "question": "Možete li dodati pretragu, filtere i stranice destinacija?", "answer": "Da. Pretraga po lokaciji, ceni, broju gostiju i sadržajima; filteri rezultata; i posebne SEO stranice za regione, ostrva ili gradove." },
+          { "question": "Da li vlasnici mogu sami da ažuriraju dostupnost?", "answer": "Da. Mogu da izgradim dashboard za vlasnike objekata gde menadžeri ažuriraju dostupnost, cene, fotografije i opise." },
+          { "question": "Da li ovo treba da bude WordPress ili custom Laravel?", "answer": "Zavisi od obima. WordPress dobro radi za manje kataloge sa editorialnim sadržajem. Custom Laravel je bolji za veće kataloge, kompleksna booking pravila, korisničke naloge vlasnika i dugoročni rast." },
+          { "question": "Koliko košta turistički portal?", "answer": "Cena zavisi od broja objekata, funkcija, jezika i integracija. Nakon kratkog discovery poziva mogu da vam dam fiksnu ponudu i plan fazične isporuke." },
+          { "question": "Da li projekat može da se razvija u fazama?", "answer": "Da. Tipična faza jedan je katalog sa formama za upit; faza dva dodaje dostupnost, vlasničke naloge i online plaćanja." }
+        ]
+      },
+      "admin-panels-dashboards": {
+        "title": "Admin paneli i dashboard-ovi",
+        "code": "ADM",
+        "seo": {
+          "title": "Izrada admin panela i dashboard-ova | Petar Arsić",
+          "description": "Custom Laravel i React admin paneli za korisnike, narudžbine, rezervacije i svakodnevnu operativu. Kontrola pristupa po ulogama, izveštavanje i eksport."
+        },
+        "shortDescription": "Bezbedni admin dashboard-i bazirani na ulogama koji daju vašem timu kontrolu nad podacima i operativom.",
+        "subtitle": "Admin paneli koji ubrzavaju svakodnevnu operativu — od unosa podataka i izveštavanja do upravljanja korisnicima i kontrole tokova rada.",
+        "serviceType": "Admin Panel Development",
+        "whoForIntro": "Ova usluga je za timove koji trebaju interni alat za upravljanje poslovnim podacima i operativom.",
+        "whoFor": [
+          { "title": "Operativni timovi", "description": "Zamenite tabele jednim dashboard-om za dnevni unos podataka i izveštavanje." },
+          { "title": "Menadžeri i direktori", "description": "Vidite KPI-jeve, prihode, popunjenost i performanse bez čekanja na ručne izveštaje." },
+          { "title": "Timovi za korisničku podršku", "description": "Pretražujte, pregledajte i ažurirajte korisničke zapise, narudžbine i rezervacije na jednom mestu." },
+          { "title": "Organizacije sa više uloga", "description": "Dajte svakom odeljenju pristup samo podacima i akcijama koje mu trebaju." }
+        ],
+        "whatBuildIntro": "Gradim admin panele koji su brzi, bezbedni i prilagođeni operativi koju podržavaju — slično po obimu back-office sistemu sa ulogama koji sam izgradio i održavam za DriveSoft-ove operacije prodaje autobuskih karata.",
+        "built": [
+          { "title": "Operativni dashboard-i", "description": "Dnevni pregledi rezervacija, narudžbina, korisnika ili bilo kog ključnog poslovnog metrika." },
+          { "title": "CRUD interfejsi", "description": "Kreiranje, čitanje, ažuriranje i brisanje zapisa sa validacijom, pretragom i filterima." },
+          { "title": "Kontrola pristupa po ulogama", "description": "Različiti pogledi i dozvole za operatere, menadžere i administratore." },
+          { "title": "Izveštavanje i eksport", "description": "Generisanje izveštaja i eksport CSV ili Excel fajlova za knjigovodstvo i analizu." },
+          { "title": "Prikazi podataka u realnom vremenu", "description": "Live tabele i grafikoni povezani sa produkcionom bazom ili API-jem." }
+        ],
+        "features": [
+          "Bezbedan login i upravljanje sesijama",
+          "Sistem uloga i dozvola",
+          "Napredna pretraga, filteri i sortiranje",
+          "Bulk akcije i importi",
+          "CSV/Excel eksport",
+          "Audit logovi",
+          "Responzivan layout",
+          "Interfejs spreman za tamni režim",
+          "Integracija sa backend API-jem"
+        ],
+        "techIntro": "Admin panele obično gradim sa Laravel-om na backend-u i React-om ili Next.js-om na frontend-u, koristeći Tailwind CSS za čist interfejs.",
+        "faq": [
+          { "question": "Da li admin panel može da se poveže na postojeću bazu?", "answer": "Da. Mogu da izgradim admin sloj iznad postojeće Laravel ili MySQL baze, ili dizajniram novu šemu od nule." },
+          { "question": "Da li radi na mobilnom?", "answer": "Da. Gradim responzivne admin interfejse tako da osoblje može proveriti podatke i završiti zadatke sa tableta ili telefona." },
+          { "question": "Možete li dodati izveštaje i grafikone?", "answer": "Da. Dodajem summary dashboard-e, filtrirane izveštaje i izvezive podatke za knjigovodstvo i operativu." },
+          { "question": "Kako rešavate dozvole?", "answer": "Implementiram kontrolu pristupa baziranu na ulogama tako da svaki korisnik vidi samo akcije i podatke relevantne za svoj posao." }
+        ]
+      },
+      "crm-internal-tools": {
+        "title": "CRM i interni poslovni alati",
+        "code": "CRM",
+        "seo": {
+          "title": "Izrada CRM-a i internih poslovnih alata | Petar Arsić",
+          "description": "Custom CRM i interni alati izgrađeni sa Laravel-om i React-om. Upravljanje kupcima, pipeline-ovi, zadaci, izveštavanje i poslovna automatizacija."
+        },
+        "shortDescription": "Interni alati i CRM-ovi koji zamenjuju tabele i razdvojene tokove rada.",
+        "subtitle": "Custom CRM-ovi i operativni alati koji centralizuju vaše korisničke podatke, zadatke i izveštavanje.",
+        "serviceType": "CRM Development",
+        "whoForIntro": "Ova usluga je za firme koje su prerasle Excel tabele i razdvojene alate i trebaju centralizovan sistem za kupce, leadove i interne procese.",
+        "whoFor": [
+          { "title": "Prodajni timovi", "description": "Pratite leadove, ponude, istoriju komunikacije i follow-up-ove na jednom mestu." },
+          { "title": "Uslužni biznisi", "description": "Upravljajte klijentima, terminima, istorijom poslova i fakturisanjem bez razbacanih dokumenata." },
+          { "title": "Mala i srednja preduzeća", "description": "Dobijte CRM funkcije koje vam zaista trebaju bez plaćanja natopljenog enterprise softvera." },
+          { "title": "Timovi sa jedinstvenim tokovima rada", "description": "CRM oblikovan oko vašeg prodajnog procesa umesto da vas tera u generički pipeline." }
+        ],
+        "whatBuildIntro": "Gradim CRM-ove i interne alate koji odgovaraju načinu na koji vaš biznis zaista radi.",
+        "built": [
+          { "title": "Upravljanje odnosima sa kupcima", "description": "Kontakti, evidencija komunikacije, zadaci i podsetnici za follow-up." },
+          { "title": "Prodajni pipeline-ovi", "description": "Custom faze, vrednosti ponuda, verovatnoća i praćenje aktivnosti." },
+          { "title": "Praćenje zadataka i projekata", "description": "Dodeljivanje zadataka, rokovi i praćenje napretka u timu." },
+          { "title": "Automatizovani podsetnici i notifikacije", "description": "Email ili in-app alerti za follow-up-ove, rokove i promene statusa." },
+          { "title": "Custom izveštaji", "description": "Prognoze prihoda, stope konverzije i izveštaji o aktivnostima prilagođeni vašim metrikama." }
+        ],
+        "features": [
+          "Upravljanje kontaktima i kompanijama",
+          "Verovatnoća zaključenja posla i prognoza prihoda",
+          "Dodela zadataka i podsetnici",
+          "Email notifikacioni tokovi",
+          "Custom polja i tagovi",
+          "Vremenska linija komunikacije sa klijentom",
+          "Kontrola pristupa po prodajnim timovima ili odeljenjima",
+          "Import i export alati za postojeće podatke o klijentima",
+          "Dashboard izveštavanje po sopstvenim prodajnim metrikama"
+        ],
+        "techIntro": "CRM-ove gradim sa Laravel-om na backend-u i React-om na interfejsu, držeći podatkovni model fleksibilnim za budući rast.",
+        "faq": [
+          { "question": "Možete li izgraditi CRM umesto Salesforce-a ili HubSpot-a?", "answer": "Da. Custom CRM može biti isplativiji i tačno odgovarati vašem workflow-u, bez neiskorišćenih funkcija ili naknada po korisniku." },
+          { "question": "Da li se može integrisati sa email-om ili kalendarom?", "answer": "Da. Mogu da integrišem email notifikacije, sinhronizaciju kalendara i API-je trećih strana u zavisnosti od vašeg workflow-a." },
+          { "question": "Da li možemo importovati postojeće podatke o kupcima?", "answer": "Da. Gradim import alate za CSV i Excel fajlove, sa validacijom i detekcijom duplikata." },
+          { "question": "Da li je bezbedan?", "answer": "Da. Implementiram autentifikaciju, kontrolu pristupa po ulogama, audit logove i sigurne hosting prakse." }
+        ]
+      },
+      "ecommerce-woocommerce": {
+        "title": "E-commerce i WooCommerce",
+        "code": "ECM",
+        "seo": {
+          "title": "Izrada e-commerce i WooCommerce prodavnica | Petar Arsić",
+          "description": "WooCommerce i custom e-commerce rešenja za online prodaju proizvoda i usluga. WordPress shop-ovi, integracija plaćanja, SEO i performanse."
+        },
+        "shortDescription": "Online prodavnice izgrađene na WooCommerce-u i WordPress-u — spremne za prodaju, skaliranje i rangiranje.",
+        "subtitle": "E-commerce sajtovi koji obrađuju proizvode, plaćanja, dostavu i poreze bez nepotrebne kompleksnosti.",
+        "serviceType": "E-commerce Development",
+        "whoForIntro": "Ova usluga je za firme koje žele da prodaju proizvode ili usluge online putem platforme koju mogu same da upravljaju.",
+        "whoFor": [
+          { "title": "Maloprodaje i brendovi", "description": "Prodajte fizičke proizvode sa kategorijama, varijantama, inventarom i pravilima dostave." },
+          { "title": "Pružaoci usluga", "description": "Prodajte rezervacije, digitalne proizvode ili pakete usluga kroz WooCommerce." },
+          { "title": "Mala i srednja preduzeća", "description": "Dobijte prodavnicu koja je isplativa za održavanje i laka za upravljanje." },
+          { "title": "Firme koje prelaze online", "description": "Pređite sa offline prodaje ili narudžbina preko društvenih mreža na profesionalnu online prodavnicu." }
+        ],
+        "whatBuildIntro": "Gradim WooCommerce prodavnice koje su brze, bezbedne i fokusirane na konverzije.",
+        "built": [
+          { "title": "Produktni katalozi", "description": "Organizovane kategorije, filteri, pretraga i detaljne produktne stranice." },
+          { "title": "Checkout i plaćanja", "description": "Bezbedan checkout sa karticama, uplatnicama, pouzećem ili opcijama plaćanja na rate." },
+          { "title": "Podešavanje dostave i poreza", "description": "Konfigurisane zone dostave, metode i poreska pravila za Srbiju, EU ili međunarodnu prodaju." },
+          { "title": "Korisnički nalozi", "description": "Istorija narudžbina, sačuvane adrese i tokovi za ponovnu kupovinu." },
+          { "title": "Analitika i izveštavanje", "description": "Prodajni izveštaji, praćenje inventara i integracija sa Google Analytics." }
+        ],
+        "features": [
+          "WooCommerce setup i konfiguracija",
+          "Custom dizajn prodavnice",
+          "Integracija payment gateway-a",
+          "Pravila dostave i poreza",
+          "Import i upravljanje proizvodima",
+          "Kupon i pravila popusta",
+          "SEO-friendly produktne stranice",
+          "Optimizacija performansi",
+          "Obuka za upravljanje narudžbinama"
+        ],
+        "techIntro": "Za većinu e-commerce projekata koristim WooCommerce na WordPress-u, sa custom temama i integracijama po potrebi.",
+        "faq": [
+          { "question": "Da li je WooCommerce dobar za srpsku prodavnicu?", "answer": "Da. WooCommerce podržava lokalne payment gateway-e, fiskalne integracije, srpske opcije dostave i višejezički sadržaj." },
+          { "question": "Možete li prilagoditi checkout?", "answer": "Da. Prilagođavam checkout polja, opcije plaćanja i tok kupovine da odgovaraju lokalnim zahtevima i poboljšaju konverzije." },
+          { "question": "Možete li ga povezati sa knjigovodstvenim softverom?", "answer": "Da. Integrišem se sa lokalnim fiskalizacijom i knjigovodstvenim sistemima gde to zakon ili poslovni workflow zahtevaju." },
+          { "question": "Da li će prodavnica biti brza?", "answer": "Da. Optimizujem slike, omogućavam keširanje, minimiziram pluginove i koristim lake teme da brzina stranica ostane visoka." }
+        ]
+      },
+      "react-frontend-applications": {
+        "title": "React / Frontend aplikacije",
+        "code": "RFE",
+        "seo": {
+          "title": "Izrada React frontend aplikacija | Petar Arsić",
+          "description": "React i Next.js frontend aplikacije povezane sa Laravel API-jima. Brzi, interaktivni interfejsi za sisteme rezervacija, dashboard-ove i marketinške sajtove."
+        },
+        "shortDescription": "Brzi, interaktivni React i Next.js frontend-i povezani sa solidnim backend-ima.",
+        "subtitle": "Moderne frontend aplikacije sa čistim UX-om, podacima u realnom vremenu i produkcionim performansama.",
+        "serviceType": "Frontend Development",
+        "whoForIntro": "Ova usluga je za timove koji trebaju poliran, performantan frontend izgrađen na modernim React obrascima.",
+        "whoFor": [
+          { "title": "Produktni timovi", "description": "Izgradite React ili Next.js frontend povezan na postojeći API." },
+          { "title": "Agencije", "description": "Dobijte pouzdanog frontend developera koji može da se integriše sa Laravel, WordPress ili headless CMS backend-ima." },
+          { "title": "Startapovi", "description": "Lansirajte MVP ili korisničku aplikaciju brzo bez žrtvovanja kvaliteta koda." },
+          { "title": "Firme koje osvežavaju UI", "description": "Modernizujte stariji frontend sa React-om, TypeScript-om i Tailwind CSS-om." }
+        ],
+        "whatBuildIntro": "Gradim React frontend-e koji su brzi, pristupačni i laki za održavanje, obično uz sopstveni Laravel ili Next.js backend da bi ceo stek ostao usklađen — isti pristup na kom radi DriveSoft-ov korisnički deo za rezervacije.",
+        "built": [
+          { "title": "Single-page aplikacije", "description": "React aplikacije sa client-side routing-om, state management-om i API integracijom." },
+          { "title": "Server-renderovani sajtovi", "description": "Next.js aplikacije za bolji SEO, performanse i društveno deljenje." },
+          { "title": "Booking i checkout interfejsi", "description": "Interaktivne forme, mape sedišta i checkout tokovi sa podacima u realnom vremenu." },
+          { "title": "Admin dashboard-i", "description": "Podatkovne tabele, grafikoni, filteri i forme za interne alate." },
+          { "title": "Marketinški i portfolio sajtovi", "description": "Animirani, responzivni sajtovi koji se brzo učitavaju i konvertuju posetioce." }
+        ],
+        "features": [
+          "Arhitektura bazirana na komponentama",
+          "TypeScript gde dodaje vrednost",
+          "Tailwind CSS stilizacija",
+          "Framer Motion animacije",
+          "API integracija i keširanje",
+          "Responzivan dizajn",
+          "Best practice pristupačnost",
+          "SEO-ready sa Next.js",
+          "Optimizacija performansi"
+        ],
+        "techIntro": "Koristim React i Next.js kao glavni frontend stack, sa TypeScript-om i Tailwind CSS-om za većinu projekata.",
+        "faq": [
+          { "question": "Da li gradite samo frontend ili full-stack?", "answer": "Mogu oboje. Često gradim React frontend zajedno sa Laravel backend-om koji ga pokreće." },
+          { "question": "Da li koristite TypeScript?", "answer": "Da, kada projekat ima koristi od strožeg tipiziranja — posebno za veće aplikacije i predaju timovima." },
+          { "question": "Možete li napraviti sajt SEO-friendly?", "answer": "Da. Sa Next.js koristim server-side rendering, ispravne meta tagove, structured data i čiste URL-ove." },
+          { "question": "Možete li se povezati na moj postojeći API?", "answer": "Da. Povezujem React frontend-e sa REST ili GraphQL API-jima, uključujući Laravel, WordPress ili servise trećih strana." }
+        ]
+      },
+      "pwa-applications": {
+        "title": "PWA aplikacije",
+        "code": "PWA",
+        "seo": {
+          "title": "Izrada PWA aplikacija | Petar Arsić",
+          "description": "Progressive web aplikacije sa offline podrškom, mogućnošću instalacije i brzim performansama. Izgrađene sa Next.js, React-om i modernim web standardima."
+        },
+        "shortDescription": "Instalabilne web aplikacije koje rade offline i deluju kao nativne mobilne aplikacije.",
+        "subtitle": "PWA-e koje kombinuju doseg weba sa pouzdanošću i osećajem nativne aplikacije.",
+        "serviceType": "Progressive Web App Development",
+        "whoForIntro": "Ova usluga je za firme koje žele funkcionalnost sličnu aplikaciji bez troškova i trenja nativnih app store-ova.",
+        "whoFor": [
+          { "title": "Terenski radnici", "description": "Aplikacije koje rade offline i sinhronizuju se kada se konekcija vrati." },
+          { "title": "Uslužni biznisi", "description": "Korisničke aplikacije za rezervacije, narudžbine i upravljanje nalogom." },
+          { "title": "Startapovi koji testiraju ideju", "description": "Brzo lansirajte instalabilnu aplikaciju pre nego što uložite u nativne iOS/Android izgradnje." },
+          { "title": "Firme sa mobile-first korisnicima", "description": "Dajte mobilnim korisnicima brzo iskustvo koje mogu dodati na početni ekran." }
+        ],
+        "whatBuildIntro": "Gradim progressive web aplikacije koristeći Next.js i React, sa fokusom na performanse, offline podršku i instalabilnost.",
+        "built": [
+          { "title": "Instalabilne web aplikacije", "description": "Aplikacije koje korisnici mogu dodati na početni ekran bez prolaska kroz app store." },
+          { "title": "Offline-first alati", "description": "Osnovna funkcionalnost radi bez konekcije, sa sinhronizacijom u pozadini." },
+          { "title": "Skeneri karata i QR kodova", "description": "Skenirajte i validirajte karte pomoću kamere uređaja, sa offline redom čekanja." },
+          { "title": "Korisnički portali", "description": "Nalog-bazirane aplikacije za rezervacije, narudžbine, dokumente i komunikaciju." },
+          { "title": "Laki admin alati", "description": "Mobile-friendly dashboard-i za osoblje u pokretu." }
+        ],
+        "features": [
+          "Web App Manifest",
+          "Service Worker keširanje",
+          "Offline skladištenje podataka",
+          "Push notifikacije",
+          "Prompt za instalaciju na početni ekran",
+          "Responzivan mobilni UI",
+          "Background sync",
+          "Pristup kameri i QR kodovima",
+          "Brzo početno učitavanje"
+        ],
+        "techIntro": "PWA-e obično gradim sa Next.js-om ili React-om, koristeći service workere i Web App Manifest za instalabilnost.",
+        "faq": [
+          { "question": "Da li PWA može da radi offline?", "answer": "Da. Koristim service workere i lokalno skladištenje tako da osnovne funkcije rade bez interneta." },
+          { "question": "Da li korisnici moraju da instaliraju aplikaciju iz app store-a?", "answer": "Ne. PWA-e se mogu instalirati direktno iz browser-a na početni ekran, bez app store review-a i naknada." },
+          { "question": "Da li može da pristupa kameri i QR kodovima?", "answer": "Da. Moderne PWA-e mogu pristupiti kamerama uređaja, geolokaciji i drugim senzorima preko browser API-ja." },
+          { "question": "Da li je PWA jeftinija od nativne aplikacije?", "answer": "Obično da. Jedna PWA radi na Android-u, iOS-u i desktop-u, smanjujući troškove razvoja i održavanja." }
+        ]
+      },
+      "ai-integrations": {
+        "title": "AI integracije za biznis",
+        "code": "AII",
+        "seo": {
+          "title": "AI integracije za biznis | Petar Arsić",
+          "description": "Praktične AI integracije za poslovne aplikacije — generisanje sadržaja, obrada dokumenata, asistenti za pretragu. Izgrađeno sa OpenAI-jem i Laravel-om."
+        },
+        "shortDescription": "Dodajte praktične AI funkcije vašoj web aplikaciji — od chat asistenata do automatizovanog sadržaja i obrade dokumenata.",
+        "subtitle": "AI funkcije koje rešavaju realne poslovne probleme, integrisane u vašu Laravel ili React aplikaciju sa ispravnim inženjerskim nadzorom.",
+        "serviceType": "AI Integration Development",
+        "whoForIntro": "Ova usluga je za firme koje žele da dodaju AI mogućnosti svojoj postojećoj ili novoj web aplikaciji bez predavanja kontrole black-box alatima.",
+        "whoFor": [
+          { "title": "Firme sa velikim obimom dokumenata", "description": "Automatizujte sumiranje, ekstrakciju i klasifikaciju dokumenata i korisničkih poruka." },
+          { "title": "Content timovi", "description": "Ubrzajte draft-ovanje, prepisivanje i generisanje SEO metadata uz ljudsku reviziju." },
+          { "title": "Timovi za korisničku podršku", "description": "AI-asistirano pisanje odgovora i pretraga baze znanja za brže odgovore." },
+          { "title": "Produktni timovi", "description": "Dodajte asistente za pretragu, logiku preporuka ili automatizaciju unutar aplikacije." }
+        ],
+        "whatBuildIntro": "Integrišem AI u realne aplikacije, držeći arhitekturu, obradu podataka i konačne odluke pod inženjerskom kontrolom.",
+        "built": [
+          { "title": "AI-asistirani content workflow-ovi", "description": "Generisanje, prepisivanje i optimizacija draft-ova sadržaja unutar admin panela ili CMS-a." },
+          { "title": "Obrada dokumenata", "description": "Ekstrakcija podataka iz faktura, formulara ili email-ova i njihovo struktuirano skladištenje u bazi." },
+          { "title": "Asistenti za pretragu", "description": "Pretraga prirodnim jezikom preko vaše dokumentacije, proizvoda ili baze znanja." },
+          { "title": "Automation trigger-i", "description": "Korišćenje AI za klasifikaciju tiketa, rutiranje leadova ili sumiranje korisničkih povratnih informacija." },
+          { "title": "Custom chat interfejsi", "description": "Ugradivi asistenti koji odgovaraju na osnovu vaših podataka, a ne generičkog treninga." }
+        ],
+        "features": [
+          "Integracija OpenAI ili custom modela",
+          "Prompt engineering i verzionisanje",
+          "Retrieval-Augmented Generation",
+          "Postavljanje vector store-a",
+          "Bezbedno rukovanje API-jem",
+          "Workflow-ovi sa ljudskom revizijom",
+          "Monitoring korišćenja i rate limit-i",
+          "Kontrola privatnosti podataka",
+          "Integracija sa Laravel-om i React-om"
+        ],
+        "techIntro": "Koristim OpenAI API-je, vector store-ove i Laravel/React integracije da bih dodao AI funkcije bezbedno i produktivno.",
+        "faq": [
+          { "question": "Da li AI može da zameni developere?", "answer": "Ne. AI je moćan akcelerator, ali arhitektura, poslovna logika, bezbednost i revizija ostaju pod ljudskom kontrolom." },
+          { "question": "Da li su moji podaci sigurni sa AI integracijama?", "answer": "Da. Dizajniram integracije tako da se osetljivi podaci pažljivo rukuju, sa ispravnom kontrolom pristupa i bez nepotrebnog izlaganja." },
+          { "question": "Da li AI može da radi sa mojim postojećim podacima?", "answer": "Da. Koristeći retrieval-augmented generation, mogu povezati AI sa vašim dokumentima, proizvodima ili bazom znanja tako da odgovori budu utemeljeni na vašem sadržaju." },
+          { "question": "Kako merite kvalitet AI output-a?", "answer": "Ugrađujem korake ljudske revizije, logovanje i feedback petlje tako da se output poboljšava tokom vremena i greške budu uočene pre nego što stignu do korisnika." }
+        ]
+      },
+      "website-redesign": {
+        "title": "Redizajn sajta",
+        "code": "RDN",
+        "seo": {
+          "title": "Redizajn i rebuild sajta | Petar Arsić",
+          "description": "Usluge redizajna i rebuild-a sajta za firme koje trebaju bolje performanse, UX, SEO i održivost. Next.js, React i WordPress."
+        },
+        "shortDescription": "Redizajnirajte i rebuild-ujte sajt za bolje performanse, UX, SEO i lakše održavanje.",
+        "subtitle": "Redizajn koji poboljšava kako sajt izgleda, performira i konvertuje — bez gubitka sadržaja ili search rangiranja.",
+        "serviceType": "Website Redesign",
+        "whoForIntro": "Ova usluga je za firme čiji trenutni sajt je spor, zastareo, težak za ažuriranje ili više ne konvertuje posetioce.",
+        "whoFor": [
+          { "title": "Firme sa zastarelim sajtovima", "description": "Osvežite dizajn, tehnologiju i strukturu sadržaja da odgovaraju aktuelnim standardima." },
+          { "title": "Biznisi sa sporim sajtovima", "description": "Poboljšajte vreme učitavanja, Core Web Vitals i mobilno iskustvo." },
+          { "title": "Timovi koji se muče sa CMS-om", "description": "Pređite na čistiji WordPress setup ili moderno headless rešenje." },
+          { "title": "Sajtovi koji gube search vidljivost", "description": "Sačuvajte i unapredite SEO tokom rebuild-a sa ispravnim redirekcijama, metadata i strukturom." }
+        ],
+        "whatBuildIntro": "Redizajniram i rebuild-ujem sajtove sa fokusom na brzinu, upotrebljivost, SEO i održivost.",
+        "built": [
+          { "title": "Rebuild-ovi fokusirani na performanse", "description": "Next.js ili optimizovani WordPress sajtovi koji se brzo učitavaju i dobri su na Core Web Vitals." },
+          { "title": "UX poboljšanja", "description": "Jasnija navigacija, jače pozive na akciju i mobile-first layout-i." },
+          { "title": "SEO-friendly migracije", "description": "Mapiranje URL-ova, redirekcije, structured data i metadata za zaštitu search rangiranja." },
+          { "title": "Modernizacija CMS-a", "description": "Prelazak na Gutenberg, ACF ili headless CMS za lakše upravljanje sadržajem." },
+          { "title": "Kreiranje dizajn sistema", "description": "Dosledan set komponenti i stilova za buduće stranice i ažuriranja." }
+        ],
+        "features": [
+          "Audit trenutnog sajta i performansi",
+          "UX i informaciona arhitektura",
+          "Mobile-first responzivan dizajn",
+          "Plan SEO migracije",
+          "Migracija sadržaja",
+          "Optimizacija performansi",
+          "Analytics i tracking setup",
+          "Obuka i dokumentacija"
+        ],
+        "techIntro": "Redizajniram sajtove sa Next.js-om, React-om ili WordPress-om u zavisnosti od sadržaja, budžeta i dugoročnih potreba.",
+        "faq": [
+          { "question": "Da li će redizajn naštetiti mom SEO-u?", "answer": "Ne ako se radi ispravno. Mapiram stare URL-ove na nove, postavljam redirekcije, čuvam metadata i šaljem ažurirane sitemap-e." },
+          { "question": "Možete li sačuvati postojeći sadržaj?", "answer": "Da. Planiram migraciju sadržaja kao deo redizajna, bilo unutar WordPress-a ili na novu platformu." },
+          { "question": "Koliko traje redizajn?", "answer": "Tipičan redizajn marketinškog sajta traje 4–8 nedelja u zavisnosti od broja stranica, sadržaja i integracija." },
+          { "question": "Da li radite sa mojim dizajnerom?", "answer": "Da. Mogu da implementiram dizajn iz Figma-e ili da sarađujem sa vašim dizajnerom na usavršavanju pristupa." }
+        ]
+      },
+      "website-maintenance": {
+        "title": "Održavanje sajta",
+        "code": "MNT",
+        "seo": {
+          "title": "Održavanje i podrška sajta | Petar Arsić",
+          "description": "Redovno održavanje i podrška za Laravel, WordPress i React sajtove. Bezbednosna ažuriranja, popravka bagova, performanse i backup."
+        },
+        "shortDescription": "Pouzdano održavanje Laravel, WordPress i React sajtova — da se vi fokusirate na svoj biznis.",
+        "subtitle": "Održavajte sajt bezbednim, brzim i ažuriranim uz preventivno održavanje i brzu podršku kada se pojave problemi.",
+        "serviceType": "Website Maintenance",
+        "whoForIntro": "Ova usluga je za firme koje trebaju pouzdanog developera da održava njihov sajt u dobrom stanju.",
+        "whoFor": [
+          { "title": "Zaposleni vlasnici biznisa", "description": "Fokusirajte se na svoj biznis dok ja rukujem ažuriranjima, backup-ovima i monitoringom." },
+          { "title": "Timovi bez internih developera", "description": "Dobijte tehničku podršku i male izmene bez zapošljavanja full-time osoblja." },
+          { "title": "Sajtovi sa custom kodom", "description": "Održavanje Laravel aplikacija, custom WordPress tema i React frontend-a koje generičke agencije ne mogu podržati." },
+          { "title": "Firme koje se spremaju za rast", "description": "Održavajte fondaciju zdravom dok dodajete nove funkcije i saobraćaj." }
+        ],
+        "whatBuildIntro": "Pružam održavanje koje sprečava probleme pre nego što utiču na korisnike.",
+        "built": [
+          { "title": "Bezbednosna ažuriranja", "description": "Redovna ažuriranja za Laravel, WordPress, pluginove i server pakete." },
+          { "title": "Popravke bagova i debugging", "description": "Otklanjanje problema u produkciji bez lomljenja postojećih funkcija." },
+          { "title": "Monitoring performansi", "description": "Optimizacija vremena učitavanja, upita baze i keširanja kako raste saobraćaj." },
+          { "title": "Backup i recovery", "description": "Automatizovani backup-ovi i testirani postupci oporavka." },
+          { "title": "Male dodatne funkcije", "description": "Dodavanje novih stranica, formi, integracija ili izveštaja na kontinuiranoj osnovi." }
+        ],
+        "features": [
+          "Mesečna bezbednosna ažuriranja",
+          "Ažuriranje pluginova i zavisnosti",
+          "Uptime monitoring",
+          "Automatizovani backup-ovi",
+          "Popravka bagova",
+          "Tune-ovanje performansi",
+          "Optimizacija baze",
+          "SSL i DNS podrška",
+          "Priority kanal podrške"
+        ],
+        "techIntro": "Održavam Laravel, WordPress i React/Next.js sajtove, sa iskustvom u Docker-u i serverima kada se pojave infrastrukturni problemi.",
+        "faq": [
+          { "question": "Da li nudite mesečne pakete održavanja?", "answer": "Da. Nudim mesečne retajnere koji uključuju ažuriranja, monitoring, backup-ove i određeni obim razvojnog vremena." },
+          { "question": "Možete li popraviti hakovan ili pokvaren sajt?", "answer": "Da. Čistim malware, vraćam iz backup-a, ažuriram kredencijale i ojačavam sajt protiv budućih napada." },
+          { "question": "Koliko brzo odgovarate na probleme?", "answer": "Za klijente na održavanju odgovaram u roku od jednog radnog dana za standardne probleme i što je brže moguće za hitne padove." },
+          { "question": "Da li dajete izveštaje?", "answer": "Da. Mesečni izveštaji pokrivaju primenjena ažuriranja, verifikovane backup-ove, uptime i svaki završeni posao." }
+        ]
+      }
+    }
   }
 }

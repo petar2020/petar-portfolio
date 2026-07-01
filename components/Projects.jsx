@@ -1,12 +1,13 @@
 'use client'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import { useTranslations } from 'next-intl'
+import { useTranslations, useLocale } from 'next-intl'
 import { featuredProjects } from '../data/projects'
 import SectionHeader from './ui/SectionHeader'
 
 export default function Projects() {
   const t = useTranslations('projects')
+  const locale = useLocale()
 
   return (
     <section id="projects" className="relative grain bg-ink-850 border-t border-line py-20 sm:py-28 scroll-mt-24">
@@ -15,7 +16,7 @@ export default function Projects() {
 
         <div className="mt-12 border-t border-line">
           {featuredProjects.map((p, i) => (
-            <ProjectRow key={p.key} p={p} t={t} n={String(i + 1).padStart(2, '0')} />
+            <ProjectRow key={p.key} p={p} t={t} n={String(i + 1).padStart(2, '0')} locale={locale} />
           ))}
         </div>
       </div>
@@ -23,7 +24,16 @@ export default function Projects() {
   )
 }
 
-function ProjectRow({ p, t, n }) {
+const PROJECT_SERVICE_LINKS = {
+  'drivesoft-web': 'custom-web-applications',
+  'sti-web': 'booking-systems',
+  'sti-mobile': 'react-frontend-applications',
+  'drivesoft-backoffice': 'admin-panels-dashboards',
+  'bozic-konig': 'booking-systems',
+  'prostor-dereta': 'wordpress-websites',
+}
+
+function ProjectRow({ p, t, n, locale }) {
   const title = t(`items.${p.key}.title`)
   const summary = t(`items.${p.key}.summary`)
   const role = t(`items.${p.key}.role`)
@@ -36,6 +46,7 @@ function ProjectRow({ p, t, n }) {
     { key: 'github', label: t('viewGithub'), external: true },
   ]
   const links = linkDefs.filter((l) => p.links?.[l.key])
+  const relatedService = PROJECT_SERVICE_LINKS[p.key]
 
   return (
     <motion.article
@@ -96,6 +107,14 @@ function ProjectRow({ p, t, n }) {
                 </a>
               ))}
             </div>
+          )}
+          {relatedService && (
+            <a
+              href={`/${locale}/services/${relatedService}`}
+              className="inline-flex items-center gap-1.5 font-mono text-xs font-semibold uppercase tracking-[0.14em] text-teal-bright hover:text-amber transition-colors md:text-right"
+            >
+              {t('relatedService', { default: 'Related service' })} <span aria-hidden>→</span>
+            </a>
           )}
         </div>
       </div>

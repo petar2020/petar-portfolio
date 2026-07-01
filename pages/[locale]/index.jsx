@@ -3,6 +3,7 @@ import dynamic from 'next/dynamic'
 import { useMemo } from 'react'
 import { useTranslations } from 'next-intl'
 import { useRouter } from 'next/router'
+import { services } from '../../data/services'
 import SEO from '../../components/SEO'
 import Nav from '../../components/Nav'
 import Hero from '../../components/Hero'
@@ -11,6 +12,7 @@ import CaseStudy from '../../components/CaseStudy'
 import HowIWork from '../../components/HowIWork'
 import AboutMe from '../../components/AboutMe'
 import Projects from '../../components/Projects'
+import HomeServices from '../../components/HomeServices'
 import ClientLogos from '../../components/ClientLogos'
 import ParallaxCVTimeline from '../../components/ParallaxCVTimeline'
 import Contact from '../../components/Contact'
@@ -29,6 +31,7 @@ const OG_LOCALE_MAP = {
 
 export default function LocaleHome({ locale }) {
   const tSeo = useTranslations('seo')
+  const tServices = useTranslations('servicePages')
   const router = useRouter()
   const currentLocale = locale ?? router.query?.locale ?? 'en'
 
@@ -40,14 +43,48 @@ export default function LocaleHome({ locale }) {
       .filter(([key]) => key !== currentLocale)
       .map(([, value]) => value)
 
+    const serviceSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'ProfessionalService',
+      '@id': `${canonicalUrl}#professionalservice`,
+      name: 'Petar Arsić — Full-Stack Development Services',
+      description: tSeo('description'),
+      url: canonicalUrl,
+      provider: {
+        '@type': 'Person',
+        '@id': `${SITE_URL}/#person`,
+        name: 'Petar Arsić',
+      },
+      areaServed: {
+        '@type': 'Place',
+        name: 'Serbia, Europe, Remote',
+      },
+      serviceType: 'Custom web applications, Laravel development, WordPress websites, booking systems, tourism portals, admin panels',
+      hasOfferCatalog: {
+        '@type': 'OfferCatalog',
+        name: 'Development Services',
+        itemListElement: services.map((service, index) => ({
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: tServices(`services.${service.slug}.title`),
+            url: `${SITE_URL}/${currentLocale}/services/${service.slug}`,
+          },
+          position: index + 1,
+        })),
+      },
+    }
+
     return {
       title: tSeo('title'),
       description: tSeo('description'),
       url: canonicalUrl,
       locale: ogLocale,
       alternateLocales,
+      additionalSchemas: [serviceSchema],
+      hrefLangPath: '',
     }
-  }, [currentLocale, router?.asPath, tSeo])
+  }, [currentLocale, router?.asPath, tSeo, tServices])
 
   return (
     <>
@@ -62,6 +99,7 @@ export default function LocaleHome({ locale }) {
         <LiveDemo />
         <CaseStudy />
         <Projects />
+        <HomeServices />
         <ServicesAnimated />
         <HowIWork />
         <AboutMe />

@@ -1,11 +1,12 @@
 'use client'
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-import { useTranslations } from 'next-intl'
+import { useTranslations, useLocale } from 'next-intl'
 import LanguageSwitcher from './LanguageSwitcher'
 
 export default function Nav() {
   const t = useTranslations('nav')
+  const locale = useLocale()
   const [scrolled, setScrolled] = useState(false)
   const [active, setActive] = useState('home')
 
@@ -21,6 +22,7 @@ export default function Nav() {
     { href: '#demo', label: t('demo', { default: 'Live demo' }) },
     { href: '#case-study', label: t('casestudy', { default: 'Case study' }) },
     { href: '#projects', label: t('projects', { default: 'Projects' }) },
+    { href: `/${locale}/services`, label: t('services', { default: 'Services' }), isPage: true },
     { href: '#about', label: t('about', { default: 'About' }) },
     { href: '#contact', label: t('contact', { default: 'Contact' }) },
   ]
@@ -43,7 +45,11 @@ export default function Nav() {
     return () => observer.disconnect()
   }, [])
 
-  const handleNavClick = (e, href) => {
+  const handleNavClick = (e, href, isPage) => {
+    if (isPage) {
+      if (typeof window !== 'undefined' && window.trackCTA) window.trackCTA('navigation', href)
+      return
+    }
     e.preventDefault()
     const el = document.getElementById(href.replace('#', ''))
     if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
@@ -68,13 +74,13 @@ export default function Nav() {
 
         <div className="flex items-center gap-6">
           <ul className="hidden md:flex gap-7">
-            {navItems.map(({ href, label }) => {
+            {navItems.map(({ href, label, isPage }) => {
               const isActive = active === href.replace('#', '')
               return (
                 <li key={href} className="group">
                   <motion.a
                     href={href}
-                    onClick={(e) => handleNavClick(e, href)}
+                    onClick={(e) => handleNavClick(e, href, isPage)}
                     whileHover={{ y: -1 }}
                     aria-current={isActive ? 'true' : undefined}
                     className={`relative font-mono text-xs uppercase tracking-[0.14em] transition-colors ${

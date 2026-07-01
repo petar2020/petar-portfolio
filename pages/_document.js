@@ -1,9 +1,18 @@
 // pages/_document.js
-import { Html, Head, Main, NextScript } from 'next/document';
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 
-export default function Document() {
-  return (
-    <Html lang="en" className="dark" style={{ backgroundColor: '#06100E' }}>
+export default class MyDocument extends Document {
+  static async getInitialProps(ctx) {
+    const initialProps = await Document.getInitialProps(ctx);
+    // Routes are pages/[locale]/..., so the locale is the first path segment.
+    const locale = ctx.query?.locale === 'sr' ? 'sr' : 'en';
+    return { ...initialProps, locale };
+  }
+
+  render() {
+    const { locale } = this.props;
+    return (
+    <Html lang={locale} className="dark" style={{ backgroundColor: '#06100E' }}>
       <Head>
         {/* FOUC prevention — hide until stylesheet loads */}
         <style dangerouslySetInnerHTML={{ __html: 'html{opacity:0}' }} />
@@ -27,5 +36,6 @@ export default function Document() {
         <NextScript />
       </body>
     </Html>
-  );
+    );
+  }
 }

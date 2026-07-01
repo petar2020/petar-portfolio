@@ -3,10 +3,7 @@ User-agent: *
 Allow: /
 Crawl-delay: 1
 
-# AI search crawlers — welcome
-User-agent: GPTBot
-Allow: /
-
+# AI search crawlers — welcome (search/citation bots)
 User-agent: OAI-SearchBot
 Allow: /
 
@@ -18,6 +15,10 @@ Allow: /
 
 User-agent: Google-Extended
 Allow: /
+
+# OpenAI training crawler — disallow while allowing search bot above
+User-agent: GPTBot
+Disallow: /
 
 # Disallow internal routes
 Disallow: /api/

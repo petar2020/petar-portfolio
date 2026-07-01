@@ -12,7 +12,7 @@ export default function AboutMe() {
   return (
     <section id="about" className="relative grain bg-ink-900 border-t border-line py-20 sm:py-28 scroll-mt-24">
       <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 relative z-10">
-        <SectionHeader index="07" callsign="Profile" title={t('title')} subtitle={t('subtitle')} />
+        <SectionHeader index="08" callsign="Profile" title={t('title')} subtitle={t('subtitle')} />
 
         <div className="mt-12 grid lg:grid-cols-2 gap-px bg-line border border-line">
           {/* Bio */}

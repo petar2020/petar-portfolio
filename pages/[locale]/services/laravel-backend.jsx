@@ -33,6 +33,7 @@ export default function LaravelBackendService({ locale }) {
         locale={ogLocale}
         alternateLocales={alternateLocales}
         isMainPage={false}
+        hrefLangPath="/services/laravel-backend"
       />
 
       <SubpageNav backLabel={tSub('backLink')} />

@@ -19,7 +19,7 @@ export default function ServicesAnimated() {
   return (
     <section id="services" className="relative grain bg-ink-900 border-t border-line py-20 sm:py-28 scroll-mt-24">
       <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 relative z-10">
-        <SectionHeader index="05" callsign="Capabilities" title={t('title')} subtitle={t('subtitle')} />
+        <SectionHeader index="06" callsign="Capabilities" title={t('title')} subtitle={t('subtitle')} />
 
         {/* spec table */}
         <div className="mt-12 border border-line">

@@ -13,7 +13,7 @@ export default function ParallaxCVTimeline() {
   return (
     <section ref={ref} className="relative grain bg-ink-900 border-t border-line py-20 sm:py-28 overflow-hidden">
       <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 relative z-10">
-        <SectionHeader index="09" callsign="Dossier" title={t('title')} subtitle={t('downloadDescription')} />
+        <SectionHeader index="10" callsign="Dossier" title={t('title')} subtitle={t('downloadDescription')} />
 
         <motion.div
           style={{ y }}

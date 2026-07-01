@@ -16,7 +16,7 @@ export default function ClientLogos() {
   return (
     <section className="relative grain bg-ink-850 border-t border-line py-20 sm:py-28">
       <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 relative z-10">
-        <SectionHeader index="08" callsign="Trusted by" title={t('title')} subtitle={t('subtitle')} />
+        <SectionHeader index="09" callsign="Trusted by" title={t('title')} subtitle={t('subtitle')} />
 
         {/* operators strip — single hairline rail, not a grid of boxes */}
         <motion.div

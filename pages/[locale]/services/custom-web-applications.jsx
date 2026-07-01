@@ -1,7 +1,7 @@
 import ServicePageTemplate from '../../../components/ServicePageTemplate'
 
-export default function BookingSystemsService({ locale }) {
-  return <ServicePageTemplate slug="booking-systems" locale={locale} />
+export default function CustomWebApplicationsService({ locale }) {
+  return <ServicePageTemplate slug="custom-web-applications" locale={locale} />
 }
 
 export async function getStaticPaths() {

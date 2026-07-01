@@ -11,14 +11,19 @@ export default function SEO({
   type = 'website',
   locale,
   alternateLocales = [],
-  isMainPage = true
+  isMainPage = true,
+  additionalSchemas = [],
+  // Locale-agnostic path (no leading locale segment, e.g. '' for homepage,
+  // '/services/tourism-accommodation-portals' for a service page). Used to build
+  // self-referencing + reciprocal hreflang tags for *this* page instead of the homepage.
+  hrefLangPath = ''
 }) {
   const router = useRouter();
   const siteUrl = url || `${DEFAULT_SITE_URL}${router?.asPath ?? ''}`;
   const ogLocale = locale || 'sr_RS';
   const alternate = alternateLocales.length > 0 ? alternateLocales : ['en_US'];
-  const siteName = 'Petar Arsić Portfolio';
-  const fullTitle = `${title} | ${siteName}`;
+  const siteName = 'Petar Arsić';
+  const fullTitle = title.includes('Petar Arsić') ? title : `${title} | ${siteName}`;
   const ogImageUrl = image.startsWith('http')
     ? image
     : (() => {
@@ -53,13 +58,23 @@ export default function SEO({
     knowsAbout: [
       'Laravel',
       'PHP',
+      'MySQL',
+      'JavaScript',
       'React',
       'React Native',
       'Next.js',
-      'MySQL',
       'WordPress',
-      'Booking & Ticketing Systems',
+      'WooCommerce',
+      'Booking Systems',
+      'Ticketing Systems',
+      'Admin Panels',
       'Business Process Automation',
+      'Tourism Portals',
+      'Accommodation Portals',
+      'CRM Software',
+      'E-commerce',
+      'Progressive Web Applications',
+      'AI Integrations',
       'Production Software',
       'Full-Stack Development'
     ],
@@ -232,10 +247,10 @@ export default function SEO({
       {/* Canonical URL */}
       <link rel="canonical" href={siteUrl} />
 
-      {/* Hreflang — language alternates */}
-      <link rel="alternate" hrefLang="en" href={`${DEFAULT_SITE_URL}/en`} />
-      <link rel="alternate" hrefLang="sr" href={`${DEFAULT_SITE_URL}/sr`} />
-      <link rel="alternate" hrefLang="x-default" href={DEFAULT_SITE_URL} />
+      {/* Hreflang — language alternates for THIS page (self-referencing + reciprocal) */}
+      <link rel="alternate" hrefLang="en" href={`${DEFAULT_SITE_URL}/en${hrefLangPath}`} />
+      <link rel="alternate" hrefLang="sr" href={`${DEFAULT_SITE_URL}/sr${hrefLangPath}`} />
+      <link rel="alternate" hrefLang="x-default" href={`${DEFAULT_SITE_URL}/en${hrefLangPath}`} />
 
       {/* Favicon */}
       <link rel="icon" href="/favicon.ico" />
@@ -284,6 +299,16 @@ export default function SEO({
           />
         </>
       )}
+
+      {additionalSchemas.map((schema, index) => (
+        <script
+          key={index}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(schema)
+          }}
+        />
+      ))}
     </Head>
   );
 }

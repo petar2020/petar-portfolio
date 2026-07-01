@@ -20,7 +20,7 @@ export default function HowIWork() {
   return (
     <section id="how-i-work" className="relative grain bg-ink-850 border-t border-line py-20 sm:py-28 scroll-mt-24">
       <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 relative z-10">
-        <SectionHeader index="06" callsign="Method" title={t('title')} subtitle={t('subtitle')} status="amber" />
+        <SectionHeader index="07" callsign="Method" title={t('title')} subtitle={t('subtitle')} status="amber" />
 
         {/* process flow — stops on a route */}
         <div className="mt-16 relative">

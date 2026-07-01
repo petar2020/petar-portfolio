@@ -1,12 +1,14 @@
 'use client'
 import { motion } from 'framer-motion'
 import { useState } from 'react'
-import { useTranslations } from 'next-intl'
+import { useTranslations, useLocale } from 'next-intl'
+import Link from 'next/link'
 import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt, FaPaperPlane, FaGithub, FaLinkedin } from 'react-icons/fa'
 import SectionHeader from './ui/SectionHeader'
 
 export default function Contact() {
   const t = useTranslations('contact')
+  const locale = useLocale()
 
   const [formData, setFormData] = useState({ name: '', email: '', message: '', website: '' })
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -61,7 +63,7 @@ export default function Contact() {
   return (
     <section id="contact" className="relative grain bg-ink-850 border-t border-line py-20 sm:py-28 scroll-mt-24">
       <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 relative z-10">
-        <SectionHeader index="10" callsign="Contact" title={t('title')} subtitle={t('subtitle')} status="amber" />
+        <SectionHeader index="11" callsign="Contact" title={t('title')} subtitle={t('subtitle')} status="amber" />
 
         <div className="mt-12 grid lg:grid-cols-2 gap-px bg-line border border-line">
           {/* form */}
@@ -174,9 +176,22 @@ export default function Contact() {
             </div>
           </div>
 
-          <p className="mt-10 pt-6 border-t border-line callsign !text-[0.62rem] text-paper-faint">
-            © {new Date().getFullYear()} · {t('copyright')}
-          </p>
+          <div className="mt-10 pt-6 border-t border-line flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+            <p className="callsign !text-[0.62rem] text-paper-faint">
+              © {new Date().getFullYear()} · {t('copyright')}
+            </p>
+            <div className="flex items-center gap-6">
+              <Link href={`/${locale}/services`} className="callsign !text-[0.62rem] text-paper-faint hover:text-teal-bright transition-colors">
+                {t('servicesLink', { default: 'Services' })}
+              </Link>
+              <Link href={`/${locale}/case-study/drivesoft`} className="callsign !text-[0.62rem] text-paper-faint hover:text-teal-bright transition-colors">
+                {t('caseStudyLink', { default: 'Case Study' })}
+              </Link>
+              <a href="#contact" className="callsign !text-[0.62rem] text-paper-faint hover:text-teal-bright transition-colors">
+                {t('contactLink', { default: 'Contact' })}
+              </a>
+            </div>
+          </div>
         </div>
       </footer>
     </section>

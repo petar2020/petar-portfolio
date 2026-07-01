@@ -10,11 +10,28 @@ Petar Arsic is a full-stack Laravel and React developer based in Belgrade, Serbi
 
 - Portfolio: https://petararsic.rs/en
 - DriveSoft Case Study: https://petararsic.rs/en/case-study/drivesoft
-- Laravel Backend Development: https://petararsic.rs/en/services/laravel-backend
-- Booking & Ticketing Systems: https://petararsic.rs/en/services/booking-systems
+- All Services: https://petararsic.rs/en/services
 - GitHub: https://github.com/petar2020
 - LinkedIn: https://www.linkedin.com/in/petar-arsic-2067821b5/
 - Email: petar.arsic14@hotmail.com
+
+## Services
+
+- Custom Web Applications: https://petararsic.rs/en/services/custom-web-applications
+- Laravel Applications: https://petararsic.rs/en/services/laravel-applications
+- WordPress Websites: https://petararsic.rs/en/services/wordpress-websites
+- Booking & Reservation Systems: https://petararsic.rs/en/services/booking-systems
+- Tourism & Accommodation Portals: https://petararsic.rs/en/services/tourism-accommodation-portals
+- Admin Panels & Dashboards: https://petararsic.rs/en/services/admin-panels-dashboards
+- CRM & Internal Business Tools: https://petararsic.rs/en/services/crm-internal-tools
+- E-commerce & WooCommerce: https://petararsic.rs/en/services/ecommerce-woocommerce
+- React / Frontend Applications: https://petararsic.rs/en/services/react-frontend-applications
+- PWA Applications: https://petararsic.rs/en/services/pwa-applications
+- AI Integrations for Business: https://petararsic.rs/en/services/ai-integrations
+- Website Redesign: https://petararsic.rs/en/services/website-redesign
+- Website Maintenance: https://petararsic.rs/en/services/website-maintenance
+
+Serbian versions of every page above are available at the same path under /sr/ instead of /en/ (e.g. https://petararsic.rs/sr/services/tourism-accommodation-portals).
 
 ## Key Projects
 
@@ -31,7 +48,7 @@ Laravel, PHP, MySQL, React, Next.js, React Native, Expo, Redis, Docker, DigitalO
 
 ## Specialties
 
-Booking & ticketing systems, payment & fiscalization integration, QR-code ticket validation, role-based admin panels, transport operations software, full-stack SaaS development
+Booking & ticketing systems, tourism and accommodation portals, payment & fiscalization integration, QR-code ticket validation, role-based admin panels and CRM tools, WordPress/WooCommerce sites, transport operations software, full-stack SaaS development
 
 ## Availability
 

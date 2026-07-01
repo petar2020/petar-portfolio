@@ -2,14 +2,18 @@ import { useTranslations } from 'next-intl'
 import { useRouter } from 'next/router'
 import SEO from '../../../components/SEO'
 import SubpageNav from '../../../components/SubpageNav'
+import { RelatedServiceCard } from '../../../components/ServicePageTemplate'
+import { getServiceBySlug } from '../../../data/services'
 
 const SITE_URL = 'https://petararsic.rs'
 const OG_LOCALE_MAP = { sr: 'sr_RS', en: 'en_US' }
+const CASE_STUDY_RELATED_SERVICES = ['booking-systems', 'admin-panels-dashboards', 'laravel-applications']
 
 export default function CaseStudyDriveSoft({ locale }) {
   const t = useTranslations('caseStudyPage')
   const tSub = useTranslations('subpage')
   const tCS = useTranslations('caseStudy')
+  const tCommon = useTranslations('servicePages')
   const router = useRouter()
   const currentLocale = locale ?? router.query?.locale ?? 'en'
 
@@ -23,15 +27,29 @@ export default function CaseStudyDriveSoft({ locale }) {
     .filter(([key]) => key !== currentLocale)
     .map(([, value]) => value)
 
+  const relatedServices = CASE_STUDY_RELATED_SERVICES.map((slug) => getServiceBySlug(slug)).filter(Boolean)
+
+  const pageUrl = `${SITE_URL}/${currentLocale}/case-study/drivesoft`
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: tCommon('breadcrumbHome'), item: `${SITE_URL}/${currentLocale}` },
+      { '@type': 'ListItem', position: 2, name: tCS('title'), item: pageUrl },
+    ],
+  }
+
   return (
     <>
       <SEO
         title={t('seo.title')}
         description={t('seo.description')}
-        url={`${SITE_URL}/${currentLocale}/case-study/drivesoft`}
+        url={pageUrl}
         locale={ogLocale}
         alternateLocales={alternateLocales}
         isMainPage={false}
+        hrefLangPath="/case-study/drivesoft"
+        additionalSchemas={[breadcrumbSchema]}
       />
 
       <SubpageNav backLabel={tSub('backLink')} />
@@ -194,8 +212,25 @@ export default function CaseStudyDriveSoft({ locale }) {
           </div>
         </section>
 
+        {/* Related services */}
+        {relatedServices.length > 0 && (
+          <section className="grain bg-ink-900 border-b border-line py-16 sm:py-20">
+            <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+              <div className="flex items-baseline gap-3 mb-8">
+                <span className="font-mono text-sm font-bold text-teal-bright">08</span>
+                <h2 className="callsign">{tCommon('relatedServicesTitle')}</h2>
+              </div>
+              <div className="grid sm:grid-cols-3 gap-px bg-line border border-line">
+                {relatedServices.map((related) => (
+                  <RelatedServiceCard key={related.slug} related={related} locale={currentLocale} t={tCommon} />
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
         {/* Demo CTA */}
-        <section className="grain bg-ink-900 border-b border-line py-16 sm:py-20">
+        <section className="grain bg-ink-850 border-b border-line py-16 sm:py-20">
           <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="font-display font-bold text-paper text-2xl sm:text-3xl mb-3">{t('demoTitle')}</h2>
             <p className="text-paper-dim mb-8 max-w-2xl mx-auto">{t('demoDescription')}</p>
@@ -211,7 +246,7 @@ export default function CaseStudyDriveSoft({ locale }) {
         </section>
 
         {/* Contact CTA */}
-        <section className="grain bg-ink-850 py-16 sm:py-20">
+        <section className="grain bg-ink-900 py-16 sm:py-20">
           <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="font-display font-bold text-paper text-2xl sm:text-3xl mb-3">{t('ctaTitle')}</h2>
             <p className="text-paper-dim mb-8">{t('ctaDescription')}</p>
