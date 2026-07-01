@@ -52,7 +52,7 @@ export default function Contact() {
   }
 
   const inputCls =
-    'w-full p-4 bg-ink-900 border border-line text-paper placeholder:text-paper-faint focus:border-teal-bright outline-none transition-colors font-sans'
+    'w-full p-4 rounded-md bg-ink-900 border border-line text-paper placeholder:text-paper-faint focus:border-teal-bright outline-none transition-colors font-sans'
 
   const infoRows = [
     { Icon: FaMapMarkerAlt, title: t('locationTitle'), value: t('location'), href: null },
@@ -61,9 +61,9 @@ export default function Contact() {
   ]
 
   return (
-    <section id="contact" className="relative grain bg-ink-850 border-t border-line py-20 sm:py-28 scroll-mt-24">
+    <section id="contact" className="relative grain bg-ink-900 border-t border-line py-20 sm:py-28 scroll-mt-24">
       <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 relative z-10">
-        <SectionHeader index="11" callsign="Contact" title={t('title')} subtitle={t('subtitle')} status="amber" />
+        <SectionHeader index="08" callsign="Contact" title={t('title')} subtitle={t('subtitle')} status="amber" />
 
         <div className="mt-12 grid lg:grid-cols-2 gap-px bg-line border border-line">
           {/* form */}
@@ -185,6 +185,14 @@ export default function Contact() {
               <Link href={`/${locale}/services`} className="callsign !text-[0.62rem] text-paper-faint hover:text-teal-bright transition-colors">
                 {t('servicesLink', { default: 'Services' })}
               </Link>
+              <Link href={locale === 'sr' ? `/${locale}/cenovnik` : `/${locale}/pricing`} className="callsign !text-[0.62rem] text-paper-faint hover:text-teal-bright transition-colors">
+                {t('pricingLink', { default: 'Pricing' })}
+              </Link>
+              {locale === 'sr' && (
+                <Link href="/sr/izrada-sajtova" className="callsign !text-[0.62rem] text-paper-faint hover:text-teal-bright transition-colors">
+                  Izrada sajtova
+                </Link>
+              )}
               <Link href={`/${locale}/case-study/drivesoft`} className="callsign !text-[0.62rem] text-paper-faint hover:text-teal-bright transition-colors">
                 {t('caseStudyLink', { default: 'Case Study' })}
               </Link>

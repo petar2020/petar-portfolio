@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
+import { FaMapMarkerAlt } from 'react-icons/fa'
 import SplitFlap from './ui/SplitFlap'
 import CountUp from './ui/CountUp'
 import Ticker from './ui/Ticker'
@@ -32,7 +33,7 @@ function RouteSchematic() {
             strokeDashoffset: 1,
             animation: `route-draw 1.4s var(--ease-surface) forwards`,
             animationDelay: `${0.2 + i * 0.09}s`,
-            opacity: 0.55,
+            opacity: 0.4,
           }}
         />
       ))}
@@ -41,7 +42,8 @@ function RouteSchematic() {
           key={i}
           cx={n.x} cy={n.y}
           r={i === 4 ? 1.5 : 1}
-          fill={i === 4 ? 'var(--amber)' : 'var(--teal-bright)'}
+          fill={i === 4 ? 'var(--amber)' : 'var(--teal)'}
+          opacity={0.6}
         />
       ))}
     </svg>
@@ -65,15 +67,19 @@ export default function Hero() {
 
   return (
     <section id="home" className="relative grain overflow-hidden min-h-[92vh] flex flex-col justify-center pt-28 pb-0">
-      {/* focal lighting — control-room screen ambience, sits behind content */}
+      {/* focal lighting — slow-drifting aurora washes, sits behind content */}
       <div className="pointer-events-none absolute inset-0 z-0" aria-hidden>
         <div
-          className="absolute right-[4%] top-[10%] h-[36rem] w-[36rem] rounded-full opacity-70 blur-3xl"
-          style={{ background: 'radial-gradient(circle, rgba(45,212,191,0.12), transparent 62%)' }}
+          className="animate-aurora-a absolute right-[4%] top-[8%] h-[38rem] w-[38rem] rounded-full opacity-80 blur-3xl"
+          style={{ background: 'radial-gradient(circle, rgba(14,124,114,0.13), transparent 62%)' }}
         />
         <div
-          className="absolute -left-[6%] bottom-[2%] h-[30rem] w-[30rem] rounded-full opacity-60 blur-3xl"
-          style={{ background: 'radial-gradient(circle, rgba(246,166,35,0.07), transparent 62%)' }}
+          className="animate-aurora-b absolute -left-[6%] bottom-[2%] h-[32rem] w-[32rem] rounded-full opacity-70 blur-3xl"
+          style={{ background: 'radial-gradient(circle, rgba(194,65,12,0.09), transparent 62%)' }}
+        />
+        <div
+          className="animate-aurora-b absolute left-[38%] top-[42%] h-[26rem] w-[26rem] rounded-full opacity-60 blur-3xl"
+          style={{ background: 'radial-gradient(circle, rgba(169,207,199,0.28), transparent 65%)', animationDelay: '-8s' }}
         />
       </div>
 
@@ -81,14 +87,9 @@ export default function Hero() {
         <motion.div variants={container} initial="hidden" animate="visible" className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-8 items-center">
           {/* LEFT — copy */}
           <div className="md:col-span-7">
-            <motion.div variants={item} className="flex items-center gap-3">
-              <span className="h-1.5 w-1.5 rounded-full bg-amber animate-pulse" aria-hidden />
-              <span className="callsign">01 — {t('eyebrow')}</span>
-            </motion.div>
-
-            <motion.h1 variants={item} className="mt-6 font-display font-bold tracking-tight text-paper text-4xl sm:text-5xl md:text-6xl leading-[1.05]">
+            <motion.h1 variants={item} className="font-display font-bold tracking-tight text-paper text-4xl sm:text-5xl md:text-6xl leading-[1.05]">
               {t('headline')}{' '}
-              <SplitFlap text={t('headlineAccent')} className="text-amber" startDelay={0.35} />
+              <SplitFlap text={t('headlineAccent')} className="font-serif italic font-normal text-amber" startDelay={0.35} />
             </motion.h1>
 
             <motion.p variants={item} className="mt-6 max-w-xl text-base sm:text-lg text-paper-dim leading-relaxed">
@@ -105,53 +106,43 @@ export default function Hero() {
             </motion.div>
           </div>
 
-          {/* RIGHT — operator instrument panel */}
+          {/* RIGHT — profile card */}
           <motion.div variants={item} className="md:col-span-5">
-            <div className="panel ticked relative max-w-sm mx-auto md:mx-0 md:ml-auto">
-              {/* call-sign bar */}
-              <div className="flex items-center justify-between border-b border-line px-3 py-2">
-                <span className="callsign !text-[0.62rem]">SYS · OPERATOR</span>
-                <span className="flex items-center gap-1.5 callsign !text-[0.62rem] text-teal-bright">
-                  <span className="h-1.5 w-1.5 rounded-full bg-teal-bright animate-pulse" /> ONLINE
-                </span>
-              </div>
-
-              {/* schematic + duotone portrait */}
-              <div className="relative aspect-[5/4] overflow-hidden border-b border-line">
+            <div className="panel animate-float-slow relative max-w-sm mx-auto md:mx-0 md:ml-auto overflow-hidden rounded-2xl">
+              {/* portrait over a quiet route schematic */}
+              <div className="relative aspect-[5/4] bg-ink-850 overflow-hidden">
                 <div className="absolute inset-0 p-4">
                   <RouteSchematic />
                 </div>
-                <div className="absolute bottom-3 right-3 w-[52%] aspect-square overflow-hidden border border-line-strong">
-                  <Image
-                    src="/avatar.png"
-                    alt="Petar Arsić"
-                    width={520}
-                    height={520}
-                    priority
-                    className="h-full w-full object-cover grayscale contrast-[1.15]"
-                  />
-                  <div className="absolute inset-0 mix-blend-color" style={{ background: 'var(--teal)' }} />
-                  <div className="absolute inset-0 mix-blend-multiply" style={{ background: 'radial-gradient(120% 100% at 50% 0%, transparent 40%, rgba(6,16,14,0.85))' }} />
-                  <div className="absolute inset-0 mix-blend-screen opacity-25" style={{ background: 'linear-gradient(180deg, var(--amber), transparent 60%)' }} />
-                  <span className="absolute left-1 top-1 h-3 w-3 border-l border-t border-teal-bright" />
-                  <span className="absolute bottom-1 right-1 h-3 w-3 border-b border-r border-teal-bright" />
-                </div>
+                <Image
+                  src="/avatar.png"
+                  alt="Petar Arsić"
+                  width={520}
+                  height={520}
+                  priority
+                  className="absolute bottom-0 left-1/2 -translate-x-1/2 h-[94%] w-auto object-contain drop-shadow-xl"
+                />
               </div>
 
-              {/* live status readout */}
-              <dl className="divide-y divide-line">
-                {[
-                  ['ROLE', 'Full-Stack'],
-                  ['STACK', 'Laravel · React · RN'],
-                  ['BASED', 'Belgrade, RS'],
-                  ['MODE', 'Remote · Async'],
-                ].map(([k, v]) => (
-                  <div key={k} className="flex items-center justify-between px-3 py-2.5">
-                    <dt className="callsign !text-[0.6rem]">{k}</dt>
-                    <dd className="font-mono text-xs text-paper">{v}</dd>
+              {/* human-readable card body */}
+              <div className="p-5">
+                <div className="flex items-start justify-between gap-3">
+                  <div>
+                    <p className="font-display text-lg font-bold text-paper leading-tight">Petar Arsić</p>
+                    <p className="mt-0.5 text-sm text-paper-dim">{t('card.role')}</p>
                   </div>
-                ))}
-              </dl>
+                  <span className="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-teal/25 bg-teal/10 px-3 py-1.5">
+                    <span className="h-1.5 w-1.5 rounded-full bg-teal animate-pulse" aria-hidden />
+                    <span className="text-xs font-semibold text-teal-bright whitespace-nowrap">{t('card.available')}</span>
+                  </span>
+                </div>
+                <div className="mt-4 flex items-center justify-between gap-3 border-t border-line pt-4">
+                  <span className="flex items-center gap-2 text-sm text-paper-dim">
+                    <FaMapMarkerAlt aria-hidden className="text-teal" /> {t('card.location')}
+                  </span>
+                  <span className="font-mono text-xs text-paper-faint whitespace-nowrap">Laravel · React</span>
+                </div>
+              </div>
             </div>
           </motion.div>
         </motion.div>
@@ -165,7 +156,7 @@ export default function Hero() {
         >
           {metricKeys.map((k, i) => (
             <div key={k} className={`py-6 sm:py-7 ${i > 0 ? 'sm:border-l border-line sm:pl-8 border-t sm:border-t-0' : ''}`}>
-              <dd className={`font-mono font-bold tracking-tight tabular-nums whitespace-nowrap leading-none ${i === 0 ? 'text-amber text-5xl md:text-6xl lg:text-7xl' : 'text-paper text-4xl md:text-5xl'}`}>
+              <dd className={`font-display font-bold tracking-tight tabular-nums whitespace-nowrap leading-none ${i === 0 ? 'text-amber text-5xl md:text-6xl lg:text-7xl' : 'text-paper text-4xl md:text-5xl'}`}>
                 <CountUp value={t(`metrics.${k}.value`)} />
               </dd>
               <dt className="mt-3 callsign">{t(`metrics.${k}.label`)}</dt>
@@ -174,7 +165,7 @@ export default function Hero() {
         </motion.dl>
       </div>
 
-      {/* live departures ticker */}
+      {/* services ticker */}
       <div className="mt-12 md:mt-16 relative z-10">
         <Ticker />
       </div>

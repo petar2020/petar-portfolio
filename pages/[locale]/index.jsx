@@ -9,19 +9,16 @@ import Nav from '../../components/Nav'
 import Hero from '../../components/Hero'
 import LiveDemo from '../../components/LiveDemo'
 import CaseStudy from '../../components/CaseStudy'
-import HowIWork from '../../components/HowIWork'
 import AboutMe from '../../components/AboutMe'
 import Projects from '../../components/Projects'
 import HomeServices from '../../components/HomeServices'
 import ClientLogos from '../../components/ClientLogos'
-import ParallaxCVTimeline from '../../components/ParallaxCVTimeline'
 import Contact from '../../components/Contact'
 import FAQ from '../../components/FAQ'
 import Analytics, { PlausibleScript } from '../../components/Analytics'
 
 // Client-only
-const Backdrop         = dynamic(() => import('../../components/Backdrop'), { ssr: false })
-const ServicesAnimated = dynamic(() => import('../../components/ServicesAnimated'))
+const Backdrop = dynamic(() => import('../../components/Backdrop'), { ssr: false })
 
 const SITE_URL = 'https://petararsic.rs'
 const OG_LOCALE_MAP = {
@@ -92,6 +89,8 @@ export default function LocaleHome({ locale }) {
       <PlausibleScript />
       <Analytics />
 
+      {/* Lean narrative: what I build → live proof → flagship case → work →
+          services → trust → who I am → questions → contact */}
       <div className="relative">
         <Backdrop />
         <Nav />
@@ -100,12 +99,9 @@ export default function LocaleHome({ locale }) {
         <CaseStudy />
         <Projects />
         <HomeServices />
-        <ServicesAnimated />
-        <HowIWork />
+        <ClientLogos />
         <AboutMe />
         <FAQ />
-        <ClientLogos />
-        <ParallaxCVTimeline />
         <Contact />
       </div>
     </>

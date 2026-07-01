@@ -2,171 +2,113 @@
 import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 import { useLocale } from 'next-intl'
-import SectionHeader from './ui/SectionHeader'
 import CountUp from './ui/CountUp'
 
+/**
+ * Home-page teaser for the DriveSoft case study, rendered as a single dark
+ * "island" panel — the one deliberate dark moment on an otherwise light page.
+ * The full spec sheet lives on /case-study/drivesoft.
+ */
 export default function CaseStudy() {
   const t = useTranslations('caseStudy')
   const locale = useLocale()
-  const architecture = t.raw('architecture')
   const scale = t.raw('scale')
-  const features = t.raw('features')
-  const tech = t.raw('tech')
-
-  const rows = [
-    { n: '01', label: t('problemTitle'), body: t('problem'), tone: 'danger' },
-    { n: '02', label: t('solutionTitle'), body: t('solution'), tone: 'teal' },
-  ]
 
   return (
-    <section id="case-study" className="relative grain bg-ink-900 border-t border-line py-20 sm:py-28 scroll-mt-24">
+    <section id="case-study" className="relative bg-ink-900 py-20 sm:py-28 scroll-mt-24">
       <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 relative z-10">
-        <SectionHeader index="03" callsign={t('eyebrow')} title={t('title')} subtitle={t('tagline')} status="amber" />
-
-        {/* Oversized scale figures */}
-        <div className="mt-14 grid grid-cols-1 sm:grid-cols-3 border-y border-line">
-          {scale.map((s, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 18 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.4 }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              className={`py-7 ${i > 0 ? 'sm:border-l border-line sm:pl-8 border-t sm:border-t-0' : ''}`}
-            >
-              <div className={`font-mono font-bold leading-none tracking-tight ${i === 0 ? 'text-amber' : 'text-paper'} text-5xl md:text-6xl`}>
-                <CountUp value={s.value} />
-              </div>
-              <p className="mt-3 callsign">{s.label}</p>
-            </motion.div>
-          ))}
-        </div>
-
-        {/* Spec sheet: Problem / Solution */}
-        <div className="mt-12 grid lg:grid-cols-2 gap-px bg-line border border-line">
-          {rows.map((r) => (
-            <SpecRow key={r.n} {...r} />
-          ))}
-        </div>
-
-        {/* Architecture */}
         <motion.div
-          initial={{ opacity: 0, y: 18 }}
+          initial={{ opacity: 0, y: 28 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.25 }}
-          transition={{ duration: 0.55 }}
-          className="mt-px panel p-6 sm:p-8 border-x border-b border-line"
+          viewport={{ once: true, amount: 0.15 }}
+          transition={{ duration: 0.65, ease: [0.65, 0, 0.35, 1] }}
+          className="relative overflow-hidden rounded-3xl bg-[#0F211B] px-6 py-12 sm:px-12 sm:py-16 shadow-lift"
         >
-          <div className="flex items-baseline gap-3 mb-5">
-            <span className="font-mono text-sm font-bold text-teal-bright">03</span>
-            <span className="callsign">{t('architectureTitle')}</span>
+          {/* interior glow */}
+          <div className="pointer-events-none absolute inset-0" aria-hidden>
+            <div
+              className="absolute -right-32 -top-32 h-96 w-96 rounded-full blur-3xl"
+              style={{ background: 'radial-gradient(circle, rgba(45,212,191,0.14), transparent 65%)' }}
+            />
+            <div
+              className="absolute -left-24 -bottom-32 h-80 w-80 rounded-full blur-3xl"
+              style={{ background: 'radial-gradient(circle, rgba(246,166,35,0.10), transparent 65%)' }}
+            />
           </div>
-          <ul className="grid sm:grid-cols-2 gap-x-8 gap-y-3">
-            {architecture.map((a, i) => (
-              <li key={i} className="flex items-start gap-3 text-paper-dim leading-relaxed">
-                <span className="mt-2 h-px w-3 shrink-0 bg-teal" aria-hidden />
-                <span className="text-sm">{a}</span>
-              </li>
-            ))}
-          </ul>
-        </motion.div>
 
-        {/* Key features + My role */}
-        <div className="mt-8 grid lg:grid-cols-2 gap-px bg-line border border-line">
-          <motion.div
-            initial={{ opacity: 0, y: 18 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.25 }}
-            transition={{ duration: 0.55 }}
-            className="bg-ink-800 p-6 sm:p-8"
-          >
-            <div className="flex items-baseline gap-3 mb-5">
-              <span className="font-mono text-sm font-bold text-teal-bright">04</span>
-              <span className="callsign">{t('featuresTitle')}</span>
-            </div>
-            <ul className="space-y-3">
-              {features.map((f, i) => (
-                <li key={i} className="flex items-start gap-3 text-paper-dim leading-relaxed">
-                  <span className="mt-2 h-px w-3 shrink-0 bg-teal" aria-hidden />
-                  <span className="text-sm">{f}</span>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 18 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.25 }}
-            transition={{ duration: 0.55, delay: 0.08 }}
-            className="bg-ink-800 p-6 sm:p-8"
-          >
-            <div className="flex items-baseline gap-3 mb-5">
-              <span className="font-mono text-sm font-bold text-amber">05</span>
-              <span className="callsign text-amber">{t('roleTitle')}</span>
-            </div>
-            <p className="text-paper-dim leading-relaxed">{t('role')}</p>
-          </motion.div>
-        </div>
-
-        {/* Result — emphasized */}
-        <motion.div
-          initial={{ opacity: 0, y: 18 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.55 }}
-          className="mt-8 border-l-2 border-amber pl-6"
-        >
-          <div className="flex items-baseline gap-3 mb-3">
-            <span className="font-mono text-sm font-bold text-amber">06</span>
-            <span className="callsign text-amber">{t('resultTitle')}</span>
-          </div>
-          <p className="max-w-3xl text-lg sm:text-xl text-paper leading-relaxed">{t('result')}</p>
-        </motion.div>
-
-        {/* Tech + CTAs */}
-        <div className="mt-12">
-          <p className="callsign mb-3">{t('techTitle')}</p>
-          <div className="flex flex-wrap gap-2">
-            {tech.map((tag, i) => (
-              <span key={i} className="px-3 py-1.5 border border-line font-mono text-xs text-paper-dim">
-                {tag}
+          <div className="relative">
+            {/* eyebrow */}
+            <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3.5 py-1.5">
+              <span className="h-1.5 w-1.5 rounded-full bg-[#F6A623] animate-pulse" aria-hidden />
+              <span className="font-mono text-[0.66rem] font-medium uppercase tracking-[0.14em] text-white/60">
+                {t('eyebrow')}
               </span>
-            ))}
-          </div>
+            </span>
 
-          <div className="mt-8 flex flex-col sm:flex-row gap-4">
-            <a href="https://demo.drivesoft.rs/passenger-demo" target="_blank" rel="noopener noreferrer" className="btn-signal w-full sm:w-auto">
-              {t('ctaPassenger')} <span aria-hidden>→</span>
-            </a>
-            <a href="https://demo.drivesoft.rs/admin-demo" target="_blank" rel="noopener noreferrer" className="btn-line w-full sm:w-auto">
-              {t('ctaAdmin')} <span aria-hidden>→</span>
-            </a>
-            <a href={`/${locale}/case-study/drivesoft`} className="btn-line w-full sm:w-auto">
-              {t('ctaFullStudy')} <span aria-hidden>→</span>
-            </a>
+            <h2 className="mt-5 max-w-3xl font-display font-bold tracking-tight text-white text-3xl sm:text-4xl md:text-5xl leading-[1.08]">
+              {t('title')}
+            </h2>
+            <p className="mt-4 max-w-2xl font-serif italic text-lg sm:text-xl text-white/70 leading-relaxed">
+              {t('tagline')}
+            </p>
+
+            {/* Oversized scale figures */}
+            <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 border-y border-white/10">
+              {scale.map((s, i) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, y: 18 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.4 }}
+                  transition={{ duration: 0.5, delay: i * 0.1 }}
+                  className={`py-7 ${i > 0 ? 'sm:border-l border-white/10 sm:pl-8 border-t sm:border-t-0' : ''}`}
+                >
+                  <div className={`font-display font-bold leading-none tracking-tight ${i === 0 ? 'text-[#FFC24B]' : 'text-white'} text-5xl md:text-6xl`}>
+                    <CountUp value={s.value} />
+                  </div>
+                  <p className="mt-3 font-mono text-[0.68rem] uppercase tracking-[0.16em] text-white/50">{s.label}</p>
+                </motion.div>
+              ))}
+            </div>
+
+            {/* Result — the one paragraph that matters */}
+            <div className="mt-12 border-l-2 border-[#F6A623] pl-6">
+              <p className="font-mono text-[0.68rem] uppercase tracking-[0.16em] text-[#FFC24B] mb-3">
+                {t('resultTitle')}
+              </p>
+              <p className="max-w-3xl font-serif italic text-xl sm:text-2xl text-white/90 leading-relaxed">
+                {t('result')}
+              </p>
+            </div>
+
+            {/* CTAs — try it live or read the whole story */}
+            <div className="mt-11 flex flex-col sm:flex-row gap-4">
+              <a
+                href="https://demo.drivesoft.rs/passenger-demo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 rounded-[10px] bg-white px-7 py-4 font-mono text-sm font-semibold uppercase tracking-[0.12em] text-[#0F211B] transition-transform hover:-translate-y-0.5 w-full sm:w-auto"
+              >
+                {t('ctaPassenger')} <span aria-hidden>→</span>
+              </a>
+              <a
+                href="https://demo.drivesoft.rs/admin-demo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 rounded-[10px] border border-white/25 px-7 py-4 font-mono text-sm font-semibold uppercase tracking-[0.12em] text-white transition-colors hover:border-white/60 w-full sm:w-auto"
+              >
+                {t('ctaAdmin')} <span aria-hidden>→</span>
+              </a>
+              <a
+                href={`/${locale}/case-study/drivesoft`}
+                className="inline-flex items-center justify-center gap-2 rounded-[10px] border border-white/25 px-7 py-4 font-mono text-sm font-semibold uppercase tracking-[0.12em] text-white transition-colors hover:border-white/60 w-full sm:w-auto"
+              >
+                {t('ctaFullStudy')} <span aria-hidden>→</span>
+              </a>
+            </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
-  )
-}
-
-function SpecRow({ n, label, body, tone }) {
-  const labelColor = tone === 'danger' ? 'text-signal-danger' : 'text-teal-bright'
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 18 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.3 }}
-      transition={{ duration: 0.5 }}
-      className="bg-ink-800 p-6 sm:p-8"
-    >
-      <div className="flex items-baseline gap-3 mb-4">
-        <span className={`font-mono text-sm font-bold ${labelColor}`}>{n}</span>
-        <span className="callsign">{label}</span>
-      </div>
-      <p className="text-paper-dim leading-relaxed">{body}</p>
-    </motion.div>
   )
 }

@@ -16,7 +16,7 @@ export default function ClientLogos() {
   return (
     <section className="relative grain bg-ink-850 border-t border-line py-20 sm:py-28">
       <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 relative z-10">
-        <SectionHeader index="09" callsign="Trusted by" title={t('title')} subtitle={t('subtitle')} />
+        <SectionHeader index="06" callsign="Trusted by" title={t('title')} subtitle={t('subtitle')} />
 
         {/* operators strip — single hairline rail, not a grid of boxes */}
         <motion.div
@@ -37,9 +37,7 @@ export default function ClientLogos() {
                 whileHover={{ y: -1 }}
                 className="group flex shrink-0 items-center gap-3 px-6 py-6 first:pl-0 transition-colors"
               >
-                <span className="font-mono text-[0.7rem] text-paper-faint group-hover:text-amber transition-colors">
-                  {String(i + 1).padStart(2, '0')}
-                </span>
+                <span className="h-1.5 w-1.5 rounded-full bg-teal-deep group-hover:bg-amber transition-colors" aria-hidden />
                 <span className="font-display font-semibold text-paper-dim whitespace-nowrap group-hover:text-teal-bright transition-colors">
                   {client.name}
                 </span>

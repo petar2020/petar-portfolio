@@ -14,13 +14,14 @@ export function middleware(request: Request) {
     return NextResponse.next();
   }
 
-  // If it's the root path, redirect to default locale
+  // If it's the root path, redirect to default locale.
+  // 308 (permanent) so search engines consolidate signals onto /en.
   if (pathname === '/') {
     url.pathname = `/${defaultLocale}`;
-    return NextResponse.redirect(url);
+    return NextResponse.redirect(url, 308);
   }
 
   // For any other path, prepend the default locale
   url.pathname = `/${defaultLocale}${pathname}`;
-  return NextResponse.redirect(url);
+  return NextResponse.redirect(url, 308);
 }

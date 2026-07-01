@@ -9,6 +9,18 @@ const LANGS = [
   { code: 'sr', name: 'Srpski', flag: '🇷🇸' },
 ]
 
+// Pages whose slug differs per locale (createSharedPathnamesNavigation assumes
+// identical slugs, so these need a manual swap when the language changes).
+const LOCALIZED_SLUGS = {
+  '/pricing': { sr: '/cenovnik' },
+  '/cenovnik': { en: '/pricing' },
+}
+
+function localizePath(path, newLocale) {
+  const override = LOCALIZED_SLUGS[path]?.[newLocale]
+  return override || path
+}
+
 export default function LanguageSwitcher() {
   const router = useRouter()
   const pathname = usePathname()
@@ -37,7 +49,8 @@ export default function LanguageSwitcher() {
     setOpen(false)
     setOptimistic(newLocale)
     const pathWithoutLocale = pathname.replace(/^\/(sr|en)(?=\/|$)/, '') || '/'
-    router.push(pathWithoutLocale, { locale: newLocale })
+    const localizedPath = localizePath(pathWithoutLocale, newLocale)
+    router.push(localizedPath, { locale: newLocale })
     if (typeof window !== 'undefined' && window.trackLanguageChange) window.trackLanguageChange(locale, newLocale)
   }
 
@@ -49,7 +62,7 @@ export default function LanguageSwitcher() {
         onClick={() => setOpen((v) => !v)}
         whileHover={{ y: -1 }}
         whileTap={{ scale: 0.97 }}
-        className="flex items-center gap-2 px-3 py-2 border border-line bg-ink-800/70 hover:border-teal-bright/50 transition-colors font-mono text-xs font-semibold tracking-wider text-paper"
+        className="flex items-center gap-2 px-3 py-2 rounded-md border border-line bg-ink-800/70 hover:border-teal-bright/50 transition-colors font-mono text-xs font-semibold tracking-wider text-paper"
         aria-expanded={open} aria-haspopup="listbox" aria-label="Choose language"
       >
         <span>{current.code.toUpperCase()}</span>
@@ -66,7 +79,7 @@ export default function LanguageSwitcher() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -6 }}
             transition={{ duration: 0.15 }}
-            className="absolute right-0 mt-2 w-40 border border-line bg-ink-800/95 backdrop-blur-md shadow-lift overflow-hidden"
+            className="absolute right-0 mt-2 w-40 rounded-lg border border-line bg-ink-800/95 backdrop-blur-md shadow-lift overflow-hidden"
           >
             {LANGS.map((lang) => {
               const isActive = active === lang.code

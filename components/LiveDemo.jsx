@@ -57,7 +57,7 @@ export default function LiveDemo() {
                     glareEnable={false}
                     scale={1.015}
                     transitionSpeed={900}
-                    className="relative aspect-[16/10] overflow-hidden border border-line [transform-style:preserve-3d]"
+                    className="relative aspect-[16/10] overflow-hidden rounded-lg border border-line [transform-style:preserve-3d]"
                   >
                     <Image
                       src={image}
@@ -66,7 +66,6 @@ export default function LiveDemo() {
                       sizes="(max-width: 768px) 92vw, 560px"
                       className="object-cover object-top"
                     />
-                    <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink-900/70 via-transparent to-transparent" />
                   </Tilt>
                 </div>
 

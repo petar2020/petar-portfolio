@@ -1,0 +1,70 @@
+# Petar Arsić Portfolio
+
+> Full-stack Laravel, PHP, React and WordPress developer based in Belgrade, Serbia, building production booking, ticketing, tourism/accommodation and business web applications for real companies. 5+ years in production.
+
+## About
+
+Petar Arsić is a full-stack developer focused on booking systems, tourism and accommodation portals, admin panels/dashboards, CRM and internal business tools, WordPress/WooCommerce sites, and custom Laravel + React web applications. His flagship product, DriveSoft, powers online seat reservations, QR-code ticket validation, payment processing with fiscal-receipt integration, and role-based admin tools for international bus carriers.
+
+## Important pages
+
+- [English homepage](https://petararsic.rs/en)
+- [Serbian homepage](https://petararsic.rs/sr)
+- [Services (EN)](https://petararsic.rs/en/services)
+- [Usluge (SR)](https://petararsic.rs/sr/services)
+- [DriveSoft case study (EN)](https://petararsic.rs/en/case-study/drivesoft)
+- [DriveSoft studija slučaja (SR)](https://petararsic.rs/sr/case-study/drivesoft)
+- [Contact section](https://petararsic.rs/en#contact)
+
+## Priority service pages
+
+- [Tourism & Accommodation Portals (EN)](https://petararsic.rs/en/services/tourism-accommodation-portals)
+- [Turistički i smeštajni portali (SR)](https://petararsic.rs/sr/services/tourism-accommodation-portals)
+- [Booking & Reservation Systems (EN)](https://petararsic.rs/en/services/booking-systems)
+- [Sistemi za rezervacije (SR)](https://petararsic.rs/sr/services/booking-systems)
+- [Laravel Applications (EN)](https://petararsic.rs/en/services/laravel-applications)
+- [Laravel aplikacije (SR)](https://petararsic.rs/sr/services/laravel-applications)
+- [WordPress Websites (EN)](https://petararsic.rs/en/services/wordpress-websites)
+- [WordPress sajtovi (SR)](https://petararsic.rs/sr/services/wordpress-websites)
+- [Admin Panels & Dashboards (EN)](https://petararsic.rs/en/services/admin-panels-dashboards)
+- [Admin paneli i dashboard-ovi (SR)](https://petararsic.rs/sr/services/admin-panels-dashboards)
+
+## All service pages (EN)
+
+- [Custom Web Applications](https://petararsic.rs/en/services/custom-web-applications)
+- [CRM & Internal Business Tools](https://petararsic.rs/en/services/crm-internal-tools)
+- [E-commerce & WooCommerce](https://petararsic.rs/en/services/ecommerce-woocommerce)
+- [React / Frontend Applications](https://petararsic.rs/en/services/react-frontend-applications)
+- [PWA Applications](https://petararsic.rs/en/services/pwa-applications)
+- [AI Integrations for Business](https://petararsic.rs/en/services/ai-integrations)
+- [Website Redesign](https://petararsic.rs/en/services/website-redesign)
+- [Website Maintenance](https://petararsic.rs/en/services/website-maintenance)
+
+Every page above also exists in Serbian at the same path under `/sr/` instead of `/en/` (e.g. `https://petararsic.rs/sr/services/ecommerce-woocommerce`).
+
+## Key projects
+
+- [DriveSoft](https://drivesoft.rs/) — Reservation, ticketing and operations platform for international bus carriers. 150,000+ tickets processed.
+- [Srbija Tours](https://srbijatours.com/) — Public ticket-sales site sharing one source of truth with the booking backend.
+- [Srbija Tours mobile app](https://play.google.com/store/apps/details?id=com.panzo98.srbijatours) — Cross-platform React Native app for iOS and Android.
+- [DriveSoft operations back-office](https://drivesoft-bozic.com/login) — Internal tool for managing passengers, routes, departures and daily operations.
+- [Bozic Konig](https://bozic-konig.com/) — Online reservation front-end for a carrier.
+- [Prostor Miljenko Dereta](https://prostordereta.org/) — Corporate site with blog and space-booking forms on custom WordPress.
+
+## Contact
+
+- [GitHub](https://github.com/petar2020)
+- [LinkedIn](https://www.linkedin.com/in/petar-arsic-2067821b5/)
+- Email: petar.arsic14@hotmail.com
+
+## Tech stack
+
+Laravel, PHP, MySQL, React, Next.js, React Native, Expo, Redis, Docker, DigitalOcean, WordPress, Nginx, Plausible Analytics
+
+## Specialties
+
+Booking & ticketing systems, tourism and accommodation portals, payment & fiscalization integration, QR-code ticket validation, role-based admin panels and CRM tools, WordPress/WooCommerce sites, transport operations software, full-stack SaaS development
+
+## Availability
+
+Open to full-time, contract and freelance work. Remote, async-first. Belgrade, Serbia (EU-friendly timezone, CET/CEST).

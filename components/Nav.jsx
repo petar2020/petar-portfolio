@@ -17,13 +17,14 @@ export default function Nav() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
+  const pricingPath = locale === 'sr' ? `/${locale}/cenovnik` : `/${locale}/pricing`
   const navItems = [
     { href: '#home', label: t('home', { default: 'Home' }) },
     { href: '#demo', label: t('demo', { default: 'Live demo' }) },
     { href: '#case-study', label: t('casestudy', { default: 'Case study' }) },
     { href: '#projects', label: t('projects', { default: 'Projects' }) },
     { href: `/${locale}/services`, label: t('services', { default: 'Services' }), isPage: true },
-    { href: '#about', label: t('about', { default: 'About' }) },
+    { href: pricingPath, label: t('pricing', { default: 'Pricing' }), isPage: true },
     { href: '#contact', label: t('contact', { default: 'Contact' }) },
   ]
 

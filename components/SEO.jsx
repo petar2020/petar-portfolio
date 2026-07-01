@@ -3,6 +3,9 @@ import { useRouter } from 'next/router';
 
 const DEFAULT_SITE_URL = 'https://petararsic.rs';
 
+// Real content-update date — bump when site content actually changes.
+const CONTENT_UPDATED = '2026-07-02';
+
 export default function SEO({
   title = 'Petar Arsić - Full-Stack Developer',
   description = 'Full-Stack Developer iz Srbije. Gradim moderne web aplikacije sa najnovijim tehnologijama.',
@@ -16,7 +19,14 @@ export default function SEO({
   // Locale-agnostic path (no leading locale segment, e.g. '' for homepage,
   // '/services/tourism-accommodation-portals' for a service page). Used to build
   // self-referencing + reciprocal hreflang tags for *this* page instead of the homepage.
-  hrefLangPath = ''
+  hrefLangPath = '',
+  // For pages whose slug differs per locale (e.g. /sr/cenovnik ↔ /en/pricing):
+  // absolute URLs { en, sr } that override the hrefLangPath-derived pair.
+  hrefLangUrls = null,
+  // For single-locale pages with no translated counterpart (e.g. a Serbian-only
+  // local SEO landing page) — skip hreflang entirely rather than fabricate a
+  // broken cross-locale link.
+  hreflangDisabled = false
 }) {
   const router = useRouter();
   const siteUrl = url || `${DEFAULT_SITE_URL}${router?.asPath ?? ''}`;
@@ -84,7 +94,7 @@ export default function SEO({
       addressLocality: 'Belgrade',
       addressRegion: 'Central Serbia'
     },
-    dateModified: new Date().toISOString().split('T')[0]
+    dateModified: CONTENT_UPDATED
   };
 
   const structuredDataWebsite = {
@@ -98,7 +108,7 @@ export default function SEO({
     author: {
       '@id': 'https://petararsic.rs/#person'
     },
-    dateModified: new Date().toISOString().split('T')[0]
+    dateModified: CONTENT_UPDATED
   };
 
   const structuredDataProfilePage = {
@@ -112,7 +122,7 @@ export default function SEO({
     isPartOf: { '@id': 'https://petararsic.rs/#website' },
     about: { '@id': 'https://petararsic.rs/#person' },
     mainEntity: { '@id': 'https://petararsic.rs/#person' },
-    dateModified: new Date().toISOString().split('T')[0]
+    dateModified: CONTENT_UPDATED
   };
 
   const structuredDataProjects = {
@@ -242,15 +252,20 @@ export default function SEO({
       {/* Additional Meta Tags */}
       <meta name="author" content="Petar Arsić" />
       <meta name="robots" content="index, follow" />
-      <meta name="theme-color" content="#06100E" />
+      <meta name="theme-color" content="#FBFBF8" />
 
       {/* Canonical URL */}
       <link rel="canonical" href={siteUrl} />
 
-      {/* Hreflang — language alternates for THIS page (self-referencing + reciprocal) */}
-      <link rel="alternate" hrefLang="en" href={`${DEFAULT_SITE_URL}/en${hrefLangPath}`} />
-      <link rel="alternate" hrefLang="sr" href={`${DEFAULT_SITE_URL}/sr${hrefLangPath}`} />
-      <link rel="alternate" hrefLang="x-default" href={`${DEFAULT_SITE_URL}/en${hrefLangPath}`} />
+      {/* Hreflang — language alternates for THIS page (self-referencing + reciprocal).
+          Skipped for single-locale pages with no translated counterpart. */}
+      {!hreflangDisabled && (
+        <>
+          <link rel="alternate" hrefLang="en" href={hrefLangUrls?.en || `${DEFAULT_SITE_URL}/en${hrefLangPath}`} />
+          <link rel="alternate" hrefLang="sr" href={hrefLangUrls?.sr || `${DEFAULT_SITE_URL}/sr${hrefLangPath}`} />
+          <link rel="alternate" hrefLang="x-default" href={hrefLangUrls?.en || `${DEFAULT_SITE_URL}/en${hrefLangPath}`} />
+        </>
+      )}
 
       {/* Favicon */}
       <link rel="icon" href="/favicon.ico" />

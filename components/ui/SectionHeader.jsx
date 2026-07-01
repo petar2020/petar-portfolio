@@ -2,20 +2,23 @@
 import { motion } from 'framer-motion'
 
 /**
- * Control-surface section header: a monospace call-sign (e.g. "02 — LIVE PRODUCT"),
- * a status dot, the title in display type, and a hairline rule that runs to the edge.
+ * Section header: a soft pill eyebrow with a status dot, the title in
+ * display type, and an italic-serif subtitle for an editorial touch.
+ * `index` is accepted for backwards compatibility but no longer rendered.
  */
 export default function SectionHeader({ index, callsign, title, subtitle, status = 'teal', align = 'left' }) {
-  const dot = status === 'amber' ? 'bg-amber' : 'bg-teal-bright'
+  const dot = status === 'amber' ? 'bg-amber' : 'bg-teal'
+  const centered = align === 'center'
 
   return (
-    <div className={align === 'center' ? 'text-center' : ''}>
-      <div className={`flex items-center gap-3 ${align === 'center' ? 'justify-center' : ''}`}>
-        <span className={`inline-block h-1.5 w-1.5 rounded-full ${dot} animate-pulse`} aria-hidden />
-        <span className="callsign">
-          {index ? `${index} — ` : ''}{callsign}
+    <div className={centered ? 'text-center' : ''}>
+      <div className={`flex items-center ${centered ? 'justify-center' : ''}`}>
+        <span className="inline-flex items-center gap-2 rounded-full border border-line bg-ink-800/80 px-3.5 py-1.5 shadow-sm">
+          <span className={`inline-block h-1.5 w-1.5 rounded-full ${dot} animate-pulse`} aria-hidden />
+          <span className="font-mono text-[0.66rem] font-medium uppercase tracking-[0.14em] text-paper-faint">
+            {callsign}
+          </span>
         </span>
-        {align !== 'center' && <span className="h-px flex-1 bg-line" aria-hidden />}
       </div>
 
       <motion.h2
@@ -23,7 +26,7 @@ export default function SectionHeader({ index, callsign, title, subtitle, status
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: '-12% 0px' }}
         transition={{ duration: 0.55, ease: [0.65, 0, 0.35, 1] }}
-        className="mt-4 font-display font-bold tracking-tight text-paper text-3xl sm:text-4xl md:text-5xl leading-[1.08]"
+        className="mt-5 font-display font-bold tracking-tight text-paper text-3xl sm:text-4xl md:text-5xl leading-[1.08]"
       >
         {title}
       </motion.h2>
@@ -34,7 +37,7 @@ export default function SectionHeader({ index, callsign, title, subtitle, status
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-12% 0px' }}
           transition={{ duration: 0.55, delay: 0.08, ease: [0.65, 0, 0.35, 1] }}
-          className={`mt-4 text-base sm:text-lg text-paper-dim leading-relaxed ${align === 'center' ? 'max-w-2xl mx-auto' : 'max-w-2xl'}`}
+          className={`mt-4 font-serif italic text-lg sm:text-xl text-paper-dim leading-relaxed ${centered ? 'max-w-2xl mx-auto' : 'max-w-2xl'}`}
         >
           {subtitle}
         </motion.p>

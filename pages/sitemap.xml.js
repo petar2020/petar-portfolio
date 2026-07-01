@@ -2,10 +2,15 @@ import { services } from '../data/services';
 
 const SITE_URL = 'https://petararsic.rs';
 
-function buildUrl(path, priority, changefreq) {
-  const now = new Date().toISOString();
-  const en = `${SITE_URL}/en${path}`;
-  const sr = `${SITE_URL}/sr${path}`;
+// Real content-update date. Bump this when page content actually changes —
+// a lastmod that changes on every crawl teaches Google to ignore it.
+const LASTMOD = '2026-07-02';
+
+// Pages whose slug differs per locale pass distinct paths (e.g. pricing/cenovnik).
+function buildPair(enPath, srPath, priority, changefreq) {
+  const now = LASTMOD;
+  const en = `${SITE_URL}/en${enPath}`;
+  const sr = `${SITE_URL}/sr${srPath}`;
 
   return `
     <url>
@@ -29,10 +34,31 @@ function buildUrl(path, priority, changefreq) {
   `;
 }
 
+function buildUrl(path, priority, changefreq) {
+  return buildPair(path, path, priority, changefreq);
+}
+
+// Single-locale page with no translated counterpart — self-referencing only,
+// no cross-locale hreflang (a fabricated /en pair would just be a 404).
+function buildSingle(locale, path, priority, changefreq) {
+  const loc = `${SITE_URL}/${locale}${path}`;
+  return `
+    <url>
+      <loc>${loc}</loc>
+      <xhtml:link rel="alternate" hreflang="${locale}" href="${loc}" />
+      <lastmod>${LASTMOD}</lastmod>
+      <changefreq>${changefreq}</changefreq>
+      <priority>${priority}</priority>
+    </url>
+  `;
+}
+
 function generateSiteMap() {
   const homePages = buildUrl('', '1.0', 'weekly');
   const caseStudyPages = buildUrl('/case-study/drivesoft', '0.9', 'monthly');
   const servicesIndexPages = buildUrl('/services', '0.9', 'weekly');
+  const pricingPages = buildPair('/pricing', '/cenovnik', '0.9', 'monthly');
+  const izradaSajtovaPage = buildSingle('sr', '/izrada-sajtova', '0.9', 'monthly');
 
   const servicePages = services
     .map((s) => buildUrl(`/services/${s.slug}`, '0.8', 'monthly'))
@@ -50,6 +76,8 @@ function generateSiteMap() {
       ${homePages}
       ${caseStudyPages}
       ${servicesIndexPages}
+      ${pricingPages}
+      ${izradaSajtovaPage}
       ${servicePages}
       ${legacyServicePages}
     </urlset>

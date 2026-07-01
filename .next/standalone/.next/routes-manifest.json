@@ -1,0 +1,383 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/[locale]",
+      "regex": "^/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/[locale]/case-study/drivesoft",
+      "regex": "^/([^/]+?)/case\\-study/drivesoft(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/case\\-study/drivesoft(?:/)?$"
+    },
+    {
+      "page": "/[locale]/cenovnik",
+      "regex": "^/([^/]+?)/cenovnik(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/cenovnik(?:/)?$"
+    },
+    {
+      "page": "/[locale]/izrada-sajtova",
+      "regex": "^/([^/]+?)/izrada\\-sajtova(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/izrada\\-sajtova(?:/)?$"
+    },
+    {
+      "page": "/[locale]/pricing",
+      "regex": "^/([^/]+?)/pricing(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/pricing(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services",
+      "regex": "^/([^/]+?)/services(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/admin-panels-dashboards",
+      "regex": "^/([^/]+?)/services/admin\\-panels\\-dashboards(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/admin\\-panels\\-dashboards(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/ai-integrations",
+      "regex": "^/([^/]+?)/services/ai\\-integrations(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/ai\\-integrations(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/booking-systems",
+      "regex": "^/([^/]+?)/services/booking\\-systems(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/booking\\-systems(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/crm-internal-tools",
+      "regex": "^/([^/]+?)/services/crm\\-internal\\-tools(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/crm\\-internal\\-tools(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/custom-web-applications",
+      "regex": "^/([^/]+?)/services/custom\\-web\\-applications(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/custom\\-web\\-applications(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/ecommerce-woocommerce",
+      "regex": "^/([^/]+?)/services/ecommerce\\-woocommerce(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/ecommerce\\-woocommerce(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/laravel-applications",
+      "regex": "^/([^/]+?)/services/laravel\\-applications(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/laravel\\-applications(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/laravel-backend",
+      "regex": "^/([^/]+?)/services/laravel\\-backend(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/laravel\\-backend(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/pwa-applications",
+      "regex": "^/([^/]+?)/services/pwa\\-applications(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/pwa\\-applications(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/react-frontend-applications",
+      "regex": "^/([^/]+?)/services/react\\-frontend\\-applications(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/react\\-frontend\\-applications(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/tourism-accommodation-portals",
+      "regex": "^/([^/]+?)/services/tourism\\-accommodation\\-portals(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/tourism\\-accommodation\\-portals(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/website-maintenance",
+      "regex": "^/([^/]+?)/services/website\\-maintenance(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/website\\-maintenance(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/website-redesign",
+      "regex": "^/([^/]+?)/services/website\\-redesign(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/website\\-redesign(?:/)?$"
+    },
+    {
+      "page": "/[locale]/services/wordpress-websites",
+      "regex": "^/([^/]+?)/services/wordpress\\-websites(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/wordpress\\-websites(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/sitemap.xml",
+      "regex": "^/sitemap\\.xml(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/sitemap\\.xml(?:/)?$"
+    }
+  ],
+  "dataRoutes": [
+    {
+      "page": "/",
+      "dataRouteRegex": "^/_next/data/MKoooVTfvL_3Vd4azDHn0/index\\.json$"
+    },
+    {
+      "page": "/sitemap.xml",
+      "dataRouteRegex": "^/_next/data/MKoooVTfvL_3Vd4azDHn0/sitemap.xml\\.json$"
+    },
+    {
+      "page": "/[locale]",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "dataRouteRegex": "^/_next/data/MKoooVTfvL_3Vd4azDHn0/([^/]+?)\\.json$",
+      "namedDataRouteRegex": "^/_next/data/MKoooVTfvL_3Vd4azDHn0/(?<nxtPlocale>[^/]+?)\\.json$"
+    },
+    {
+      "page": "/[locale]/case-study/drivesoft",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "dataRouteRegex": "^/_next/data/MKoooVTfvL_3Vd4azDHn0/([^/]+?)/case\\-study/drivesoft\\.json$",
+      "namedDataRouteRegex": "^/_next/data/MKoooVTfvL_3Vd4azDHn0/(?<nxtPlocale>[^/]+?)/case\\-study/drivesoft\\.json$"
+    },
+    {
+      "page": "/[locale]/cenovnik",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "dataRouteRegex": "^/_next/data/MKoooVTfvL_3Vd4azDHn0/([^/]+?)/cenovnik\\.json$",
+      "namedDataRouteRegex": "^/_next/data/MKoooVTfvL_3Vd4azDHn0/(?<nxtPlocale>[^/]+?)/cenovnik\\.json$"
+    },
+    {
+      "page": "/[locale]/izrada-sajtova",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "dataRouteRegex": "^/_next/data/MKoooVTfvL_3Vd4azDHn0/([^/]+?)/izrada\\-sajtova\\.json$",
+      "namedDataRouteRegex": "^/_next/data/MKoooVTfvL_3Vd4azDHn0/(?<nxtPlocale>[^/]+?)/izrada\\-sajtova\\.json$"
+    },
+    {
+      "page": "/[locale]/pricing",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "dataRouteRegex": "^/_next/data/MKoooVTfvL_3Vd4azDHn0/([^/]+?)/pricing\\.json$",
+      "namedDataRouteRegex": "^/_next/data/MKoooVTfvL_3Vd4azDHn0/(?<nxtPlocale>[^/]+?)/pricing\\.json$"
+    },
+    {
+      "page": "/[locale]/services",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "dataRouteRegex": "^/_next/data/MKoooVTfvL_3Vd4azDHn0/([^/]+?)/services\\.json$",
+      "namedDataRouteRegex": "^/_next/data/MKoooVTfvL_3Vd4azDHn0/(?<nxtPlocale>[^/]+?)/services\\.json$"
+    },
+    {
+      "page": "/[locale]/services/admin-panels-dashboards",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "dataRouteRegex": "^/_next/data/MKoooVTfvL_3Vd4azDHn0/([^/]+?)/services/admin\\-panels\\-dashboards\\.json$",
+      "namedDataRouteRegex": "^/_next/data/MKoooVTfvL_3Vd4azDHn0/(?<nxtPlocale>[^/]+?)/services/admin\\-panels\\-dashboards\\.json$"
+    },
+    {
+      "page": "/[locale]/services/ai-integrations",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "dataRouteRegex": "^/_next/data/MKoooVTfvL_3Vd4azDHn0/([^/]+?)/services/ai\\-integrations\\.json$",
+      "namedDataRouteRegex": "^/_next/data/MKoooVTfvL_3Vd4azDHn0/(?<nxtPlocale>[^/]+?)/services/ai\\-integrations\\.json$"
+    },
+    {
+      "page": "/[locale]/services/booking-systems",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "dataRouteRegex": "^/_next/data/MKoooVTfvL_3Vd4azDHn0/([^/]+?)/services/booking\\-systems\\.json$",
+      "namedDataRouteRegex": "^/_next/data/MKoooVTfvL_3Vd4azDHn0/(?<nxtPlocale>[^/]+?)/services/booking\\-systems\\.json$"
+    },
+    {
+      "page": "/[locale]/services/crm-internal-tools",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "dataRouteRegex": "^/_next/data/MKoooVTfvL_3Vd4azDHn0/([^/]+?)/services/crm\\-internal\\-tools\\.json$",
+      "namedDataRouteRegex": "^/_next/data/MKoooVTfvL_3Vd4azDHn0/(?<nxtPlocale>[^/]+?)/services/crm\\-internal\\-tools\\.json$"
+    },
+    {
+      "page": "/[locale]/services/custom-web-applications",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "dataRouteRegex": "^/_next/data/MKoooVTfvL_3Vd4azDHn0/([^/]+?)/services/custom\\-web\\-applications\\.json$",
+      "namedDataRouteRegex": "^/_next/data/MKoooVTfvL_3Vd4azDHn0/(?<nxtPlocale>[^/]+?)/services/custom\\-web\\-applications\\.json$"
+    },
+    {
+      "page": "/[locale]/services/ecommerce-woocommerce",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "dataRouteRegex": "^/_next/data/MKoooVTfvL_3Vd4azDHn0/([^/]+?)/services/ecommerce\\-woocommerce\\.json$",
+      "namedDataRouteRegex": "^/_next/data/MKoooVTfvL_3Vd4azDHn0/(?<nxtPlocale>[^/]+?)/services/ecommerce\\-woocommerce\\.json$"
+    },
+    {
+      "page": "/[locale]/services/laravel-applications",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "dataRouteRegex": "^/_next/data/MKoooVTfvL_3Vd4azDHn0/([^/]+?)/services/laravel\\-applications\\.json$",
+      "namedDataRouteRegex": "^/_next/data/MKoooVTfvL_3Vd4azDHn0/(?<nxtPlocale>[^/]+?)/services/laravel\\-applications\\.json$"
+    },
+    {
+      "page": "/[locale]/services/laravel-backend",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "dataRouteRegex": "^/_next/data/MKoooVTfvL_3Vd4azDHn0/([^/]+?)/services/laravel\\-backend\\.json$",
+      "namedDataRouteRegex": "^/_next/data/MKoooVTfvL_3Vd4azDHn0/(?<nxtPlocale>[^/]+?)/services/laravel\\-backend\\.json$"
+    },
+    {
+      "page": "/[locale]/services/pwa-applications",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "dataRouteRegex": "^/_next/data/MKoooVTfvL_3Vd4azDHn0/([^/]+?)/services/pwa\\-applications\\.json$",
+      "namedDataRouteRegex": "^/_next/data/MKoooVTfvL_3Vd4azDHn0/(?<nxtPlocale>[^/]+?)/services/pwa\\-applications\\.json$"
+    },
+    {
+      "page": "/[locale]/services/react-frontend-applications",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "dataRouteRegex": "^/_next/data/MKoooVTfvL_3Vd4azDHn0/([^/]+?)/services/react\\-frontend\\-applications\\.json$",
+      "namedDataRouteRegex": "^/_next/data/MKoooVTfvL_3Vd4azDHn0/(?<nxtPlocale>[^/]+?)/services/react\\-frontend\\-applications\\.json$"
+    },
+    {
+      "page": "/[locale]/services/tourism-accommodation-portals",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "dataRouteRegex": "^/_next/data/MKoooVTfvL_3Vd4azDHn0/([^/]+?)/services/tourism\\-accommodation\\-portals\\.json$",
+      "namedDataRouteRegex": "^/_next/data/MKoooVTfvL_3Vd4azDHn0/(?<nxtPlocale>[^/]+?)/services/tourism\\-accommodation\\-portals\\.json$"
+    },
+    {
+      "page": "/[locale]/services/website-maintenance",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "dataRouteRegex": "^/_next/data/MKoooVTfvL_3Vd4azDHn0/([^/]+?)/services/website\\-maintenance\\.json$",
+      "namedDataRouteRegex": "^/_next/data/MKoooVTfvL_3Vd4azDHn0/(?<nxtPlocale>[^/]+?)/services/website\\-maintenance\\.json$"
+    },
+    {
+      "page": "/[locale]/services/website-redesign",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "dataRouteRegex": "^/_next/data/MKoooVTfvL_3Vd4azDHn0/([^/]+?)/services/website\\-redesign\\.json$",
+      "namedDataRouteRegex": "^/_next/data/MKoooVTfvL_3Vd4azDHn0/(?<nxtPlocale>[^/]+?)/services/website\\-redesign\\.json$"
+    },
+    {
+      "page": "/[locale]/services/wordpress-websites",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "dataRouteRegex": "^/_next/data/MKoooVTfvL_3Vd4azDHn0/([^/]+?)/services/wordpress\\-websites\\.json$",
+      "namedDataRouteRegex": "^/_next/data/MKoooVTfvL_3Vd4azDHn0/(?<nxtPlocale>[^/]+?)/services/wordpress\\-websites\\.json$"
+    }
+  ],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}
