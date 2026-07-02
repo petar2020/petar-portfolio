@@ -11,11 +11,11 @@ module.exports = {
         // ── Gallery-light surface tokens (semantics unchanged:
         //    ink = surfaces, paper = foreground text) ─────────────
         ink: {
-          DEFAULT: '#FBFBF8', // page base — warm paper white
-          900: '#FBFBF8',
-          850: '#F3F5F1', // raised sections — sage-tinted
+          DEFAULT: '#F7F3EC', // page base — warm off-white
+          900: '#F7F3EC',
+          850: '#F0E9DD', // raised sections — sand-tinted
           800: '#FFFFFF', // cards / readouts — pure white
-          700: '#ECF1ED', // hover fills
+          700: '#E8E0D0', // hover fills
         },
         teal: {
           DEFAULT: '#0E7C72', // structural brand hue
@@ -25,35 +25,36 @@ module.exports = {
           600: '#0A6E63',
         },
         amber: {
-          DEFAULT: '#C2410C', // the single sharp accent — burnt orange
-          bright: '#9A3409',
-          500: '#C2410C',
-          600: '#9A3409',
+          DEFAULT: '#F0500F', // the single sharp accent — vivid flame orange
+          bright: '#D6420A',
+          500: '#F0500F',
+          600: '#D6420A',
         },
         signal: {
           danger: '#B93A3F', // muted "Problem" markers only
         },
         // text tokens
-        paper: '#141F1A',
-        'paper-dim': '#4A5B53',
-        'paper-faint': '#67766E',
+        paper: '#1A1512',
+        'paper-dim': '#59524A',
+        'paper-faint': '#837A6F',
         // hairline
-        line: 'rgba(20,50,42,0.13)',
-        'line-strong': 'rgba(20,50,42,0.28)',
+        line: 'rgba(26,21,18,0.12)',
+        'line-strong': 'rgba(26,21,18,0.26)',
 
         // ── Repoint legacy aliases onto the new palette so existing
         //    `primary/secondary/accent` classes follow automatically ──
         primary: '#0E7C72',
         secondary: '#0A6E63',
-        accent: '#C2410C',
+        accent: '#F0500F',
         bgLight: '#FFFFFF',
-        bgDark: '#F3F5F1',
+        bgDark: '#F0E9DD',
       },
       fontFamily: {
         sans: ['var(--font-display)', 'ui-sans-serif', 'system-ui', 'sans-serif'],
         display: ['var(--font-display)', 'ui-sans-serif', 'system-ui', 'sans-serif'],
         serif: ['var(--font-serif)', 'Georgia', 'serif'],
         mono: ['var(--font-mono)', 'ui-monospace', 'SFMono-Regular', 'monospace'],
+        script: ['var(--font-script)', 'cursive'],
       },
       borderRadius: {
         // soft studio corners

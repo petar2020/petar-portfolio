@@ -1,6 +1,6 @@
 // pages/_app.js
 import '../styles/globals.css'
-import { Space_Grotesk, IBM_Plex_Mono, Instrument_Serif } from 'next/font/google'
+import { Space_Grotesk, IBM_Plex_Mono, Instrument_Serif, Caveat } from 'next/font/google'
 import { ThemeProvider } from 'next-themes'
 import { AnimatePresence } from 'framer-motion'
 import { NextIntlClientProvider } from 'next-intl'
@@ -26,6 +26,13 @@ const serif = Instrument_Serif({
   display: 'swap',
   variable: '--font-serif',
 })
+// Signature accent — handwritten mark for the About section.
+const script = Caveat({
+  subsets: ['latin'],
+  weight: ['500', '700'],
+  display: 'swap',
+  variable: '--font-script',
+})
 
 function MyApp({ Component, pageProps }) {
   const locale = pageProps?.locale ?? 'en'
@@ -35,7 +42,7 @@ function MyApp({ Component, pageProps }) {
     <NextIntlClientProvider locale={locale} messages={messages} timeZone="Europe/Belgrade">
       {/* Light-only "gallery" surface — no dark theme. */}
       <ThemeProvider attribute="class" forcedTheme="light" enableSystem={false}>
-        <div className={`${display.variable} ${mono.variable} ${serif.variable} font-sans`}>
+        <div className={`${display.variable} ${mono.variable} ${serif.variable} ${script.variable} font-sans`}>
           <AnimatePresence exitBeforeEnter initial={false}>
             <Component {...pageProps} />
           </AnimatePresence>

@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl'
 import { motion } from 'framer-motion'
 import SEO from './SEO'
 import SubpageNav from './SubpageNav'
+import Footer from './Footer'
 import { projects } from '../data/projects'
 import { getServiceBySlug } from '../data/services'
 
@@ -174,9 +175,9 @@ export default function ServicePageTemplate({ slug, locale }) {
           <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 relative z-10">
             <h2 className="font-display font-bold text-paper text-2xl mb-6">{t('whoForTitle')}</h2>
             <p className="text-paper-dim leading-relaxed mb-8">{service.whoForIntro}</p>
-            <div className="grid sm:grid-cols-2 gap-px bg-line border border-line">
+            <div className="grid sm:grid-cols-2 gap-4">
               {whoFor.map((item, i) => (
-                <div key={i} className="bg-ink-800 p-6">
+                <div key={i} className="rounded-2xl border border-line bg-ink-800 shadow-panel p-6">
                   <h3 className="font-display font-semibold text-paper mb-2">{item.title}</h3>
                   <p className="text-sm text-paper-dim leading-relaxed">{item.description}</p>
                 </div>
@@ -190,11 +191,11 @@ export default function ServicePageTemplate({ slug, locale }) {
           <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 relative z-10">
             <h2 className="font-display font-bold text-paper text-2xl mb-6">{t('whatBuildTitle')}</h2>
             <p className="text-paper-dim leading-relaxed mb-8">{service.whatBuildIntro}</p>
-            <div className="space-y-px">
+            <div className="space-y-4">
               {built.map((item, i) => (
-                <div key={i} className="bg-ink-800 border border-line p-6">
+                <div key={i} className="rounded-2xl border border-line bg-ink-800 shadow-panel p-6">
                   <div className="flex items-start gap-4">
-                    <span className="font-mono text-xs font-bold text-teal-bright mt-1">{String(i + 1).padStart(2, '0')}</span>
+                    <span className="font-mono text-xs font-bold text-amber mt-1">{String(i + 1).padStart(2, '0')}</span>
                     <div>
                       <h3 className="font-display font-semibold text-paper mb-1">{item.title}</h3>
                       <p className="text-sm text-paper-dim leading-relaxed">{item.description}</p>
@@ -212,7 +213,7 @@ export default function ServicePageTemplate({ slug, locale }) {
             <h2 className="font-display font-bold text-paper text-2xl mb-6">{t('featuresTitle')}</h2>
             <div className="grid sm:grid-cols-2 gap-3">
               {features.map((feature, i) => (
-                <div key={i} className="flex items-start gap-3 bg-ink-800 border border-line p-4">
+                <div key={i} className="flex items-start gap-3 rounded-xl border border-line bg-ink-800 p-4">
                   <span className="h-1.5 w-1.5 mt-2 rounded-full bg-amber shrink-0" aria-hidden />
                   <span className="text-sm text-paper-dim leading-relaxed">{feature}</span>
                 </div>
@@ -228,7 +229,7 @@ export default function ServicePageTemplate({ slug, locale }) {
             <p className="text-paper-dim leading-relaxed mb-6">{service.techIntro}</p>
             <div className="flex flex-wrap gap-2">
               {tech.map((tag, i) => (
-                <span key={i} className="px-3 py-1.5 border border-line font-mono text-xs text-paper-faint bg-ink-800">
+                <span key={i} className="rounded-full px-3 py-1.5 border border-line font-mono text-xs text-paper-faint bg-ink-800">
                   {tag}
                 </span>
               ))}
@@ -241,9 +242,9 @@ export default function ServicePageTemplate({ slug, locale }) {
           <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 relative z-10">
             <h2 className="font-display font-bold text-paper text-2xl mb-8">{t('projectsTitle')}</h2>
             {relevant.length > 0 ? (
-              <div className="space-y-px">
+              <div className="space-y-4">
                 {relevant.map((project) => (
-                  <div key={project.key} className="bg-ink-800 border border-line p-6">
+                  <div key={project.key} className="rounded-2xl border border-line bg-ink-800 shadow-panel p-6">
                     <h3 className="font-display font-semibold text-paper mb-2">
                       {tProjects(`items.${project.key}.title`)}
                     </h3>
@@ -256,7 +257,7 @@ export default function ServicePageTemplate({ slug, locale }) {
                     </p>
                     <div className="flex flex-wrap gap-1.5">
                       {project.tech.map((tag, i) => (
-                        <span key={i} className="px-2 py-0.5 border border-line font-mono text-[0.68rem] text-paper-faint">
+                        <span key={i} className="rounded-full px-2 py-0.5 border border-line font-mono text-[0.68rem] text-paper-faint">
                           {tag}
                         </span>
                       ))}
@@ -303,7 +304,7 @@ export default function ServicePageTemplate({ slug, locale }) {
           <section className="grain bg-ink-900 border-b border-line py-16 sm:py-20 relative">
             <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 relative z-10">
               <h2 className="font-display font-bold text-paper text-2xl mb-8">{t('relatedServicesTitle')}</h2>
-              <div className="grid sm:grid-cols-2 gap-px bg-line border border-line">
+              <div className="grid sm:grid-cols-2 gap-4">
                 {relatedServices.map((related) => (
                   <RelatedServiceCard key={related.slug} related={related} locale={currentLocale} t={t} />
                 ))}
@@ -337,12 +338,8 @@ export default function ServicePageTemplate({ slug, locale }) {
           </div>
         </section>
 
-        <footer className="border-t border-line py-6">
-          <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-            <p className="callsign text-paper-faint">&copy; {new Date().getFullYear()} Petar Arsić</p>
-          </div>
-        </footer>
       </main>
+      <Footer />
     </>
   )
 }
@@ -351,7 +348,7 @@ export function RelatedServiceCard({ related, locale, t }) {
   return (
     <a
       href={`/${locale}/services/${related.slug}`}
-      className="group block bg-ink-800 p-6 transition-colors hover:bg-ink-700"
+      className="group block rounded-2xl border border-line bg-ink-800 shadow-panel p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lift"
     >
       <div className="flex items-center gap-2 mb-3">
         <span className="h-1.5 w-1.5 rounded-full bg-teal-deep group-hover:bg-teal-bright transition-colors" />

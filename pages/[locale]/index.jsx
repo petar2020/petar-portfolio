@@ -7,14 +7,10 @@ import { services } from '../../data/services'
 import SEO from '../../components/SEO'
 import Nav from '../../components/Nav'
 import Hero from '../../components/Hero'
-import LiveDemo from '../../components/LiveDemo'
-import CaseStudy from '../../components/CaseStudy'
-import AboutMe from '../../components/AboutMe'
 import Projects from '../../components/Projects'
 import HomeServices from '../../components/HomeServices'
-import ClientLogos from '../../components/ClientLogos'
-import Contact from '../../components/Contact'
-import FAQ from '../../components/FAQ'
+import AboutContact from '../../components/AboutContact'
+import Footer from '../../components/Footer'
 import Analytics, { PlausibleScript } from '../../components/Analytics'
 
 // Client-only
@@ -89,20 +85,15 @@ export default function LocaleHome({ locale }) {
       <PlausibleScript />
       <Analytics />
 
-      {/* Lean narrative: what I build → live proof → flagship case → work →
-          services → trust → who I am → questions → contact */}
+      {/* Focused narrative: what I build → what I do → selected work → about + contact */}
       <div className="relative">
         <Backdrop />
         <Nav />
         <Hero />
-        <LiveDemo />
-        <CaseStudy />
-        <Projects />
         <HomeServices />
-        <ClientLogos />
-        <AboutMe />
-        <FAQ />
-        <Contact />
+        <Projects />
+        <AboutContact />
+        <Footer />
       </div>
     </>
   )

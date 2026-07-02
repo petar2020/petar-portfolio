@@ -14,6 +14,8 @@ const LANGS = [
 const LOCALIZED_SLUGS = {
   '/pricing': { sr: '/cenovnik' },
   '/cenovnik': { en: '/pricing' },
+  '/contact': { sr: '/kontakt' },
+  '/kontakt': { en: '/contact' },
 }
 
 function localizePath(path, newLocale) {

@@ -12,16 +12,20 @@
     "about": "O meni",
     "contact": "Kontakt",
     "cv": "CV",
-    "pricing": "Cenovnik"
+    "pricing": "Cenovnik",
+    "workTogether": "Hajde da sarađujemo"
   },
   "hero": {
     "name": "Petar Arsić",
+    "greeting": "Ćao, ja sam Petar",
+    "statLabel": "Godina iskustva",
     "eyebrow": "Full-Stack Developer · Laravel · React · React Native",
-    "headline": "Full-stack Laravel developer koji gradi produkcione platforme za rezervacije, karte i operativu",
-    "headlineAccent": "za realne firme.",
-    "subline": "Full-stack na Laravel-u i React-u — od baze i API-ja do weba, mobilnog i cloud-a. Više od pet godina isporučujem softver za rezervacije, karte i operativu koji firme koriste svakog dana — a ne demo projekte.",
-    "ctaDemo": "Pogledaj demo uživo",
-    "ctaCase": "Pogledaj case study",
+    "headline": "Kreiram digitalne",
+    "headlineAccent": "proizvode",
+    "headlineEnd": "koji rešavaju stvarne poslovne probleme.",
+    "subline": "Full-stack developer koji gradi brze, skalabilne i pouzdane web aplikacije za savremene firme — booking sisteme, admin alate i svakodnevnu operativu.",
+    "ctaDemo": "Pogledaj projekte",
+    "ctaCase": "Preuzmi CV",
     "metrics": {
       "passengers": {
         "value": "150.000+",
@@ -205,6 +209,8 @@
   },
   "projects": {
     "title": "Izabrani Projekti",
+    "viewAllProjects": "Pogledaj sve projekte",
+    "featuredLabel": "Izdvojen projekat",
     "subtitle": "Realni sistemi u produkciji — šta svaki radi i šta sam ja izgradio.",
     "viewLive": "Uživo",
     "viewDemo": "Demo",
@@ -221,8 +227,9 @@
       },
       "sti-web": {
         "title": "Srbija Tours — Prodaja karata",
-        "summary": "Javni sajt za prodaju karata međunarodnog prevoznika, sa jedinstvenim izvorom podataka deljenim sa backend-om za rezervacije.",
-        "role": "Izradio WordPress frontend i Laravel API za polaske, cene, rezervacije i fiskalizovana plaćanja."
+        "summary": "Javni sajt za prodaju karata međunarodnog prevoznika, sa jedinstvenim izvorom podataka deljenim sa backend-om koji je obradio preko 150.000 realnih karata i rezervacija.",
+        "role": "Izradio WordPress frontend i Laravel API za polaske, cene, rezervacije i fiskalizovana plaćanja.",
+        "capabilities": ["Rezervacije", "Prodaja karata", "Operativa"]
       },
       "sti-mobile": {
         "title": "Srbija Tours — Mobilna aplikacija (iOS / Android)",
@@ -262,6 +269,10 @@
   },
   "about": {
     "title": "O meni",
+    "badge": "Čist kod · Solidna rešenja",
+    "eyebrow": "O meni",
+    "compactTitle": "Pretvaram ideje u snažna rešenja.",
+    "compactBio": "Full-stack developer sam sa 5+ godina iskustva u izradi sistema za rezervacije, karte i operativu za realne firme. Fokusiran sam na održiv kod i rezultate koji se osete.",
     "subtitle": "Full-stack developer fokusiran na realne produkcione sisteme i biznis logiku.",
     "aboutMe": "Ko sam ja",
     "bio": "Gradim i održavam realne produkcione sisteme za rezervacije, karte, operativu i automatizaciju poslovanja. Preko 5 godina isporučujem kompletna rešenja u transportnoj industriji — Laravel backend (rezervacije, plaćanja, fiskalizacija, logistika), React / Next i React Native frontend, i 10+ aktivnih WordPress sajtova. Komotno preuzimam postojeći codebase, raspetljavam realnu biznis logiku i isporučujem praktična rešenja koja izdrže u produkciji — a ne samo čist kod u izolaciji. Trenutno full-time u Srbija Tours International, uz freelance projekte. Remote-first, asinhrono, Git workflow.",
@@ -297,6 +308,11 @@
   },
   "contact": {
     "title": "Javite Se",
+    "compactEyebrow": "Hajde da sarađujemo",
+    "compactTitle": "Imate ideju za projekat?",
+    "compactText": "Uvek sam otvoren za nove projekte i ideje.",
+    "compactCta": "Kontaktirajte me",
+    "compactDirect": "Ili mi pišite direktno na",
     "subtitle": "Imate Laravel, booking, operativni ili automatizacioni projekat? Hajde da razgovaramo.",
     "availabilityTitle": "Dostupnost",
     "availability": "Otvoren za full-time, ugovor i freelance",
@@ -326,7 +342,14 @@
   },
   "footer": {
     "rights": "Sva prava zadržana",
-    "madeWith": "Napravljeno sa ❤️ u Srbiji"
+    "madeWith": "Napravljeno sa ❤️ u Srbiji",
+    "backToTop": "Nazad na vrh"
+  },
+  "contactPage": {
+    "seo": {
+      "title": "Kontakt — Petar Arsić | Full-Stack Developer",
+      "description": "Javite se za Laravel, booking, operativni ili automatizacioni projekat. Beograd, Srbija — radim remote sa klijentima iz cele Evrope."
+    }
   },
   "faq": {
     "eyebrow": "FAQ",
@@ -551,11 +574,26 @@
     "ctaButton": "Započnite projekat"
   },
   "homeServices": {
-    "eyebrow": "Platforme",
-    "title": "Web platforme za realne poslovne potrebe",
-    "subtitle": "Custom Laravel, WordPress i React rešenja za rezervacije, turizam, interne alate, e-commerce i poslovnu automatizaciju.",
+    "eyebrow": "Šta radim",
+    "title": "Usluge od početka do kraja",
+    "subtitle": "Od prve linije koda do podrške posle lansiranja — sve što vašem biznisu treba na jednom mestu.",
     "viewAll": "Pogledaj sve usluge",
     "cards": {
+      "webdev": {
+        "code": "WEB",
+        "title": "Izrada web sajtova",
+        "description": "Brze, sigurne i skalabilne web aplikacije rađene u Laravel-u i React-u."
+      },
+      "api": {
+        "code": "API",
+        "title": "API razvoj",
+        "description": "Robusni REST API-ji i integracije sa trećim sistemima."
+      },
+      "maintenance": {
+        "code": "MNT",
+        "title": "Podrška i održavanje",
+        "description": "Redovna ažuriranja, monitoring i optimizacija performansi nakon lansiranja."
+      },
       "tourism": {
         "code": "TOU",
         "title": "Turizam i smeštaj",
@@ -563,7 +601,7 @@
       },
       "booking": {
         "code": "BKG",
-        "title": "Rezervacije i booking",
+        "title": "Booking sistemi",
         "description": "Online sistemi za rezervacije sa dostupnošću, naplatom, admin panelima i QR kartama."
       },
       "admin": {

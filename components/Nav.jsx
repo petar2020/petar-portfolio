@@ -1,7 +1,8 @@
 'use client'
 import { useEffect, useState } from 'react'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import { useTranslations, useLocale } from 'next-intl'
+import { FaBars, FaTimes } from 'react-icons/fa'
 import LanguageSwitcher from './LanguageSwitcher'
 
 export default function Nav() {
@@ -9,6 +10,7 @@ export default function Nav() {
   const locale = useLocale()
   const [scrolled, setScrolled] = useState(false)
   const [active, setActive] = useState('home')
+  const [menuOpen, setMenuOpen] = useState(false)
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50)
@@ -20,17 +22,15 @@ export default function Nav() {
   const pricingPath = locale === 'sr' ? `/${locale}/cenovnik` : `/${locale}/pricing`
   const navItems = [
     { href: '#home', label: t('home', { default: 'Home' }) },
-    { href: '#demo', label: t('demo', { default: 'Live demo' }) },
-    { href: '#case-study', label: t('casestudy', { default: 'Case study' }) },
     { href: '#projects', label: t('projects', { default: 'Projects' }) },
     { href: `/${locale}/services`, label: t('services', { default: 'Services' }), isPage: true },
     { href: pricingPath, label: t('pricing', { default: 'Pricing' }), isPage: true },
-    { href: '#contact', label: t('contact', { default: 'Contact' }) },
+    { href: '#contact', label: t('about', { default: 'About' }) },
   ]
 
   // Scroll-spy: highlight the nav item for the section currently in view.
   useEffect(() => {
-    const ids = ['home', 'demo', 'case-study', 'projects', 'about', 'contact']
+    const ids = ['home', 'projects', 'contact']
     const els = ids.map((id) => document.getElementById(id)).filter(Boolean)
     if (!els.length) return
     const observer = new IntersectionObserver(
@@ -47,6 +47,7 @@ export default function Nav() {
   }, [])
 
   const handleNavClick = (e, href, isPage) => {
+    setMenuOpen(false)
     if (isPage) {
       if (typeof window !== 'undefined' && window.trackCTA) window.trackCTA('navigation', href)
       return
@@ -60,49 +61,103 @@ export default function Nav() {
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 border-b ${
-        scrolled ? 'bg-ink-900/85 backdrop-blur-md border-line' : 'bg-transparent border-transparent'
+        scrolled ? 'bg-ink-900/90 backdrop-blur-md border-line' : 'bg-ink-900/0 border-transparent'
       }`}
     >
       <div className="container mx-auto max-w-6xl flex items-center justify-between py-4 px-4 sm:px-6">
-        {/* logo mark */}
-        <a href="#home" onClick={(e) => handleNavClick(e, '#home')} className="flex items-center gap-2.5 group">
-          <span className="h-2 w-2 bg-amber" aria-hidden />
-          <span className="font-mono text-sm font-bold tracking-[0.2em] text-paper">PA</span>
-          <span className="hidden sm:inline callsign !text-[0.6rem] text-paper-faint group-hover:text-teal-bright transition-colors">
-            / FULL-STACK
-          </span>
+        {/* wordmark */}
+        <a href="#home" onClick={(e) => handleNavClick(e, '#home')} className="flex items-center gap-1 shrink-0">
+          <span className="font-display text-lg font-bold tracking-tight text-paper">Petar Arsić</span>
+          <span className="h-1.5 w-1.5 rounded-full bg-amber" aria-hidden />
         </a>
 
-        <div className="flex items-center gap-6">
-          <ul className="hidden md:flex gap-7">
-            {navItems.map(({ href, label, isPage }) => {
-              const isActive = active === href.replace('#', '')
-              return (
-                <li key={href} className="group">
-                  <motion.a
-                    href={href}
-                    onClick={(e) => handleNavClick(e, href, isPage)}
-                    whileHover={{ y: -1 }}
-                    aria-current={isActive ? 'true' : undefined}
-                    className={`relative font-mono text-xs uppercase tracking-[0.14em] transition-colors ${
-                      isActive ? 'text-paper' : 'text-paper-dim hover:text-paper'
+        {/* center links — desktop */}
+        <ul className="hidden lg:flex items-center gap-8">
+          {navItems.map(({ href, label, isPage }) => {
+            const isActive = active === href.replace('#', '')
+            return (
+              <li key={href} className="group">
+                <a
+                  href={href}
+                  onClick={(e) => handleNavClick(e, href, isPage)}
+                  aria-current={isActive ? 'true' : undefined}
+                  className={`relative pb-1 text-sm font-medium transition-colors ${
+                    isActive ? 'text-paper' : 'text-paper-dim hover:text-paper'
+                  }`}
+                >
+                  {label}
+                  <span
+                    className={`absolute left-0 -bottom-0.5 h-[2px] bg-amber transition-all duration-300 ${
+                      isActive ? 'w-full' : 'w-0 group-hover:w-full'
                     }`}
-                  >
-                    {label}
-                    <span
-                      className={`absolute left-0 -bottom-1.5 h-px bg-teal-bright transition-all duration-300 ${
-                        isActive ? 'w-full' : 'w-0 group-hover:w-full'
-                      }`}
-                    />
-                  </motion.a>
-                </li>
-              )
-            })}
-          </ul>
+                  />
+                </a>
+              </li>
+            )
+          })}
+        </ul>
 
-          <LanguageSwitcher scrolled={scrolled} />
+        <div className="flex items-center gap-3">
+          <div className="hidden sm:block">
+            <LanguageSwitcher scrolled={scrolled} />
+          </div>
+          <a
+            href="#contact"
+            onClick={(e) => handleNavClick(e, '#contact')}
+            className="hidden md:inline-flex items-center gap-2 rounded-full bg-[#141110] px-5 py-2.5 text-sm font-semibold text-white transition-transform hover:-translate-y-0.5 hover:bg-black"
+          >
+            {t('workTogether', { default: "Let's work together" })} <span aria-hidden>→</span>
+          </a>
+
+          {/* mobile toggle */}
+          <button
+            type="button"
+            onClick={() => setMenuOpen((v) => !v)}
+            aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+            aria-expanded={menuOpen}
+            className="lg:hidden inline-flex h-10 w-10 items-center justify-center rounded-full border border-line text-paper"
+          >
+            {menuOpen ? <FaTimes aria-hidden /> : <FaBars aria-hidden />}
+          </button>
         </div>
       </div>
+
+      {/* mobile menu */}
+      <AnimatePresence>
+        {menuOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.25, ease: [0.65, 0, 0.35, 1] }}
+            className="lg:hidden overflow-hidden border-t border-line bg-ink-900"
+          >
+            <ul className="container mx-auto max-w-6xl px-4 sm:px-6 py-4 flex flex-col gap-1">
+              {navItems.map(({ href, label, isPage }) => (
+                <li key={href}>
+                  <a
+                    href={href}
+                    onClick={(e) => handleNavClick(e, href, isPage)}
+                    className="block rounded-lg px-3 py-3 text-base font-medium text-paper hover:bg-ink-850"
+                  >
+                    {label}
+                  </a>
+                </li>
+              ))}
+              <li className="mt-2 flex items-center justify-between gap-3 px-3">
+                <LanguageSwitcher scrolled={scrolled} />
+                <a
+                  href="#contact"
+                  onClick={(e) => handleNavClick(e, '#contact')}
+                  className="inline-flex items-center gap-2 rounded-full bg-[#141110] px-5 py-2.5 text-sm font-semibold text-white"
+                >
+                  {t('workTogether', { default: "Let's work together" })} <span aria-hidden>→</span>
+                </a>
+              </li>
+            </ul>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   )
 }

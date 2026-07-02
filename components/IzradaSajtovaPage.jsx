@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { FaMapMarkerAlt } from 'react-icons/fa'
 import SEO from './SEO'
 import SubpageNav from './SubpageNav'
+import Footer from './Footer'
 
 const SITE_URL = 'https://petararsic.rs'
 export const IZRADA_SAJTOVA_URL = `${SITE_URL}/sr/izrada-sajtova`
@@ -207,12 +208,8 @@ export default function IzradaSajtovaPage() {
           </div>
         </section>
 
-        <footer className="border-t border-line py-6">
-          <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-            <p className="callsign text-paper-faint">&copy; {new Date().getFullYear()} Petar Arsić</p>
-          </div>
-        </footer>
       </main>
+      <Footer />
     </>
   )
 }

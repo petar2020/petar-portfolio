@@ -3,6 +3,7 @@ import { useTranslations } from 'next-intl'
 import { motion } from 'framer-motion'
 import SEO from '../../../components/SEO'
 import SubpageNav from '../../../components/SubpageNav'
+import Footer from '../../../components/Footer'
 import { services } from '../../../data/services'
 
 const SITE_URL = 'https://petararsic.rs'
@@ -132,7 +133,7 @@ export default function ServicesIndex({ locale }) {
         {/* Services Grid */}
         <section className="grain bg-ink-850 border-b border-line py-16 sm:py-20 relative">
           <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 relative z-10">
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-line border border-line">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {services.map((service, i) => (
                 <ServiceCard
                   key={service.slug}
@@ -168,12 +169,8 @@ export default function ServicesIndex({ locale }) {
           </div>
         </section>
 
-        <footer className="border-t border-line py-6">
-          <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-            <p className="callsign text-paper-faint">&copy; {new Date().getFullYear()} Petar Arsić</p>
-          </div>
-        </footer>
       </main>
+      <Footer />
     </>
   )
 }
@@ -189,7 +186,7 @@ function ServiceCard({ service, locale, index }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.45, delay: index * 0.05 }}
-      className="group block bg-ink-800 p-6 transition-colors hover:bg-ink-700"
+      className="group block rounded-2xl border border-line bg-ink-800 shadow-panel p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lift"
     >
       <div className="flex items-center gap-2 mb-4">
         <span className="h-1.5 w-1.5 rounded-full bg-teal-deep group-hover:bg-teal-bright transition-colors" />
@@ -203,7 +200,7 @@ function ServiceCard({ service, locale, index }) {
       <p className="text-sm text-paper-dim leading-relaxed mb-4">{t('shortDescription')}</p>
       <div className="flex flex-wrap gap-1.5">
         {service.tech.slice(0, 4).map((tag, i) => (
-          <span key={i} className="px-2 py-0.5 border border-line font-mono text-[0.65rem] text-paper-faint">
+          <span key={i} className="rounded-full px-2 py-0.5 border border-line font-mono text-[0.65rem] text-paper-faint">
             {tag}
           </span>
         ))}

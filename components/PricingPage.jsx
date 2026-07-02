@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { FaCheck } from 'react-icons/fa'
 import SEO from './SEO'
 import SubpageNav from './SubpageNav'
+import Footer from './Footer'
 
 const SITE_URL = 'https://petararsic.rs'
 const OG_LOCALE_MAP = { sr: 'sr_RS', en: 'en_US' }
@@ -238,12 +239,8 @@ export default function PricingPage({ locale }) {
           </div>
         </section>
 
-        <footer className="border-t border-line py-6">
-          <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-            <p className="callsign text-paper-faint">&copy; {new Date().getFullYear()} Petar Arsić</p>
-          </div>
-        </footer>
       </main>
+      <Footer />
     </>
   )
 }
@@ -258,7 +255,7 @@ function PackageCard({ p, index, locale }) {
       transition={{ duration: 0.45, delay: index * 0.06 }}
       className={`flex flex-col rounded-2xl p-6 ${
         featured
-          ? 'bg-[#0F211B] text-white shadow-lift'
+          ? 'bg-[#14110F] text-white shadow-lift'
           : 'panel'
       }`}
     >
@@ -269,7 +266,7 @@ function PackageCard({ p, index, locale }) {
 
       <p className="mt-5">
         <span className={`text-sm ${featured ? 'text-white/60' : 'text-paper-faint'}`}>{p.priceNote} </span>
-        <span className={`font-display text-4xl font-bold ${featured ? 'text-[#FFC24B]' : 'text-paper'}`}>
+        <span className={`font-display text-4xl font-bold ${featured ? 'text-amber' : 'text-paper'}`}>
           {p.price}
         </span>
       </p>
@@ -280,7 +277,7 @@ function PackageCard({ p, index, locale }) {
       <ul className="mt-5 space-y-2.5">
         {p.features.map((f, i) => (
           <li key={i} className={`flex items-start gap-2.5 text-sm leading-relaxed ${featured ? 'text-white/80' : 'text-paper-dim'}`}>
-            <FaCheck aria-hidden className={`mt-1 shrink-0 ${featured ? 'text-[#FFC24B]' : 'text-teal'}`} />
+            <FaCheck aria-hidden className={`mt-1 shrink-0 ${featured ? 'text-amber' : 'text-teal'}`} />
             <span>{f}</span>
           </li>
         ))}
@@ -291,8 +288,8 @@ function PackageCard({ p, index, locale }) {
           href={`/${locale}#contact`}
           className={
             featured
-              ? 'inline-flex w-full items-center justify-center gap-2 rounded-[10px] bg-white px-5 py-3.5 font-mono text-xs font-semibold uppercase tracking-[0.12em] text-[#0F211B] transition-transform hover:-translate-y-0.5'
-              : 'btn-line w-full !px-5 !py-3.5 !text-xs'
+              ? 'inline-flex w-full items-center justify-center gap-2 rounded-full bg-white px-5 py-3.5 text-sm font-semibold text-[#14110F] transition-transform hover:-translate-y-0.5'
+              : 'btn-line w-full !px-5 !py-3'
           }
         >
           {p.cta || (p.priceNote === 'od' ? 'Zatraži ponudu' : 'Request a quote')} <span aria-hidden>→</span>

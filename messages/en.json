@@ -12,16 +12,20 @@
     "about": "About",
     "contact": "Contact",
     "cv": "CV",
-    "pricing": "Pricing"
+    "pricing": "Pricing",
+    "workTogether": "Let's work together"
   },
   "hero": {
     "name": "Petar Arsić",
+    "greeting": "Hello, I'm Petar",
+    "statLabel": "Years Experience",
     "eyebrow": "Full-Stack Developer · Laravel · React · React Native",
-    "headline": "Full-stack Laravel developer building production booking, ticketing & operations platforms",
-    "headlineAccent": "for real businesses.",
-    "subline": "Full-stack on Laravel and React — from database and API to web, mobile and cloud. Five-plus years shipping booking, ticketing and operations software that real companies run every day, not demo projects.",
-    "ctaDemo": "View live demo",
-    "ctaCase": "See the case study",
+    "headline": "I build digital",
+    "headlineAccent": "products",
+    "headlineEnd": "that solve real business problems.",
+    "subline": "Full-stack developer crafting fast, scalable and reliable web applications for modern businesses — booking systems, admin tools and everyday operations.",
+    "ctaDemo": "View projects",
+    "ctaCase": "Download CV",
     "metrics": {
       "passengers": {
         "value": "150,000+",
@@ -205,6 +209,8 @@
   },
   "projects": {
     "title": "Selected Projects",
+    "viewAllProjects": "View all projects",
+    "featuredLabel": "Featured project",
     "subtitle": "Real systems in production — what each one does, and what I built.",
     "viewLive": "Live",
     "viewDemo": "Demo",
@@ -221,8 +227,9 @@
       },
       "sti-web": {
         "title": "Srbija Tours — Public Ticket Sales",
-        "summary": "Public ticket-sales site for an international bus carrier, sharing one source of truth with the booking backend.",
-        "role": "Built the WordPress frontend and the Laravel API powering departures, pricing, reservations and fiscalized payments."
+        "summary": "Public ticket-sales site for an international bus carrier, sharing one source of truth with the booking backend that has processed over 150,000 real tickets and reservations.",
+        "role": "Built the WordPress frontend and the Laravel API powering departures, pricing, reservations and fiscalized payments.",
+        "capabilities": ["Booking", "Ticketing", "Operations"]
       },
       "sti-mobile": {
         "title": "Srbija Tours — Mobile App (iOS / Android)",
@@ -262,6 +269,10 @@
   },
   "about": {
     "title": "About Me",
+    "badge": "Clean code · Solid solutions",
+    "eyebrow": "About Me",
+    "compactTitle": "I turn ideas into powerful solutions.",
+    "compactBio": "I'm a full-stack developer with 5+ years building booking, ticketing and operations systems for real businesses. I focus on writing maintainable code and delivering results that matter.",
     "subtitle": "Full-stack developer focused on real production systems and business logic.",
     "aboutMe": "Who I Am",
     "bio": "I build and maintain real production systems for booking, ticketing, operations and business automation. For 5+ years I've shipped end-to-end software for the transport industry — Laravel backends (reservations, payments, fiscalization, logistics), React / Next and React Native front-ends, and 10+ live WordPress sites. I'm comfortable taking ownership of an existing codebase, untangling real business logic, and delivering practical solutions that hold up in production — not just clean code in isolation. Currently full-time at Srbija Tours International, with freelance projects on the side. Remote-first, async, Git-based.",
@@ -297,6 +308,11 @@
   },
   "contact": {
     "title": "Get In Touch",
+    "compactEyebrow": "Let's work together",
+    "compactTitle": "Have a project in mind?",
+    "compactText": "I'm always open to discussing new projects and creative ideas.",
+    "compactCta": "Get in touch",
+    "compactDirect": "Or write me directly at",
     "subtitle": "Have a Laravel, booking, operations or automation project? Let's talk.",
     "availabilityTitle": "Availability",
     "availability": "Open to full-time, contract and freelance",
@@ -326,7 +342,14 @@
   },
   "footer": {
     "rights": "All rights reserved",
-    "madeWith": "Made with ❤️ in Serbia"
+    "madeWith": "Made with ❤️ in Serbia",
+    "backToTop": "Back to top"
+  },
+  "contactPage": {
+    "seo": {
+      "title": "Contact — Petar Arsić | Full-Stack Developer",
+      "description": "Get in touch about a Laravel, booking, operations or automation project. Based in Belgrade, Serbia, working remotely with clients across Europe."
+    }
   },
   "faq": {
     "eyebrow": "FAQ",
@@ -551,11 +574,26 @@
     "ctaButton": "Start a project"
   },
   "homeServices": {
-    "eyebrow": "Platforms",
-    "title": "Web platforms for real business needs",
-    "subtitle": "Custom Laravel, WordPress and React solutions for booking, tourism, internal tools, e-commerce and business automation.",
+    "eyebrow": "What I do",
+    "title": "End-to-end development services",
+    "subtitle": "From first line of code to post-launch support — everything your business needs in one place.",
     "viewAll": "View all services",
     "cards": {
+      "webdev": {
+        "code": "WEB",
+        "title": "Web Development",
+        "description": "Fast, secure and scalable web applications built with Laravel and React."
+      },
+      "api": {
+        "code": "API",
+        "title": "API Development",
+        "description": "Robust REST APIs and third-party integrations that connect your systems."
+      },
+      "maintenance": {
+        "code": "MNT",
+        "title": "Support & Maintenance",
+        "description": "Ongoing updates, monitoring and performance optimization after launch."
+      },
       "tourism": {
         "code": "TOU",
         "title": "Tourism & Accommodation",
@@ -563,7 +601,7 @@
       },
       "booking": {
         "code": "BKG",
-        "title": "Booking & Reservations",
+        "title": "Booking Systems",
         "description": "Online reservation systems with availability, checkout, admin panels and QR tickets."
       },
       "admin": {

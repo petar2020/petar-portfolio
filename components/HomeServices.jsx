@@ -1,17 +1,15 @@
 'use client'
 import { motion } from 'framer-motion'
 import { useTranslations, useLocale } from 'next-intl'
-import { FaUmbrellaBeach, FaCalendarCheck, FaChartLine, FaWordpress, FaShoppingCart, FaRobot } from 'react-icons/fa'
+import { FaCode, FaCalendarCheck, FaPlug, FaTools } from 'react-icons/fa'
 import SectionHeader from './ui/SectionHeader'
 import { homeServiceCards } from '../data/services'
 
 const CARD_ICONS = {
-  tourism: FaUmbrellaBeach,
+  webdev: FaCode,
   booking: FaCalendarCheck,
-  admin: FaChartLine,
-  wordpress: FaWordpress,
-  ecommerce: FaShoppingCart,
-  ai: FaRobot,
+  api: FaPlug,
+  maintenance: FaTools,
 }
 
 export default function HomeServices() {
@@ -19,7 +17,7 @@ export default function HomeServices() {
   const locale = useLocale()
 
   return (
-    <section id="platforms" className="relative grain bg-ink-900 border-t border-line py-20 sm:py-28 scroll-mt-24">
+    <section id="platforms" className="relative bg-ink-900 border-t border-line py-20 sm:py-28 scroll-mt-24">
       <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 relative z-10">
         <SectionHeader
           callsign={t('eyebrow')}
@@ -27,7 +25,7 @@ export default function HomeServices() {
           subtitle={t('subtitle')}
         />
 
-        <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
+        <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
           {homeServiceCards.map((card, i) => (
             <ServiceCard key={card.slug} card={card} index={i} locale={locale} />
           ))}
@@ -40,7 +38,7 @@ export default function HomeServices() {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="mt-12 text-center"
         >
-          <a href={`/${locale}/services`} className="btn-line">
+          <a href={`/${locale}/services`} className="btn-pill-outline">
             {t('viewAll')} <span aria-hidden>→</span>
           </a>
         </motion.div>
@@ -51,8 +49,7 @@ export default function HomeServices() {
 
 function ServiceCard({ card, index, locale }) {
   const t = useTranslations(`homeServices.cards.${card.labelKey}`)
-  const tCommon = useTranslations('servicePages')
-  const Icon = CARD_ICONS[card.labelKey] || FaChartLine
+  const Icon = CARD_ICONS[card.labelKey] || FaCode
 
   return (
     <motion.a
@@ -61,17 +58,18 @@ function ServiceCard({ card, index, locale }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.45, delay: index * 0.06 }}
-      className="group panel block rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lift"
+      className="group relative flex flex-col rounded-2xl border border-line bg-ink-800 p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lift hover:border-line-strong"
     >
-      <span className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-teal/10 text-teal transition-colors group-hover:bg-teal group-hover:text-white">
+      <span className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-ink-850 text-paper transition-colors group-hover:bg-amber group-hover:text-white">
         <Icon aria-hidden className="text-lg" />
       </span>
-      <h3 className="mt-4 font-display text-lg font-bold text-paper group-hover:text-teal-bright transition-colors">
-        {t('title')}
-      </h3>
+      <h3 className="mt-5 font-display text-lg font-bold text-paper">{t('title')}</h3>
       <p className="mt-2 text-sm text-paper-dim leading-relaxed">{t('description')}</p>
-      <span className="mt-4 inline-flex items-center gap-1.5 font-mono text-xs font-semibold uppercase tracking-[0.12em] text-teal-bright transition-all group-hover:gap-2.5 group-hover:text-amber">
-        {tCommon('readMore')} <span aria-hidden>→</span>
+      <span
+        aria-hidden
+        className="absolute right-5 bottom-5 flex h-9 w-9 items-center justify-center rounded-full border border-line text-paper-faint transition-all duration-300 group-hover:bg-amber group-hover:border-amber group-hover:text-white group-hover:rotate-45"
+      >
+        ↗
       </span>
     </motion.a>
   )

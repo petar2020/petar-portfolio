@@ -97,12 +97,10 @@ export const services = [
 ]
 
 export const homeServiceCards = [
-  { slug: 'tourism-accommodation-portals', labelKey: 'tourism' },
+  { slug: 'custom-web-applications', labelKey: 'webdev' },
   { slug: 'booking-systems', labelKey: 'booking' },
-  { slug: 'admin-panels-dashboards', labelKey: 'admin' },
-  { slug: 'wordpress-websites', labelKey: 'wordpress' },
-  { slug: 'ecommerce-woocommerce', labelKey: 'ecommerce' },
-  { slug: 'ai-integrations', labelKey: 'ai' },
+  { slug: 'laravel-applications', labelKey: 'api' },
+  { slug: 'website-maintenance', labelKey: 'maintenance' },
 ]
 
 export function getServiceBySlug(slug) {

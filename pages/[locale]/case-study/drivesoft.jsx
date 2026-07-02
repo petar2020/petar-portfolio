@@ -2,6 +2,7 @@ import { useTranslations } from 'next-intl'
 import { useRouter } from 'next/router'
 import SEO from '../../../components/SEO'
 import SubpageNav from '../../../components/SubpageNav'
+import Footer from '../../../components/Footer'
 import { RelatedServiceCard } from '../../../components/ServicePageTemplate'
 import { getServiceBySlug } from '../../../data/services'
 
@@ -123,9 +124,9 @@ export default function CaseStudyDriveSoft({ locale }) {
             </div>
             <p className="text-paper-dim leading-relaxed mb-8">{t('architectureIntro')}</p>
 
-            <div className="space-y-px">
+            <div className="space-y-4">
               {layers.map((layer, i) => (
-                <div key={i} className="bg-ink-800 border border-line p-6">
+                <div key={i} className="rounded-2xl border border-line bg-ink-800 shadow-panel p-6">
                   <div className="flex items-center gap-3 mb-3">
                     <span className="font-mono text-xs font-bold text-amber">{layer.code}</span>
                     <h3 className="font-display font-semibold text-paper">{layer.title}</h3>
@@ -145,11 +146,11 @@ export default function CaseStudyDriveSoft({ locale }) {
               <h2 className="callsign">{t('bookingFlowTitle')}</h2>
             </div>
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-line border border-line">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {steps.map((s, i) => (
-                <div key={i} className="bg-ink-800 p-5">
+                <div key={i} className="rounded-2xl border border-line bg-ink-800 shadow-panel p-5">
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="font-mono text-xs font-bold text-teal-bright">{String(i + 1).padStart(2, '0')}</span>
+                    <span className="font-mono text-xs font-bold text-amber">{String(i + 1).padStart(2, '0')}</span>
                     <h3 className="font-display font-semibold text-paper text-sm">{s.step}</h3>
                   </div>
                   <p className="text-sm text-paper-dim leading-relaxed">{s.description}</p>
@@ -206,7 +207,7 @@ export default function CaseStudyDriveSoft({ locale }) {
             <p className="callsign mb-4">{tCS('techTitle')}</p>
             <div className="flex flex-wrap gap-2">
               {tech.map((tag, i) => (
-                <span key={i} className="px-3 py-1.5 border border-line font-mono text-xs text-paper-dim">{tag}</span>
+                <span key={i} className="rounded-full px-3 py-1.5 border border-line font-mono text-xs text-paper-dim">{tag}</span>
               ))}
             </div>
           </div>
@@ -220,7 +221,7 @@ export default function CaseStudyDriveSoft({ locale }) {
                 <span className="font-mono text-sm font-bold text-teal-bright">08</span>
                 <h2 className="callsign">{tCommon('relatedServicesTitle')}</h2>
               </div>
-              <div className="grid sm:grid-cols-3 gap-px bg-line border border-line">
+              <div className="grid sm:grid-cols-3 gap-4">
                 {relatedServices.map((related) => (
                   <RelatedServiceCard key={related.slug} related={related} locale={currentLocale} t={tCommon} />
                 ))}
@@ -256,13 +257,8 @@ export default function CaseStudyDriveSoft({ locale }) {
           </div>
         </section>
 
-        {/* Footer */}
-        <footer className="border-t border-line py-6">
-          <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-            <p className="callsign text-paper-faint">&copy; {new Date().getFullYear()} Petar Arsić</p>
-          </div>
-        </footer>
       </main>
+      <Footer />
     </>
   )
 }

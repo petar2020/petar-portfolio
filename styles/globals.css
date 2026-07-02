@@ -9,26 +9,26 @@
 /*   paper* = foreground text                                   */
 /* ============================================================ */
 :root {
-  --ink-900: #fbfbf8; /* page base — warm paper white */
-  --ink-850: #f3f5f1; /* raised sections — sage-tinted */
+  --ink-900: #f7f3ec; /* page base — warm off-white */
+  --ink-850: #f0e9dd; /* raised sections — sand-tinted */
   --ink-800: #ffffff; /* cards / readouts — pure white */
-  --ink-700: #ecf1ed; /* hover fills */
+  --ink-700: #e8e0d0; /* hover fills */
 
   --teal: #0e7c72; /* structural brand hue */
   --teal-bright: #0a6e63; /* links / active — AA on white */
   --teal-deep: #a9cfc7; /* muted tints, idle dots */
-  --amber: #c2410c; /* the single sharp accent — burnt orange */
-  --amber-bright: #9a3409; /* hover — darker on light surfaces */
+  --amber: #f0500f; /* the single sharp accent — vivid flame orange */
+  --amber-bright: #d6420a; /* hover — darker on light surfaces */
   --danger: #b93a3f;
 
-  --paper: #141f1a; /* primary text — deep ink green */
-  --paper-dim: #4a5b53; /* secondary text */
-  --paper-faint: #67766e; /* labels / call-signs */
-  --line: rgba(20, 50, 42, 0.13);
-  --line-strong: rgba(20, 50, 42, 0.28);
+  --paper: #1a1512; /* primary text — near-black, warm neutral */
+  --paper-dim: #59524a; /* secondary text */
+  --paper-faint: #837a6f; /* labels / call-signs */
+  --line: rgba(26, 21, 18, 0.12);
+  --line-strong: rgba(26, 21, 18, 0.26);
 
-  --btn-ink: #14231d; /* primary action surface */
-  --btn-ink-hover: #0e5a51;
+  --btn-ink: #14110f; /* primary action surface */
+  --btn-ink-hover: #000000;
 
   --ease-surface: cubic-bezier(0.65, 0, 0.35, 1);
 }
@@ -112,41 +112,42 @@ body {
     color: var(--paper-faint);
   }
 
-  /* Solid ink primary action */
-  .btn-signal {
-    @apply inline-flex items-center justify-center gap-2 px-7 py-4 font-mono text-sm font-semibold uppercase tracking-[0.12em];
+  /* Solid ink primary action — pill shape, sans-serif (site-wide) */
+  .btn-signal,
+  .btn-pill-dark {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold transition-all duration-200;
     background: var(--btn-ink);
-    color: #f7faf8;
+    color: #fff;
     border: 1px solid var(--btn-ink);
-    border-radius: 10px;
-    box-shadow: 0 10px 24px -14px rgba(20, 35, 29, 0.45);
-    transition: transform 0.18s var(--ease-surface), background 0.18s var(--ease-surface),
-      box-shadow 0.25s var(--ease-surface);
   }
-  .btn-signal:hover {
+  .btn-signal:hover,
+  .btn-pill-dark:hover {
     background: var(--btn-ink-hover);
     border-color: var(--btn-ink-hover);
     transform: translateY(-2px);
-    box-shadow: 0 16px 34px -14px rgba(14, 90, 81, 0.5);
+    box-shadow: 0 14px 28px -14px rgba(20, 17, 16, 0.45);
   }
 
-  /* Hairline-bordered secondary action */
-  .btn-line {
-    @apply inline-flex items-center justify-center gap-2 px-7 py-4 font-mono text-sm font-semibold uppercase tracking-[0.12em];
-    background: var(--ink-800);
+  /* Hairline-bordered secondary action — pill shape, sans-serif (site-wide) */
+  .btn-line,
+  .btn-pill-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold transition-all duration-200;
+    background: transparent;
     color: var(--paper);
     border: 1px solid var(--line-strong);
-    border-radius: 10px;
-    transition: border-color 0.18s var(--ease-surface), color 0.18s var(--ease-surface),
-      transform 0.18s var(--ease-surface), box-shadow 0.25s var(--ease-surface);
   }
-  .btn-line:hover {
-    border-color: var(--teal);
-    color: var(--teal-bright);
+  .btn-line:hover,
+  .btn-pill-outline:hover {
+    border-color: var(--paper);
     transform: translateY(-2px);
-    box-shadow: 0 12px 28px -18px rgba(14, 124, 114, 0.35);
   }
 }
+
+/* Slow badge rotation — respects reduced-motion via the global override below */
+@keyframes spin-slow {
+  to { transform: rotate(360deg); }
+}
+.animate-spin-slow { animation: spin-slow 14s linear infinite; }
 
 /* ============================================================ */
 /* UTILITIES                                                   */

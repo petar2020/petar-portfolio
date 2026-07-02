@@ -1,14 +1,12 @@
 'use client'
 import { motion } from 'framer-motion'
 import { useState } from 'react'
-import { useTranslations, useLocale } from 'next-intl'
-import Link from 'next/link'
-import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt, FaPaperPlane, FaGithub, FaLinkedin } from 'react-icons/fa'
+import { useTranslations } from 'next-intl'
+import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt, FaPaperPlane } from 'react-icons/fa'
 import SectionHeader from './ui/SectionHeader'
 
 export default function Contact() {
   const t = useTranslations('contact')
-  const locale = useLocale()
 
   const [formData, setFormData] = useState({ name: '', email: '', message: '', website: '' })
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -52,7 +50,7 @@ export default function Contact() {
   }
 
   const inputCls =
-    'w-full p-4 rounded-md bg-ink-900 border border-line text-paper placeholder:text-paper-faint focus:border-teal-bright outline-none transition-colors font-sans'
+    'w-full p-4 rounded-xl bg-ink-900 border border-line text-paper placeholder:text-paper-faint focus:border-amber outline-none transition-colors font-sans'
 
   const infoRows = [
     { Icon: FaMapMarkerAlt, title: t('locationTitle'), value: t('location'), href: null },
@@ -61,13 +59,13 @@ export default function Contact() {
   ]
 
   return (
-    <section id="contact" className="relative grain bg-ink-900 border-t border-line py-20 sm:py-28 scroll-mt-24">
+    <section id="contact" className="relative bg-ink-900 border-t border-line py-20 sm:py-28 scroll-mt-24">
       <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 relative z-10">
         <SectionHeader index="08" callsign="Contact" title={t('title')} subtitle={t('subtitle')} status="amber" />
 
-        <div className="mt-12 grid lg:grid-cols-2 gap-px bg-line border border-line">
+        <div className="mt-12 grid lg:grid-cols-2 gap-6">
           {/* form */}
-          <form className="bg-ink-800 p-6 sm:p-8 space-y-5" onSubmit={handleSubmit}>
+          <form className="rounded-2xl border border-line bg-ink-800 shadow-panel p-6 sm:p-8 space-y-5" onSubmit={handleSubmit}>
             <input type="text" name="website" value={formData.website} onChange={handleInputChange} className="hidden" tabIndex={-1} autoComplete="off" />
 
             {['name', 'email', 'message'].map((field) => (
@@ -93,30 +91,30 @@ export default function Contact() {
               <motion.div
                 initial={{ opacity: 0, y: 8 }}
                 animate={{ opacity: 1, y: 0 }}
-                className={`p-4 border font-mono text-sm ${submitStatus === 'success' ? 'border-teal text-teal-bright' : 'border-signal-danger text-signal-danger'}`}
+                className={`p-4 rounded-xl border font-sans text-sm ${submitStatus === 'success' ? 'border-teal text-teal-bright' : 'border-signal-danger text-signal-danger'}`}
               >
                 {submitStatus === 'success' ? t('success') : t('error')}
               </motion.div>
             )}
 
-            <button type="submit" disabled={isSubmitting} className="btn-signal w-full disabled:opacity-50 disabled:cursor-not-allowed">
+            <button type="submit" disabled={isSubmitting} className="btn-pill-dark w-full disabled:opacity-50 disabled:cursor-not-allowed">
               {isSubmitting ? t('sending') : t('send')}
               <FaPaperPlane aria-hidden="true" className={isSubmitting ? 'animate-spin' : ''} />
             </button>
           </form>
 
           {/* info */}
-          <div className="bg-ink-800 p-6 sm:p-8 flex flex-col">
-            <div className="space-y-px bg-line border border-line">
+          <div className="rounded-2xl border border-line bg-ink-800 shadow-panel p-6 sm:p-8 flex flex-col">
+            <div className="space-y-3">
               {infoRows.map(({ Icon, title, value, href }, i) => (
-                <div key={i} className="bg-ink-900 p-5 flex items-start gap-4">
-                  <span className="mt-0.5 text-teal-bright"><Icon aria-hidden="true" /></span>
+                <div key={i} className="rounded-xl bg-ink-850 p-5 flex items-start gap-4">
+                  <span className="mt-0.5 text-amber"><Icon aria-hidden="true" /></span>
                   <div>
                     <h3 className="callsign !text-[0.6rem]">{title}</h3>
                     {href ? (
-                      <a href={href} className="mt-1 block font-mono text-sm text-paper hover:text-amber transition-colors break-all">{value}</a>
+                      <a href={href} className="mt-1 block text-sm text-paper hover:text-amber transition-colors break-all">{value}</a>
                     ) : (
-                      <p className="mt-1 font-mono text-sm text-paper">{value}</p>
+                      <p className="mt-1 text-sm text-paper">{value}</p>
                     )}
                   </div>
                 </div>
@@ -124,85 +122,26 @@ export default function Contact() {
             </div>
 
             {/* availability — hiring signal for recruiters / clients */}
-            <div className="mt-6 border border-teal-deep/60 bg-teal-deep/10 p-5">
+            <div className="mt-4 rounded-xl border border-amber/25 bg-amber/5 p-5">
               <div className="flex items-center gap-2">
-                <span className="h-1.5 w-1.5 rounded-full bg-teal-bright animate-pulse" aria-hidden />
-                <h4 className="callsign !text-[0.6rem] text-teal-bright">{t('availabilityTitle')}</h4>
+                <span className="h-1.5 w-1.5 rounded-full bg-amber animate-pulse" aria-hidden />
+                <h4 className="callsign !text-[0.6rem] text-amber">{t('availabilityTitle')}</h4>
               </div>
               <p className="mt-3 text-sm text-paper leading-relaxed">{t('availability')}</p>
-              <p className="mt-1.5 font-mono text-xs text-paper-dim">{t('locationMode')}</p>
+              <p className="mt-1.5 text-xs text-paper-dim">{t('locationMode')}</p>
               <div className="mt-4 pt-4 border-t border-line">
                 <span className="callsign !text-[0.6rem]">{t('stackTitle')}</span>
-                <p className="mt-1.5 font-mono text-xs text-paper">{t('stackValue')}</p>
+                <p className="mt-1.5 text-xs text-paper">{t('stackValue')}</p>
               </div>
             </div>
 
-            <div className="mt-6 border border-line p-5">
+            <div className="mt-4 rounded-xl border border-line p-5">
               <h4 className="callsign !text-[0.6rem]">{t('hoursTitle')}</h4>
-              <p className="mt-2 whitespace-pre-line font-mono text-sm text-paper-dim">{t('hours')}</p>
+              <p className="mt-2 whitespace-pre-line text-sm text-paper-dim">{t('hours')}</p>
             </div>
           </div>
         </div>
       </div>
-
-      {/* footer */}
-      <footer className="mt-24 border-t border-line">
-        <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-12">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
-            <div className="max-w-md">
-              <div className="flex items-center gap-2.5">
-                <span className="h-2 w-2 bg-amber" />
-                <span className="font-mono text-sm font-bold tracking-[0.2em] text-paper">PETAR ARSIĆ</span>
-              </div>
-              <p className="mt-4 text-sm text-paper-dim leading-relaxed">{t('footerBio')}</p>
-            </div>
-
-            <div className="flex gap-3">
-              {[
-                { Icon: FaGithub, url: 'https://github.com/petar2020', label: t('githubLabel') },
-                { Icon: FaLinkedin, url: 'https://www.linkedin.com/in/petar-arsic-2067821b5/', label: t('linkedinLabel') },
-              ].map(({ Icon, url, label }, idx) => (
-                <motion.a
-                  key={idx}
-                  href={url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={label}
-                  whileHover={{ y: -3 }}
-                  className="p-3 border border-line text-paper-dim hover:border-teal-bright hover:text-teal-bright transition-colors"
-                >
-                  <Icon aria-hidden="true" />
-                </motion.a>
-              ))}
-            </div>
-          </div>
-
-          <div className="mt-10 pt-6 border-t border-line flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-            <p className="callsign !text-[0.62rem] text-paper-faint">
-              © {new Date().getFullYear()} · {t('copyright')}
-            </p>
-            <div className="flex items-center gap-6">
-              <Link href={`/${locale}/services`} className="callsign !text-[0.62rem] text-paper-faint hover:text-teal-bright transition-colors">
-                {t('servicesLink', { default: 'Services' })}
-              </Link>
-              <Link href={locale === 'sr' ? `/${locale}/cenovnik` : `/${locale}/pricing`} className="callsign !text-[0.62rem] text-paper-faint hover:text-teal-bright transition-colors">
-                {t('pricingLink', { default: 'Pricing' })}
-              </Link>
-              {locale === 'sr' && (
-                <Link href="/sr/izrada-sajtova" className="callsign !text-[0.62rem] text-paper-faint hover:text-teal-bright transition-colors">
-                  Izrada sajtova
-                </Link>
-              )}
-              <Link href={`/${locale}/case-study/drivesoft`} className="callsign !text-[0.62rem] text-paper-faint hover:text-teal-bright transition-colors">
-                {t('caseStudyLink', { default: 'Case Study' })}
-              </Link>
-              <a href="#contact" className="callsign !text-[0.62rem] text-paper-faint hover:text-teal-bright transition-colors">
-                {t('contactLink', { default: 'Contact' })}
-              </a>
-            </div>
-          </div>
-        </div>
-      </footer>
     </section>
   )
 }

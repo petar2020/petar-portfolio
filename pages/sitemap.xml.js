@@ -58,6 +58,7 @@ function generateSiteMap() {
   const caseStudyPages = buildUrl('/case-study/drivesoft', '0.9', 'monthly');
   const servicesIndexPages = buildUrl('/services', '0.9', 'weekly');
   const pricingPages = buildPair('/pricing', '/cenovnik', '0.9', 'monthly');
+  const contactPages = buildPair('/contact', '/kontakt', '0.8', 'monthly');
   const izradaSajtovaPage = buildSingle('sr', '/izrada-sajtova', '0.9', 'monthly');
 
   const servicePages = services
@@ -77,6 +78,7 @@ function generateSiteMap() {
       ${caseStudyPages}
       ${servicesIndexPages}
       ${pricingPages}
+      ${contactPages}
       ${izradaSajtovaPage}
       ${servicePages}
       ${legacyServicePages}
