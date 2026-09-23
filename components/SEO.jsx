@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 const DEFAULT_SITE_URL = 'https://petararsic.rs';
 
 // Real content-update date — bump when site content actually changes.
-const CONTENT_UPDATED = '2026-07-02';
+const CONTENT_UPDATED = '2026-09-23';
 
 export default function SEO({
   title = 'Petar Arsić - Full-Stack Developer',
@@ -130,7 +130,7 @@ export default function SEO({
     '@type': 'ItemList',
     '@id': `${siteUrl}#projects`,
     name: 'Selected Projects',
-    numberOfItems: 6,
+    numberOfItems: 7,
     itemListElement: [
       {
         '@type': 'ListItem',
@@ -192,6 +192,17 @@ export default function SEO({
           '@type': 'WebSite',
           name: 'Prostor Miljenko Dereta — Corporate Site',
           url: 'https://prostordereta.org/',
+          author: { '@id': 'https://petararsic.rs/#person' }
+        }
+      },
+      {
+        '@type': 'ListItem',
+        position: 7,
+        item: {
+          '@type': 'WebSite',
+          name: 'Leto Halkidiki — Accommodation Portal',
+          url: 'https://letohalkidiki.com/',
+          inLanguage: ['sr', 'en', 'ro', 'el'],
           author: { '@id': 'https://petararsic.rs/#person' }
         }
       }

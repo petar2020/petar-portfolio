@@ -220,6 +220,16 @@
     "roleLabel": "Moja uloga",
     "techLabel": "Tehnologije",
     "items": {
+      "leto-halkidiki": {
+        "title": "Leto Halkidiki — portal za smeštaj",
+        "summary": "Portal za privatni smeštaj na Halkidikiju na četiri jezika, koji goste povezuje direktno sa vlasnicima, bez provizije.",
+        "role": "Stari WordPress sajt prebacio u Laravel aplikaciju: pretraga po destinaciji i datumima, višejezični SEO, forme za upite i admin panel za objekte.",
+        "testimonial": {
+          "quote": "Petar je od našeg starog sajta napravio pravi portal na četiri jezika, sa admin panelom u kom sve sređujemo sami. Uvek je bio dostupan i uradio je tačno ono što smo se dogovorili.",
+          "author": "Vlasnica",
+          "company": "Leto Halkidiki"
+        }
+      },
       "drivesoft-web": {
         "title": "DriveSoft — Prezentacioni i agencijski sajt",
         "summary": "Moderan prezentacioni sajt za DriveSoft transportni softver, sa interaktivnim demoima za putnike i admin i fokusiranim pozivom da se zakaže razgovor.",
@@ -229,7 +239,11 @@
         "title": "Srbija Tours — Prodaja karata",
         "summary": "Javni sajt za prodaju karata međunarodnog prevoznika, sa jedinstvenim izvorom podataka deljenim sa backend-om koji je obradio preko 150.000 realnih karata i rezervacija.",
         "role": "Izradio WordPress frontend i Laravel API za polaske, cene, rezervacije i fiskalizovana plaćanja.",
-        "capabilities": ["Rezervacije", "Prodaja karata", "Operativa"]
+        "capabilities": [
+          "Rezervacije",
+          "Prodaja karata",
+          "Operativa"
+        ]
       },
       "sti-mobile": {
         "title": "Srbija Tours — Mobilna aplikacija (iOS / Android)",
@@ -307,7 +321,7 @@
     "cta": "Hajde da razgovaramo"
   },
   "contact": {
-    "title": "Javite Se",
+    "title": "Javite se",
     "compactEyebrow": "Hajde da sarađujemo",
     "compactTitle": "Imate ideju za projekat?",
     "compactText": "Uvek sam otvoren za nove projekte i ideje.",
@@ -1053,7 +1067,7 @@
             "description": "Lansirajte platformu fokusiranu na destinacije sa prostorom za rast u rezervacije i korisničke naloge vlasnika."
           }
         ],
-        "whatBuildIntro": "Mogu da izgradim custom turističku i smeštajnu platformu sa sličnim tipovima funkcionalnosti kao popularni srpski portali, oslanjajući se na realno produkciono iskustvo sa booking sajtom Srbija Tours-a i DriveSoft platformom za rezervacije — originalan dizajn i kod.",
+        "whatBuildIntro": "Mogu da izgradim custom turističku i smeštajnu platformu sa sličnim tipovima funkcionalnosti kao popularni srpski portali, oslanjajući se na realno produkciono iskustvo: Leto Halkidiki, portal za privatni smeštaj u Grčkoj na četiri jezika, booking sajt Srbija Tours-a i DriveSoft platforma za rezervacije — originalan dizajn i kod.",
         "built": [
           {
             "title": "Katalog smeštaja",
@@ -1786,7 +1800,8 @@
           }
         ]
       }
-    }
+    },
+    "relatedPagesTitle": "Povezano"
   },
   "pricingPage": {
     "seo": {
@@ -2044,5 +2059,1381 @@
     "ctaText": "Kratak opis projekta je dovoljan za početak — u roku od 48h dobijate fiksnu ponudu.",
     "ctaButtonPricing": "Pogledaj cenovnik",
     "ctaButtonContact": "Pošalji upit"
+  },
+  "pageLinks": {
+    "apartments": {
+      "label": "Sajt za apartmane",
+      "description": "Predstavite jedinice, sezonske cene i primajte upite ili rezervacije za smeštaj."
+    },
+    "travel-agency": {
+      "label": "Sajt za turističku agenciju",
+      "description": "Povežite aranžmane, termine i obradu upita sa radom svojih agenata."
+    },
+    "bus-tickets": {
+      "label": "Prodaja karata za prevoznike",
+      "description": "Uskladite polaske, sedišta, naplatu i proveru karata u jednom sistemu."
+    },
+    "rent-a-car": {
+      "label": "Sajt za rent-a-car",
+      "description": "Organizujte vozila, periode najma i zahteve za preuzimanje."
+    },
+    "quote-app": {
+      "label": "Program za izradu ponuda",
+      "description": "Sastavite ponudu iz kataloga stavki, obračunajte iznose i preuzmite PDF."
+    },
+    "appointments": {
+      "label": "Zakazivanje termina",
+      "description": "Povežite usluge, raspored zaposlenih i potvrđivanje dolazaka."
+    },
+    "freelancer-vs-agency": {
+      "label": "Frilenser ili agencija",
+      "description": "Uporedite cenu, komunikaciju, kapacitet i obaveze održavanja."
+    },
+    "wordpress-vs-custom": {
+      "label": "WordPress ili sajt po meri",
+      "description": "Izaberite rešenje prema sadržaju, poslovnim pravilima i integracijama."
+    },
+    "wix-vs-custom": {
+      "label": "Wix ili sajt po meri",
+      "description": "Pogledajte pretplatu, SEO podešavanja i kontrolu nad implementacijom."
+    },
+    "booking-cost": {
+      "label": "Koliko košta booking sistem",
+      "description": "Razlikujte formu za upit, rezervacije sa kalendarom i poslovnu aplikaciju."
+    },
+    "webapp-cost": {
+      "label": "Koliko košta web aplikacija",
+      "description": "Procena obima admin panela, CRM-a ili portala i troškova posle isporuke."
+    }
+  },
+  "contentPages": {
+    "industryLabel": "Rešenja po delatnosti",
+    "guideLabel": "Vodiči i poređenja",
+    "contact": "Zatražite ponudu",
+    "pricingLink": "Pogledajte cenovnik",
+    "priceTitle": "Koliko košta i koliko traje",
+    "priceHeaders": [
+      "Paket",
+      "Početna cena",
+      "Okvirni rok"
+    ],
+    "proofTitle": "Primer iz prakse",
+    "caseStudy": "Pročitajte studiju slučaja",
+    "directTitle": "Zašto direktno sa programerom, a ne agencija",
+    "direct": [
+      {
+        "title": "Ista osoba od poziva do servera",
+        "description": "Sa mnom dogovarate obim, prolazite razvoj i preuzimate gotov sajt. Pitanja dolaze direktno do osobe koja piše kod."
+      },
+      {
+        "title": "Fiksna ponuda za dogovoreni posao",
+        "description": "Za 48h posle kratkog poziva dobijate cenu, obim i faze. Dodatne funkcije van tog obima dogovaramo unapred."
+      },
+      {
+        "title": "Bez agencijske marže",
+        "description": "Direktan rad može biti povoljniji od agencije jer plaćate razvoj i potrebne usluge, uz jasno definisanu odgovornost za isporuku."
+      },
+      {
+        "title": "Održavanje od {maintenancePrice} mesečno",
+        "description": "Prvih 30 dana posle lansiranja ispravke su besplatne. Dalja podrška i održavanje dogovaraju se prema cenovniku."
+      }
+    ],
+    "relatedTitle": "Povezano",
+    "servicesTitle": "Usluge koje podržavaju ovo rešenje",
+    "author": "Autor",
+    "updated": "Ažurirano",
+    "industriesTitle": "Rešenja po delatnosti",
+    "industryPricingTitle": "Cene po delatnosti",
+    "guidesTitle": "Vodiči za izbor i budžet"
+  },
+  "industryPages": {
+    "izrada-sajta-za-apartmane": {
+      "seo": {
+        "title": "Izrada sajta za apartmane | Petar Arsić",
+        "description": "Izrada sajta za apartmane od {bookingPrice}: kalendar, sezonske cene, galerija i upiti na više jezika. Rok {bookingDuration}, direktno sa programerom, bez agencijske marže."
+      },
+      "title": "Izrada sajta za apartmane sa rezervacijama",
+      "intro": "Izrada sajta za apartmane sa rezervacijama počinje od {bookingPrice}, uz okvirni rok od {bookingDuration}. Dobijate stranice smeštaja, kalendar, sezonske cene i način da gosti pošalju upit ili rezervišu. Rešenje je namenjeno vlasnicima apartmana i manjim izdavaocima koji žele svoj prodajni kanal i pregled svih zahteva.",
+      "context": {
+        "title": "Gostu prvo pokažite da li smeštaj odgovara njegovom odmoru",
+        "paragraphs": [
+          "Posetilac želi da vidi raspored kreveta, udaljenost od plaže ili centra, fotografije kupatila i uslove dolaska. Ako te informacije traži kroz poruke, lako odustaje pre slanja upita. Stranicu objekta zato organizujem oko konkretnih pitanja gosta. Telefon ostaje dostupan, ali osnovne podatke i željene datume može da pošalje i uveče, kada ne odgovarate na pozive.",
+          "Pre izrade razdvajamo objekat od smeštajnih jedinica. Vila sa nekoliko apartmana nema istu evidenciju kao kuća koja se izdaje cela. Dogovaramo i da li gost šalje zahtev koji vi potvrđujete ili bira stvarno raspoloživ termin. Ta odluka određuje ponašanje kalendara, poruke nakon prijave i način ažuriranja zauzetosti. Sajt ne sme da obeća slobodan smeštaj ako taj podatak nije pouzdano vođen."
+        ]
+      },
+      "featuresTitle": "Šta sajt za smeštaj sadrži",
+      "features": [
+        {
+          "title": "Kalendar po smeštajnoj jedinici",
+          "description": "Za svaki apartman definišemo dane koje možete da ponudite gostima i periode kada objekat ne radi. Ručni unos rezervacije iz telefonskog razgovora treba da bude jednostavan, kako sajt i vaša evidencija ne bi pokazivali različitu dostupnost."
+        },
+        {
+          "title": "Sezonski cenovnik",
+          "description": "Unosite cenu za odabrani period, minimalan broj noćenja i dogovorene doplate. Gost vidi šta ulazi u iznos, a gde je potrebna vaša potvrda. Posebno dogovaramo računanje boravka koji prelazi iz jedne sezone u drugu."
+        },
+        {
+          "title": "Upit ili potvrđena rezervacija",
+          "description": "Forma prikuplja datume, broj odraslih i dece i kontakt gosta. Kod upita poruka jasno kaže da termin tek treba potvrditi. Automatska rezervacija uvodi se kada postoje pouzdana dostupnost i precizna pravila prihvatanja."
+        },
+        {
+          "title": "Sadržaj za strane goste",
+          "description": "Opis, uslovi boravka i poruke mogu da postoje na više jezika. Za svaku verziju postavljam odgovarajuću adresu i oznake jezika. Prevode i nazive jedinica proveravamo zajedno, posebno kada utiču na očekivanja gosta."
+        },
+        {
+          "title": "Galerija koja objašnjava prostor",
+          "description": "Fotografije grupišemo uz odgovarajući apartman, umesto jedne zajedničke galerije bez konteksta. Gost treba da razlikuje terasu, spavaću sobu i zajedničko dvorište. Prikaz prilagođavam telefonu, sa slikama odgovarajuće veličine i opisima."
+        },
+        {
+          "title": "Mapa i praktične informacije",
+          "description": "Lokacija, parking, način dolaska i vreme prijave nalaze se na istom mestu. Po potrebi dodajemo uputstvo za dolazak sa glavnog puta. Tačan položaj i sadržaj proveravate vi, pre nego što stranica postane javna."
+        },
+        {
+          "title": "Panel za svakodnevne izmene",
+          "description": "Iz panela menjate opise, fotografije, cene i status pristiglih zahteva. Ne morate da šaljete programeru svaku sezonsku izmenu. Na obuci prolazimo unos jednog stvarnog apartmana i obradu upita od početka do kraja."
+        },
+        {
+          "title": "Potvrde i pregled zahteva",
+          "description": "Mejl gostu potvrđuje da je zahtev primljen, dok vi dobijate podatke potrebne za odgovor. Dogovaramo ko prima poruke i kako se prati slanje. Poruka o prijemu upita ne predstavlja potvrdu raspoloživosti ili naplate."
+        }
+      ],
+      "pricing": [
+        "Polazni paket je sajt sa rezervacijama. Konačan obim zavisi od broja različitih tipova jedinica, jezika, pravila cena i toga da li je potrebna trenutna potvrda. Tekstovi, kvalitetne fotografije i pripremljen cenovnik pomažu da posao ostane u planiranom roku. Fiksnu ponudu dobijate za 48h posle kratkog poziva.",
+        "Povezivanje sa kanalima prodaje, naplata karticama i složeni obračuni nisu prećutno uključeni u početnu cenu. Svaku takvu stavku posebno opisujemo pre rada. Ako su potrebni uloge zaposlenih, napredni izveštaji i više integracija, razmatramo paket web aplikacije po meri od {appPrice}, sa rokom {appDuration}. Hosting i spoljne usluge navodimo odvojeno u ponudi."
+      ],
+      "proof": [
+        "Leto Halkidiki je moj konkretan primer rada sa privatnim smeštajem. Postojeći WordPress sajt zamenjen je Laravel portalom koji organizuje ponudu kroz destinacije, mesta i pojedinačne objekte. Sadržaj podržava srpski, engleski, rumunski i grčki, uz zasebne meta podatke i administraciju smeštaja.",
+        "Važna razlika: ovaj portal trenutno šalje upite vlasnicima mejlom. Ne navodim ga kao dokaz automatske rezervacije, zauzetosti ili kartične naplate. Iskustvo iz njega primenjujem na predstavljanje smeštaja, pretragu, prevode i administraciju. Za vaš sajt kalendar i potvrđivanje rezervacija ugovaramo prema stvarnom načinu rada, a detalji postojećeg projekta nalaze se u studiji slučaja."
+      ],
+      "faqTitle": "Pitanja vlasnika apartmana",
+      "faq": [
+        {
+          "question": "Da li sajt može da radi uz Booking.com ili Airbnb?",
+          "answer": "Može da bude dodatni kanal za direktne upite. Automatsko usklađivanje dostupnosti zavisi od sistema i pristupa koji koristite i posebno se proverava pre ponude. Ako kalendar ažurirate ručno, to jasno postavljamo kao vašu obavezu. Ne obećavam trenutnu sinhronizaciju dok ne proverimo konkretan način povezivanja i njegova ograničenja."
+        },
+        {
+          "question": "Mogu li samostalno da menjam cene za sledeću sezonu?",
+          "answer": "Da, u dogovorenom panelu menjate periode i pripadajuće cene. Na obuci prolazimo i boravak koji obuhvata različite sezone, da bi obračun bio razumljiv. Pre objave možete proveriti prikaz konkretnog termina. Ako postoje posebni uslovi za decu, dodatni ležaj ili duži boravak, uključujemo ih u specifikaciju unapred."
+        },
+        {
+          "question": "Da li je online plaćanje obavezno?",
+          "answer": "Nije. Prva verzija može da prikuplja upite koje potvrđujete mejlom ili telefonom. Plaćanje karticom ima smisla kada su jasno definisani raspoloživost, avans i otkazivanje. Njegovo uvođenje zavisi i od pružaoca naplate. U ponudi razdvajam izradu integracije od naknada i uslova te spoljne usluge, kako biste mogli da uporedite opcije."
+        },
+        {
+          "question": "Koliko fotografija i tekstova treba da pripremim?",
+          "answer": "Potrebni su jasni opisi jedinica, raspored kreveta, sadržaji, lokacija i reprezentativne fotografije prostora. Ne određujem isti broj za svaki objekat: cilj je da gost razume šta dobija. Zajedno biramo materijal koji odgovara stranici, a pre početka dogovaramo ko piše opise i ko obezbeđuje prevode za strane goste."
+        },
+        {
+          "question": "Da li garantujete više direktnih rezervacija?",
+          "answer": "Ne garantujem broj rezervacija ili poziciju na pretraživaču. Pripremam razumljiv sadržaj, tehničke SEO osnove i put od stranice smeštaja do upita. Na rezultat utiču tražnja, lokacija, ponuda, fotografije i vaš odgovor gostima. Nakon objave možemo pratiti pristigle upite i na osnovu njih poboljšavati stranice i obrazac za kontakt."
+        },
+        {
+          "question": "Šta ako već imam stari sajt?",
+          "answer": "Najpre pregledamo njegove adrese, sadržaj i način prijema upita. Korisne stranice zadržavamo ili planiramo odgovarajuća preusmerenja pri promeni adresa. Prenos fotografija i opisa dogovaramo kao deo obima, uz proveru prava korišćenja. Postojeći sajt ostaje oslonac dok nova verzija ne prođe pregled sadržaja, obrazaca i prikaza na mobilnom telefonu."
+        }
+      ],
+      "cta": {
+        "title": "Pokažite gostima svoj smeštaj i način rezervacije",
+        "text": "Pošaljite adresu postojećeg sajta, tipove apartmana i primer cenovnika. Na kratkom pozivu utvrđujemo da li vam treba prijem upita ili rezervacija sa kalendarom, pa dobijate jasnu, fiksnu ponudu."
+      }
+    },
+    "sajt-za-turisticku-agenciju": {
+      "seo": {
+        "title": "Izrada sajta za turističku agenciju | Petar Arsić",
+        "description": "Sajt za turističku agenciju od {bookingPrice}, aplikacija od {appPrice}. Aranžmani, upiti i administracija, uz iskustvo sa Leto Halkidiki i Srbija Tours projektima."
+      },
+      "title": "Izrada sajta za turističku agenciju",
+      "intro": "Izrada sajta za turističku agenciju kreće od {bookingPrice} za ponudu sa rezervacijama, uz rok {bookingDuration}. Za aplikaciju sa složenom prodajom polazna cena je {appPrice}, a rok {appDuration}. Dobijate pregled aranžmana, prijem upita i administraciju prilagođenu načinu na koji vaša agencija prodaje putovanja.",
+      "context": {
+        "title": "Od objavljene ponude do zahteva koji agent može da obradi",
+        "paragraphs": [
+          "Agenciji nije dovoljan lep spisak destinacija ako zaposleni zatim traže nedostajuće podatke kroz nekoliko razgovora. Posetilac treba da razume termin, prevoz, tip smeštaja i šta cena obuhvata, a agent da dobije upit vezan za tačno određenu ponudu. Zato prvo mapiramo kako nastaje aranžman, ko ga objavljuje i ko odgovara zainteresovanom putniku.",
+          "Posebno razdvajamo prodaju sopstvenih aranžmana od objavljivanja ponuda partnera. U drugom slučaju agencija možda nema poslednji podatak o raspoloživosti. Tada je ispravno ponuditi proveru termina, umesto prikazati rezervaciju kao završenu. Ako već koristite poslovni softver, pregledamo mogućnosti razmene podataka pre nego što planiramo ponovno ručno unošenje svega na sajt."
+        ]
+      },
+      "featuresTitle": "Šta obuhvata sajt turističke agencije",
+      "features": [
+        {
+          "title": "Katalog aranžmana i destinacija",
+          "description": "Ponudu organizujemo prema načinu na koji je putnici traže: destinacija, period, prevoz ili vrsta putovanja. Stranice pojedinačnih aranžmana imaju sopstvene opise i adrese, tako da možete da ih delite bez dodatnog objašnjavanja."
+        },
+        {
+          "title": "Polasci i varijante ponude",
+          "description": "Isti aranžman može da ima različite datume, trajanje i polazna mesta. Te podatke prikazujemo uz ponudu, a ne samo u priloženom dokumentu. Posebno označavamo potvrđene polaske i one za koje tek primate zainteresovane putnike."
+        },
+        {
+          "title": "Cene sa jasnim uslovima",
+          "description": "Putnik vidi šta je uključeno, šta se doplaćuje i da li je prikazana cena po osobi ili smeštajnoj jedinici. Pravila popusta i promene cena unosimo po dogovoru, uz pregled pre objave nove ponude."
+        },
+        {
+          "title": "Upit sa kontekstom putovanja",
+          "description": "Forma šalje izabrani aranžman, termin, broj putnika i kontakt. Agent ne mora ponovo da pita za osnovne detalje. Osetljive podatke koji nisu potrebni za prvi razgovor ne tražimo kroz običan početni obrazac."
+        },
+        {
+          "title": "Pretraga i korisni filteri",
+          "description": "Filtere biramo prema stvarnoj količini ponude. Za mali katalog jednostavne kategorije često su preglednije od složene pretrage. Kada ponuda poraste, možemo da uvedemo kombinovanje datuma, odredišta, prevoza i raspoloživih opcija."
+        },
+        {
+          "title": "Administracija za agente",
+          "description": "Zaposleni menjaju opise, termine i fotografije iz panela. Ako različite osobe uređuju i odobravaju ponude, dogovaramo uloge i prava. Cilj je da nova ponuda može da bude objavljena bez slanja zahteva programeru."
+        },
+        {
+          "title": "Više jezika i lokalizovane stranice",
+          "description": "Za agencije koje rade sa stranim gostima pripremam odvojene jezičke verzije sa odgovarajućim meta podacima. Ne objavljujemo prazne prevode samo radi broja jezika. Potrebno je da putnik razume i ponudu i uslove slanja upita."
+        },
+        {
+          "title": "Veze sa postojećim sistemima",
+          "description": "Povezivanje sa evidencijom prodaje, naplatom ili bazom partnera procenjuje se nakon uvida u dostupni interfejs. Kada direktna integracija nije moguća, definišemo razmenu datoteka ili ručni korak koji zaposleni zaista mogu da održavaju."
+        }
+      ],
+      "pricing": [
+        "Cenovnik za sajt sa rezervacijama navodi okvir od 900 € do 2.500 €, dok web aplikacije počinju od {appPrice} naviše. To su različiti nivoi obima, a ne obećanje da najveći prodajni sistem staje u gornju granicu. Jednostavan katalog sa upitima i složena obrada putnika zahtevaju različitu ponudu.",
+        "Na cenu naročito utiču uvoz partnerovih aranžmana, obračun doplata, više korisničkih uloga i povezivanje sa naplatom. Pre procene tražim primer stvarnog aranžmana i opis jednog završenog postupka prodaje. Tako proveravamo i izuzetke, poput promene termina ili broja putnika. Fiksna cena i faze isporuke stižu za 48h posle kratkog poziva i dogovora o obimu."
+      ],
+      "proof": [
+        "Leto Halkidiki pokazuje moje iskustvo sa organizacijom turističke ponude, višejezičnim sadržajem i upitima za smeštaj. Portal radi na četiri jezika i povezuje stranice destinacija, mesta i objekata. Koristan je primer kada agenciji treba pregledan katalog i direktna komunikacija sa zainteresovanim gostom.",
+        "Srbija Tours i DriveSoft pokrivaju drugačiji deo poslovanja: rezervacije i prodaju autobuskih karata, QR validaciju, fiskalizaciju i administraciju. Platforma je obradila 150.000+ karata i rezervacija i koristi je 100+ internih korisnika. Ove projekte ne predstavljam kao gotov agencijski paket; oni pokazuju iskustvo sa sadržajem i operativom koje prilagođavam vašem procesu prodaje."
+      ],
+      "faqTitle": "Pitanja pre izrade agencijskog sajta",
+      "faq": [
+        {
+          "question": "Možemo li sami da dodajemo nove aranžmane?",
+          "answer": "Da. Panel prilagođavam poljima koja koristite za opis putovanja, termine, prevoz, cenu i fotografije. Tokom obuke unosimo vaš primer aranžmana. Ako ponude prolaze odobrenje pre objave, to ugovaramo kao zaseban korak. Dobijate način rada koji zaposleni mogu da ponove i tokom sezone, bez tehničkog znanja ili menjanja koda."
+        },
+        {
+          "question": "Da li je moguće preuzimanje ponuda partnera?",
+          "answer": "Moguće je kada partner obezbeđuje odgovarajući izvor podataka i dozvoljava korišćenje. Pre obećanja proveravam format, učestalost promena i podatke o raspoloživosti. Integracija ima sopstveni obim i cenu u ponudi. Ako takav pristup ne postoji, dogovaramo održiv ručni unos ili uvoz datoteke, umesto nepouzdanog kopiranja tuđih stranica."
+        },
+        {
+          "question": "Da li korisnik mora odmah da plati aranžman?",
+          "answer": "Ne mora. Za ponude čiju raspoloživost agent proverava često je bolji zahtev za rezervaciju. Korisnik tada dobija jasno obaveštenje da čeka odgovor agencije. Kartičnu naplatu možemo da uvedemo kada utvrdimo potvrđivanje mesta, uslove plaćanja i postupak otkazivanja. Vaš pružalac naplate i računovođa daju uslove koje sistem treba da podrži."
+        },
+        {
+          "question": "Kako se rešavaju stare stranice koje već imaju posete?",
+          "answer": "Pre promene sajta pravimo popis važnih adresa i dogovaramo koje ostaju iste. Za sadržaj koji menja adresu pripremamo odgovarajuća preusmerenja. Nova struktura mora da omogući posetiocu da pronađe istu ili najbližu relevantnu ponudu. Prenos ne garantuje iste pozicije, pa je praćenje indeksiranja posle objave deo razumnog plana migracije."
+        },
+        {
+          "question": "Može li sajt da podrži individualna putovanja?",
+          "answer": "Može, ali upit za putovanje po želji ne treba da izgleda kao kupovina gotovog aranžmana. Forma može da prikupi okvirni termin, odredište, broj osoba i očekivanja. Agent zatim priprema konkretnu ponudu. Ako želite istoriju komunikacije, verzije ponuda i praćenje prodaje, razmatramo aplikaciju sa dodatnim poslovnim funkcijama."
+        },
+        {
+          "question": "Šta treba da pripremimo za procenu projekta?",
+          "answer": "Pošaljite nekoliko različitih aranžmana, način na koji ih danas unosite i spisak alata koje koristite. Posebno su korisni primeri doplate, otkazivanja i izmene putnika. Nisu potrebni stvarni lični podaci klijenata. Na osnovu tih primera mogu da razdvojim neophodnu prvu verziju od dodataka koji mogu da sačekaju kasniju fazu."
+        }
+      ],
+      "cta": {
+        "title": "Pretvorite svoju ponudu putovanja u jasan prodajni tok",
+        "text": "Pošaljite primere aranžmana i opišite kako agent danas obrađuje upit. Predložiću obim prve verzije, potrebne veze sa postojećim alatima i fiksnu ponudu za dogovoreni posao."
+      }
+    },
+    "online-prodaja-karata-za-prevoznike": {
+      "seo": {
+        "title": "Online prodaja autobuskih karata | Petar Arsić",
+        "description": "Online prodaja autobuskih karata i softver za prevoznike od {appPrice}. Polasci, sedišta, QR karte i admin panel, uz iskustvo sa 150.000+ karata i rezervacija."
+      },
+      "title": "Online prodaja autobuskih karata i softver za prevoznike",
+      "intro": "Sistem za online prodaju autobuskih karata razvijam kao web aplikaciju po meri, od {appPrice}, sa okvirnim rokom {appDuration}. Namenjen je prevoznicima koji žele povezanu prodaju, evidenciju putnika i operativu. Obim može da obuhvati izbor sedišta, QR karte, fiskalizaciju i admin panel, prema dogovorenim fazama isporuke.",
+      "context": {
+        "title": "Jedna evidencija za internet prodaju, kancelariju i ukrcavanje",
+        "paragraphs": [
+          "Karta prodata preko sajta menja ono što kancelarija i posada vide na polasku. Ako svaki kanal ima zasebnu tabelu, lako nastaje neslaganje oko sedišta, statusa uplate ili spiska putnika. Zato projektovanje počinje od zajedničke evidencije. Definišemo šta se dešava kada operater unese rezervaciju, putnik plati na internetu ili dođe do promene polaska.",
+          "Međunarodne linije imaju više stanica, pravila i izuzetaka od jednostavne kupovine proizvoda. Važno je razlikovati liniju od konkretnog datuma polaska, a kartu od zahteva koji još nije potvrđen. Pre razvoja prolazimo stvarne primere iz vaše operative, uključujući neuspelu naplatu i izmenu putovanja. Na njima se proverava da li predloženi sistem odgovara radu zaposlenih."
+        ]
+      },
+      "featuresTitle": "Šta može da sadrži sistem za prevoznike",
+      "features": [
+        {
+          "title": "Linije, stanice i polasci",
+          "description": "Upravljate relacijama, stanicama i konkretnim polascima iz jednog panela. Dogovaramo prodajne rokove i način prikaza vremena putniku. Promena jednog polaska ne sme neprimetno da promeni podatke svih već izdatih karata."
+        },
+        {
+          "title": "Mapa sedišta i raspoloživost",
+          "description": "Putnik bira mesto prema rasporedu autobusa. Sistem treba da spreči da dve istovremene kupovine potvrde isto sedište. Dogovaramo i privremeno zadržavanje mesta, istek rezervacije i postupak kada uplata nije završena."
+        },
+        {
+          "title": "Prodaja preko više kanala",
+          "description": "Internet prodaja i kancelarijski unos koriste dogovoreni zajednički izvor podataka. Ako postoje partneri ili prodajna mesta, definišemo njihov pristup. Svaki kanal mora jasno da razlikuje rezervisanu, plaćenu, otkazanu i iskorišćenu kartu."
+        },
+        {
+          "title": "Elektronska karta sa QR kodom",
+          "description": "Nakon potvrde izdaje se karta sa podacima putovanja i oznakom za validaciju. Izgled prilagođavamo telefonu i štampi. Ponovno slanje karte treba da bude jednostavno, bez pravljenja druge važeće prodaje za istog putnika."
+        },
+        {
+          "title": "Provera pri ukrcavanju",
+          "description": "Zaposleni proveravaju kartu i vide njen status u sistemu. Potrebno je dogovoriti ponašanje kod ponovljenog skeniranja ili pogrešnog polaska. Ako rad na terenu zahteva poseban mobilni alat, njegov obim definišemo odvojeno."
+        },
+        {
+          "title": "Naplata i fiskalizacija",
+          "description": "Integracije planiram prema pružaocima koje koristite i zahtevima potvrđenim sa vašim računovođom. Obrada neuspeha, povraćaja i ponovljenih obaveštenja deo je specifikacije. Tehnička veza mora da prati stvaran status transakcije, a ne samo otvaranje stranice potvrde."
+        },
+        {
+          "title": "Uloge i kontrola pristupa",
+          "description": "Prodajni operater, dispečer i administrator ne moraju da imaju ista prava. Dogovaramo ko menja cene, ko otkazuje prodaju i ko vidi izveštaje. Time se smanjuje mogućnost da slučajna izmena utiče na ceo polazak."
+        },
+        {
+          "title": "Spiskovi i operativni izveštaji",
+          "description": "Pregledi putnika, zauzetosti i prodaje pripremaju se prema potrebama kancelarije i terena. Potrebne izvoze dogovaramo na konkretnim primerima. Izveštaj treba da objasni podatke iz sistema i status prodaje, a ne samo da prikaže zbir."
+        }
+      ],
+      "pricing": [
+        "Početna cena iz cenovnika odnosi se na dogovorenu web aplikaciju, ne na kompletan sistem sa svim mogućim kanalima prodaje. Broj integracija, različiti tarifni modeli, partneri, mobilni alati i prenos stare baze menjaju obim. Tokom procene određujemo šta mora da radi pri prvom puštanju i koje funkcije mogu da slede.",
+        "Okvir {appDuration} važi za ugovoreni obim. Pristup pružaocu naplate, testno okruženje i sadržaj koji dostavljate utiču na konkretan raspored. U fiksnoj ponudi posebno opisujem razvoj i spoljne troškove. Dobijate je za 48h posle kratkog poziva i razjašnjenja zahteva; ne zasnivam procenu na pretpostavci da su svi prevoznici organizovani isto."
+      ],
+      "proof": [
+        "Za Srbija Tours izgradio sam DriveSoft, booking i ticketing platformu za međunarodnog autobuskog prevoznika. Sistem je obradio 150.000+ karata i rezervacija, uz 100+ internih korisnika. Pokriva QR validaciju, fiskalizaciju i admin panel, kao i rad sa putnicima, linijama, polascima i izveštajima.",
+        "To je dokaz iskustva u produkciji, a ne obećanje da vaš projekat automatski dobija identičan obim za početnu cenu. U studiji slučaja možete pogledati tok od izbora polaska do ukrcavanja i ulogu pojedinačnih delova platforme. Vaša pravila prodaje, dozvole zaposlenih i postojeća infrastruktura ostaju osnova specifikacije novog sistema."
+      ],
+      "faqTitle": "Pitanja o prodaji karata i radu operative",
+      "faq": [
+        {
+          "question": "Da li kancelarija može da prodaje ista sedišta kao sajt?",
+          "answer": "Da, cilj je zajednička evidencija dostupnosti, ali način povezivanja zavisi od softvera koji već koristite. Ako gradimo oba kanala, projektujemo ih oko iste baze prodaje. Ako ostaje postojeći sistem, najpre proveravam njegov interfejs. Dve nepovezane evidencije ne predstavljaju pouzdano rešenje za istovremenu prodaju istog kapaciteta."
+        },
+        {
+          "question": "Šta se dešava kada plaćanje ne uspe?",
+          "answer": "U specifikaciji određujemo koliko se mesto privremeno čuva, kada se oslobađa i kako putnik nastavlja kupovinu. Status naplate potvrđuje pružalac plaćanja. Posebno obrađujemo zakašnjelo obaveštenje i ponovljen pokušaj, kako ne bi nastale dve karte ili zauzeto sedište bez potvrđene prodaje. Te situacije proveravamo pre puštanja sistema."
+        },
+        {
+          "question": "Možemo li da zadržimo postojeću bazu putnika i polazaka?",
+          "answer": "Moguće je planirati uvoz ako postoje podaci u dostupnom formatu i pravo njihovog korišćenja. Prvo pregledam strukturu na uzorku bez nepotrebnih ličnih podataka. Potrebno je uskladiti stanice, relacije, statuse i duplikate. Prenos istorije i prekid rada tokom prelaska navode se u planu, sa proverom rezultata pre konačnog uključivanja."
+        },
+        {
+          "question": "Da li QR validacija radi bez interneta?",
+          "answer": "To zavisi od dogovorenog terenskog alata. Rad sa povremenom vezom zahteva pravila za preuzimanje podataka, lokalnu proveru i kasniju sinhronizaciju. Ne uključujem tu mogućnost prećutno u svaku web aplikaciju. Prvo utvrđujemo gde posada radi, kakve uređaje koristi i kakav rizik postoji od ponovljene provere iste karte."
+        },
+        {
+          "question": "Da li su sve fiskalne obaveze automatski rešene?",
+          "answer": "Razvijam tehničku integraciju prema potvrđenim zahtevima vašeg poslovanja i izabranog pružaoca. Računovođa ili drugi nadležni stručnjak određuje obaveze i postupanje u konkretnim situacijama. Potrebno je testirati prodaju, otkazivanje i povraćaj sa njima. Softver ne zamenjuje tu proveru, niti unapred obećavam isto rešenje za svako tržište."
+        },
+        {
+          "question": "Može li sistem da se uvodi postepeno?",
+          "answer": "Može. Često prvo definišemo jedan potpun tok prodaje i obradu u kancelariji, pa dodajemo druge kanale i izveštaje. Važno je da svaka faza ima jasnu granicu i način provere. Tokom prelaska dogovaramo gde se nalazi važeća evidencija, kako zaposleni ne bi istovremeno vodili različite verzije istog polaska."
+        }
+      ],
+      "cta": {
+        "title": "Prođimo zajedno kroz jedan vaš polazak",
+        "text": "Opišite kako trenutno prodajete karte, vodite sedišta i proveravate putnike. Na toj osnovi pripremam predlog sistema, redosled uvođenja i fiksnu ponudu za dogovorenu prvu verziju."
+      }
+    },
+    "sajt-za-rent-a-car": {
+      "seo": {
+        "title": "Sajt za rent a car sa rezervacijama | Petar Arsić",
+        "description": "Sajt za rent a car sa rezervacijama od {bookingPrice}. Vozila, kalendar i admin panel za {bookingDuration}. Dogovorite obim i fiksnu ponudu direktno sa programerom."
+      },
+      "title": "Sajt za rent a car sa rezervacijama",
+      "intro": "Sajt za rent a car sa rezervacijama počinje od {bookingPrice}, uz okvirni rok {bookingDuration}. Dobijate katalog vozila, kalendar raspoloživosti i administraciju zahteva. Namenjen je firmama koje žele da putnik pošalje podatke o najmu na jednom mestu, a zaposleni proveri vozilo, termin i dogovorene uslove.",
+      "context": {
+        "title": "Dostupnost vozila zavisi i od vremena povratka",
+        "paragraphs": [
+          "Kod najma automobila dva datuma nisu uvek dovoljna. Vozilo vraćeno predveče možda nije spremno za sledeće preuzimanje istog dana, a isporuka na drugoj lokaciji traži dodatnu organizaciju. Zato pre crtanja kalendara dogovaramo trajanje najma, razmak za pripremu i način blokiranja vozila zbog servisa. Pravila treba da budu razumljiva i putniku i zaposlenom.",
+          "Druga važna odluka je da li korisnik bira tačno određeni automobil ili klasu vozila. To menja način prikaza fotografija, raspoloživosti i mogućih zamena. Na sajtu jasno označavamo šta se potvrđuje slanjem zahteva, a šta tek nakon vaše provere. Obrazac treba da prikupi dovoljno podataka za ponudu, bez obećanja koje operativa ne može da ispuni."
+        ]
+      },
+      "featuresTitle": "Šta sajt za najam vozila može da obuhvati",
+      "features": [
+        {
+          "title": "Katalog vozila ili kategorija",
+          "description": "Svaka ponuda prikazuje broj sedišta, menjač, prtljažnik i druge podatke važne za izbor. Dogovaramo da li fotografija predstavlja konkretno vozilo ili primer klase. Korisnik tako razume šta bira pre nego što unese datume."
+        },
+        {
+          "title": "Kalendar raspoloživosti",
+          "description": "Raspored obuhvata potvrđene najmove i periode kada vozilo nije u ponudi. Zaposleni mogu da unesu rezervaciju pristiglu drugim kanalom. Posebno određujemo pravila za obradu zahteva koji još čeka potvrdu i privremeno zadržavanje vozila."
+        },
+        {
+          "title": "Mesto i vreme preuzimanja",
+          "description": "Forma beleži početak i kraj najma, kao i dogovorene lokacije. Ako postoje isporuka na aerodromu ili vraćanje na drugom mestu, prikazujemo njihove uslove. Dostupnost te usluge ne pretpostavljamo samo zato što je izabrana lokacija."
+        },
+        {
+          "title": "Obračun prema trajanju",
+          "description": "Cene mogu da zavise od sezone, dužine najma i kategorije vozila. Pre razvoja razjašnjavamo šta predstavlja obračunski dan i kako se tretira kasniji povratak. Primer obračuna proveravate pre nego što pravila uključimo u sajt."
+        },
+        {
+          "title": "Dodatna oprema i usluge",
+          "description": "Dečje sedište, dodatni vozač ili druge ponuđene opcije mogu da budu deo zahteva. Za opremu sa ograničenim brojem komada potrebno je posebno pravilo dostupnosti. Konačan prikaz cene razlikuje potvrđene stavke od zahteva za proveru."
+        },
+        {
+          "title": "Uslovi najma pre slanja",
+          "description": "Pored forme postavljamo razumljive informacije o depozitu, dokumentima i otkazivanju koje vi odobrite. Korisnik treba da ih vidi na vreme. Tekst pravila preuzima se iz vaših uslova poslovanja, bez programerovog izmišljanja pravnih obaveza."
+        },
+        {
+          "title": "Panel za rezervacije i flotu",
+          "description": "Zaposleni vide zahteve po terminu i vozilu, sa kontaktom korisnika i statusom obrade. Dogovaramo ko može da menja raspored i ponudu. Za prvu verziju biramo pregled koji odgovara svakodnevnom radu vaše firme."
+        },
+        {
+          "title": "Više jezika i mejl obaveštenja",
+          "description": "Strani putnik može da pročita ponudu i pošalje zahtev na podržanom jeziku. Potvrda prijema sadrži sažetak unetih podataka. Pre objave proveravamo prevod uslova, primaoce poruka i način na koji zaposleni odgovaraju korisniku."
+        }
+      ],
+      "pricing": [
+        "Paket sa rezervacijama pokriva dogovorenu prvu verziju, sa katalogom i obradom najma. Na cenu utiču broj različitih tarifa, pravila zamene vozila, više lokacija i način potvrđivanja. Broj fotografija sam po sebi nije dobar pokazatelj složenosti; izuzeci u obračunu i raspoloživosti obično zahtevaju više pažnje.",
+        "Integracija sa postojećim softverom za flotu, kartična naplata ili napredna evidencija štete dodatno se procenjuju. Za širu poslovnu aplikaciju polazni paket je od {appPrice}, sa rokom {appDuration}. Dobijate fiksnu ponudu za 48h nakon kratkog poziva. Pre početka znate koje funkcije ulaze u cenu i šta je ostavljeno za kasniji razvoj."
+      ],
+      "proof": [
+        "Nemam objavljen projekat za rent-a-car firmu. Relevantno iskustvo dolazi iz sistema rezervacija za Srbija Tours i DriveSoft, koji je obradio 150.000+ karata i rezervacija. Ista osnovna booking logika povezuje raspoloživ resurs, period, potvrdu i administraciju, ali najam vozila ima svoja posebna pravila.",
+        "To iskustvo koristim za sprečavanje preklapanja, jasne statuse i kontrolisan rad operatera. Ne prenosim slepo prodaju sedišta na flotu automobila: trajanje najma, servisni razmak i lokacije preuzimanja određujemo za vaš posao. Studija slučaja DriveSoft pokazuje postojeći rad sa rezervacijama i operativom, bez tvrdnje da sam taj sistem već isporučio auto-rental klijentu."
+      ],
+      "faqTitle": "Pitanja o sajtu za rent-a-car",
+      "faq": [
+        {
+          "question": "Da li klijent bira konkretno vozilo ili samo klasu?",
+          "answer": "Možemo da podržimo oba načina, ali ih je potrebno razdvojiti u ponudi i administraciji. Ako prodajete klasu, korisnik treba da zna da prikazani model može biti zamenjen odgovarajućim vozilom. Ako bira konkretan automobil, raspoloživost se vodi za njega. Pre razvoja utvrđujemo koji pristup vaša operativa može pouzdano da prati."
+        },
+        {
+          "question": "Kako se sprečava preklapanje rezervacija?",
+          "answer": "Potvrđeni najam zauzima resurs za definisani period, uz dogovoreni razmak za pripremu. Potrebno je da u evidenciju ulaze i rezervacije sa telefona ili drugih kanala. Zahtevi koji čekaju odgovor imaju poseban status. Pravila potvrde i istovremenog prihvatanja proveravaju se u testiranju, kako dva operatera ne bi potvrdila isti automobil."
+        },
+        {
+          "question": "Mogu li da naplaćujem depozit preko sajta?",
+          "answer": "To je moguća dodatna integracija, ali zavisi od izabranog pružaoca i načina na koji sprovodite naplatu ili rezervaciju sredstava. Nije isto odmah naplatiti iznos i samo zadržati sredstva. Pre ponude proveravamo podržani postupak, a vi potvrđujete uslove sa pružaocem naplate i svojim stručnim saradnicima."
+        },
+        {
+          "question": "Da li sajt može da prikazuje cenu za različite sezone?",
+          "answer": "Može, uz unapred definisana pravila obračuna. Potrebno je odlučiti kako se računa najam koji počinje u jednoj sezoni, a završava u drugoj. Posebno proveravamo dodatne sate, minimalno trajanje i eventualne popuste. Vi dostavljate cenovnik i primere, a ja ih pretvaram u jasan prikaz i proverljiv obračun."
+        },
+        {
+          "question": "Može li se povezati sa našim programom za flotu?",
+          "answer": "Najpre proveravam da li program ima API, izvoz ili drugi podržan način razmene podataka. Zatim određujemo gde nastaje važeća rezervacija i kako se obrađuju promene. Bez te provere ne obećavam automatsku sinhronizaciju. Ako integracija nije dostupna, možemo da planiramo sajt za upite uz potvrdu zaposlenog u postojećem programu."
+        },
+        {
+          "question": "Šta ako nam je zasad dovoljan samo upit za najam?",
+          "answer": "Tada pravimo jednostavniji tok: korisnik bira vozilo, termin i lokaciju, a vi proveravate raspoloživost i šaljete odgovor. Potvrda prijema ne kaže da je automobil rezervisan. Takva verzija može da bude dobar početak kada se raspored još vodi van sajta. Kasnije proširenje planiramo prema podacima i pravilima koje već koristite."
+        }
+      ],
+      "cta": {
+        "title": "Počnimo od pravila vaše flote",
+        "text": "Pošaljite primer cenovnika, lokacije preuzimanja i opis sadašnje evidencije. Predložiću sajt koji prati vaš način potvrđivanja najma, uz jasno naveden obim i cenu pre početka rada."
+      }
+    },
+    "program-za-izradu-ponuda": {
+      "seo": {
+        "title": "Program za izradu ponuda | Petar Arsić",
+        "description": "Program za izradu ponuda od {appPrice}: katalog stavki, unos na telefonu, kalkulacija sa PDV-om i PDF. Laravel aplikacija po meri, bez agencijske marže."
+      },
+      "title": "Program za izradu ponuda za majstore i zanatske firme",
+      "intro": "Program za izradu ponuda razvijam kao web aplikaciju po meri od {appPrice}, uz okvirni rok {appDuration}. Dobijate katalog stavki, unos količina na telefonu, obračun sa PDV-om i PDF ponudu. Namenjen je majstorima i zanatskim firmama koje žele ujednačene ponude bez ponovnog prepisivanja podataka iz tabela.",
+      "context": {
+        "title": "Ponuda treba da nastane dok su mere i dogovor još sveži",
+        "paragraphs": [
+          "Na terenu zapisujete dimenzije, vrstu materijala i napomene, a kasnije ponovo unosite iste podatke u tabelu. Pri tome lako ostane stara cena ili izostane rad koji ste usmeno dogovorili. Aplikaciju zato oblikujem oko vašeg obrasca ponude. Cilj je da stavke izaberete, unesete količine i sačuvate nacrt dok ste još kod klijenta.",
+          "Pre izrade uzimamo nekoliko anonimizovanih primera: jednostavnu ponudu, ponudu sa popustom i slučaj u kom se promenio obim. Na njima dogovaramo jedinice mere, zaokruživanje, redosled stavki i verzije dokumenta. Softver mora da prati vaš način računanja, a ne da vas prisili da sve poslove svedete na jednu nejasnu ukupnu cenu."
+        ]
+      },
+      "featuresTitle": "Šta aplikacija za ponude može da sadrži",
+      "features": [
+        {
+          "title": "Katalog radova i materijala",
+          "description": "Stavke dobijaju naziv, jedinicu mere, jediničnu cenu i kategoriju. Često korišćene radove pronalazite pretragom umesto prepisivanjem. Ako se materijal i rad računaju odvojeno, čuvamo tu razliku i u konačnom dokumentu."
+        },
+        {
+          "title": "Brzi unos na telefonu",
+          "description": "Ekran za teren ima jasna polja za količinu, meru i napomenu. Raspored prilagođavam radu prstom i manjim ekranima. Dogovaramo automatsko čuvanje nacrta i prikaz stanja, kako biste znali da su poslednje izmene sačuvane."
+        },
+        {
+          "title": "Proverljiv obračun sa PDV-om",
+          "description": "Aplikacija računa stavke, međuzbirove, popuste i porez prema pravilima koja potvrdite sa računovođom. Stope su podešavanja, a ne pretpostavka programera. Iznosi u pregledu i PDF-u moraju da koriste isti postupak računanja i zaokruživanja."
+        },
+        {
+          "title": "PDF ponuda za klijenta",
+          "description": "Dokument sadrži vaše podatke, stavke, ukupan iznos, rok važenja i dogovorene uslove. Možete da ga preuzmete i pošaljete svojim kanalom. Pre razvoja usaglašavamo izgled na stvarnom primeru, uključujući duge opise i više stranica."
+        },
+        {
+          "title": "Administracija cena i pristupa",
+          "description": "Ovlašćena osoba menja katalog i cene, dok zaposleni sastavljaju ponude u okviru svojih prava. Cena koja se kasnije promeni ne sme tiho da izmeni već poslatu ponudu. Zato razlikujemo važeći katalog od sačuvanog dokumenta."
+        },
+        {
+          "title": "Nacrti i verzije ponuda",
+          "description": "Klijent može da traži drugačiji materijal ili manji obim. Umesto brisanja prethodnog dogovora, možemo da čuvamo novu verziju sa izmenjenim stavkama. Vidite šta je poslato, šta se još uređuje i koju verziju je potrebno potvrditi."
+        },
+        {
+          "title": "Podaci o klijentu i poslu",
+          "description": "Kontakt, adresa radova i interne napomene nalaze se uz ponudu. Nije potrebno ponovo unositi istog klijenta za svaki posao. Određujemo koji podaci su potrebni zaposlenima, a koji treba da budu prikazani u dokumentu."
+        },
+        {
+          "title": "PWA pristup",
+          "description": "Aplikacija može da se koristi kroz pregledač i, gde je podržano, doda na početni ekran telefona. To nije automatsko obećanje rada bez interneta. Čuvanje nacrta bez veze i kasnija sinhronizacija posebno se projektuju ako su potrebni."
+        }
+      ],
+      "pricing": [
+        "Početni paket web aplikacije po meri služi kao osnova za dogovoreni katalog, izradu ponude i administraciju. Cena raste kada uvodimo složene formule, više nivoa odobravanja, posebne dokumente ili povezivanje sa drugim programima. U proceni je važniji stvaran postupak obračuna od samog broja ekrana.",
+        "Za okvir {appDuration} potreban je dogovoren obim i pravovremena provera vaših primera. Pre početka dobijate fiksnu ponudu za 48h posle kratkog poziva. Razdvajamo neophodnu prvu verziju od budućeg CRM-a, magacina ili fakturisanja. Održavanje je zasebna stavka od {maintenancePrice} mesečno; veće nove funkcije nisu isto što i redovne ispravke i ažuriranja."
+      ],
+      "proof": [
+        "Nisam objavio projekat programa za ponude za zanatsku firmu. Moj odgovarajući primer je DriveSoft operativni back-office u Laravelu: administracija putnika, linija, polazaka i izveštaja. To je iskustvo sa istom vrstom internog poslovnog alata, u kome zaposleni svakodnevno unose podatke i rade kroz definisana prava.",
+        "Platforma Srbija Tours / DriveSoft obradila je 150.000+ karata i rezervacija. Ta brojka pripada transportnom sistemu, ne budućoj aplikaciji za ponude. Iz tog rada prenosim disciplinu obrade podataka, provere unosa i jasnih administrativnih postupaka. Formule, PDV i izgled vaših ponuda razvijaju se na vašim primerima, uz vašu poslovnu potvrdu."
+      ],
+      "faqTitle": "Pitanja o programu za ponude",
+      "faq": [
+        {
+          "question": "Da li program može da zameni moj Excel obrazac?",
+          "answer": "Može da preuzme dogovoreni postupak iz tabele, ali je pre toga potrebno pregledati formule i izuzetke. Pošaljite anonimizovane primere sa očekivanim iznosima. Posebno proveravamo zaokruživanje, popust i porez. Ako vam postojeća tabela pouzdano završava posao i koristi je jedna osoba, prvo procenjujemo da li nova aplikacija donosi dovoljno koristi."
+        },
+        {
+          "question": "Mogu li da napravim ponudu direktno sa gradilišta?",
+          "answer": "Da, interfejs se prilagođava telefonu i brzom izboru stavki. Za rad preko interneta potreban je pristup mreži. Ako često radite bez signala, treba dodatno dogovoriti lokalno čuvanje i sinhronizaciju. PWA oznaka sama po sebi ne znači da sve funkcije rade van mreže, posebno kada više zaposlenih istovremeno menja podatke."
+        },
+        {
+          "question": "Kako se rešava promena cene materijala?",
+          "answer": "Nova cena važi za budući unos, dok već poslata ponuda čuva dogovorene iznose. Ako želite da osvežite staru ponudu, to je namerna izmena ili nova verzija. Time klijent ne dobija dokument koji se kasnije neprimetno promenio. Tačan postupak odobravanja i obaveštavanja zaposlenih dogovaramo prema tome ko kod vas vodi cenovnik."
+        },
+        {
+          "question": "Da li je PDF ponuda isto što i račun?",
+          "answer": "Nije. Ova aplikacija je prvenstveno namenjena pripremi ponude za radove ili usluge. Ako želite fakturisanje, fiskalizaciju ili vezu sa računovodstvom, to je dodatni obim. Zahteve i poreski tretman potvrđujete sa računovođom, a ja implementiram dogovorena polja i obračun. Ne predstavljam generisani PDF kao zamenu za sve obavezne poslovne dokumente."
+        },
+        {
+          "question": "Može li svaki zaposleni da ima svoj nalog?",
+          "answer": "Može. Prava definišemo prema poslu: neko sastavlja nacrte, neko menja cene, a neko odobrava konačan dokument. Važno je dogovoriti da li zaposleni vidi samo svoje ponude ili ceo tim. Te razlike utiču na obim aplikacije. Pristupe proveravamo kroz konkretne radne situacije, a ne samo kroz izgled menija."
+        },
+        {
+          "question": "Možemo li kasnije da dodamo evidenciju realizovanih poslova?",
+          "answer": "Da, ponuda može da bude početak šire evidencije, ali prvo utvrđujemo koja veza je potrebna. Status prihvaćeno, radni nalog i faktura predstavljaju različite korake. U prvoj verziji čuvamo podatke potrebne za dogovoreni posao. Kasnije proširenje dobija zasebnu specifikaciju, kako dodatne funkcije ne bi neprimetno promenile budžet i rok."
+        }
+      ],
+      "cta": {
+        "title": "Pošaljite primer ponude koju danas sastavljate",
+        "text": "Anonimizovana tabela ili PDF i kratak opis rada dovoljan su početak razgovora. Zajedno ćemo odrediti katalog, pravila obračuna i prvu verziju aplikacije, uz fiksnu cenu pre razvoja."
+      }
+    },
+    "sajt-za-zakazivanje-termina": {
+      "seo": {
+        "title": "Sajt za zakazivanje termina | Petar Arsić",
+        "description": "Sajt za zakazivanje termina od {bookingPrice}, za salone, ordinacije i servise. Kalendar, usluge i admin panel za {bookingDuration}, direktno sa programerom."
+      },
+      "title": "Sajt za zakazivanje termina za salone, ordinacije i servise",
+      "intro": "Sajt za zakazivanje termina počinje od {bookingPrice}, uz okvirni rok {bookingDuration}. Dobijate izbor usluge, pregled dostupnih termina i administraciju rasporeda. Namenjen je salonima, ordinacijama i servisima koji žele manje dogovaranja preko poruka, uz jasnu razliku između zahteva za termin i odmah potvrđenog dolaska.",
+      "context": {
+        "title": "Raspored zavisi od usluge, zaposlenog i prostora",
+        "paragraphs": [
+          "Nije svaki slobodan sat dovoljan za svaku uslugu. Šišanje, pregled ili rad na vozilu mogu da traju različito, a ista prostorija ili oprema ne može da bude na dva mesta odjednom. Zato prvo popisujemo šta klijent zakazuje i koji resursi su potrebni. Tek tada možemo da prikažemo termine koje zaista možete da ispunite.",
+          "Sajt treba da prati i ono što se događa van njega: telefonsko zakazivanje, pauzu, odsustvo zaposlenog ili pomeranje već potvrđenog dolaska. Kada se te promene ne unose u zajedničku evidenciju, online kalendar brzo postaje nepouzdan. Dogovaramo ko održava raspored i kako se klijent obaveštava, tako da automatizacija olakša rad umesto da stvara dodatne pozive."
+        ]
+      },
+      "featuresTitle": "Šta sistem za zakazivanje može da sadrži",
+      "features": [
+        {
+          "title": "Spisak usluga i trajanje",
+          "description": "Svaka usluga ima razumljiv opis i planirano trajanje. Po potrebi dodajemo vreme za pripremu ili sređivanje nakon dolaska. Klijent bira odgovarajuću uslugu pre termina, kako raspored ne bi nudio nedovoljno dug slobodan period."
+        },
+        {
+          "title": "Radno vreme i izuzeci",
+          "description": "Raspored prati radne dane, pauze, praznike i odsustva koja unesete. Izuzetak za jedan datum ne mora da promeni uobičajenu nedelju. Definišemo i koliko unapred klijent može da rezerviše, prema načinu organizacije vašeg posla."
+        },
+        {
+          "title": "Zaposleni i potrebni resursi",
+          "description": "Ako klijent bira zaposlenog, kalendar prikazuje njegovu dostupnost. Kada usluga zahteva i prostoriju, radno mesto ili opremu, njihova ograničenja uključujemo u specifikaciju. Time termin predstavlja izvodljiv dogovor, a ne samo prazno polje u tabeli."
+        },
+        {
+          "title": "Zahtev ili trenutna potvrda",
+          "description": "Možete prvo da pregledate svaki zahtev ili da automatski prihvatate slobodne termine. Tekst posle slanja prati izabrani način rada. Klijent mora da zna da li je dolazak potvrđen ili treba da sačeka vaš odgovor."
+        },
+        {
+          "title": "Obaveštenja mejlom",
+          "description": "Poruka sadrži uslugu, datum, vreme i osnovno uputstvo za dolazak. Primaoce i trenutak slanja dogovaramo unapred. Podsetnici ili SMS mogu da budu dodatne funkcije, uz odvojenu procenu integracije i troškova spoljne usluge."
+        },
+        {
+          "title": "Otkazivanje i pomeranje",
+          "description": "Određujemo ko može da menja termin i do kada. Ako je promena moguća kroz link, potreban je kontrolisan pristup i jasan ishod. Oslobođeni termin vraća se u raspored prema dogovorenom pravilu, bez nejasnog statusa."
+        },
+        {
+          "title": "Unos poziva i dolazaka sa recepcije",
+          "description": "Zaposleni mogu da evidentiraju termin zakazan telefonom ili na licu mesta. Online rezervacije moraju da vide isti zauzet resurs. Panel zato prilagođavam i brzoj internoj upotrebi, ne samo prikazu klijentu na javnom sajtu."
+        },
+        {
+          "title": "Minimalni podaci za zakazivanje",
+          "description": "Početna forma traži samo ono što je potrebno za kontakt i izbor termina. Za ordinaciju to nije automatski zdravstveni karton. Obrada osetljivih podataka i posebna pravila pristupa zahtevaju zasebnu specifikaciju i odgovarajuću stručnu proveru."
+        }
+      ],
+      "pricing": [
+        "Početni paket je sajt sa rezervacijama za definisani obim usluga i rasporeda. Više lokacija, složeni resursi, rad u smenama i integracija sa postojećom evidencijom utiču na konačnu cenu. Ako vam treba samo prijem zahteva, ne uvodimo istu logiku kao za automatsku potvrdu svakog slobodnog termina.",
+        "Za širu poslovnu aplikaciju polazna cena je {appPrice}, uz okvir {appDuration}. To može da bude potrebno kada zakazivanje postane deo CRM-a ili složenog internog procesa. Fiksnu ponudu dobijate za 48h posle kratkog poziva. U njoj razdvajamo razvoj, spoljna obaveštenja i održavanje, bez pretpostavke da početni paket uključuje sve buduće potrebe."
+      ],
+      "proof": [
+        "Nemam objavljen projekat za salon ili ordinaciju. Iskustvo za ovaj tip rešenja dolazi iz platforme Srbija Tours / DriveSoft, sa 150.000+ obrađenih karata i rezervacija. Njena booking logika povezuje dostupnost, potvrđivanje i administraciju, što je relevantno i kada se umesto sedišta zakazuje vreme i usluga.",
+        "Ipak, raspored zaposlenih i uslova rada nije isto što i autobuski polazak. Pravila vašeg salona, ordinacije ili servisa prvo definišemo kroz konkretne situacije. Postojeću studiju slučaja koristim kao dokaz iskustva sa rezervacijama i operativnim panelom, a ne kao tvrdnju o radu sa klijentom iz delatnosti u kojoj još nemam objavljen projekat."
+      ],
+      "faqTitle": "Pitanja pre uvođenja online termina",
+      "faq": [
+        {
+          "question": "Možemo li da zadržimo telefonsko zakazivanje?",
+          "answer": "Možete, uz uslov da zaposleni unesu taj termin u zajednički raspored. U suprotnom sajt ne zna da je vreme zauzeto. Panel prilagođavam brzom unosu poziva, sa istim pravilima dostupnosti kao na javnom sajtu. Dogovaramo ko ima odgovornost da raspored bude ažuran i šta se dešava kada je potreban izuzetak."
+        },
+        {
+          "question": "Da li klijent bira zaposlenog?",
+          "answer": "Može da bira određenog zaposlenog ili prvi dostupan termin, zavisno od vašeg rada. Ako nije svako osposobljen za svaku uslugu, ta veza se definiše u administraciji. Potrebno je proveriti i zajedničke resurse, poput prostorije ili radnog mesta. Samo slobodno vreme zaposlenog nije uvek dovoljno da termin bude moguć."
+        },
+        {
+          "question": "Mogu li se slati podsetnici da klijenti ne zaborave dolazak?",
+          "answer": "Podsetnike možemo da uključimo u obim, uz dogovor kada se šalju i kojim kanalom. Mejl i SMS imaju različite tehničke uslove i troškove. Dostavu poruke ne treba mešati sa potvrdom da ju je klijent pročitao. Posle uvođenja pratite rezultate kroz svoju evidenciju dolazaka; ne obećavam unapred određeno smanjenje izostanaka."
+        },
+        {
+          "question": "Da li sistem odgovara ordinaciji?",
+          "answer": "Može da služi za izbor usluge i termina, uz pažljivo određen obim podataka. Obično zakazivanje nije isto što i elektronski zdravstveni karton. Ako tražite medicinsku dokumentaciju, dodatne saglasnosti ili povezivanje sa zdravstvenim softverom, potrebno je posebno razraditi pristupe i zahteve uz nadležnog stručnjaka. Te funkcije nisu podrazumevane u početnoj ceni."
+        },
+        {
+          "question": "Šta ako klijent želi da pomeri dolazak?",
+          "answer": "Pravila mogu da dozvole samostalno pomeranje do određenog trenutka ili da traže kontakt sa zaposlenim. Pri promeni ponovo proveravamo raspoloživost odgovarajućih resursa. Stari termin se oslobađa tek kada novi dogovor ima jasan status. Klijent i zaposleni dobijaju usklađeno obaveštenje, kako u njihovim evidencijama ne bi ostala dva različita vremena."
+        },
+        {
+          "question": "Možemo li prvo da uvedemo samo jednu uslugu?",
+          "answer": "Da, ograničena prva verzija može da pomogne da zaposleni usvoje novi način rada. Biramo uslugu sa dovoljno jasnim trajanjem i pravilima, a zatim proveravamo ceo postupak od prijave do dolaska. Ostale usluge dodajemo kada su definisani njihovi uslovi, bez pretpostavke da svi termini u vašem poslu rade na isti način."
+        }
+      ],
+      "cta": {
+        "title": "Uskladimo online termine sa vašim radnim danom",
+        "text": "Pošaljite spisak usluga, trajanja i način vođenja rasporeda. Predložiću obim koji može pouzdano da radi u prvoj verziji, uz fiksnu cenu i jasan plan isporuke."
+      }
+    }
+  },
+  "comparisonPages": {
+    "frilenser-ili-agencija": {
+      "seo": {
+        "title": "Frilenser ili agencija za izradu sajta | Petar Arsić",
+        "description": "Frilenser ili agencija za izradu sajta? Uporedite cenu, komunikaciju i rizike. Sajt od {websitePrice}, bez agencijske marže, uz jasan obim i fiksnu ponudu za 48h."
+      },
+      "title": "Frilenser ili agencija za izradu sajta?",
+      "intro": "Za mala i srednja preduzeća iskusan frilenser sa dokazanim projektima može da isporuči isti kvalitet povoljnije od agencije, bez agencijske marže. Moj prezentacioni sajt počinje od {websitePrice}. Agencija je bolji izbor kada vam istovremeno trebaju veliki tim, ugovorena podrška 24/7 ili zajednički paket razvoja, brendinga i marketinga.",
+      "table": {
+        "title": "Poređenje saradnje sa frilenserom i agencijom",
+        "headers": [
+          "Kriterijum",
+          "Iskusan frilenser",
+          "Agencija"
+        ],
+        "rows": [
+          [
+            "Cena",
+            "Moj sajt od {websitePrice}; fiksna ponuda za definisan obim.",
+            "Ponuda zavisi od tima, usluga i obima; tražite razrađene stavke."
+          ],
+          [
+            "Ko radi posao",
+            "Direktno razgovarate sa osobom koja razvija i postavlja sajt.",
+            "Posao se može podeliti između dizajnera, programera i menadžera."
+          ],
+          [
+            "Komunikacija",
+            "Kratak put od pitanja do tehničkog odgovora.",
+            "Jedna kontakt osoba može koordinisati više specijalista."
+          ],
+          [
+            "Brzina",
+            "Efikasno za jasan obim; kapacitet jedne osobe je ograničen.",
+            "Više poslova može teći paralelno ako je tim stvarno dodeljen."
+          ],
+          [
+            "Rizici",
+            "Odsustvo i prevelik obim; ublažavaju ih dokumentacija i plan predaje.",
+            "Promene članova tima i više primopredaja; tražite odgovorne osobe."
+          ],
+          [
+            "Održavanje",
+            "Kod mene od {maintenancePrice} mesečno, u dogovorenom obimu.",
+            "Mogući širi ugovori i dežurstva, prema konkretnoj ponudi."
+          ]
+        ],
+        "note": "Tabela opisuje način organizacije, ne garantuje kvalitet svakog ponuđača. Moje cene su iz javnog cenovnika; ne navodim izmišljene prosečne agencijske cene. Za pošteno poređenje pošaljite isti opis posla i tražite isti nivo isporuke."
+      },
+      "sections": [
+        {
+          "title": "Kada direktna saradnja donosi najveću korist",
+          "paragraphs": [
+            "Frilenser dobro odgovara projektu koji ima jasan cilj i jednog sagovornika za poslovne odluke. To može biti sajt firme, portal sa upitima, sistem rezervacija ili interni alat ograničenog obima. Kada ista osoba razume zahtev, piše kod i postavlja server, manje vremena se troši na prenošenje konteksta između različitih uloga.",
+            "Rad bez agencijske marže ne znači da preskačemo plan, testiranje ili obuku. Znači da budžet ne plaća organizaciju koja vašem obimu možda nije potrebna. Prednost postoji kada izabrani programer već ume da završi ceo dogovoreni posao. Ako projekat zahteva više specijalnosti ili istovremeni rad koji prevazilazi njegov kapacitet, potrebno je promeniti sastav tima ili raspored, a ne obećati nemoguć rok."
+          ]
+        },
+        {
+          "title": "Kada je agencija bolji izbor",
+          "paragraphs": [
+            "Agenciju bih preporučio kada treba istovremeno razvijati mnogo povezanih proizvoda, voditi više timova i koordinisati različite donosioce odluka. Isto važi ako želite brending, fotografiju, kampanje, tekstove i razvoj pod jednim ugovorom. U takvom projektu organizacija i raspoloživost više stručnjaka mogu da opravdaju veći trošak.",
+            "Poseban razlog je potreba za ugovorenim dežurstvom i podrškom 24/7. To je kapacitet tima i procesa, ne dobra namera pojedinca. Proverite da li ponuđač zaista obezbeđuje smene, eskalaciju i zamenu odsutnih ljudi. Sama oznaka agencija nije dokaz toga. Tražite da ponuda navede ko radi, koje vreme odziva se ugovara i šta se dešava van redovnog radnog vremena."
+          ]
+        },
+        {
+          "title": "Kako porediti cenu bez pogrešnog zaključka",
+          "paragraphs": [
+            "Uporedive ponude moraju da obuhvate iste stranice, funkcije, sadržaj i odgovornosti. Ponuda koja uključuje unos tekstova, migraciju, obuku i puštanje na server ne može da se poredi samo po zbiru sa ponudom za izradu nekoliko ekrana. Pitajte i ko obezbeđuje fotografije, prevode, domene i pristup spoljnom softveru.",
+            "Moj cenovnik počinje od {websitePrice} za prezentacioni sajt, od {bookingPrice} za sajt sa rezervacijama i od {appPrice} za web aplikaciju. To su početni paketi, a fiksna ponuda stiže za 48h posle kratkog poziva. Rokovi iz cenovnika su {websiteDuration}, {bookingDuration} i {appDuration}, zavisno od paketa. Dodatne funkcije izvan dogovora procenjuju se zasebno, pre početka tog dodatnog rada."
+          ]
+        },
+        {
+          "title": "Dokazi su korisniji od obećanja o kvalitetu",
+          "paragraphs": [
+            "Tražite da ponuđač objasni jedan pravi projekat: šta je uradio lično, koji problem je rešavao i kako sistem radi posle isporuke. Lep prikaz ekrana nije dovoljan dokaz za naplatu, upravljanje raspoloživošću ili složenu administraciju. Razgovor o stvarnom toku, greškama i odgovornostima pokazuje koliko ponuđač razume produkcijski rad.",
+            "Moj konkretan primer je Srbija Tours / DriveSoft, platforma sa 150.000+ obrađenih karata i rezervacija i 100+ internih korisnika. Leto Halkidiki pokazuje drugi tip posla: prelazak sa WordPress-a na Laravel i portal za smeštaj na četiri jezika. To nisu garancije rezultata vašeg projekta, već proverljivi primeri različitog obima. U studijama slučaja možete da procenite da li je to iskustvo relevantno za vas."
+          ],
+          "links": [
+            {
+              "href": "/sr/case-study/drivesoft",
+              "label": "DriveSoft: rezervacije, karte i operativa"
+            },
+            {
+              "href": "/sr/case-study/leto-halkidiki",
+              "label": "Leto Halkidiki: višejezični smeštajni portal"
+            }
+          ]
+        },
+        {
+          "title": "Rizik saradnje rešava se pre početka",
+          "paragraphs": [
+            "Sa svakim ponuđačem dogovorite pristupe, čuvanje koda, dokumentaciju i način predaje. Domen i važni poslovni nalozi treba da budu pod vašom kontrolom. Važno je da drugi odgovarajući stručnjak može da preuzme održavanje, uz razumljive informacije o projektu. To je korisno i kada je saradnja odlična, jer se potrebe i dostupnost ljudi vremenom menjaju.",
+            "Kod mene saradnja obuhvata kratak poziv, fiksnu ponudu, razvoj u fazama i lansiranje sa obukom. Prvih 30 dana posle objave uključuju besplatne ispravke. Održavanje od {maintenancePrice} mesečno dogovara se prema cenovniku; to nije obećanje neograničenog razvoja ili stalnog dežurstva. Za malo ili srednje preduzeće sa odgovarajućim obimom, iskusan frilenser može dati isti kvalitet povoljnije od agencije."
+          ]
+        }
+      ],
+      "faqTitle": "Pitanja pri izboru frilensera ili agencije",
+      "faq": [
+        {
+          "question": "Da li frilenser može da uradi sve od dizajna do servera?",
+          "answer": "Može ako ima odgovarajuće iskustvo, ali to treba proveriti kroz konkretne projekte. Ja razvijam sajtove i web aplikacije, postavljam ih na server i dogovaram održavanje. Obim dizajna, sadržaja i integracija navodim u ponudi. Kada su potrebne dodatne specijalnosti, važno je to jasno utvrditi pre početka, umesto sve podvesti pod jednu neodređenu uslugu."
+        },
+        {
+          "question": "Da li je agencija uvek pouzdanija?",
+          "answer": "Nije moguće zaključiti samo na osnovu naziva ponuđača. Agencija može da obezbedi zamenu članova tima i više kapaciteta, ali proverite da li je to deo vaše ponude. Frilenser može biti pouzdan za ograničen obim uz dokumentaciju i dogovorene rokove. U oba slučaja tražite jasne odgovornosti i način rešavanja problema posle isporuke."
+        },
+        {
+          "question": "Kako da prepoznam ponudu koja je nepotpuna?",
+          "answer": "Ako nije navedeno šta dobijate, ko unosi sadržaj, kako se proverava rad i šta obuhvata podrška, ponuda traži dopunu. Obratite pažnju na integracije, migraciju i spoljne troškove. Tražite primer prihvaćene isporuke za važnu funkciju. Fiksna cena ima smisla tek kada obe strane isto razumeju obim i kriterijume završetka."
+        },
+        {
+          "question": "Šta ako programer kasnije nije dostupan?",
+          "answer": "Pristupi, kod i dokumentacija treba da omoguće planiranu predaju drugom odgovarajućem stručnjaku. Pre ugovaranja pitajte kako izgleda ta predaja i gde se nalaze važne informacije. Mesečno održavanje ne uklanja potrebu za takvim planom. Kod agencije takođe proverite šta se dešava ako osoba koja poznaje vaš projekat napusti tim ili promeni ulogu."
+        },
+        {
+          "question": "Da li je održavanje obavezno posle izrade?",
+          "answer": "Moj mesečni paket je od {maintenancePrice} i odvojeno se dogovara. Prvih 30 dana posle lansiranja ispravke su besplatne, sa ili bez tog paketa. Potrebno je da unapred znate ko će kasnije raditi ažuriranja, rezervne kopije i nadzor. Nove funkcije predstavljaju zaseban razvoj, pa njihovu cenu i rok dogovaramo pre rada."
+        },
+        {
+          "question": "Koga biste preporučili maloj firmi sa jasnim zahtevom?",
+          "answer": "Iskusnog frilensera sa stvarnim projektima slične složenosti, ako njegov kapacitet odgovara roku i podršci koja vam treba. Direktna komunikacija i rad bez agencijske marže tada imaju konkretnu vrednost. Za širi marketinški paket ili veći tim pogledao bih agenciju. Presudan je usklađen obim, a ne izbor jedne vrste ponuđača po svaku cenu."
+        }
+      ],
+      "cta": {
+        "title": "Uporedite konkretnu ponudu za svoj projekat",
+        "text": "Pošaljite cilj sajta i funkcije koje su vam neophodne. Posle kratkog poziva dobijate obim, rok i fiksnu cenu, pa možete da ih uporedite sa drugim ponudama na istoj osnovi."
+      }
+    },
+    "wordpress-ili-sajt-po-meri": {
+      "seo": {
+        "title": "WordPress ili sajt po meri | Petar Arsić",
+        "description": "WordPress ili sajt po meri? Uporedite sadržaj, rezervacije i održavanje. Prezentacioni sajt od {websitePrice}, web aplikacija od {appPrice}, uz fiksnu ponudu za 48h."
+      },
+      "title": "WordPress ili sajt po meri: kada izabrati Laravel?",
+      "intro": "WordPress je često dovoljan za prezentacioni sajt, blog i uobičajeno uređivanje sadržaja. Sajt po meri ima smisla kada posebna poslovna pravila određuju rezervacije, korisničke uloge ili integracije. Moj prezentacioni sajt počinje od {websitePrice}, a web aplikacija po meri od {appPrice}. Odluku donosimo prema poslu koji sistem treba da obavi.",
+      "table": {
+        "title": "WordPress i Laravel rešenje prema potrebama projekta",
+        "headers": [
+          "Potreba",
+          "WordPress",
+          "Sajt po meri"
+        ],
+        "rows": [
+          [
+            "Tekstovi i blog",
+            "Ugrađen sistem za stranice, objave i uređivanje sadržaja.",
+            "Polja i postupak uređivanja razvijaju se prema vašoj ponudi."
+          ],
+          [
+            "Posebna pravila",
+            "Proveravamo postojeće dodatke ili procenjujemo prilagođavanje.",
+            "Pravila se projektuju direktno za konkretan poslovni tok."
+          ],
+          [
+            "Rezervacije",
+            "Dobar izbor kada dodatak pouzdano pokriva traženi postupak.",
+            "Koristan kada raspoloživost i naplata imaju posebne izuzetke."
+          ],
+          [
+            "Integracije",
+            "Postojeći dodatak može uštedeti razvoj, uz proveru ograničenja.",
+            "Povezivanje se razvija prema dostupnom interfejsu drugog sistema."
+          ],
+          [
+            "Održavanje",
+            "Ažuriranja jezgra, teme i dodataka; provera kompatibilnosti.",
+            "Ažuriranja aplikacije i zavisnosti; provera poslovnih funkcija."
+          ],
+          [
+            "Početni budžet kod mene",
+            "Prezentacioni sajt od {websitePrice}.",
+            "Web aplikacija po meri od {appPrice}."
+          ]
+        ],
+        "note": "WordPress može da podrži i složene projekte, a Laravel nije automatski bolji za svaku stranicu. Poređenje govori gde bih tražio jednostavnije i održivije rešenje za konkretan obim, bez univerzalnog pobednika."
+      },
+      "sections": [
+        {
+          "title": "Kada je WordPress sasvim dovoljan",
+          "paragraphs": [
+            "Ako objavljujete usluge, vesti, reference i kontakt informacije, WordPress često daje sve što vam treba. Važno je da zaposleni mogu lako da menjaju tekstove i slike, a da posetilac na telefonu brzo pronađe ponudu. Nema poslovnog razloga da se uobičajeno uređivanje sadržaja razvija od nule samo zbog izbora tehnologije.",
+            "WordPress može biti dobar i za katalog ili prodavnicu kada odabrana tema i dodaci odgovaraju pravilima rada. Pre odluke proveravam stvaran tok: unos ponude, kupovinu ili upit, obaveštenja i administraciju. Moja preporuka je da platite prilagođavanje koje rešava vaš problem. Ako standardno rešenje to već radi razumljivo i pouzdano, izrada posebne aplikacije može da bude nepotreban trošak."
+          ],
+          "links": [
+            {
+              "href": "https://wordpress.org/about/features/",
+              "label": "WordPress: zvaničan pregled uređivanja sadržaja i proširenja"
+            }
+          ]
+        },
+        {
+          "title": "Kada poslovna pravila opravdavaju razvoj po meri",
+          "paragraphs": [
+            "Laravel razmatram kada korisnici rade kroz specifične uloge, odobravanja ili povezane evidencije. Primer je sistem koji povezuje raspoloživost, rezervaciju, naplatu i operativni panel. Ako više dodataka mora stalno da se prilagođava istom neobičnom pravilu, korisno je uporediti ukupnu složenost tog pristupa sa jednom namenskom aplikacijom.",
+            "Prilagođena aplikacija ipak traži specifikaciju i razvoj. Panel za uređivanje, izveštaji i obrasci ne nastaju sami od izbora Laravela. Zato najpre opisujemo neophodnu prvu verziju i kriterijume prihvatanja. Mogućnost da se nešto napravi po meri nije dovoljan razlog da se odmah napravi sve. Ograničen, dobro definisan obim lakše je proveriti i održavati nego skup funkcija čija korist još nije jasna."
+          ]
+        },
+        {
+          "title": "Cena uključuje više od prve izrade",
+          "paragraphs": [
+            "Moj cenovnik navodi prezentacioni sajt od {websitePrice}, sajt sa rezervacijama od {bookingPrice} i web aplikaciju po meri od {appPrice}. Rokovi su redom {websiteDuration}, {bookingDuration} i {appDuration}. Paket se bira prema funkcijama, ne samo prema nazivu tehnologije. Dve stranice istog izgleda mogu da imaju veoma različit posao iza prijave, obračuna ili raspoloživosti.",
+            "Za poređenje troška zabeležite i hosting, domene, licence dodataka, održavanje i buduće izmene. Ne navodim univerzalnu cenu tih usluga jer zavisi od izbora i pružaoca. WordPress može da ima plaćene dodatke, a aplikacija po meri trošak razvoja novih mogućnosti. Održavanje kod mene počinje od {maintenancePrice} mesečno, uz odvojeno dogovaranje većih proširenja. Fiksna ponuda za projekat stiže nakon razjašnjenog obima."
+          ]
+        },
+        {
+          "title": "SEO, brzina i bezbednost zavise od izvedbe",
+          "paragraphs": [
+            "Ni WordPress ni Laravel ne garantuju rangiranje. Potrebni su koristan sadržaj, dostupne stranice, jasne adrese i tehnički ispravan prikaz. Kod migracije dodatno proveravamo stare URL-ove, preusmerenja i jezičke verzije. Promena tehnologije sama po sebi nije SEO strategija; mora da postoji razlog zašto nova struktura bolje odgovara posetiocu i ponudi.",
+            "Slično važi za brzinu i bezbednost. Prevelike fotografije, loša konfiguracija ili nepotrebne funkcije mogu da opterete oba pristupa. Ažuriranja, pristupi i rezervne kopije ostaju obaveza i kod sajta po meri. U ponudi zato navodimo ko održava sistem i kako se proverava posle promene. Važnija je uredna isporuka i održavanje od opšte tvrdnje da je jedna tehnologija uvek brža ili bezbednija."
+          ]
+        },
+        {
+          "title": "Leto Halkidiki: primer prelaska sa WordPress-a na Laravel",
+          "paragraphs": [
+            "Leto Halkidiki je portal za privatni smeštaj koji sam prebacio sa WordPress-a na Laravel. Njegovu ponudu čine destinacije, mesta i objekti, uz sadržaj na srpskom, engleskom, rumunskom i grčkom. Admin panel prati tu organizaciju, a upiti gostiju odlaze vlasnicima mejlom. Taj primer pokazuje kako namenski model podataka može da prati turističku ponudu.",
+            "Ne navodim ga kao dokaz da svaki WordPress sajt treba zameniti. Takođe ne tvrdim da migracija sama po sebi donosi rast poseta ili prodaje, jer za to ovde nema potvrđenih podataka. Praktično pitanje za vaš projekat je jednostavnije: da li postojeći sistem otežava unos, pretragu ili obradu zahteva? Ako je odgovor ne, unapređenje trenutnog sajta može biti razumnije od potpunog prepisivanja."
+          ],
+          "links": [
+            {
+              "href": "/sr/case-study/leto-halkidiki",
+              "label": "Pročitajte studiju slučaja Leto Halkidiki"
+            }
+          ]
+        }
+      ],
+      "faqTitle": "Pitanja o WordPress-u i sajtu po meri",
+      "faq": [
+        {
+          "question": "Da li WordPress može da ima rezervacije?",
+          "answer": "Može, kroz odgovarajuće dodatke ili prilagođeni razvoj. Pre izbora treba proveriti dostupnost, pravila cena, potvrđivanje i integracije na stvarnim primerima. Ako dodatak pokriva taj obim bez velikih izmena, to može biti dobar izbor. Kada vaše poslovanje zahteva mnogo povezanih izuzetaka, upoređujemo cenu i održavanje takvog rešenja sa aplikacijom po meri."
+        },
+        {
+          "question": "Da li mogu samostalno da menjam Laravel sajt?",
+          "answer": "Možete kroz admin panel koji je deo dogovorenog obima. U njemu definišemo šta se uređuje: tekstovi, fotografije, cene ili ponuda. To nije isto što i slobodno menjanje celog rasporeda stranice u vizuelnom editoru. Pre razvoja prolazimo koje izmene zaista radite redovno, pa panel prilagođavam njima i pokazujem upotrebu na obuci."
+        },
+        {
+          "question": "Da li aplikacija po meri garantuje bolji SEO?",
+          "answer": "Ne. Ona omogućava da se struktura i tehnički detalji precizno prilagode, ali rezultat zavisi i od sadržaja, konkurencije i drugih faktora. WordPress takođe može da ima dobre SEO osnove. Važno je da konkretna implementacija ima ispravne adrese, meta podatke i dostupne stranice, kao i sadržaj koji stvarno odgovara na pitanja posetilaca."
+        },
+        {
+          "question": "Mogu li da sačuvam sadržaj pri prelasku?",
+          "answer": "U pravilu planiramo prenos onoga što je dostupno i potrebno, uz prethodnu proveru formata. Popisujemo tekstove, fotografije, kategorije i stare adrese. Neke strukture zahtevaju mapiranje na novi model. Dogovaramo i preusmerenja, proveru prenosa i trenutak prelaska. Ne počinjemo migraciju pretpostavkom da se svi podaci mogu preneti jednim automatskim korakom."
+        },
+        {
+          "question": "Šta je lakše za buduće održavanje?",
+          "answer": "To zavisi od izvedbe i dostupnog stručnjaka. U WordPress-u pratimo kompatibilnost jezgra, teme i dodataka. Kod aplikacije po meri potrebni su razumljiv kod i dokumentacija poslovnih pravila. U oba slučaja želite kontrolu nad pristupima i rezervnim kopijama. Odluku zato donosimo i prema tome ko će sistem održavati posle prve isporuke."
+        },
+        {
+          "question": "Kako da znam da mi nije ponuđeno previše razvoja?",
+          "answer": "Tražite objašnjenje za svaku prilagođenu funkciju: koji posao rešava i zašto standardno rešenje nije dovoljno. Uporedite prvi potreban rezultat, a ne listu tehnologija. Ako vam treba samo predstavljanje usluga i kontakt, nema razloga da odmah plaćate složenu aplikaciju. Na razgovoru možemo odvojiti neophodne stavke od onih koje imaju smisla tek kasnije."
+        }
+      ],
+      "cta": {
+        "title": "Izaberite tehnologiju prema poslu koji sajt obavlja",
+        "text": "Pošaljite postojeći sajt ili opis potrebnih funkcija. Predložiću WordPress ili razvoj po meri na osnovu obima, uz jasno obrazloženje, rok i fiksnu ponudu."
+      }
+    },
+    "wix-ili-sajt-po-meri": {
+      "seo": {
+        "title": "Wix ili sajt po meri | Petar Arsić",
+        "description": "Wix ili sajt po meri: pretplata, SEO, vlasništvo i ograničenja. Sajt od {websitePrice}, aplikacija od {appPrice}, uz jasno poređenje troškova izrade i održavanja."
+      },
+      "title": "Wix ili sajt po meri: troškovi, SEO i kontrola",
+      "intro": "Wix je razuman izbor ako želite vizuelno uređivanje i funkcije koje njegov paket već pokriva. Sajt po meri ima smisla kada poslovni proces traži posebna pravila i veću kontrolu. Moj prezentacioni sajt počinje od {websitePrice}, a web aplikacija od {appPrice}; pored izrade planiraju se hosting, održavanje i spoljne usluge.",
+      "table": {
+        "title": "Kako uporediti Wix i razvoj po meri",
+        "headers": [
+          "Tema",
+          "Wix",
+          "Sajt po meri"
+        ],
+        "rows": [
+          [
+            "Plaćanje",
+            "Plan platforme i eventualne dodatne usluge prema aktuelnoj ponudi.",
+            "Jednokratna cena dogovorenog razvoja; tekući troškovi odvojeno."
+          ],
+          [
+            "Uređivanje",
+            "Vizuelni alati i funkcije dostupne u izabranom proizvodu.",
+            "Admin panel za sadržaj i postupke koje ste ugovorili."
+          ],
+          [
+            "SEO",
+            "Moguće je uređivanje naslova, opisa i drugih SEO postavki.",
+            "Struktura adresa i SEO postavke oblikuju se u implementaciji."
+          ],
+          [
+            "Hosting",
+            "Sajt koristi infrastrukturu Wix-a.",
+            "Hosting se bira prema zahtevima aplikacije."
+          ],
+          [
+            "Prenos",
+            "Sadržaj i domen razlikuju se od prenosivosti samog Wix sajta.",
+            "Predaja koda, podataka i pristupa definiše se dogovorom."
+          ],
+          [
+            "Posebne funkcije",
+            "Proverite podršku platforme i integracija za svoj slučaj.",
+            "Razvijaju se po specifikaciji, uz odgovarajući budžet."
+          ]
+        ],
+        "note": "Ne upisujem fiksnu Wix pretplatu jer se paketi, uslovi i obračun mogu menjati. Za konkretnu odluku proverite aktuelnu ponudu platforme i uključene funkcije, a zatim ih uporedite sa istim obimom razvoja."
+      },
+      "sections": [
+        {
+          "title": "Kada bih preporučio Wix",
+          "paragraphs": [
+            "Ako sami želite da sastavite sajt i redovno menjate raspored sadržaja, vizuelna platforma može da bude praktičan početak. Važno je da proverite da li izabrani plan pokriva sve što vam treba pre nego što uložite vreme u ceo sadržaj. Jednostavan portfolio, predstavljanje usluga ili jasno ograničena ponuda često ne zahtevaju posebnu poslovnu aplikaciju.",
+            "Moja preporuka je da prvo prođete jedan kompletan zadatak: napravite stranicu, pošaljite probni upit i proverite kako ga obrađujete. Ako vam taj tok odgovara, nema razloga da tehnologiju menjate samo radi drugačijeg imena. Trošak svog vremena takođe uključite u odluku. Samostalno uređivanje ima vrednost kada vam je prijatno da ga radite i kada ne odlaže važniji deo poslovanja."
+          ]
+        },
+        {
+          "title": "Pretplata i jednokratna izrada nisu ista vrsta troška",
+          "paragraphs": [
+            "Poređenje počinje spiskom onoga što plaćate kroz vreme: izrada ili podešavanje, platforma ili hosting, domen, dodaci i održavanje. Jednokratno plaćena izrada ne znači da sajt zauvek radi bez tekućih troškova. Isto tako, pretplata ne znači da je sav potreban rad na sadržaju i prilagođavanju uključen u cenu.",
+            "Moj cenovnik navodi sajt od {websitePrice}, rezervacije od {bookingPrice} i web aplikaciju od {appPrice}. Održavanje počinje od {maintenancePrice} mesečno. Fiksna ponuda precizira obim, dok hosting i spoljne usluge navodimo posebno. Ako upoređujete dve opcije, tražite procenu za isti period i ista poslovna pravila. Bez toga manji početni iznos može da sakrije skuplje kasnije izmene, a veći početni iznos može da uključi rad koji druga ponuda izostavlja."
+          ]
+        },
+        {
+          "title": "Vlasništvo nad sadržajem i mogućnost preseljenja",
+          "paragraphs": [
+            "Wix navodi da sadržaj koji napravite pripada vama, ali da sajt zbog njihove tehnologije mora da radi na njihovim serverima. Domen može da bude kod drugog pružaoca. Zato vlasništvo nad tekstovima i fotografijama ne treba mešati sa mogućnošću da celu implementaciju jednostavno preselite na drugi hosting.",
+            "Kod razvoja po meri unapred dogovaramo predaju koda, baze, naloga i dokumentacije. Prenosivost nije razlog da se preskoči taj dogovor: budući održavalac mora da razume kako se aplikacija pokreće i od kojih usluga zavisi. Moj praktičan savet je da pre izbora napišete šta biste želeli da preuzmete pri promeni saradnika. Zatim proverite da li ponuđeno rešenje i ugovor to zaista omogućavaju, uključujući podatke koji nastaju tokom poslovanja."
+          ],
+          "links": [
+            {
+              "href": "https://support.wix.com/en/article/exporting-or-embedding-your-wix-site-elsewhere",
+              "label": "Wix: zvanično objašnjenje hostinga i prenosa sajta"
+            }
+          ]
+        },
+        {
+          "title": "SEO nije razlog za automatsko odbacivanje Wix-a",
+          "paragraphs": [
+            "Wix podržava podešavanje naslova, meta opisa i drugih SEO elemenata. Zbog toga tvrdnja da Wix sajt uopšte ne može da se optimizuje nije poštena. Za odluku je važnije da proverite da li možete da organizujete konkretan sadržaj i adrese onako kako vašoj ponudi treba.",
+            "Ni sajt po meri ne dobija posete samo zato što je namenski razvijen. Ja bih najpre pregledao kvalitet stranica, jasnoću ponude, interni put do kontakta i način održavanja sadržaja. Za više jezika ili veliki katalog posebno proveravamo strukturu i doslednost podataka. Razvoj po meri ima vrednost kada rešava konkretno ograničenje, a ne kada se koristi kao neodređeno obećanje bolje pozicije. Merenje upita i rada korisnika zatim pokazuje gde su potrebna poboljšanja."
+          ],
+          "links": [
+            {
+              "href": "https://support.wix.com/en/article/customizing-your-pages-seo-settings-in-the-seo-panel",
+              "label": "Wix: zvanična SEO podešavanja stranice"
+            }
+          ]
+        },
+        {
+          "title": "Kada razmatrati namensku aplikaciju",
+          "paragraphs": [
+            "Kada sajt postane alat za svakodnevni rad, tražite odgovor na posebne situacije: ko sme da menja cenu, kako se sprečava preklapanje, šta se dešava posle neuspele naplate i kako izgleda izvoz podataka. Ako platforma to pokriva, može ostati dobar izbor. Ako su potrebna brojna prilagođavanja, vredi uporediti razvoj po meri sa celim obimom tih dodataka.",
+            "DriveSoft je moj primer aplikacije za rezervacije, karte i operativu, sa 150.000+ obrađenih karata i rezervacija. Leto Halkidiki je primer namenskog portala za smeštaj i upite. Nijedan ne predstavljam kao projekat prebačen sa Wix-a. Oni pokazuju rad sa poslovnim pravilima i sadržajem koji mogu biti relevantni kada procenjujete granice svog sadašnjeg sajta. Pre migracije svakako planiramo prenos sadržaja, starih adresa i pristiglih podataka."
+          ],
+          "links": [
+            {
+              "href": "/sr/case-study/drivesoft",
+              "label": "Primer poslovne aplikacije: DriveSoft"
+            },
+            {
+              "href": "/sr/case-study/leto-halkidiki",
+              "label": "Primer portala po meri: Leto Halkidiki"
+            }
+          ]
+        }
+      ],
+      "faqTitle": "Pitanja o Wix-u i razvoju po meri",
+      "faq": [
+        {
+          "question": "Da li je Wix dobar za prvi sajt firme?",
+          "answer": "Može biti dobar ako podržava vaše potrebne funkcije i želite sami da uređujete sadržaj. Pre odluke proverite ceo tok od stranice do upita, prikaz na telefonu i uslove izabranog paketa. Ako već sada znate da su potrebni posebni obračuni ili složena administracija, njihovu izvodljivost proverite pre unošenja celog sajta."
+        },
+        {
+          "question": "Da li kod sajta po meri plaćam samo jednom?",
+          "answer": "Jednokratna cena pokriva dogovorenu izradu. Domen, hosting, održavanje i eventualne spoljne usluge ostaju odvojene stavke. Nove funkcije takođe traže novi dogovor. U mojoj ponudi jasno razdvajamo te troškove, pa sa pretplatničkom platformom možete da poredite ukupan potreban budžet, a ne samo početnu uplatu ili jednu mesečnu stavku."
+        },
+        {
+          "question": "Da li mogu da preselim ceo Wix sajt na svoj server?",
+          "answer": "Prema zvaničnom objašnjenju Wix-a, sama implementacija mora da radi na njihovoj infrastrukturi. Preseljenje na drugu tehnologiju zato treba planirati kao poseban projekat. Pregledamo koji sadržaj i podaci mogu da se prenesu, kako se mapiraju postojeće adrese i šta treba ponovo napraviti. Ne predstavljam to kao jednostavno kopiranje gotovog sajta."
+        },
+        {
+          "question": "Hoće li sajt po meri automatski imati više upita?",
+          "answer": "Ne mogu to da obećam. Više upita zavisi od tražnje, ponude, sadržaja, poseta i jasnoće narednog koraka. Prilagođen razvoj može da ukloni konkretne prepreke, poput neupotrebljive forme ili nedovoljno jasnog procesa. Zato pre rada utvrđujemo koji problem rešavamo i kako ćete pratiti rezultat, umesto promene platforme bez jasnog cilja."
+        },
+        {
+          "question": "Mogu li samostalno da menjam sadržaj posle izrade?",
+          "answer": "Da, kada je administracija deo dogovorenog obima. Pre razvoja određujemo koje podatke redovno menjate i kako treba da izgleda njihov unos. Namenski panel nije isto što i slobodan vizuelni editor cele stranice. Ako vam je ta sloboda glavni zahtev, uključujemo je u izbor rešenja i procenu, umesto da je pretpostavimo."
+        },
+        {
+          "question": "Kako procenjujete da li mi prelazak ima smisla?",
+          "answer": "Tražim konkretne zadatke koje sadašnji sajt ne rešava, učestalost njihovog pojavljivanja i plan razvoja poslovanja. Zatim proveravamo da li problem može da se reši u postojećem sistemu. Ako može, to je često dobar prvi korak. Kada ograničenje ostaje, pripremam obim nove verzije i plan prenosa koji možete da uporedite sa ostankom."
+        }
+      ],
+      "cta": {
+        "title": "Proverite da li vam treba nova platforma ili bolji postojeći sajt",
+        "text": "Pošaljite adresu sajta i nekoliko zadataka koji vam danas otežavaju rad. Dobićete obrazloženu preporuku i, ako je razvoj potreban, fiksnu ponudu za jasno definisan obim."
+      }
+    },
+    "koliko-kosta-booking-sistem": {
+      "seo": {
+        "title": "Koliko košta booking sistem? | Petar Arsić",
+        "description": "Koliko košta booking sistem: upiti od {websitePrice}, sajt sa rezervacijama od {bookingPrice}, aplikacija od {appPrice}. Pogledajte obim, rokove i šta podiže cenu izrade."
+      },
+      "title": "Koliko košta booking sistem i aplikacija za rezervacije?",
+      "intro": "Sajt sa rezervacijama u mom cenovniku počinje od {bookingPrice}, uz rok {bookingDuration}. Jednostavan sajt sa formom za upit može da krene od {websitePrice}, ali nije automatski booking sistem. Za aplikaciju sa posebnim pravilima, plaćanjem i fiskalizacijom polazna cena je {appPrice}, uz okvirni rok {appDuration}.",
+      "table": {
+        "title": "Tri nivoa obima i početne cene",
+        "headers": [
+          "Nivo",
+          "Paket i cena",
+          "Rok"
+        ],
+        "rows": [
+          [
+            "Ponuda i kontakt upit",
+            "Prezentacioni sajt od {websitePrice}; bez evidencije slobodnog kapaciteta.",
+            "{websiteDuration}"
+          ],
+          [
+            "Rezervacije sa kalendarom",
+            "Sajt sa rezervacijama od {bookingPrice}; dogovorena dostupnost, potvrde i panel.",
+            "{bookingDuration}"
+          ],
+          [
+            "Poslovna aplikacija",
+            "Web aplikacija po meri od {appPrice}; posebni tokovi i ugovorene integracije.",
+            "{appDuration}"
+          ]
+        ],
+        "note": "Nivoi su vezani za postojeće pakete cenovnika. Početna cena nije maksimum niti uključuje svaku moguću integraciju. Vaš konkretan obim, spoljne usluge i faze isporuke navode se u fiksnoj ponudi."
+      },
+      "sections": [
+        {
+          "title": "Upit nije isto što i potvrđena rezervacija",
+          "paragraphs": [
+            "Forma za upit prikuplja željeni datum, kontakt i podatke o usluzi. Zaposleni zatim proverava raspoloživost i odgovara. Takav tok može da bude sasvim dovoljan kada se prodaje mali broj različitih usluga ili kada svaki zahtev svakako zahteva razgovor. Bitno je da poruka nakon slanja ne kaže da je termin rezervisan ako to još nije potvrđeno.",
+            "Pravi booking sistem mora da zna šta je dostupno i da pri potvrdi zauzme odgovarajući kapacitet. Potrebno je obraditi istovremene zahteve, promene i otkazivanje. To je razlika u odgovornosti softvera, ne samo dodavanje kalendara na stranicu. Pre procene zato pitam ko danas daje konačnu potvrdu i gde se vodi važeća evidencija: u programu, tabeli ili rasporedu koji zaposleni menjaju ručno."
+          ]
+        },
+        {
+          "title": "Šta ulazi u nivo sa kalendarom",
+          "paragraphs": [
+            "Paket sa rezervacijama iz cenovnika polazi od {bookingPrice}. Za dogovoreni obim planiramo kalendar dostupnosti, admin panel i obaveštenja. Određujemo i pravila cena, jezike i način potvrde koji su potrebni projektu. Kod apartmana se rezerviše boravak, kod salona trajanje usluge, a kod vozila period najma. Svaki slučaj zahteva drugačije granice zauzetosti.",
+            "Najviše jasnoće donosi mali skup konkretnih primera. Šta se dešava ako gost produži boravak, zaposleni ode na odsustvo ili vozilo ostane na servisu? Ko unosi rezervaciju pristiglu telefonom? Odgovori određuju stvaran obim panela i provera. Ako ti podaci nisu dostupni sistemu, automatska potvrda ne može pouzdano da ih uzme u obzir. Zato odgovornost za unos dogovaramo zajedno sa tehničkom funkcijom."
+          ]
+        },
+        {
+          "title": "Kada cena prelazi u aplikaciju po meri",
+          "paragraphs": [
+            "Polazni paket web aplikacije je od {appPrice}, sa rokom {appDuration}. Razmatramo ga kada rezervacija povezuje više korisničkih uloga, kanala prodaje, obračuna i integracija. Primer je prodaja karte koja mora da uskladi sedište, uplatu, dokument i proveru pri ukrcavanju. Takav sistem ima više odgovornosti od samog prijema termina.",
+            "Plaćanje ili fiskalizacija ne predstavljaju jedan univerzalan dodatak sa istom cenom za sve. Potrebno je pregledati pružaoca, testno okruženje i postupke u slučaju greške. Definišemo i otkazivanje, povraćaj i ponovljena obaveštenja o istoj transakciji. Početni iznos aplikacije ne znači da je svaka kombinacija ovih funkcija uključena. U ponudi navodim tačno koje tokove razvijam i kako proveravamo njihovo ponašanje pre puštanja."
+          ]
+        },
+        {
+          "title": "Šta najčešće podiže cenu i produžava rok",
+          "paragraphs": [
+            "Složenost povećavaju pravila koja zavise jedno od drugog: sezonske tarife, različiti resursi, prava zaposlenih i podaci iz drugog sistema. Uvoz stare evidencije može da zahteva usklađivanje formata i proveru duplikata. Više jezika traži pripremljen sadržaj i proveru svih poruka koje korisnik dobija. Rok zavisi i od pristupa spoljnim uslugama i brzine vaših odluka.",
+            "Budžet se kontroliše jasnom prvom verzijom. Možemo početi upitom i ručnom potvrdom, ili automatizovati jedan potpuni tok pre dodavanja drugih. Važno je da ograničenje bude vidljivo korisniku i zaposlenom. Fiksnu ponudu dobijate za 48h posle kratkog poziva i razjašnjenja obima. Hosting, naknade naplate i slanja poruka odvajamo od razvoja, jer zavise od izabranih pružalaca i korišćenja."
+          ]
+        },
+        {
+          "title": "Dva projekta koja pokazuju razliku u obimu",
+          "paragraphs": [
+            "Leto Halkidiki organizuje privatni smeštaj po destinaciji, mestu i objektu i podržava četiri jezika. Trenutni tok zasniva se na upitima vlasnicima mejlom. To je konkretan primer portala sa sadržajem i administracijom, ali ga ne predstavljam kao automatski kalendar zauzetosti ili naplatu smeštaja.",
+            "Nasuprot tome, Srbija Tours / DriveSoft povezuje rezervacije, prodaju karata, QR validaciju, fiskalizaciju i operativni panel. Platforma je obradila 150.000+ karata i rezervacija, uz 100+ internih korisnika. Ove brojke opisuju postojeći projekat, ne obim koji dobija svaki novi klijent za početnu cenu. Studije slučaja pomažu da pokažete koji deo vam treba i šta bi za vašu firmu bilo nepotrebno u prvoj fazi."
+          ],
+          "links": [
+            {
+              "href": "/sr/case-study/leto-halkidiki",
+              "label": "Leto Halkidiki: portal i upiti za smeštaj"
+            },
+            {
+              "href": "/sr/case-study/drivesoft",
+              "label": "DriveSoft: rezervacije, naplata i operativa"
+            }
+          ]
+        }
+      ],
+      "faqTitle": "Pitanja o ceni sistema za rezervacije",
+      "faq": [
+        {
+          "question": "Da li je {bookingPrice} konačna cena za bilo koji booking sistem?",
+          "answer": "Ne, to je početna cena paketa sa rezervacijama. Konačan iznos zavisi od pravila raspoloživosti, jezika, integracija i administracije. Pre rada dobijate fiksnu ponudu sa navedenim funkcijama. Ako traženi obim prelazi u složeniju poslovnu aplikaciju, to kažem tokom procene i vezujem ponudu za odgovarajući paket, bez obećanja da sve staje u minimum."
+        },
+        {
+          "question": "Mogu li da počnem samo sa formom za upit?",
+          "answer": "Možete ako je ručna potvrda dobar način rada za vaše poslovanje. Tada jasno označavamo da je zahtev primljen, a da raspoloživost tek proveravate. Prezentacioni paket od {websitePrice} predstavlja polaznu osnovu za jednostavan sajt, ne za rezervacije sa automatskim zauzećem. Potrebna polja forme i obradu upita preciziramo u ponudi."
+        },
+        {
+          "question": "Da li je online plaćanje uključeno u paket?",
+          "answer": "Cenovnik navodi online plaćanje kao opciju. U konkretnoj ponudi mora da piše da li je uključeno i za kog pružaoca. Pored razvoja veze postoje uslovi i naknade njegove usluge. Pre početka proveravamo način potvrde transakcije, testiranje i postupak otkazivanja, jer samo dugme za plaćanje ne rešava ceo tok rezervacije."
+        },
+        {
+          "question": "Koliko treba da izdvojim za održavanje?",
+          "answer": "Moj paket održavanja počinje od {maintenancePrice} mesečno. Obuhvat se dogovara prema cenovniku i potrebama isporučenog sajta. Hosting i spoljne usluge razmatraju se zasebno, a nove funkcije predstavljaju dodatni razvoj. Prvih 30 dana posle lansiranja uključuje besplatne ispravke, bez uslova da odmah ugovorite mesečni paket održavanja."
+        },
+        {
+          "question": "Šta treba da pošaljem da bih dobio tačnu cenu?",
+          "answer": "Opišite šta se rezerviše, kako određujete dostupnost i ko potvrđuje zahtev. Pošaljite primer cenovnika i spisak sistema sa kojima je potrebna veza, bez stvarnih ličnih podataka korisnika. Korisni su i primeri otkazivanja ili promene. Na osnovu toga mogu da razdvojim standardni tok od izuzetaka koji povećavaju obim razvoja."
+        },
+        {
+          "question": "Da li kasnije mogu da dodam aplikaciju za zaposlene?",
+          "answer": "Možete planirati takvo proširenje, ali njegov obim treba posebno proceniti. Mobilni pristup kroz pregledač, PWA i posebna mobilna aplikacija nisu ista isporuka. Važno je znati da li zaposleni samo pregledaju raspored ili proveravaju karte i rade bez stabilne veze. Prvu verziju pripremamo prema poznatim potrebama, bez plaćanja neodređenih budućih funkcija."
+        }
+      ],
+      "cta": {
+        "title": "Dobijte cenu za pravila koja vaš posao stvarno koristi",
+        "text": "Pošaljite primer rezervacije od prvog upita do konačne potvrde. Predložiću nivo rešenja, šta ulazi u prvu verziju i fiksnu ponudu zasnovanu na konkretnom obimu."
+      }
+    },
+    "koliko-kosta-web-aplikacija": {
+      "seo": {
+        "title": "Koliko košta izrada web aplikacije? | Petar Arsić",
+        "description": "Koliko košta izrada web aplikacije: od {appPrice}, uz rok {appDuration}. Uporedite obim admin panela, CRM-a i portala, integracije i troškove održavanja."
+      },
+      "title": "Koliko košta izrada web aplikacije po meri?",
+      "intro": "Izrada web aplikacije po meri u mom cenovniku počinje od {appPrice}, sa okvirnim rokom {appDuration}. Cena zavisi od poslovnih pravila, korisničkih uloga, integracija i prenosa podataka. Namenjena je firmama kojima treba admin panel, CRM, portal ili drugi poslovni sistem, uz fiksnu ponudu za precizno dogovorenu prvu verziju.",
+      "table": {
+        "title": "Primeri obima u okviru paketa web aplikacije",
+        "headers": [
+          "Primer",
+          "Početna osnova",
+          "Šta povećava obim"
+        ],
+        "rows": [
+          [
+            "Admin panel",
+            "Web aplikacija od {appPrice}; unos i pregled dogovorenih evidencija.",
+            "Složena prava, odobravanja, posebni izveštaji i uvoz istorije."
+          ],
+          [
+            "CRM ili interni alat",
+            "Web aplikacija od {appPrice}; definisan tok klijenata ili poslova.",
+            "Automatizacije, više timova, naplata i veze sa drugim programima."
+          ],
+          [
+            "Poslovni portal",
+            "Web aplikacija od {appPrice}; javni deo i dogovorena administracija.",
+            "Više jezika, korisnički nalozi, posebna pretraga i integracije."
+          ]
+        ],
+        "note": "Ovo su primeri različitog obima istog početnog paketa, ne tri garantovane fiksne cene. Složeni projekti koštaju više od početnog iznosa. Rok iz cenovnika je {appDuration}, a tačan plan vezuje se za specifikaciju."
+      },
+      "sections": [
+        {
+          "title": "Zašto broj ekrana nije dovoljan za procenu",
+          "paragraphs": [
+            "Jedan ekran može da prikaže jednostavan spisak, ali i da donosi odluke o cenama, dostupnosti i dozvolama. Zbog toga pitanje koliko aplikacija ima stranica ne opisuje pouzdano posao. Mnogo više govori primer šta korisnik pokušava da završi, koji podaci ulaze i šta mora da ostane tačno posle njegove akcije.",
+            "Procenu počinjem opisom jednog potpunog postupka. Kod ponude to su unos stavki, obračun i dokument; kod rezervacije izbor termina, potvrda i zauzeće kapaciteta. Zatim proveravamo izuzetke: izmenu, otkazivanje, dupli zahtev ili pogrešan unos. Kada su ti koraci jasni, možemo da procenimo razvoj i proveru bez nagađanja na osnovu nekoliko nacrtanih ekrana. Izgled ostaje važan, ali poslovna pravila određuju veliki deo složenosti."
+          ]
+        },
+        {
+          "title": "Šta znači prva verzija od {appPrice}",
+          "paragraphs": [
+            "Početni paket web aplikacije po meri obuhvata dogovoreni poslovni tok i funkcije navedene u ponudi. Cenovnik navodi Laravel i MySQL backend, React frontend, administraciju sa pravima, mogućnosti integracija i izveštaje. Konkretna kombinacija i obim ipak moraju da budu određeni za vaš projekat. Lista mogućnosti paketa nije obećanje neograničenog razvoja svih integracija odjednom.",
+            "Dobra prva verzija rešava jedan važan problem od početka do kraja. Može da zameni ponavljano prepisivanje iz tabela, objedini evidenciju ili omogući novu prodajnu funkciju. Odvajamo ono bez čega korisnik ne može da završi zadatak od pogodnosti koje mogu da sačekaju. Tako dobijate koristan rezultat koji se može proveriti, umesto mnogo poluzavršenih modula koji još ne podržavaju stvaran rad."
+          ]
+        },
+        {
+          "title": "Uloge, podaci i integracije određuju rast budžeta",
+          "paragraphs": [
+            "Različita prava zaposlenih zahtevaju jasna pravila: ko vidi podatke, ko ih menja i ko potvrđuje konačan korak. Kada se uvodi više timova ili poslovnica, potrebno je proveriti granice pristupa i zajedničke evidencije. Izveštaji takođe moraju da imaju precizno značenje. Dve osobe ne treba da pod istim nazivom očekuju različit zbir ili status.",
+            "Integracija zavisi od mogućnosti drugog sistema, a prenos podataka od njihove stvarne strukture i kvaliteta. Zato tražim dokumentaciju interfejsa i anonimizovan uzorak pre obećanja roka. Naplata, fiskalizacija, mejl i SMS uvode spoljne uslove i troškove. U fiksnoj ponudi razdvajamo razvoj, pretpostavke i odgovornosti. Ako pristup partnerovom sistemu još nije dostupan, taj korak mora da bude vidljiv u planu isporuke, a ne skriven u završnoj fazi."
+          ]
+        },
+        {
+          "title": "Kako dogovaramo rok i sprečavamo nekontrolisano širenje",
+          "paragraphs": [
+            "Cenovnik daje okvir {appDuration}, ali konkretan raspored zavisi od ugovorenih funkcija i povratnih informacija. Saradnja počinje besplatnim kratkim pozivom i fiksnom ponudom za 48h. U ponudi su obim i faze, a tokom razvoja redovno pregledate ono što je urađeno. Vaše odluke o pravilima i sadržaju deo su tog rasporeda.",
+            "Promena ideje je moguća, ali nova funkcija nije automatski uključena u postojeću cenu. Najpre opisujemo njen uticaj, pa odlučujete da li ulazi sada ili kasnije. Za svaku važnu funkciju dogovaramo primer prihvaćene isporuke. Tako obe strane znaju kada je zadatak završen. Na kraju dolaze postavka na server, obuka i 30 dana besplatnih ispravki, umesto nejasnog završetka u kome aplikacija samo promeni status u listi zadataka."
+          ]
+        },
+        {
+          "title": "Šta se plaća i proverava posle lansiranja",
+          "paragraphs": [
+            "Aplikaciji su potrebni odgovarajući hosting, rezervne kopije, ažuriranja i praćenje rada. Moj paket održavanja počinje od {maintenancePrice} mesečno, dok se spoljne usluge i veći novi razvoj dogovaraju posebno. U ponudi razjašnjavamo ko ima pristupe, gde se čuva kod i kako se aplikacija može predati drugom odgovarajućem stručnjaku.",
+            "DriveSoft operativni back-office pokazuje moje iskustvo sa putnicima, linijama, polascima i izveštajima. Šira Srbija Tours / DriveSoft platforma obradila je 150.000+ karata i rezervacija. Leto Halkidiki je primer portala sa strukturisanom ponudom i administracijom. To su reference za način rada, ne procena da vaš CRM ili admin panel mora imati isti budžet. Za tačnu ponudu presudan je vaš postupak i obim prve verzije."
+          ],
+          "links": [
+            {
+              "href": "/sr/case-study/drivesoft",
+              "label": "DriveSoft: primer administracije i poslovnog sistema"
+            },
+            {
+              "href": "/sr/case-study/leto-halkidiki",
+              "label": "Leto Halkidiki: primer portala po meri"
+            }
+          ]
+        }
+      ],
+      "faqTitle": "Pitanja o budžetu za web aplikaciju",
+      "faq": [
+        {
+          "question": "Da li je {appPrice} dovoljno za ceo CRM?",
+          "answer": "To je početna cena paketa, ne garancija za svaki CRM. Jednostavna evidencija klijenata i poslova razlikuje se od sistema sa više timova, odobravanjima i naplatom. Najpre definišemo koji postupak mora da radi u prvoj verziji. Na osnovu toga dobijate fiksnu ponudu i možete da odlučite koje dodatke ostavljate za kasnije."
+        },
+        {
+          "question": "Šta treba da pripremim za prvi razgovor?",
+          "answer": "Opišite problem koji sada rešavate ručno, ko koristi evidenciju i kako izgleda jedan završen posao. Koristan je anonimizovan primer tabele, dokumenta ili izvoda, uz spisak potrebnih integracija. Ne morate unapred da znate tehnologiju ili nacrtate svaki ekran. Važnije je da razumemo pravila, izuzetke i rezultat koji očekujete od aplikacije."
+        },
+        {
+          "question": "Da li u cenu ulazi prenos podataka iz Excel-a?",
+          "answer": "Samo ako je konkretan prenos naveden u ponudi. Najpre pregledamo strukturu, duplikate i obavezna polja na uzorku. Jedna uredna tabela i više nepovezanih evidencija nisu isti posao. Dogovaramo mapiranje, proveru rezultata i trenutak konačnog uvoza. Time izbegavamo da se kvalitet starih podataka otkrije tek kada aplikacija treba da počne sa radom."
+        },
+        {
+          "question": "Može li aplikacija kasnije da dobije mobilnu verziju?",
+          "answer": "Može se planirati, ali treba razlikovati dobar prikaz u pregledaču od PWA ili posebne mobilne aplikacije. Potrebe za kamerom, radom bez veze ili obaveštenjima utiču na izbor. API i strukturu dogovaramo prema poznatim planovima. Kasniji mobilni razvoj dobija sopstvenu procenu, umesto da se neograničena buduća podrška podrazumeva u početnoj ceni."
+        },
+        {
+          "question": "Kako znamo da je ugovoreni posao završen?",
+          "answer": "Pre početka određujemo konkretne postupke koje aplikacija mora da podrži i primere očekivanog rezultata. Tokom faza ih pregledate, a pre objave proveravamo celinu sa dogovorenim podacima i pravima. Predaja uključuje obuku i pristupe prema dogovoru. Besplatne ispravke prvih 30 dana pokrivaju greške u isporučenom obimu, dok nove ideje posebno procenjujemo."
+        },
+        {
+          "question": "Da li je aplikacija po meri uvek bolja od gotovog alata?",
+          "answer": "Nije. Ako gotov alat dobro podržava vaš postupak i trošak korišćenja vam odgovara, on može biti razumniji izbor. Razvoj po meri ima smisla kada posebna pravila, povezivanje ili kontrola podataka donose jasnu korist. Pre ponude proveravamo tu razliku, kako ne biste finansirali razvoj funkcija koje već možete da koristite na jednostavniji način."
+        }
+      ],
+      "cta": {
+        "title": "Dobijte procenu za jednu korisnu prvu verziju",
+        "text": "Opišite posao koji aplikacija treba da završi i alate koje danas koristite. Razdvojiću neophodan obim od kasnijih dodataka i pripremiti fiksnu ponudu sa fazama isporuke."
+      }
+    }
+  },
+  "caseStudyPages": {
+    "letoHalkidiki": {
+      "summary": {
+        "eyebrow": "Studija slučaja",
+        "title": "Leto Halkidiki: od WordPress-a do Laravel portala",
+        "scale": [
+          {
+            "value": "4",
+            "label": "jezika: sr, en, ro, el"
+          },
+          {
+            "value": "Laravel",
+            "label": "portal i admin panel"
+          },
+          {
+            "value": "Email",
+            "label": "upiti vlasnicima smeštaja"
+          }
+        ],
+        "techTitle": "Tehnologije",
+        "tech": [
+          "Laravel 12.69.2",
+          "Blade",
+          "Tailwind CSS",
+          "Alpine.js",
+          "MySQL",
+          "spatie/laravel-translatable"
+        ]
+      },
+      "body": {
+        "seo": {
+          "title": "Leto Halkidiki: Laravel portal | Petar Arsić",
+          "description": "Studija slučaja Leto Halkidiki: prelazak sa WordPress-a na Laravel, smeštajni portal na četiri jezika, SEO struktura, admin panel i direktni upiti vlasnicima."
+        },
+        "overview": "Leto Halkidiki je portal za privatni smeštaj na Halkidikiju koji sam prebacio sa WordPress-a na Laravel. Nova struktura povezuje destinacije, mesta i objekte na četiri jezika, uz administraciju ponude i upite vlasnicima mejlom. Projekat pokazuje kako sadržaj, pretraga i poslovni podaci mogu da rade u jednom namenskom sistemu.",
+        "author": "Autor",
+        "updated": "Ažurirano",
+        "challengeTitle": "Polazni problem",
+        "challengeIntro": "Postojeći WordPress sajt trebalo je zameniti portalom čiji model podataka prati stvarnu organizaciju smeštaja. Zadatak je bio da isti objekat ima uređene opise, fotografije, cene, lokaciju i kontakt, povezane sa mestom i destinacijom.",
+        "challengePoints": [
+          "Ponudu organizovati kroz destinacije, mesta i smeštajne objekte, uz jasne veze između njih.",
+          "Omogućiti uređivanje sadržaja na srpskom, engleskom, rumunskom i grčkom, bez pravljenja nepovezanih kopija objekta.",
+          "Napraviti administraciju za svakodnevni unos ponude i pregled upita.",
+          "Pripremiti pretragu i stranice smeštaja koje gosta vode do direktnog kontakta sa vlasnikom."
+        ],
+        "challengeConclusion": "Obim prikazanog rešenja je javni portal, admin panel i prijem upita. Automatsko rezervisanje slobodnih datuma i naplata smeštaja nisu deo trenutno potvrđenog toka.",
+        "solutionTitle": "Rešenje",
+        "solution": "Izgradio sam Laravel aplikaciju sa Blade šablonima, Tailwind stilovima, Alpine.js interakcijama i MySQL bazom. Podaci o destinacijama, mestima, objektima i vlasnicima povezani su u zajednički model. Gost dobija preglednu ponudu, dok administrator menja sadržaj i cene kroz panel prilagođen smeštaju. Prevedena polja koriste spatie/laravel-translatable. Rešenje ne zahteva poseban JavaScript frontend da bi prikazalo osnovni sadržaj stranice.",
+        "architectureTitle": "Kako je portal organizovan",
+        "architectureIntro": "Javne stranice prate hijerarhiju destinacija → mesto → smeštaj. Jezik se nalazi na početku adrese, a pojedini delovi putanje koriste odgovarajuće slugove. Administracija je zasebna, zaštićena prijavom i namenjena radu na srpskom.",
+        "layers": [
+          {
+            "code": "WEB",
+            "title": "Javne stranice",
+            "description": "Blade prikazuje stranice destinacija, mesta i smeštaja. Alpine.js podržava interakcije, a Tailwind oblikuje prikaz za mobilne i veće ekrane. Posetilac može da pregleda ponudu i pređe na stranicu konkretnog objekta."
+          },
+          {
+            "code": "DATA",
+            "title": "Strukturisana ponuda",
+            "description": "Modeli povezuju objekat sa vlasnikom i mestom, a mesto sa destinacijom. Smeštaj ima fotografije, sadržaje i jedinice. Sezonski periodi i cene jedinica omogućavaju prikaz cenovnika i obračun ponude za unete datume kada postoje potrebni podaci."
+          },
+          {
+            "code": "LANG",
+            "title": "Četiri jezičke verzije",
+            "description": "Konfiguracija navodi sr, en, ro i el. Prevedivi opisi, nazivi i meta podaci čuvaju se preko spatie/laravel-translatable, dok zajednički poslovni podaci ostaju vezani za isti objekat. Prevod se tako uređuje bez gubitka veze sa smeštajem."
+          },
+          {
+            "code": "ADM",
+            "title": "Admin panel",
+            "description": "Administracija obuhvata destinacije, mesta, vlasnike, smeštaj, fotografije, cenovnike i upite. Aktivacija i redosled ponude kontrolišu šta posetilac vidi. Upiti imaju pregled podataka i mogućnost ponovnog slanja mejla kada je to potrebno."
+          }
+        ],
+        "bookingFlowTitle": "Od pretrage do upita vlasniku",
+        "bookingFlowSteps": [
+          {
+            "step": "Izbor destinacije",
+            "description": "Gost pronalazi oblast, mesto ili smeštaj i sužava ponudu prema podacima koji su mu važni."
+          },
+          {
+            "step": "Pregled objekta",
+            "description": "Stranica smeštaja prikazuje opis, fotografije, lokaciju, sadržaje i podatke o ceni kada su uneti."
+          },
+          {
+            "step": "Unos boravka",
+            "description": "Datumi i broj gostiju mogu da služe za obračun na osnovu cenovnika. Prikazana cena nije potvrda slobodnog termina."
+          },
+          {
+            "step": "Slanje upita",
+            "description": "Gost šalje kontakt i podatke o željenom boravku. Upit se beleži u bazi, pa postoji evidencija i ako slanje mejla ne uspe."
+          },
+          {
+            "step": "Obaveštenje vlasniku",
+            "description": "Poruka odlazi vlasniku ili podešenom sandučetu portala kada kontakt vlasnika nije dostupan. Administracija može da proveri upit i slanje."
+          },
+          {
+            "step": "Direktan dogovor",
+            "description": "Vlasnik i gost dalje dogovaraju raspoloživost i uslove. Portal ne prikazuje taj korak kao automatski završenu rezervaciju."
+          }
+        ],
+        "featuresTitle": "SEO i uređivanje sadržaja",
+        "featuresList": [
+          {
+            "title": "Jasna hijerarhija adresa",
+            "description": "URL-ovi pokazuju kojoj destinaciji i mestu objekat pripada. Stranice međusobno povezuju ponudu, tako da posetilac može da se vrati na širi izbor, a pojedinačan objekat ima sopstvenu adresu."
+          },
+          {
+            "title": "Meta podaci po stranici i jeziku",
+            "description": "Modeli sadrže prevediva polja za meta naslov i opis. Administracija omogućava da se oni prilagode stranici, umesto da sve destinacije ili objekti koriste isti opšti opis."
+          },
+          {
+            "title": "Hreflang i sitemap",
+            "description": "Kod gradi alternativne adrese iz jezičkih slugova i ne dodaje putanju kojoj nedostaje potreban prevod sluga. Sitemap i veze među jezičkim verzijama podržavaju pronalaženje odgovarajućih javnih stranica."
+          },
+          {
+            "title": "Cene bez lažne dostupnosti",
+            "description": "Uneti cenovnik može da izračuna cenu boravka, ali model ne vodi slobodne i zauzete datume. Tu granicu je važno zadržati u prikazu: rezultat obračuna nije obećanje da vlasnik može da potvrdi traženi termin."
+          }
+        ],
+        "roleTitle": "Moja uloga",
+        "role": "Radio sam na prelasku sa WordPress-a na Laravel, strukturi podataka, javnom prikazu, administraciji i tehničkoj SEO osnovi portala. Posao povezuje ono što gost vidi sa načinom na koji se ponuda održava. Naglasak je na jasnom modelu smeštaja i pouzdanom prijemu upita, uz prostor za kasnije zasebno ugovorene funkcije.",
+        "impactTitle": "Rezultat koji može da se proveri",
+        "impact": "Rezultat je javni portal na četiri jezika, sa hijerarhijom destinacija, mesta i objekata, administracijom sadržaja i upitima mejlom. Broj aktivnih objekata se menja i ovde ga ne predstavljam kao trajan rezultat. Nema potvrđenih podataka o rastu organskog saobraćaja, pozicija ili prihoda, pa takve tvrdnje ne navodim.",
+        "demoTitle": "Pogledajte portal",
+        "demoDescription": "Na živom sajtu možete da pregledate destinacije, objekte i način predstavljanja smeštaja. Kontakt sa vlasnikom je upit za proveru uslova, ne automatska kupovina.",
+        "ctaLive": "Otvorite Leto Halkidiki",
+        "ctaTitle": "Planirate portal ili sajt za smeštaj?",
+        "ctaDescription": "Opišite ponudu, jezike i način obrade upita. Na osnovu stvarnog procesa predložiću obim, rok i fiksnu cenu razvoja.",
+        "ctaButton": "Razgovarajmo o projektu",
+        "pricingLink": "Pogledajte cenovnik",
+        "relatedTitle": "Srodna rešenja i vodiči"
+      }
+    }
   }
 }

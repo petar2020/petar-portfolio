@@ -301,7 +301,14 @@
     },
     "turbopack": {
       "root": "C:\\Users\\petar\\OneDrive\\Desktop\\builtwell-backend\\petar-portfolio"
-    }
+    },
+    "_originalRedirects": [
+      {
+        "source": "/:locale(en|sr)/services/laravel-backend",
+        "destination": "/:locale/services/laravel-applications",
+        "permanent": true
+      }
+    ]
   },
   "appDir": "C:\\Users\\petar\\OneDrive\\Desktop\\builtwell-backend\\petar-portfolio",
   "relativeAppDir": "",

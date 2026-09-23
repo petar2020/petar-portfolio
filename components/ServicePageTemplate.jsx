@@ -3,6 +3,7 @@ import { useMemo, useState } from 'react'
 import { useTranslations } from 'next-intl'
 import { motion } from 'framer-motion'
 import SEO from './SEO'
+import RelatedPages from './RelatedPages'
 import SubpageNav from './SubpageNav'
 import Footer from './Footer'
 import { projects } from '../data/projects'
@@ -284,7 +285,7 @@ export default function ServicePageTemplate({ slug, locale }) {
                     )}
                     {project.links.caseStudy && (
                       <a
-                        href={`/${currentLocale}/case-study/drivesoft`}
+                        href={`/${currentLocale}/case-study/${project.links.caseStudy}`}
                         className="inline-block mt-4 font-mono text-xs text-teal-bright hover:text-amber transition-colors"
                       >
                         {tProjects('viewCase')} <span aria-hidden>→</span>
@@ -309,6 +310,14 @@ export default function ServicePageTemplate({ slug, locale }) {
                   <RelatedServiceCard key={related.slug} related={related} locale={currentLocale} t={t} />
                 ))}
               </div>
+            </div>
+          </section>
+        )}
+
+        {getServiceBySlug(slug)?.relatedPages?.length > 0 && (
+          <section className="bg-ink-850 border-b border-line py-12">
+            <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+              <RelatedPages ids={getServiceBySlug(slug).relatedPages} locale={currentLocale} title={t('relatedPagesTitle')} />
             </div>
           </section>
         )}

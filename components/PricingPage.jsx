@@ -4,6 +4,8 @@ import { useTranslations } from 'next-intl'
 import { motion } from 'framer-motion'
 import { FaCheck } from 'react-icons/fa'
 import SEO from './SEO'
+import RelatedPages from './RelatedPages'
+import { industries } from '../data/industries'
 import SubpageNav from './SubpageNav'
 import Footer from './Footer'
 
@@ -140,6 +142,8 @@ export default function PricingPage({ locale }) {
               ))}
             </div>
 
+            <IndustryPricingLinks locale={locale} />
+
             {/* Maintenance */}
             <motion.div
               initial={{ opacity: 0, y: 18 }}
@@ -243,6 +247,14 @@ export default function PricingPage({ locale }) {
       <Footer />
     </>
   )
+}
+
+function IndustryPricingLinks({ locale }) {
+  const t = useTranslations('contentPages')
+  return <div className="mt-8 border-t border-line pt-6 text-sm">
+    <RelatedPages title={t('industryPricingTitle')} locale={locale} ids={industries.map((item) => item.id)} />
+    <div className="mt-6"><RelatedPages title={t('guidesTitle')} locale={locale} ids={['booking-cost', 'webapp-cost', 'freelancer-vs-agency']} /></div>
+  </div>
 }
 
 function PackageCard({ p, index, locale }) {

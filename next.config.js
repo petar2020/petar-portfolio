@@ -14,6 +14,17 @@ module.exports = withNextIntl({
     '/*': ['./node_modules/sharp/**/*', './node_modules/@img/**/*'],
   },
   images: { domains: ['images.unsplash.com','via.placeholder.com'], formats: ['image/webp','image/avif'] },
+  // Thin legacy page merged into the full Laravel service page — keeps its
+  // link equity and stops the two pages competing for the same queries.
+  async redirects() {
+    return [
+      {
+        source: '/:locale(en|sr)/services/laravel-backend',
+        destination: '/:locale/services/laravel-applications',
+        permanent: true,
+      },
+    ]
+  },
   compiler: { removeConsole: process.env.NODE_ENV === 'production' },
   // Dev watcher hardening — folder je pod OneDrive-om koji stalno "dodiruje" fajlove
   // (menja mtime bez prave izmene). Bez ovoga svaki OneDrive sync okine recompile →

@@ -1,10 +1,10 @@
 {
   "version": 4,
   "routes": {
-    "/sr/services/booking-systems": {
+    "/sr/koliko-kosta-web-aplikacija": {
       "initialRevalidateSeconds": false,
-      "srcRoute": "/[locale]/services/booking-systems",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/sr/services/booking-systems.json",
+      "srcRoute": "/[locale]/koliko-kosta-web-aplikacija",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/sr/koliko-kosta-web-aplikacija.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -14,322 +14,10 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/en/services/booking-systems": {
+    "/en/online-bus-ticket-sales-software": {
       "initialRevalidateSeconds": false,
-      "srcRoute": "/[locale]/services/booking-systems",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/en/services/booking-systems.json",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/sr/services/laravel-backend": {
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/[locale]/services/laravel-backend",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/sr/services/laravel-backend.json",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/en/services/laravel-backend": {
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/[locale]/services/laravel-backend",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/en/services/laravel-backend.json",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/sr/services/tourism-accommodation-portals": {
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/[locale]/services/tourism-accommodation-portals",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/sr/services/tourism-accommodation-portals.json",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/en/services/tourism-accommodation-portals": {
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/[locale]/services/tourism-accommodation-portals",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/en/services/tourism-accommodation-portals.json",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/en/contact": {
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/[locale]/contact",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/en/contact.json",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/sr/services/react-frontend-applications": {
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/[locale]/services/react-frontend-applications",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/sr/services/react-frontend-applications.json",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/en/services/react-frontend-applications": {
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/[locale]/services/react-frontend-applications",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/en/services/react-frontend-applications.json",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/sr/services/website-maintenance": {
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/[locale]/services/website-maintenance",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/sr/services/website-maintenance.json",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/en/services/website-maintenance": {
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/[locale]/services/website-maintenance",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/en/services/website-maintenance.json",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/sr/services/laravel-applications": {
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/[locale]/services/laravel-applications",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/sr/services/laravel-applications.json",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/en/services/laravel-applications": {
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/[locale]/services/laravel-applications",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/en/services/laravel-applications.json",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/sr/services": {
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/[locale]/services",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/sr/services.json",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/en/services": {
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/[locale]/services",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/en/services.json",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/sr/services/pwa-applications": {
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/[locale]/services/pwa-applications",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/sr/services/pwa-applications.json",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/en/services/pwa-applications": {
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/[locale]/services/pwa-applications",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/en/services/pwa-applications.json",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/sr/services/wordpress-websites": {
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/[locale]/services/wordpress-websites",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/sr/services/wordpress-websites.json",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/en/services/wordpress-websites": {
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/[locale]/services/wordpress-websites",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/en/services/wordpress-websites.json",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/sr/kontakt": {
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/[locale]/kontakt",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/sr/kontakt.json",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/sr/services/website-redesign": {
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/[locale]/services/website-redesign",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/sr/services/website-redesign.json",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/en/services/website-redesign": {
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/[locale]/services/website-redesign",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/en/services/website-redesign.json",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/sr": {
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/[locale]",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/sr.json",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/en": {
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/[locale]",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/en.json",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/sr/case-study/drivesoft": {
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/[locale]/case-study/drivesoft",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/sr/case-study/drivesoft.json",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/en/case-study/drivesoft": {
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/[locale]/case-study/drivesoft",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/en/case-study/drivesoft.json",
+      "srcRoute": "/[locale]/online-bus-ticket-sales-software",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/en/online-bus-ticket-sales-software.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -342,7 +30,7 @@
     "/en/pricing": {
       "initialRevalidateSeconds": false,
       "srcRoute": "/[locale]/pricing",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/en/pricing.json",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/en/pricing.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -352,10 +40,10 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/sr/izrada-sajtova": {
+    "/sr/online-prodaja-karata-za-prevoznike": {
       "initialRevalidateSeconds": false,
-      "srcRoute": "/[locale]/izrada-sajtova",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/sr/izrada-sajtova.json",
+      "srcRoute": "/[locale]/online-prodaja-karata-za-prevoznike",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/sr/online-prodaja-karata-za-prevoznike.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -365,10 +53,10 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/sr/services/ecommerce-woocommerce": {
+    "/sr/program-za-izradu-ponuda": {
       "initialRevalidateSeconds": false,
-      "srcRoute": "/[locale]/services/ecommerce-woocommerce",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/sr/services/ecommerce-woocommerce.json",
+      "srcRoute": "/[locale]/program-za-izradu-ponuda",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/sr/program-za-izradu-ponuda.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -378,10 +66,10 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/en/services/ecommerce-woocommerce": {
+    "/en/quoting-app-for-contractors": {
       "initialRevalidateSeconds": false,
-      "srcRoute": "/[locale]/services/ecommerce-woocommerce",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/en/services/ecommerce-woocommerce.json",
+      "srcRoute": "/[locale]/quoting-app-for-contractors",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/en/quoting-app-for-contractors.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -391,10 +79,10 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/sr/services/admin-panels-dashboards": {
+    "/en/rent-a-car-booking-website": {
       "initialRevalidateSeconds": false,
-      "srcRoute": "/[locale]/services/admin-panels-dashboards",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/sr/services/admin-panels-dashboards.json",
+      "srcRoute": "/[locale]/rent-a-car-booking-website",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/en/rent-a-car-booking-website.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -404,10 +92,10 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/en/services/admin-panels-dashboards": {
+    "/sr/sajt-za-rent-a-car": {
       "initialRevalidateSeconds": false,
-      "srcRoute": "/[locale]/services/admin-panels-dashboards",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/en/services/admin-panels-dashboards.json",
+      "srcRoute": "/[locale]/sajt-za-rent-a-car",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/sr/sajt-za-rent-a-car.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -417,10 +105,10 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/sr/services/custom-web-applications": {
+    "/sr/sajt-za-turisticku-agenciju": {
       "initialRevalidateSeconds": false,
-      "srcRoute": "/[locale]/services/custom-web-applications",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/sr/services/custom-web-applications.json",
+      "srcRoute": "/[locale]/sajt-za-turisticku-agenciju",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/sr/sajt-za-turisticku-agenciju.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -430,10 +118,10 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/en/services/custom-web-applications": {
+    "/sr/sajt-za-zakazivanje-termina": {
       "initialRevalidateSeconds": false,
-      "srcRoute": "/[locale]/services/custom-web-applications",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/en/services/custom-web-applications.json",
+      "srcRoute": "/[locale]/sajt-za-zakazivanje-termina",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/sr/sajt-za-zakazivanje-termina.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -446,7 +134,7 @@
     "/sr/services/ai-integrations": {
       "initialRevalidateSeconds": false,
       "srcRoute": "/[locale]/services/ai-integrations",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/sr/services/ai-integrations.json",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/sr/services/ai-integrations.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -459,7 +147,7 @@
     "/en/services/ai-integrations": {
       "initialRevalidateSeconds": false,
       "srcRoute": "/[locale]/services/ai-integrations",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/en/services/ai-integrations.json",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/en/services/ai-integrations.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -469,10 +157,49 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/sr/cenovnik": {
+    "/sr/services/admin-panels-dashboards": {
       "initialRevalidateSeconds": false,
-      "srcRoute": "/[locale]/cenovnik",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/sr/cenovnik.json",
+      "srcRoute": "/[locale]/services/admin-panels-dashboards",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/sr/services/admin-panels-dashboards.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/en/services/admin-panels-dashboards": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]/services/admin-panels-dashboards",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/en/services/admin-panels-dashboards.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/sr/services/booking-systems": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]/services/booking-systems",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/sr/services/booking-systems.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/en/services/booking-systems": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]/services/booking-systems",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/en/services/booking-systems.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -485,7 +212,7 @@
     "/sr/services/crm-internal-tools": {
       "initialRevalidateSeconds": false,
       "srcRoute": "/[locale]/services/crm-internal-tools",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/sr/services/crm-internal-tools.json",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/sr/services/crm-internal-tools.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -498,7 +225,566 @@
     "/en/services/crm-internal-tools": {
       "initialRevalidateSeconds": false,
       "srcRoute": "/[locale]/services/crm-internal-tools",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/en/services/crm-internal-tools.json",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/en/services/crm-internal-tools.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/sr/services/custom-web-applications": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]/services/custom-web-applications",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/sr/services/custom-web-applications.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/en/services/custom-web-applications": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]/services/custom-web-applications",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/en/services/custom-web-applications.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/sr/services/ecommerce-woocommerce": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]/services/ecommerce-woocommerce",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/sr/services/ecommerce-woocommerce.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/en/services/ecommerce-woocommerce": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]/services/ecommerce-woocommerce",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/en/services/ecommerce-woocommerce.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/sr/services": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]/services",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/sr/services.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/en/services": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]/services",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/en/services.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/sr/services/laravel-applications": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]/services/laravel-applications",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/sr/services/laravel-applications.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/en/services/laravel-applications": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]/services/laravel-applications",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/en/services/laravel-applications.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/sr/services/pwa-applications": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]/services/pwa-applications",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/sr/services/pwa-applications.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/en/services/pwa-applications": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]/services/pwa-applications",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/en/services/pwa-applications.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/en/apartment-rental-website": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]/apartment-rental-website",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/en/apartment-rental-website.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/sr/services/react-frontend-applications": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]/services/react-frontend-applications",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/sr/services/react-frontend-applications.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/en/services/react-frontend-applications": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]/services/react-frontend-applications",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/en/services/react-frontend-applications.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/en/freelance-developer-vs-agency": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]/freelance-developer-vs-agency",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/en/freelance-developer-vs-agency.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/sr/services/website-maintenance": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]/services/website-maintenance",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/sr/services/website-maintenance.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/en/services/website-maintenance": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]/services/website-maintenance",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/en/services/website-maintenance.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/sr/services/wordpress-websites": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]/services/wordpress-websites",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/sr/services/wordpress-websites.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/en/services/wordpress-websites": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]/services/wordpress-websites",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/en/services/wordpress-websites.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/en/travel-agency-website": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]/travel-agency-website",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/en/travel-agency-website.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/sr/case-study/drivesoft": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]/case-study/drivesoft",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/sr/case-study/drivesoft.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/en/case-study/drivesoft": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]/case-study/drivesoft",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/en/case-study/drivesoft.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/sr/services/website-redesign": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]/services/website-redesign",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/sr/services/website-redesign.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/en/services/website-redesign": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]/services/website-redesign",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/en/services/website-redesign.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/en/web-application-cost": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]/web-application-cost",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/en/web-application-cost.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/en/wix-vs-custom-website": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]/wix-vs-custom-website",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/en/wix-vs-custom-website.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/sr": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/sr.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/en": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/en.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/sr/wordpress-ili-sajt-po-meri": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]/wordpress-ili-sajt-po-meri",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/sr/wordpress-ili-sajt-po-meri.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/sr/wix-ili-sajt-po-meri": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]/wix-ili-sajt-po-meri",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/sr/wix-ili-sajt-po-meri.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/en/contact": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]/contact",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/en/contact.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/en/wordpress-vs-custom-website": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]/wordpress-vs-custom-website",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/en/wordpress-vs-custom-website.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/sr/case-study/leto-halkidiki": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]/case-study/leto-halkidiki",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/sr/case-study/leto-halkidiki.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/en/case-study/leto-halkidiki": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]/case-study/leto-halkidiki",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/en/case-study/leto-halkidiki.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/sr/kontakt": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]/kontakt",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/sr/kontakt.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/sr/services/tourism-accommodation-portals": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]/services/tourism-accommodation-portals",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/sr/services/tourism-accommodation-portals.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/en/services/tourism-accommodation-portals": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]/services/tourism-accommodation-portals",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/en/services/tourism-accommodation-portals.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/en/appointment-booking-website": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]/appointment-booking-website",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/en/appointment-booking-website.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/sr/izrada-sajtova": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]/izrada-sajtova",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/sr/izrada-sajtova.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/en/booking-system-cost": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]/booking-system-cost",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/en/booking-system-cost.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/sr/frilenser-ili-agencija": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]/frilenser-ili-agencija",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/sr/frilenser-ili-agencija.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/sr/cenovnik": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]/cenovnik",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/sr/cenovnik.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/sr/izrada-sajta-za-apartmane": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]/izrada-sajta-za-apartmane",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/sr/izrada-sajta-za-apartmane.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/sr/koliko-kosta-booking-sistem": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[locale]/koliko-kosta-booking-sistem",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/sr/koliko-kosta-booking-sistem.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -510,11 +796,11 @@
     }
   },
   "dynamicRoutes": {
-    "/[locale]/services/booking-systems": {
-      "routeRegex": "^/([^/]+?)/services/booking\\-systems(?:/)?$",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/[locale]/services/booking-systems.json",
+    "/[locale]/koliko-kosta-web-aplikacija": {
+      "routeRegex": "^/([^/]+?)/koliko\\-kosta\\-web\\-aplikacija(?:/)?$",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/[locale]/koliko-kosta-web-aplikacija.json",
       "fallback": false,
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/([^/]+?)/services/booking\\-systems\\.json$",
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/koliko\\-kosta\\-web\\-aplikacija\\.json$",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -524,179 +810,11 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/[locale]/services/laravel-backend": {
-      "routeRegex": "^/([^/]+?)/services/laravel\\-backend(?:/)?$",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/[locale]/services/laravel-backend.json",
+    "/[locale]/online-bus-ticket-sales-software": {
+      "routeRegex": "^/([^/]+?)/online\\-bus\\-ticket\\-sales\\-software(?:/)?$",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/[locale]/online-bus-ticket-sales-software.json",
       "fallback": false,
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/([^/]+?)/services/laravel\\-backend\\.json$",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/[locale]/services/tourism-accommodation-portals": {
-      "routeRegex": "^/([^/]+?)/services/tourism\\-accommodation\\-portals(?:/)?$",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/[locale]/services/tourism-accommodation-portals.json",
-      "fallback": false,
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/([^/]+?)/services/tourism\\-accommodation\\-portals\\.json$",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/[locale]/contact": {
-      "routeRegex": "^/([^/]+?)/contact(?:/)?$",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/[locale]/contact.json",
-      "fallback": false,
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/([^/]+?)/contact\\.json$",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/[locale]/services/react-frontend-applications": {
-      "routeRegex": "^/([^/]+?)/services/react\\-frontend\\-applications(?:/)?$",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/[locale]/services/react-frontend-applications.json",
-      "fallback": false,
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/([^/]+?)/services/react\\-frontend\\-applications\\.json$",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/[locale]/services/website-maintenance": {
-      "routeRegex": "^/([^/]+?)/services/website\\-maintenance(?:/)?$",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/[locale]/services/website-maintenance.json",
-      "fallback": false,
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/([^/]+?)/services/website\\-maintenance\\.json$",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/[locale]/services/laravel-applications": {
-      "routeRegex": "^/([^/]+?)/services/laravel\\-applications(?:/)?$",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/[locale]/services/laravel-applications.json",
-      "fallback": false,
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/([^/]+?)/services/laravel\\-applications\\.json$",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/[locale]/services": {
-      "routeRegex": "^/([^/]+?)/services(?:/)?$",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/[locale]/services.json",
-      "fallback": false,
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/([^/]+?)/services\\.json$",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/[locale]/services/pwa-applications": {
-      "routeRegex": "^/([^/]+?)/services/pwa\\-applications(?:/)?$",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/[locale]/services/pwa-applications.json",
-      "fallback": false,
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/([^/]+?)/services/pwa\\-applications\\.json$",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/[locale]/services/wordpress-websites": {
-      "routeRegex": "^/([^/]+?)/services/wordpress\\-websites(?:/)?$",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/[locale]/services/wordpress-websites.json",
-      "fallback": false,
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/([^/]+?)/services/wordpress\\-websites\\.json$",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/[locale]/kontakt": {
-      "routeRegex": "^/([^/]+?)/kontakt(?:/)?$",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/[locale]/kontakt.json",
-      "fallback": false,
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/([^/]+?)/kontakt\\.json$",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/[locale]/services/website-redesign": {
-      "routeRegex": "^/([^/]+?)/services/website\\-redesign(?:/)?$",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/[locale]/services/website-redesign.json",
-      "fallback": false,
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/([^/]+?)/services/website\\-redesign\\.json$",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/[locale]": {
-      "routeRegex": "^/([^/]+?)(?:/)?$",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/[locale].json",
-      "fallback": false,
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/([^/]+?)\\.json$",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/[locale]/case-study/drivesoft": {
-      "routeRegex": "^/([^/]+?)/case\\-study/drivesoft(?:/)?$",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/[locale]/case-study/drivesoft.json",
-      "fallback": false,
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/([^/]+?)/case\\-study/drivesoft\\.json$",
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/online\\-bus\\-ticket\\-sales\\-software\\.json$",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -708,9 +826,9 @@
     },
     "/[locale]/pricing": {
       "routeRegex": "^/([^/]+?)/pricing(?:/)?$",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/[locale]/pricing.json",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/[locale]/pricing.json",
       "fallback": false,
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/([^/]+?)/pricing\\.json$",
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/pricing\\.json$",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -720,11 +838,11 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/[locale]/izrada-sajtova": {
-      "routeRegex": "^/([^/]+?)/izrada\\-sajtova(?:/)?$",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/[locale]/izrada-sajtova.json",
+    "/[locale]/online-prodaja-karata-za-prevoznike": {
+      "routeRegex": "^/([^/]+?)/online\\-prodaja\\-karata\\-za\\-prevoznike(?:/)?$",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/[locale]/online-prodaja-karata-za-prevoznike.json",
       "fallback": false,
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/([^/]+?)/izrada\\-sajtova\\.json$",
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/online\\-prodaja\\-karata\\-za\\-prevoznike\\.json$",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -734,11 +852,11 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/[locale]/services/ecommerce-woocommerce": {
-      "routeRegex": "^/([^/]+?)/services/ecommerce\\-woocommerce(?:/)?$",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/[locale]/services/ecommerce-woocommerce.json",
+    "/[locale]/program-za-izradu-ponuda": {
+      "routeRegex": "^/([^/]+?)/program\\-za\\-izradu\\-ponuda(?:/)?$",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/[locale]/program-za-izradu-ponuda.json",
       "fallback": false,
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/([^/]+?)/services/ecommerce\\-woocommerce\\.json$",
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/program\\-za\\-izradu\\-ponuda\\.json$",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -748,11 +866,11 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/[locale]/services/admin-panels-dashboards": {
-      "routeRegex": "^/([^/]+?)/services/admin\\-panels\\-dashboards(?:/)?$",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/[locale]/services/admin-panels-dashboards.json",
+    "/[locale]/quoting-app-for-contractors": {
+      "routeRegex": "^/([^/]+?)/quoting\\-app\\-for\\-contractors(?:/)?$",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/[locale]/quoting-app-for-contractors.json",
       "fallback": false,
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/([^/]+?)/services/admin\\-panels\\-dashboards\\.json$",
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/quoting\\-app\\-for\\-contractors\\.json$",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -762,11 +880,53 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/[locale]/services/custom-web-applications": {
-      "routeRegex": "^/([^/]+?)/services/custom\\-web\\-applications(?:/)?$",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/[locale]/services/custom-web-applications.json",
+    "/[locale]/rent-a-car-booking-website": {
+      "routeRegex": "^/([^/]+?)/rent\\-a\\-car\\-booking\\-website(?:/)?$",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/[locale]/rent-a-car-booking-website.json",
       "fallback": false,
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/([^/]+?)/services/custom\\-web\\-applications\\.json$",
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/rent\\-a\\-car\\-booking\\-website\\.json$",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/[locale]/sajt-za-rent-a-car": {
+      "routeRegex": "^/([^/]+?)/sajt\\-za\\-rent\\-a\\-car(?:/)?$",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/[locale]/sajt-za-rent-a-car.json",
+      "fallback": false,
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/sajt\\-za\\-rent\\-a\\-car\\.json$",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/[locale]/sajt-za-turisticku-agenciju": {
+      "routeRegex": "^/([^/]+?)/sajt\\-za\\-turisticku\\-agenciju(?:/)?$",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/[locale]/sajt-za-turisticku-agenciju.json",
+      "fallback": false,
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/sajt\\-za\\-turisticku\\-agenciju\\.json$",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/[locale]/sajt-za-zakazivanje-termina": {
+      "routeRegex": "^/([^/]+?)/sajt\\-za\\-zakazivanje\\-termina(?:/)?$",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/[locale]/sajt-za-zakazivanje-termina.json",
+      "fallback": false,
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/sajt\\-za\\-zakazivanje\\-termina\\.json$",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -778,9 +938,9 @@
     },
     "/[locale]/services/ai-integrations": {
       "routeRegex": "^/([^/]+?)/services/ai\\-integrations(?:/)?$",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/[locale]/services/ai-integrations.json",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/[locale]/services/ai-integrations.json",
       "fallback": false,
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/([^/]+?)/services/ai\\-integrations\\.json$",
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/services/ai\\-integrations\\.json$",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -790,11 +950,25 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/[locale]/cenovnik": {
-      "routeRegex": "^/([^/]+?)/cenovnik(?:/)?$",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/[locale]/cenovnik.json",
+    "/[locale]/services/admin-panels-dashboards": {
+      "routeRegex": "^/([^/]+?)/services/admin\\-panels\\-dashboards(?:/)?$",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/[locale]/services/admin-panels-dashboards.json",
       "fallback": false,
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/([^/]+?)/cenovnik\\.json$",
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/services/admin\\-panels\\-dashboards\\.json$",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/[locale]/services/booking-systems": {
+      "routeRegex": "^/([^/]+?)/services/booking\\-systems(?:/)?$",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/[locale]/services/booking-systems.json",
+      "fallback": false,
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/services/booking\\-systems\\.json$",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -806,9 +980,429 @@
     },
     "/[locale]/services/crm-internal-tools": {
       "routeRegex": "^/([^/]+?)/services/crm\\-internal\\-tools(?:/)?$",
-      "dataRoute": "/_next/data/mPgcKZVF3xuIVSz3Vctpl/[locale]/services/crm-internal-tools.json",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/[locale]/services/crm-internal-tools.json",
       "fallback": false,
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/([^/]+?)/services/crm\\-internal\\-tools\\.json$",
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/services/crm\\-internal\\-tools\\.json$",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/[locale]/services/custom-web-applications": {
+      "routeRegex": "^/([^/]+?)/services/custom\\-web\\-applications(?:/)?$",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/[locale]/services/custom-web-applications.json",
+      "fallback": false,
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/services/custom\\-web\\-applications\\.json$",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/[locale]/services/ecommerce-woocommerce": {
+      "routeRegex": "^/([^/]+?)/services/ecommerce\\-woocommerce(?:/)?$",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/[locale]/services/ecommerce-woocommerce.json",
+      "fallback": false,
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/services/ecommerce\\-woocommerce\\.json$",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/[locale]/services": {
+      "routeRegex": "^/([^/]+?)/services(?:/)?$",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/[locale]/services.json",
+      "fallback": false,
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/services\\.json$",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/[locale]/services/laravel-applications": {
+      "routeRegex": "^/([^/]+?)/services/laravel\\-applications(?:/)?$",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/[locale]/services/laravel-applications.json",
+      "fallback": false,
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/services/laravel\\-applications\\.json$",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/[locale]/services/pwa-applications": {
+      "routeRegex": "^/([^/]+?)/services/pwa\\-applications(?:/)?$",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/[locale]/services/pwa-applications.json",
+      "fallback": false,
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/services/pwa\\-applications\\.json$",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/[locale]/apartment-rental-website": {
+      "routeRegex": "^/([^/]+?)/apartment\\-rental\\-website(?:/)?$",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/[locale]/apartment-rental-website.json",
+      "fallback": false,
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/apartment\\-rental\\-website\\.json$",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/[locale]/services/react-frontend-applications": {
+      "routeRegex": "^/([^/]+?)/services/react\\-frontend\\-applications(?:/)?$",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/[locale]/services/react-frontend-applications.json",
+      "fallback": false,
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/services/react\\-frontend\\-applications\\.json$",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/[locale]/freelance-developer-vs-agency": {
+      "routeRegex": "^/([^/]+?)/freelance\\-developer\\-vs\\-agency(?:/)?$",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/[locale]/freelance-developer-vs-agency.json",
+      "fallback": false,
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/freelance\\-developer\\-vs\\-agency\\.json$",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/[locale]/services/website-maintenance": {
+      "routeRegex": "^/([^/]+?)/services/website\\-maintenance(?:/)?$",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/[locale]/services/website-maintenance.json",
+      "fallback": false,
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/services/website\\-maintenance\\.json$",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/[locale]/services/wordpress-websites": {
+      "routeRegex": "^/([^/]+?)/services/wordpress\\-websites(?:/)?$",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/[locale]/services/wordpress-websites.json",
+      "fallback": false,
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/services/wordpress\\-websites\\.json$",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/[locale]/travel-agency-website": {
+      "routeRegex": "^/([^/]+?)/travel\\-agency\\-website(?:/)?$",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/[locale]/travel-agency-website.json",
+      "fallback": false,
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/travel\\-agency\\-website\\.json$",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/[locale]/case-study/drivesoft": {
+      "routeRegex": "^/([^/]+?)/case\\-study/drivesoft(?:/)?$",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/[locale]/case-study/drivesoft.json",
+      "fallback": false,
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/case\\-study/drivesoft\\.json$",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/[locale]/services/website-redesign": {
+      "routeRegex": "^/([^/]+?)/services/website\\-redesign(?:/)?$",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/[locale]/services/website-redesign.json",
+      "fallback": false,
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/services/website\\-redesign\\.json$",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/[locale]/web-application-cost": {
+      "routeRegex": "^/([^/]+?)/web\\-application\\-cost(?:/)?$",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/[locale]/web-application-cost.json",
+      "fallback": false,
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/web\\-application\\-cost\\.json$",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/[locale]/wix-vs-custom-website": {
+      "routeRegex": "^/([^/]+?)/wix\\-vs\\-custom\\-website(?:/)?$",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/[locale]/wix-vs-custom-website.json",
+      "fallback": false,
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/wix\\-vs\\-custom\\-website\\.json$",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/[locale]": {
+      "routeRegex": "^/([^/]+?)(?:/)?$",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/[locale].json",
+      "fallback": false,
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)\\.json$",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/[locale]/wordpress-ili-sajt-po-meri": {
+      "routeRegex": "^/([^/]+?)/wordpress\\-ili\\-sajt\\-po\\-meri(?:/)?$",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/[locale]/wordpress-ili-sajt-po-meri.json",
+      "fallback": false,
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/wordpress\\-ili\\-sajt\\-po\\-meri\\.json$",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/[locale]/wix-ili-sajt-po-meri": {
+      "routeRegex": "^/([^/]+?)/wix\\-ili\\-sajt\\-po\\-meri(?:/)?$",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/[locale]/wix-ili-sajt-po-meri.json",
+      "fallback": false,
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/wix\\-ili\\-sajt\\-po\\-meri\\.json$",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/[locale]/contact": {
+      "routeRegex": "^/([^/]+?)/contact(?:/)?$",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/[locale]/contact.json",
+      "fallback": false,
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/contact\\.json$",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/[locale]/wordpress-vs-custom-website": {
+      "routeRegex": "^/([^/]+?)/wordpress\\-vs\\-custom\\-website(?:/)?$",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/[locale]/wordpress-vs-custom-website.json",
+      "fallback": false,
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/wordpress\\-vs\\-custom\\-website\\.json$",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/[locale]/case-study/leto-halkidiki": {
+      "routeRegex": "^/([^/]+?)/case\\-study/leto\\-halkidiki(?:/)?$",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/[locale]/case-study/leto-halkidiki.json",
+      "fallback": false,
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/case\\-study/leto\\-halkidiki\\.json$",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/[locale]/kontakt": {
+      "routeRegex": "^/([^/]+?)/kontakt(?:/)?$",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/[locale]/kontakt.json",
+      "fallback": false,
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/kontakt\\.json$",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/[locale]/services/tourism-accommodation-portals": {
+      "routeRegex": "^/([^/]+?)/services/tourism\\-accommodation\\-portals(?:/)?$",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/[locale]/services/tourism-accommodation-portals.json",
+      "fallback": false,
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/services/tourism\\-accommodation\\-portals\\.json$",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/[locale]/appointment-booking-website": {
+      "routeRegex": "^/([^/]+?)/appointment\\-booking\\-website(?:/)?$",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/[locale]/appointment-booking-website.json",
+      "fallback": false,
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/appointment\\-booking\\-website\\.json$",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/[locale]/izrada-sajtova": {
+      "routeRegex": "^/([^/]+?)/izrada\\-sajtova(?:/)?$",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/[locale]/izrada-sajtova.json",
+      "fallback": false,
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/izrada\\-sajtova\\.json$",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/[locale]/booking-system-cost": {
+      "routeRegex": "^/([^/]+?)/booking\\-system\\-cost(?:/)?$",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/[locale]/booking-system-cost.json",
+      "fallback": false,
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/booking\\-system\\-cost\\.json$",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/[locale]/frilenser-ili-agencija": {
+      "routeRegex": "^/([^/]+?)/frilenser\\-ili\\-agencija(?:/)?$",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/[locale]/frilenser-ili-agencija.json",
+      "fallback": false,
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/frilenser\\-ili\\-agencija\\.json$",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/[locale]/cenovnik": {
+      "routeRegex": "^/([^/]+?)/cenovnik(?:/)?$",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/[locale]/cenovnik.json",
+      "fallback": false,
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/cenovnik\\.json$",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/[locale]/izrada-sajta-za-apartmane": {
+      "routeRegex": "^/([^/]+?)/izrada\\-sajta\\-za\\-apartmane(?:/)?$",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/[locale]/izrada-sajta-za-apartmane.json",
+      "fallback": false,
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/izrada\\-sajta\\-za\\-apartmane\\.json$",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/[locale]/koliko-kosta-booking-sistem": {
+      "routeRegex": "^/([^/]+?)/koliko\\-kosta\\-booking\\-sistem(?:/)?$",
+      "dataRoute": "/_next/data/4VmShLk45UlYFLHq4OeYy/[locale]/koliko-kosta-booking-sistem.json",
+      "fallback": false,
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/koliko\\-kosta\\-booking\\-sistem\\.json$",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -821,8 +1415,8 @@
   },
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "670fd3db4d3c3b3bf015ddc4cf0ec4d9",
-    "previewModeSigningKey": "c9865270f34dcc9741d31a4b4a2278283d18e6b0431f331e8f6445aa871c39eb",
-    "previewModeEncryptionKey": "ecf21a26b5b29d80e6d5ab3f77d4d6106dc78ab9c30774ffd3fbde51de6794c6"
+    "previewModeId": "c7832b0e2d0514308960b4b42ac3893e",
+    "previewModeSigningKey": "fa00ef733a476d4041e9e50d6fff0e5d2314fff89cecf4907f54471edaef6932",
+    "previewModeEncryptionKey": "8d779525c2a25a5dbd3eb93a613da6f170c7d7b7e74834539e8282ca1bdad1be"
   }
 }

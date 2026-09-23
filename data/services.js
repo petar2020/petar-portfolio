@@ -5,6 +5,7 @@
 export const services = [
   {
     slug: 'custom-web-applications',
+    relatedPages: ["webapp-cost","freelancer-vs-agency"],
     code: 'CWA',
     relevantProjects: ['drivesoft-backoffice', 'bozic-konig', 'drivesoft-web'],
     tech: ['Laravel', 'PHP', 'MySQL', 'React', 'Next.js', 'REST APIs', 'Docker'],
@@ -13,12 +14,13 @@ export const services = [
   {
     slug: 'laravel-applications',
     code: 'LAR',
-    relevantProjects: ['drivesoft-backoffice', 'sti-web', 'bozic-konig'],
+    relevantProjects: ['leto-halkidiki', 'drivesoft-backoffice', 'sti-web', 'bozic-konig'],
     tech: ['Laravel', 'PHP', 'MySQL', 'Redis', 'Queues', 'REST APIs', 'Docker'],
     relatedServices: ['custom-web-applications', 'booking-systems', 'admin-panels-dashboards', 'crm-internal-tools'],
   },
   {
     slug: 'wordpress-websites',
+    relatedPages: ["wordpress-vs-custom","wix-vs-custom"],
     code: 'WPD',
     relevantProjects: ['sti-web', 'prostor-dereta'],
     tech: ['WordPress', 'PHP', 'Gutenberg', 'ACF', 'MySQL', 'SEO', 'Performance'],
@@ -26,6 +28,7 @@ export const services = [
   },
   {
     slug: 'booking-systems',
+    relatedPages: ["apartments","bus-tickets","appointments","booking-cost"],
     code: 'BKG',
     relevantProjects: ['sti-web', 'sti-mobile', 'drivesoft-backoffice', 'bozic-konig'],
     tech: ['Laravel', 'PHP', 'MySQL', 'React', 'React Native', 'Payments', 'Fiscalization'],
@@ -33,13 +36,15 @@ export const services = [
   },
   {
     slug: 'tourism-accommodation-portals',
+    relatedPages: ["apartments","travel-agency","rent-a-car"],
     code: 'TOU',
-    relevantProjects: ['sti-web', 'bozic-konig', 'drivesoft-backoffice'],
+    relevantProjects: ['leto-halkidiki', 'sti-web', 'bozic-konig', 'drivesoft-backoffice'],
     tech: ['Laravel', 'PHP', 'MySQL', 'React', 'Next.js', 'WordPress', 'SEO'],
     relatedServices: ['booking-systems', 'laravel-applications', 'admin-panels-dashboards', 'website-maintenance', 'wordpress-websites'],
   },
   {
     slug: 'admin-panels-dashboards',
+    relatedPages: ["quote-app","webapp-cost"],
     code: 'ADM',
     relevantProjects: ['drivesoft-backoffice', 'drivesoft-web'],
     tech: ['Laravel', 'PHP', 'MySQL', 'React', 'Tailwind CSS', 'REST APIs', 'RBAC'],
@@ -47,6 +52,7 @@ export const services = [
   },
   {
     slug: 'crm-internal-tools',
+    relatedPages: ["quote-app","webapp-cost"],
     code: 'CRM',
     relevantProjects: ['drivesoft-backoffice', 'drivesoft-web'],
     tech: ['Laravel', 'PHP', 'MySQL', 'React', 'REST APIs', 'Import/Export', 'Reporting'],
@@ -83,7 +89,7 @@ export const services = [
   {
     slug: 'website-redesign',
     code: 'RDN',
-    relevantProjects: ['drivesoft-web', 'prostor-dereta'],
+    relevantProjects: ['leto-halkidiki', 'drivesoft-web', 'prostor-dereta'],
     tech: ['Next.js', 'React', 'WordPress', 'Tailwind CSS', 'Figma', 'SEO'],
     relatedServices: ['wordpress-websites', 'react-frontend-applications', 'website-maintenance', 'custom-web-applications'],
   },

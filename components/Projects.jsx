@@ -18,6 +18,8 @@ export default function Projects() {
   const projects = featuredProjects.filter((p) => p.featured)
   const primary = projects.find((p) => p.primary) || projects[0]
   const secondary = projects.filter((p) => p.key !== primary?.key)
+  const quoted = projects.find((p) => t.has(`items.${p.key}.testimonial`))
+  const testimonial = quoted ? t.raw(`items.${quoted.key}.testimonial`) : null
 
   return (
     <section id="projects" className="relative bg-ink-850 border-t border-line py-20 sm:py-28 scroll-mt-24">
@@ -35,14 +37,27 @@ export default function Projects() {
         </div>
 
         <div className="mt-12 space-y-6 lg:space-y-8">
-          {primary && <FeaturedProjectCard p={primary} t={t} tHero={tHero} locale={locale} />}
+          {primary && <div><FeaturedProjectCard p={primary} t={t} tHero={tHero} locale={locale} /><ProjectCaseLink p={primary} t={t} locale={locale} /></div>}
 
           <div className="grid sm:grid-cols-2 gap-6 lg:gap-8">
             {secondary.map((p, i) => (
-              <ProjectCard key={p.key} p={p} t={t} locale={locale} index={i} />
+              <div key={p.key}><ProjectCard p={p} t={t} locale={locale} index={i} /><ProjectCaseLink p={p} t={t} locale={locale} /></div>
             ))}
           </div>
         </div>
+
+        {testimonial && (
+          <figure className="mx-auto mt-16 max-w-3xl text-center sm:mt-20">
+            <blockquote className="font-display text-xl font-medium leading-snug text-paper sm:text-2xl">
+              “{testimonial.quote}”
+            </blockquote>
+            <figcaption className="mt-5 text-sm text-paper-dim">
+              <span className="font-semibold text-paper">{testimonial.author}</span>
+              <span aria-hidden className="mx-2 text-paper-faint">·</span>
+              {testimonial.company}
+            </figcaption>
+          </figure>
+        )}
       </div>
     </section>
   )
@@ -62,7 +77,7 @@ function projectHref(p, locale) {
   return (
     p.links?.live ||
     p.links?.demo ||
-    (p.links?.caseStudy ? `/${locale}/case-study/drivesoft` : null) ||
+    (p.links?.caseStudy ? `/${locale}/case-study/${p.links.caseStudy}` : null) ||
     p.links?.github
   )
 }
@@ -168,8 +183,8 @@ function ProjectCard({ p, t, locale, index }) {
           src={p.image}
           alt={`${title} — screenshot`}
           fill
-          sizes="(max-width: 640px) 92vw, 420px"
-          className="object-cover object-top transition-transform duration-700 group-hover:scale-[1.04]"
+          sizes="(max-width: 640px) 92vw, 540px"
+          className="object-cover object-left-top transition-transform duration-700 group-hover:scale-[1.04]"
         />
         <StatusBadge label={statusLabel} />
       </div>
@@ -202,4 +217,9 @@ function ProjectCard({ p, t, locale, index }) {
       </div>
     </motion.a>
   )
+}
+
+function ProjectCaseLink({ p, t, locale }) {
+  if (!p.links?.caseStudy) return null
+  return <a href={`/${locale}/case-study/${p.links.caseStudy}`} className="mt-4 inline-block text-sm font-semibold text-teal-bright underline underline-offset-4">{t('viewCase')} <span aria-hidden>→</span></a>
 }

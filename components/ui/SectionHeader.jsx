@@ -6,7 +6,8 @@ import { motion } from 'framer-motion'
  * display type, and an italic-serif subtitle for an editorial touch.
  * `index` is accepted for backwards compatibility but no longer rendered.
  */
-export default function SectionHeader({ index, callsign, title, subtitle, status = 'teal', align = 'left' }) {
+export default function SectionHeader({ index, callsign, title, subtitle, status = 'teal', align = 'left', level = 2 }) {
+  const Heading = level === 1 ? motion.h1 : motion.h2
   const dot = status === 'amber' ? 'bg-amber' : 'bg-teal'
   const centered = align === 'center'
 
@@ -21,7 +22,7 @@ export default function SectionHeader({ index, callsign, title, subtitle, status
         </span>
       </div>
 
-      <motion.h2
+      <Heading
         initial={{ opacity: 0, y: 16 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: '-12% 0px' }}
@@ -29,7 +30,7 @@ export default function SectionHeader({ index, callsign, title, subtitle, status
         className="mt-5 font-display font-bold tracking-tight text-paper text-3xl sm:text-4xl md:text-5xl leading-[1.08]"
       >
         {title}
-      </motion.h2>
+      </Heading>
 
       {subtitle && (
         <motion.p

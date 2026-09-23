@@ -1,3 +1,4 @@
+
 # Search engine crawlers
 User-agent: *
 Allow: /
@@ -5,19 +6,24 @@ Disallow: /api/
 Disallow: /_next/
 Disallow: /admin/
 
-# AI search crawlers — welcome (search/citation bots)
+# AI crawlers — welcome, including training bots. Being in the models'
+# knowledge is how ChatGPT / Claude / Gemini recommend me without a live search.
+User-agent: GPTBot
 User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
 User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: anthropic-ai
 User-agent: PerplexityBot
+User-agent: Perplexity-User
 User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: Bingbot
 Allow: /
 Disallow: /api/
 Disallow: /_next/
 Disallow: /admin/
-
-# OpenAI training crawler — disallow while allowing the search bot above
-User-agent: GPTBot
-Disallow: /
 
 # Sitemap
 Sitemap: https://petararsic.rs/sitemap.xml

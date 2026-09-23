@@ -10,6 +10,12 @@
       "internal": true,
       "statusCode": 308,
       "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    },
+    {
+      "source": "/:locale(en|sr)/services/laravel-backend",
+      "destination": "/:locale/services/laravel-applications",
+      "statusCode": 308,
+      "regex": "^(?!/_next)(?:/(en|sr))/services/laravel-backend(?:/)?$"
     }
   ],
   "headers": [],
@@ -28,12 +34,44 @@
       "namedRegex": "^/(?<nxtPlocale>[^/]+?)(?:/)?$"
     },
     {
+      "page": "/[locale]/apartment-rental-website",
+      "regex": "^/([^/]+?)/apartment\\-rental\\-website(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/apartment\\-rental\\-website(?:/)?$"
+    },
+    {
+      "page": "/[locale]/appointment-booking-website",
+      "regex": "^/([^/]+?)/appointment\\-booking\\-website(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/appointment\\-booking\\-website(?:/)?$"
+    },
+    {
+      "page": "/[locale]/booking-system-cost",
+      "regex": "^/([^/]+?)/booking\\-system\\-cost(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/booking\\-system\\-cost(?:/)?$"
+    },
+    {
       "page": "/[locale]/case-study/drivesoft",
       "regex": "^/([^/]+?)/case\\-study/drivesoft(?:/)?$",
       "routeKeys": {
         "nxtPlocale": "nxtPlocale"
       },
       "namedRegex": "^/(?<nxtPlocale>[^/]+?)/case\\-study/drivesoft(?:/)?$"
+    },
+    {
+      "page": "/[locale]/case-study/leto-halkidiki",
+      "regex": "^/([^/]+?)/case\\-study/leto\\-halkidiki(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/case\\-study/leto\\-halkidiki(?:/)?$"
     },
     {
       "page": "/[locale]/cenovnik",
@@ -52,12 +90,52 @@
       "namedRegex": "^/(?<nxtPlocale>[^/]+?)/contact(?:/)?$"
     },
     {
+      "page": "/[locale]/freelance-developer-vs-agency",
+      "regex": "^/([^/]+?)/freelance\\-developer\\-vs\\-agency(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/freelance\\-developer\\-vs\\-agency(?:/)?$"
+    },
+    {
+      "page": "/[locale]/frilenser-ili-agencija",
+      "regex": "^/([^/]+?)/frilenser\\-ili\\-agencija(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/frilenser\\-ili\\-agencija(?:/)?$"
+    },
+    {
+      "page": "/[locale]/izrada-sajta-za-apartmane",
+      "regex": "^/([^/]+?)/izrada\\-sajta\\-za\\-apartmane(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/izrada\\-sajta\\-za\\-apartmane(?:/)?$"
+    },
+    {
       "page": "/[locale]/izrada-sajtova",
       "regex": "^/([^/]+?)/izrada\\-sajtova(?:/)?$",
       "routeKeys": {
         "nxtPlocale": "nxtPlocale"
       },
       "namedRegex": "^/(?<nxtPlocale>[^/]+?)/izrada\\-sajtova(?:/)?$"
+    },
+    {
+      "page": "/[locale]/koliko-kosta-booking-sistem",
+      "regex": "^/([^/]+?)/koliko\\-kosta\\-booking\\-sistem(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/koliko\\-kosta\\-booking\\-sistem(?:/)?$"
+    },
+    {
+      "page": "/[locale]/koliko-kosta-web-aplikacija",
+      "regex": "^/([^/]+?)/koliko\\-kosta\\-web\\-aplikacija(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/koliko\\-kosta\\-web\\-aplikacija(?:/)?$"
     },
     {
       "page": "/[locale]/kontakt",
@@ -68,12 +146,76 @@
       "namedRegex": "^/(?<nxtPlocale>[^/]+?)/kontakt(?:/)?$"
     },
     {
+      "page": "/[locale]/online-bus-ticket-sales-software",
+      "regex": "^/([^/]+?)/online\\-bus\\-ticket\\-sales\\-software(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/online\\-bus\\-ticket\\-sales\\-software(?:/)?$"
+    },
+    {
+      "page": "/[locale]/online-prodaja-karata-za-prevoznike",
+      "regex": "^/([^/]+?)/online\\-prodaja\\-karata\\-za\\-prevoznike(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/online\\-prodaja\\-karata\\-za\\-prevoznike(?:/)?$"
+    },
+    {
       "page": "/[locale]/pricing",
       "regex": "^/([^/]+?)/pricing(?:/)?$",
       "routeKeys": {
         "nxtPlocale": "nxtPlocale"
       },
       "namedRegex": "^/(?<nxtPlocale>[^/]+?)/pricing(?:/)?$"
+    },
+    {
+      "page": "/[locale]/program-za-izradu-ponuda",
+      "regex": "^/([^/]+?)/program\\-za\\-izradu\\-ponuda(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/program\\-za\\-izradu\\-ponuda(?:/)?$"
+    },
+    {
+      "page": "/[locale]/quoting-app-for-contractors",
+      "regex": "^/([^/]+?)/quoting\\-app\\-for\\-contractors(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/quoting\\-app\\-for\\-contractors(?:/)?$"
+    },
+    {
+      "page": "/[locale]/rent-a-car-booking-website",
+      "regex": "^/([^/]+?)/rent\\-a\\-car\\-booking\\-website(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/rent\\-a\\-car\\-booking\\-website(?:/)?$"
+    },
+    {
+      "page": "/[locale]/sajt-za-rent-a-car",
+      "regex": "^/([^/]+?)/sajt\\-za\\-rent\\-a\\-car(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/sajt\\-za\\-rent\\-a\\-car(?:/)?$"
+    },
+    {
+      "page": "/[locale]/sajt-za-turisticku-agenciju",
+      "regex": "^/([^/]+?)/sajt\\-za\\-turisticku\\-agenciju(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/sajt\\-za\\-turisticku\\-agenciju(?:/)?$"
+    },
+    {
+      "page": "/[locale]/sajt-za-zakazivanje-termina",
+      "regex": "^/([^/]+?)/sajt\\-za\\-zakazivanje\\-termina(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/sajt\\-za\\-zakazivanje\\-termina(?:/)?$"
     },
     {
       "page": "/[locale]/services",
@@ -140,14 +282,6 @@
       "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/laravel\\-applications(?:/)?$"
     },
     {
-      "page": "/[locale]/services/laravel-backend",
-      "regex": "^/([^/]+?)/services/laravel\\-backend(?:/)?$",
-      "routeKeys": {
-        "nxtPlocale": "nxtPlocale"
-      },
-      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/laravel\\-backend(?:/)?$"
-    },
-    {
       "page": "/[locale]/services/pwa-applications",
       "regex": "^/([^/]+?)/services/pwa\\-applications(?:/)?$",
       "routeKeys": {
@@ -194,6 +328,54 @@
         "nxtPlocale": "nxtPlocale"
       },
       "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/wordpress\\-websites(?:/)?$"
+    },
+    {
+      "page": "/[locale]/travel-agency-website",
+      "regex": "^/([^/]+?)/travel\\-agency\\-website(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/travel\\-agency\\-website(?:/)?$"
+    },
+    {
+      "page": "/[locale]/web-application-cost",
+      "regex": "^/([^/]+?)/web\\-application\\-cost(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/web\\-application\\-cost(?:/)?$"
+    },
+    {
+      "page": "/[locale]/wix-ili-sajt-po-meri",
+      "regex": "^/([^/]+?)/wix\\-ili\\-sajt\\-po\\-meri(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/wix\\-ili\\-sajt\\-po\\-meri(?:/)?$"
+    },
+    {
+      "page": "/[locale]/wix-vs-custom-website",
+      "regex": "^/([^/]+?)/wix\\-vs\\-custom\\-website(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/wix\\-vs\\-custom\\-website(?:/)?$"
+    },
+    {
+      "page": "/[locale]/wordpress-ili-sajt-po-meri",
+      "regex": "^/([^/]+?)/wordpress\\-ili\\-sajt\\-po\\-meri(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/wordpress\\-ili\\-sajt\\-po\\-meri(?:/)?$"
+    },
+    {
+      "page": "/[locale]/wordpress-vs-custom-website",
+      "regex": "^/([^/]+?)/wordpress\\-vs\\-custom\\-website(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/wordpress\\-vs\\-custom\\-website(?:/)?$"
     }
   ],
   "staticRoutes": [
@@ -213,187 +395,363 @@
   "dataRoutes": [
     {
       "page": "/",
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/index\\.json$"
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/index\\.json$"
     },
     {
       "page": "/sitemap.xml",
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/sitemap.xml\\.json$"
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/sitemap.xml\\.json$"
     },
     {
       "page": "/[locale]",
       "routeKeys": {
         "nxtPlocale": "nxtPlocale"
       },
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/([^/]+?)\\.json$",
-      "namedDataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/(?<nxtPlocale>[^/]+?)\\.json$"
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)\\.json$",
+      "namedDataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/(?<nxtPlocale>[^/]+?)\\.json$"
+    },
+    {
+      "page": "/[locale]/apartment-rental-website",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/apartment\\-rental\\-website\\.json$",
+      "namedDataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/(?<nxtPlocale>[^/]+?)/apartment\\-rental\\-website\\.json$"
+    },
+    {
+      "page": "/[locale]/appointment-booking-website",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/appointment\\-booking\\-website\\.json$",
+      "namedDataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/(?<nxtPlocale>[^/]+?)/appointment\\-booking\\-website\\.json$"
+    },
+    {
+      "page": "/[locale]/booking-system-cost",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/booking\\-system\\-cost\\.json$",
+      "namedDataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/(?<nxtPlocale>[^/]+?)/booking\\-system\\-cost\\.json$"
     },
     {
       "page": "/[locale]/case-study/drivesoft",
       "routeKeys": {
         "nxtPlocale": "nxtPlocale"
       },
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/([^/]+?)/case\\-study/drivesoft\\.json$",
-      "namedDataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/(?<nxtPlocale>[^/]+?)/case\\-study/drivesoft\\.json$"
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/case\\-study/drivesoft\\.json$",
+      "namedDataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/(?<nxtPlocale>[^/]+?)/case\\-study/drivesoft\\.json$"
+    },
+    {
+      "page": "/[locale]/case-study/leto-halkidiki",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/case\\-study/leto\\-halkidiki\\.json$",
+      "namedDataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/(?<nxtPlocale>[^/]+?)/case\\-study/leto\\-halkidiki\\.json$"
     },
     {
       "page": "/[locale]/cenovnik",
       "routeKeys": {
         "nxtPlocale": "nxtPlocale"
       },
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/([^/]+?)/cenovnik\\.json$",
-      "namedDataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/(?<nxtPlocale>[^/]+?)/cenovnik\\.json$"
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/cenovnik\\.json$",
+      "namedDataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/(?<nxtPlocale>[^/]+?)/cenovnik\\.json$"
     },
     {
       "page": "/[locale]/contact",
       "routeKeys": {
         "nxtPlocale": "nxtPlocale"
       },
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/([^/]+?)/contact\\.json$",
-      "namedDataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/(?<nxtPlocale>[^/]+?)/contact\\.json$"
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/contact\\.json$",
+      "namedDataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/(?<nxtPlocale>[^/]+?)/contact\\.json$"
+    },
+    {
+      "page": "/[locale]/freelance-developer-vs-agency",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/freelance\\-developer\\-vs\\-agency\\.json$",
+      "namedDataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/(?<nxtPlocale>[^/]+?)/freelance\\-developer\\-vs\\-agency\\.json$"
+    },
+    {
+      "page": "/[locale]/frilenser-ili-agencija",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/frilenser\\-ili\\-agencija\\.json$",
+      "namedDataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/(?<nxtPlocale>[^/]+?)/frilenser\\-ili\\-agencija\\.json$"
+    },
+    {
+      "page": "/[locale]/izrada-sajta-za-apartmane",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/izrada\\-sajta\\-za\\-apartmane\\.json$",
+      "namedDataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/(?<nxtPlocale>[^/]+?)/izrada\\-sajta\\-za\\-apartmane\\.json$"
     },
     {
       "page": "/[locale]/izrada-sajtova",
       "routeKeys": {
         "nxtPlocale": "nxtPlocale"
       },
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/([^/]+?)/izrada\\-sajtova\\.json$",
-      "namedDataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/(?<nxtPlocale>[^/]+?)/izrada\\-sajtova\\.json$"
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/izrada\\-sajtova\\.json$",
+      "namedDataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/(?<nxtPlocale>[^/]+?)/izrada\\-sajtova\\.json$"
+    },
+    {
+      "page": "/[locale]/koliko-kosta-booking-sistem",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/koliko\\-kosta\\-booking\\-sistem\\.json$",
+      "namedDataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/(?<nxtPlocale>[^/]+?)/koliko\\-kosta\\-booking\\-sistem\\.json$"
+    },
+    {
+      "page": "/[locale]/koliko-kosta-web-aplikacija",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/koliko\\-kosta\\-web\\-aplikacija\\.json$",
+      "namedDataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/(?<nxtPlocale>[^/]+?)/koliko\\-kosta\\-web\\-aplikacija\\.json$"
     },
     {
       "page": "/[locale]/kontakt",
       "routeKeys": {
         "nxtPlocale": "nxtPlocale"
       },
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/([^/]+?)/kontakt\\.json$",
-      "namedDataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/(?<nxtPlocale>[^/]+?)/kontakt\\.json$"
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/kontakt\\.json$",
+      "namedDataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/(?<nxtPlocale>[^/]+?)/kontakt\\.json$"
+    },
+    {
+      "page": "/[locale]/online-bus-ticket-sales-software",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/online\\-bus\\-ticket\\-sales\\-software\\.json$",
+      "namedDataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/(?<nxtPlocale>[^/]+?)/online\\-bus\\-ticket\\-sales\\-software\\.json$"
+    },
+    {
+      "page": "/[locale]/online-prodaja-karata-za-prevoznike",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/online\\-prodaja\\-karata\\-za\\-prevoznike\\.json$",
+      "namedDataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/(?<nxtPlocale>[^/]+?)/online\\-prodaja\\-karata\\-za\\-prevoznike\\.json$"
     },
     {
       "page": "/[locale]/pricing",
       "routeKeys": {
         "nxtPlocale": "nxtPlocale"
       },
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/([^/]+?)/pricing\\.json$",
-      "namedDataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/(?<nxtPlocale>[^/]+?)/pricing\\.json$"
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/pricing\\.json$",
+      "namedDataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/(?<nxtPlocale>[^/]+?)/pricing\\.json$"
+    },
+    {
+      "page": "/[locale]/program-za-izradu-ponuda",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/program\\-za\\-izradu\\-ponuda\\.json$",
+      "namedDataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/(?<nxtPlocale>[^/]+?)/program\\-za\\-izradu\\-ponuda\\.json$"
+    },
+    {
+      "page": "/[locale]/quoting-app-for-contractors",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/quoting\\-app\\-for\\-contractors\\.json$",
+      "namedDataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/(?<nxtPlocale>[^/]+?)/quoting\\-app\\-for\\-contractors\\.json$"
+    },
+    {
+      "page": "/[locale]/rent-a-car-booking-website",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/rent\\-a\\-car\\-booking\\-website\\.json$",
+      "namedDataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/(?<nxtPlocale>[^/]+?)/rent\\-a\\-car\\-booking\\-website\\.json$"
+    },
+    {
+      "page": "/[locale]/sajt-za-rent-a-car",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/sajt\\-za\\-rent\\-a\\-car\\.json$",
+      "namedDataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/(?<nxtPlocale>[^/]+?)/sajt\\-za\\-rent\\-a\\-car\\.json$"
+    },
+    {
+      "page": "/[locale]/sajt-za-turisticku-agenciju",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/sajt\\-za\\-turisticku\\-agenciju\\.json$",
+      "namedDataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/(?<nxtPlocale>[^/]+?)/sajt\\-za\\-turisticku\\-agenciju\\.json$"
+    },
+    {
+      "page": "/[locale]/sajt-za-zakazivanje-termina",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/sajt\\-za\\-zakazivanje\\-termina\\.json$",
+      "namedDataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/(?<nxtPlocale>[^/]+?)/sajt\\-za\\-zakazivanje\\-termina\\.json$"
     },
     {
       "page": "/[locale]/services",
       "routeKeys": {
         "nxtPlocale": "nxtPlocale"
       },
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/([^/]+?)/services\\.json$",
-      "namedDataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/(?<nxtPlocale>[^/]+?)/services\\.json$"
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/services\\.json$",
+      "namedDataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/(?<nxtPlocale>[^/]+?)/services\\.json$"
     },
     {
       "page": "/[locale]/services/admin-panels-dashboards",
       "routeKeys": {
         "nxtPlocale": "nxtPlocale"
       },
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/([^/]+?)/services/admin\\-panels\\-dashboards\\.json$",
-      "namedDataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/(?<nxtPlocale>[^/]+?)/services/admin\\-panels\\-dashboards\\.json$"
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/services/admin\\-panels\\-dashboards\\.json$",
+      "namedDataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/(?<nxtPlocale>[^/]+?)/services/admin\\-panels\\-dashboards\\.json$"
     },
     {
       "page": "/[locale]/services/ai-integrations",
       "routeKeys": {
         "nxtPlocale": "nxtPlocale"
       },
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/([^/]+?)/services/ai\\-integrations\\.json$",
-      "namedDataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/(?<nxtPlocale>[^/]+?)/services/ai\\-integrations\\.json$"
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/services/ai\\-integrations\\.json$",
+      "namedDataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/(?<nxtPlocale>[^/]+?)/services/ai\\-integrations\\.json$"
     },
     {
       "page": "/[locale]/services/booking-systems",
       "routeKeys": {
         "nxtPlocale": "nxtPlocale"
       },
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/([^/]+?)/services/booking\\-systems\\.json$",
-      "namedDataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/(?<nxtPlocale>[^/]+?)/services/booking\\-systems\\.json$"
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/services/booking\\-systems\\.json$",
+      "namedDataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/(?<nxtPlocale>[^/]+?)/services/booking\\-systems\\.json$"
     },
     {
       "page": "/[locale]/services/crm-internal-tools",
       "routeKeys": {
         "nxtPlocale": "nxtPlocale"
       },
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/([^/]+?)/services/crm\\-internal\\-tools\\.json$",
-      "namedDataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/(?<nxtPlocale>[^/]+?)/services/crm\\-internal\\-tools\\.json$"
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/services/crm\\-internal\\-tools\\.json$",
+      "namedDataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/(?<nxtPlocale>[^/]+?)/services/crm\\-internal\\-tools\\.json$"
     },
     {
       "page": "/[locale]/services/custom-web-applications",
       "routeKeys": {
         "nxtPlocale": "nxtPlocale"
       },
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/([^/]+?)/services/custom\\-web\\-applications\\.json$",
-      "namedDataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/(?<nxtPlocale>[^/]+?)/services/custom\\-web\\-applications\\.json$"
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/services/custom\\-web\\-applications\\.json$",
+      "namedDataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/(?<nxtPlocale>[^/]+?)/services/custom\\-web\\-applications\\.json$"
     },
     {
       "page": "/[locale]/services/ecommerce-woocommerce",
       "routeKeys": {
         "nxtPlocale": "nxtPlocale"
       },
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/([^/]+?)/services/ecommerce\\-woocommerce\\.json$",
-      "namedDataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/(?<nxtPlocale>[^/]+?)/services/ecommerce\\-woocommerce\\.json$"
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/services/ecommerce\\-woocommerce\\.json$",
+      "namedDataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/(?<nxtPlocale>[^/]+?)/services/ecommerce\\-woocommerce\\.json$"
     },
     {
       "page": "/[locale]/services/laravel-applications",
       "routeKeys": {
         "nxtPlocale": "nxtPlocale"
       },
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/([^/]+?)/services/laravel\\-applications\\.json$",
-      "namedDataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/(?<nxtPlocale>[^/]+?)/services/laravel\\-applications\\.json$"
-    },
-    {
-      "page": "/[locale]/services/laravel-backend",
-      "routeKeys": {
-        "nxtPlocale": "nxtPlocale"
-      },
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/([^/]+?)/services/laravel\\-backend\\.json$",
-      "namedDataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/(?<nxtPlocale>[^/]+?)/services/laravel\\-backend\\.json$"
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/services/laravel\\-applications\\.json$",
+      "namedDataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/(?<nxtPlocale>[^/]+?)/services/laravel\\-applications\\.json$"
     },
     {
       "page": "/[locale]/services/pwa-applications",
       "routeKeys": {
         "nxtPlocale": "nxtPlocale"
       },
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/([^/]+?)/services/pwa\\-applications\\.json$",
-      "namedDataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/(?<nxtPlocale>[^/]+?)/services/pwa\\-applications\\.json$"
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/services/pwa\\-applications\\.json$",
+      "namedDataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/(?<nxtPlocale>[^/]+?)/services/pwa\\-applications\\.json$"
     },
     {
       "page": "/[locale]/services/react-frontend-applications",
       "routeKeys": {
         "nxtPlocale": "nxtPlocale"
       },
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/([^/]+?)/services/react\\-frontend\\-applications\\.json$",
-      "namedDataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/(?<nxtPlocale>[^/]+?)/services/react\\-frontend\\-applications\\.json$"
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/services/react\\-frontend\\-applications\\.json$",
+      "namedDataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/(?<nxtPlocale>[^/]+?)/services/react\\-frontend\\-applications\\.json$"
     },
     {
       "page": "/[locale]/services/tourism-accommodation-portals",
       "routeKeys": {
         "nxtPlocale": "nxtPlocale"
       },
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/([^/]+?)/services/tourism\\-accommodation\\-portals\\.json$",
-      "namedDataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/(?<nxtPlocale>[^/]+?)/services/tourism\\-accommodation\\-portals\\.json$"
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/services/tourism\\-accommodation\\-portals\\.json$",
+      "namedDataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/(?<nxtPlocale>[^/]+?)/services/tourism\\-accommodation\\-portals\\.json$"
     },
     {
       "page": "/[locale]/services/website-maintenance",
       "routeKeys": {
         "nxtPlocale": "nxtPlocale"
       },
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/([^/]+?)/services/website\\-maintenance\\.json$",
-      "namedDataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/(?<nxtPlocale>[^/]+?)/services/website\\-maintenance\\.json$"
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/services/website\\-maintenance\\.json$",
+      "namedDataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/(?<nxtPlocale>[^/]+?)/services/website\\-maintenance\\.json$"
     },
     {
       "page": "/[locale]/services/website-redesign",
       "routeKeys": {
         "nxtPlocale": "nxtPlocale"
       },
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/([^/]+?)/services/website\\-redesign\\.json$",
-      "namedDataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/(?<nxtPlocale>[^/]+?)/services/website\\-redesign\\.json$"
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/services/website\\-redesign\\.json$",
+      "namedDataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/(?<nxtPlocale>[^/]+?)/services/website\\-redesign\\.json$"
     },
     {
       "page": "/[locale]/services/wordpress-websites",
       "routeKeys": {
         "nxtPlocale": "nxtPlocale"
       },
-      "dataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/([^/]+?)/services/wordpress\\-websites\\.json$",
-      "namedDataRouteRegex": "^/_next/data/mPgcKZVF3xuIVSz3Vctpl/(?<nxtPlocale>[^/]+?)/services/wordpress\\-websites\\.json$"
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/services/wordpress\\-websites\\.json$",
+      "namedDataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/(?<nxtPlocale>[^/]+?)/services/wordpress\\-websites\\.json$"
+    },
+    {
+      "page": "/[locale]/travel-agency-website",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/travel\\-agency\\-website\\.json$",
+      "namedDataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/(?<nxtPlocale>[^/]+?)/travel\\-agency\\-website\\.json$"
+    },
+    {
+      "page": "/[locale]/web-application-cost",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/web\\-application\\-cost\\.json$",
+      "namedDataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/(?<nxtPlocale>[^/]+?)/web\\-application\\-cost\\.json$"
+    },
+    {
+      "page": "/[locale]/wix-ili-sajt-po-meri",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/wix\\-ili\\-sajt\\-po\\-meri\\.json$",
+      "namedDataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/(?<nxtPlocale>[^/]+?)/wix\\-ili\\-sajt\\-po\\-meri\\.json$"
+    },
+    {
+      "page": "/[locale]/wix-vs-custom-website",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/wix\\-vs\\-custom\\-website\\.json$",
+      "namedDataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/(?<nxtPlocale>[^/]+?)/wix\\-vs\\-custom\\-website\\.json$"
+    },
+    {
+      "page": "/[locale]/wordpress-ili-sajt-po-meri",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/wordpress\\-ili\\-sajt\\-po\\-meri\\.json$",
+      "namedDataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/(?<nxtPlocale>[^/]+?)/wordpress\\-ili\\-sajt\\-po\\-meri\\.json$"
+    },
+    {
+      "page": "/[locale]/wordpress-vs-custom-website",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "dataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/([^/]+?)/wordpress\\-vs\\-custom\\-website\\.json$",
+      "namedDataRouteRegex": "^/_next/data/4VmShLk45UlYFLHq4OeYy/(?<nxtPlocale>[^/]+?)/wordpress\\-vs\\-custom\\-website\\.json$"
     }
   ],
   "rsc": {

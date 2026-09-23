@@ -4,6 +4,8 @@ import { useTranslations } from 'next-intl'
 import { motion } from 'framer-motion'
 import { FaMapMarkerAlt } from 'react-icons/fa'
 import SEO from './SEO'
+import RelatedPages from './RelatedPages'
+import { industries } from '../data/industries'
 import SubpageNav from './SubpageNav'
 import Footer from './Footer'
 
@@ -18,6 +20,7 @@ export const IZRADA_SAJTOVA_URL = `${SITE_URL}/sr/izrada-sajtova`
  */
 export default function IzradaSajtovaPage() {
   const t = useTranslations('izradaSajtovaPage')
+  const tContent = useTranslations('contentPages')
   const tSub = useTranslations('subpage')
   const tServices = useTranslations('servicePages')
 
@@ -152,6 +155,12 @@ export default function IzradaSajtovaPage() {
                 </a>
               ))}
             </div>
+          </div>
+        </section>
+
+        <section className="bg-ink-900 border-b border-line py-16 sm:py-20">
+          <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+            <RelatedPages ids={industries.map((item) => item.id)} locale="sr" title={tContent('industriesTitle')} descriptions />
           </div>
         </section>
 

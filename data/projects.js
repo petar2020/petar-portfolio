@@ -3,10 +3,17 @@
 // links: { live, demo, caseStudy, github } — only the keys present are rendered.
 export const projects = [
   {
+    key: 'leto-halkidiki',
+    image: '/letohalkidiki-preview.jpg',
+    category: 'platform',
+    featured: true,
+    tech: ['Laravel', 'Tailwind CSS', 'Alpine.js', 'MySQL', 'SEO'],
+    links: { live: 'https://letohalkidiki.com/sr', caseStudy: 'leto-halkidiki' },
+  },
+  {
     key: 'drivesoft-web',
     image: '/drivesoft-preview.png',
     category: 'web',
-    featured: true,
     tech: ['Next.js', 'React', 'Tailwind CSS', 'Framer Motion', 'SEO'],
     links: { live: 'https://drivesoft.rs/' },
   },
@@ -17,7 +24,7 @@ export const projects = [
     featured: true,
     primary: true, // leads the homepage "Selected Projects" section — real 150k+ ticket volume
     tech: ['WordPress', 'Laravel (API)', 'MySQL', 'Redis', 'Nginx'],
-    links: { live: 'https://srbijatours.com/', caseStudy: '#case-study' },
+    links: { live: 'https://srbijatours.com/', caseStudy: 'drivesoft' },
   },
   {
     key: 'sti-mobile',
@@ -32,7 +39,7 @@ export const projects = [
     category: 'dashboard',
     featured: true,
     tech: ['Laravel', 'MySQL', 'Redis', 'Queues', 'Docker'],
-    links: { demo: 'https://drivesoft-bozic.com/login', caseStudy: '#case-study' },
+    links: { demo: 'https://drivesoft-bozic.com/login', caseStudy: 'drivesoft' },
   },
   {
     key: 'bozic-konig',

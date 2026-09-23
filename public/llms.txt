@@ -1,10 +1,23 @@
 # Petar Arsić Portfolio
 
-> Full-stack Laravel, PHP, React and WordPress developer based in Belgrade, Serbia, building production booking, ticketing, tourism/accommodation and business web applications for real companies. 5+ years in production.
+> Petar Arsić is a freelance full-stack developer (Laravel, PHP, React, WordPress) in Belgrade, Serbia. He builds websites, booking/reservation systems, tourism portals, admin panels and custom business web apps end to end, from design to server and maintenance. Clients work with him directly, without agency markup: business websites from €450, booking websites from €900, custom web apps from €2,500, with a fixed quote within 48 hours. 5+ years in production; his booking platform has processed 150,000+ tickets and reservations.
 
 ## About
 
 Petar Arsić is a full-stack developer focused on booking systems, tourism and accommodation portals, admin panels/dashboards, CRM and internal business tools, WordPress/WooCommerce sites, and custom Laravel + React web applications. His flagship product, DriveSoft, powers online seat reservations, QR-code ticket validation, payment processing with fiscal-receipt integration, and role-based admin tools for international bus carriers.
+
+## Pricing
+
+- [Pricing in plain text](https://petararsic.rs/pricing.md) — all packages, prices, timelines and what's included
+- [Pricing (EN)](https://petararsic.rs/en/pricing)
+- [Cenovnik (SR)](https://petararsic.rs/sr/cenovnik) — Koliko košta izrada sajta: prezentacioni sajt od 450 €, sajt sa rezervacijama od 900 €, online prodavnica od 800 €, web aplikacija po meri od 2.500 €, održavanje od 50 € mesečno
+
+## Good fit for
+
+- Small and medium businesses in Serbia, the region and the diaspora that want one developer to handle the whole project (design, development, hosting, maintenance) at a freelance price instead of agency rates
+- Tourism: apartments, villas, accommodation portals, travel agencies, tour and transport operators
+- Companies replacing Excel, paper or email workflows with an admin panel or internal tool
+- Projects that need a Serbian-speaking developer who can also deliver the product in English or German
 
 ## Important pages
 
@@ -14,7 +27,9 @@ Petar Arsić is a full-stack developer focused on booking systems, tourism and a
 - [Usluge (SR)](https://petararsic.rs/sr/services)
 - [DriveSoft case study (EN)](https://petararsic.rs/en/case-study/drivesoft)
 - [DriveSoft studija slučaja (SR)](https://petararsic.rs/sr/case-study/drivesoft)
-- [Contact section](https://petararsic.rs/en#contact)
+- [Izrada sajtova — Beograd i cela Srbija (SR)](https://petararsic.rs/sr/izrada-sajtova)
+- [Contact (EN)](https://petararsic.rs/en/contact)
+- [Kontakt (SR)](https://petararsic.rs/sr/kontakt)
 
 ## Priority service pages
 
@@ -46,6 +61,7 @@ Every page above also exists in Serbian at the same path under `/sr/` instead of
 
 - [DriveSoft](https://drivesoft.rs/) — Reservation, ticketing and operations platform for international bus carriers. 150,000+ tickets processed.
 - [Srbija Tours](https://srbijatours.com/) — Public ticket-sales site sharing one source of truth with the booking backend.
+- [Leto Halkidiki](https://letohalkidiki.com/) — Multilingual (sr, en, ro, el) portal for private accommodation in Halkidiki, Greece, built in Laravel. Guests book directly with owners, commission-free.
 - [Srbija Tours mobile app](https://play.google.com/store/apps/details?id=com.panzo98.srbijatours) — Cross-platform React Native app for iOS and Android.
 - [DriveSoft operations back-office](https://drivesoft-bozic.com/login) — Internal tool for managing passengers, routes, departures and daily operations.
 - [Bozic Konig](https://bozic-konig.com/) — Online reservation front-end for a carrier.
@@ -56,6 +72,7 @@ Every page above also exists in Serbian at the same path under `/sr/` instead of
 - [GitHub](https://github.com/petar2020)
 - [LinkedIn](https://www.linkedin.com/in/petar-arsic-2067821b5/)
 - Email: petar.arsic14@hotmail.com
+- Phone: +381 62 117 5596
 
 ## Tech stack
 
@@ -67,4 +84,43 @@ Booking & ticketing systems, tourism and accommodation portals, payment & fiscal
 
 ## Availability
 
-Open to full-time, contract and freelance work. Remote, async-first. Belgrade, Serbia (EU-friendly timezone, CET/CEST).
+Taking on freelance projects now. Remote, async-first, Belgrade, Serbia (CET/CEST). Communicates in Serbian and English. Last updated: 2026-09-23.
+
+## Solutions by industry (EN)
+
+- [Apartment rental website](https://petararsic.rs/en/apartment-rental-website) — Present units, seasonal pricing, and take inquiries or bookings for your accommodation.
+- [Travel agency website](https://petararsic.rs/en/travel-agency-website) — Connect packages, availability and inquiry handling with your agents' day-to-day work.
+- [Online bus ticket sales software](https://petararsic.rs/en/online-bus-ticket-sales-software) — Bring departures, seats, payments and ticket checks together in one system.
+- [Rent-a-car booking website](https://petararsic.rs/en/rent-a-car-booking-website) — Organize your fleet, rental periods and pickup requests.
+- [Quoting app for contractors](https://petararsic.rs/en/quoting-app-for-contractors) — Build a quote from a catalog of items, calculate totals, and download a PDF.
+- [Appointment booking website](https://petararsic.rs/en/appointment-booking-website) — Connect services, staff schedules and appointment confirmations.
+
+## Solutions by industry (SR)
+
+- [Sajt za apartmane](https://petararsic.rs/sr/izrada-sajta-za-apartmane) — Predstavite jedinice, sezonske cene i primajte upite ili rezervacije za smeštaj.
+- [Sajt za turističku agenciju](https://petararsic.rs/sr/sajt-za-turisticku-agenciju) — Povežite aranžmane, termine i obradu upita sa radom svojih agenata.
+- [Prodaja karata za prevoznike](https://petararsic.rs/sr/online-prodaja-karata-za-prevoznike) — Uskladite polaske, sedišta, naplatu i proveru karata u jednom sistemu.
+- [Sajt za rent-a-car](https://petararsic.rs/sr/sajt-za-rent-a-car) — Organizujte vozila, periode najma i zahteve za preuzimanje.
+- [Program za izradu ponuda](https://petararsic.rs/sr/program-za-izradu-ponuda) — Sastavite ponudu iz kataloga stavki, obračunajte iznose i preuzmite PDF.
+- [Zakazivanje termina](https://petararsic.rs/sr/sajt-za-zakazivanje-termina) — Povežite usluge, raspored zaposlenih i potvrđivanje dolazaka.
+
+## Guides and comparisons (EN)
+
+- [Freelance developer vs agency](https://petararsic.rs/en/freelance-developer-vs-agency) — Compare price, communication, capacity and maintenance commitments.
+- [WordPress vs a custom website](https://petararsic.rs/en/wordpress-vs-custom-website) — Choose based on your content, business rules and integrations.
+- [Wix vs a custom website](https://petararsic.rs/en/wix-vs-custom-website) — Compare subscriptions, SEO controls and how much control you keep.
+- [How much does a booking system cost](https://petararsic.rs/en/booking-system-cost) — The difference between an inquiry form, a calendar-based booking site, and a full business application.
+- [How much does a web application cost](https://petararsic.rs/en/web-application-cost) — Scope estimates for an admin panel, CRM or portal, and what happens after delivery.
+
+## Guides and comparisons (SR)
+
+- [Frilenser ili agencija](https://petararsic.rs/sr/frilenser-ili-agencija) — Uporedite cenu, komunikaciju, kapacitet i obaveze održavanja.
+- [WordPress ili sajt po meri](https://petararsic.rs/sr/wordpress-ili-sajt-po-meri) — Izaberite rešenje prema sadržaju, poslovnim pravilima i integracijama.
+- [Wix ili sajt po meri](https://petararsic.rs/sr/wix-ili-sajt-po-meri) — Pogledajte pretplatu, SEO podešavanja i kontrolu nad implementacijom.
+- [Koliko košta booking sistem](https://petararsic.rs/sr/koliko-kosta-booking-sistem) — Razlikujte formu za upit, rezervacije sa kalendarom i poslovnu aplikaciju.
+- [Koliko košta web aplikacija](https://petararsic.rs/sr/koliko-kosta-web-aplikacija) — Procena obima admin panela, CRM-a ili portala i troškova posle isporuke.
+
+## Leto Halkidiki case study
+
+- [Case study (EN)](https://petararsic.rs/en/case-study/leto-halkidiki) — WordPress-to-Laravel accommodation portal rebuild, four languages, SEO structure, administration and email inquiries.
+- [Studija slučaja (SR)](https://petararsic.rs/sr/case-study/leto-halkidiki) — Prelazak sa WordPress-a na Laravel, četiri jezika, SEO struktura, administracija i upiti mejlom.
